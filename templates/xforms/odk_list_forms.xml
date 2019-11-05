@@ -1,0 +1,8 @@
+<forms>
+{% if xforms %}
+  {% for xform in xforms %}
+  <formID>{{ xform.keyword }}</formID>
+  <form url="http://{{ host }}/xforms/odk/get/{{ xform.pk }}/">{{ xform.name }}</form>
+  {% endfor %}
+{% endif %}
+</forms>

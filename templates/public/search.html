@@ -1,0 +1,56 @@
+{% extends "public_base.html" %}
+
+{% load quickblocks i18n %}
+
+{% block pre-container %}
+<div class="public-header">
+  <div class="container">
+    <div class="country-nav">
+      <ul>
+        <li><a href="{% url 'public-country' 'rw' %}">{% trans "Rwanda" %}</a></li>
+        <li><a href="{% url 'public-country' 'ke' %}">{% trans "Kenya" %}</a></li>
+        <li><a href="{% url 'public-country' 'tz' %}">{% trans "Tanzania" %}</a></li>
+        <li><a href="{% url 'public-country' 'et' %}">{% trans "Ethiopia" %}</a></li>
+      </ul>
+    </div>
+    <div class="header-image">
+      <img src="{{ STATIC_URL }}img/820x250.jpeg">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+{% include "public/search_box.html" %}
+
+<div class="row">
+  <div class="span12">
+    {% if not wetmills %}
+    <div class="alert-message block-message warning">
+      {% trans "Sorry, there were no matches for your query, please try again." %}
+    </div>
+    {% else %}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>{% trans "Name" %}</th>
+          <th>{% trans "Country" %}</th>
+          <th>{% trans "Province" %}</th>
+          <th>{% trans "Started" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+    {% for wetmill in wetmills %}
+      <tr>
+        <td class="clickable"><a href="{% url 'public-wetmill' wetmill.id %}">{{ wetmill.name }}</a></td>
+        <td>{{ wetmill.country.name }}</td>
+        <td>{{ wetmill.province }}</td>
+        <td>{{ wetmill.year_started }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

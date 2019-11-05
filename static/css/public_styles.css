@@ -1,0 +1,206 @@
+html {
+    background-color: white;
+}
+
+body {
+    padding-top: 0px;
+    background-color: white;
+}
+
+body.has-top-bar {
+    background-color: white;
+    padding-top: 39px;
+    border-top: 0px;
+}
+
+div.public-header {
+    background: url("../img/home_bg.png");
+    background-repeat: repeat-x;
+    background-color: white;
+}
+
+div.header-image {
+    padding-bottom: 12px;
+}
+
+div.content {
+    border: 0px;
+    -webkit-border-radius: 0 0 0px 0px;
+    -moz-border-radius: 0 0 0px 0px;
+    box-shadow: 0 0px 0px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 0px 0px rgba(0,0,0,.15);
+}
+
+h1, h2, h3, h4 {
+    color: #719E41;
+}
+
+div.country-nav {
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+div.country-nav ul {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+div.country-nav ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+div.country-nav ul li a {
+    text-transform: uppercase;
+    color: #3E5825;
+    font-size: 12px;
+}
+
+div.country-nav ul li a.selected {
+    border-bottom: 3px solid #3E5825;
+}
+
+div.metric {
+    margin-bottom: 5px;
+    line-height: 1;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: right;
+    color: #719E41;
+}
+
+span.med {
+    font-size: 32px;
+    font-weight: bold;
+    color: #849F32;
+    margin-right: 0px;
+}
+
+div.metric-label p {
+    line-height: 1;
+    margin-bottom: 2px;
+    clear: both;
+    text-align: right;
+}
+
+div.metric-block {
+    padding-top: 15px;
+    float: right;
+    padding-left: 30px;
+}
+
+div.metrics {
+    height: 120px;
+}
+
+div.top-margin {
+    margin-top: 16px;
+}
+
+div.bottom-margin {
+    margin-bottom: 16px;
+}
+
+div.home-half img {
+    margin-bottom: 0px;
+}
+
+div.login-box a {
+    color: white;
+    font-size: 10px;
+}
+
+div.login-box {
+    color: white;
+    float: right;
+    background-color: #729E41;
+    padding: 3px 10px 3px 10px;
+}
+
+div.wetmill-header {
+    margin-bottom: 12px;
+}
+
+div.wetmill-stats {
+    font-size: 12px;
+    border-left: 3px solid #729E41;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+div.wetmill-stats label {
+    float: left;
+    text-align: left;
+    padding-top: 0px;
+    font-size: 12px;
+    line-height: 1;
+    width: 90px;
+}
+
+div.wetmill-stats p {
+    margin-left: 90px;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+div.wetmill-image {
+    width: 520px;
+    height: 250px;
+}
+
+div.wetmill-name {
+    margin-top: 200px;
+    background-color: rgba(255,255,255,.65);
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 5px;
+    border-left: 3px solid #C12337;
+    color: #C12337;
+}
+
+div.wetmill-name h2 {
+    color: #C12337;
+    line-height: 1;
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+div.wetmill-name p {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+span.search-prompt {
+    color: #719E41;
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 5px;
+}
+
+#search form {
+    margin-bottom: 0px;
+}
+
+#search input {
+    height: 25px;
+    width: 350px;
+    font-size: 18px;
+}
+
+.wetmills ul {
+    list-style: none;
+    list-style-position: inside;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+div.country-map {
+  text-align: right;
+  padding-top: 50px;
+}
+

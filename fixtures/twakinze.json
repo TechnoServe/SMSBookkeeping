@@ -1,0 +1,129 @@
+[
+  {
+    "pk": 182,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Accountant",
+      "created": "2012-01-20T09:14:55",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:24:36",
+      "type": null,
+      "slug": "twakinze_accountant",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 192,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Date",
+      "created": "2012-01-25T11:19:54",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:19:54",
+      "type": null,
+      "slug": "twakinze_date",
+      "name": "Date"
+    }
+  },
+  {
+    "pk": 119,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Twakinze",
+      "keyword": "twakinze",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "{{ wetmill.name }} has been reported closed on {{ date }}.",
+      "created": "2012-01-20T09:09:37",
+      "restrict_message": "",
+      "modified": "2012-02-02T14:35:34",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "{{ wetmill.name }} has been reported closed on {{ date }}.",
+      "response_en_us": "{{ wetmill.name }} has been reported closed on {{ date}}.",
+      "description": "Message sent on days when the wetmill is closed."
+    }
+  },
+  {
+    "pk": 124,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": null,
+      "message_en_us": "Error. You must be an accountant in order to send twakinze reports.  Register with 'acc'",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 182,
+      "test": "None",
+      "message": "Error. You must be an accountant in order to send twakinze reports.  Register with 'acc'",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 125,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": null,
+      "message_en_us": "Error. You must include the date that the wetmill was closed.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 192,
+      "test": "None",
+      "message": "Error. You must include the date that the wetmill was closed.",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 182,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "accountant",
+      "order": 1,
+      "xform": 119
+    }
+  },
+  {
+    "pk": 192,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "daylot",
+      "command": "date",
+      "order": 0,
+      "xform": 119
+    }
+  },
+  {
+    "pk": 127,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": null,
+      "message_en_us": "Error. You must include the date of the daylot for your ibitumbwe submission.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 92,
+      "test": "None",
+      "message": "Error. You must include the date of the daylot for your ibitumbwe submission.",
+      "type": "req_val",
+      "order": 0
+    }
+  }
+]
+
+

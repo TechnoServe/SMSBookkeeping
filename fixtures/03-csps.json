@@ -1,0 +1,338 @@
+[
+  {
+    "pk": 3,
+    "model": "csps.csp",
+    "fields": {
+      "modified_by": 1,
+      "name": "ENAS",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "sms_name": "enas",
+      "created_on": "2011-11-21 12:41:45", 
+      "modified_on": "2011-11-29 09:05:25", 
+      "logo": "",
+      "description": ""
+    }
+  },
+  {
+    "pk": 23,
+    "model": "csps.csp",
+    "fields": {
+      "modified_by": 1,
+      "name": "Kaizen Venture Partners",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "sms_name": "KVP",
+      "created_on": "2011-11-21 12:41:45", 
+      "modified_on": "2011-11-29 09:05:25", 
+      "logo": "",
+      "description": ""
+    }
+  },
+  {
+    "pk": 29,
+    "model": "csps.csp",
+    "fields": {
+      "modified_by": 1,
+      "name": "Kayco",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "sms_name": "kay-co",
+      "created_on": "2011-11-21 12:41:45", 
+      "modified_on": "2011-11-29 09:05:25", 
+      "logo": "",
+      "description": ""
+    }
+  },
+  {
+    "pk": 4,
+    "model": "csps.csp",
+    "fields": {
+      "modified_by": 1,
+      "name": "KCC",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "sms_name": "kcc",
+      "created_on": "2011-11-21 12:41:45", 
+      "modified_on": "2011-11-29 09:05:25", 
+      "logo": "",
+      "description": ""
+    }
+  },
+  {
+    "pk": 30,
+    "model": "csps.csp",
+    "fields": {
+      "modified_by": 1,
+      "name": "Muhibiri",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "sms_name": "muhibiri",
+      "created_on": "2011-11-21 12:41:45", 
+      "modified_on": "2011-11-29 09:05:25", 
+      "logo": "",
+      "description": ""
+    }
+  },
+  {
+    "pk": 1,
+    "model": "csps.csp",
+    "fields": {
+      "modified_by": 1,
+      "name": "Rwacof",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "sms_name": "rwacof",
+      "created_on": "2011-11-21 12:41:45", 
+      "modified_on": "2011-11-29 09:05:25", 
+      "logo": "",
+      "description": ""
+    }
+  },
+  {
+    "pk": 2,
+    "model": "csps.csp",
+    "fields": {
+      "modified_by": 1,
+      "name": "Rwanda Trading Company",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "sms_name": "rtc",
+      "created_on": "2011-11-21 12:41:45", 
+      "modified_on": "2011-11-29 09:05:25", 
+      "logo": "logos/Inzovu_Logo.jpf",
+      "description": "Westrock Coffee and Rwanda Trading Company work together to provide our customers with a vertically integrated coffee supply chain.\r\n\r\nWe develop blends, products, and brands for a range of clients. We import and roast coffee from around the world, and we produce and export coffee from East Africa through our Rwanda Trading Company subsidiary."
+    }
+  },
+  {
+    "pk": 11, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 8, 
+      "name": "KFCFCU", 
+      "sms_name": "kfcfcu", 
+      "country": 4, 
+      "is_active": true, 
+      "created_by": 4, 
+      "created_on": "2011-11-21 12:41:45", 
+      "modified_on": "2011-11-29 09:05:25", 
+      "logo": "", 
+      "description": "Kaffa Forest Coffee Farmers Cooperative Union"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 8, 
+      "name": "LIFCU", 
+      "sms_name": "lifcu", 
+      "country": 4, 
+      "is_active": true, 
+      "created_by": 4, 
+      "created_on": "2011-11-21 12:41:02", 
+      "modified_on": "2011-11-29 09:06:37", 
+      "logo": "", 
+      "description": "Limu Inara Farmers Cooperative Union"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 8, 
+      "name": "OCFCU", 
+      "sms_name": "ocfcu", 
+      "country": 4, 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-18 11:57:39", 
+      "modified_on": "2011-11-29 09:04:33", 
+      "logo": "", 
+      "description": "Oromia Coffee Farmer's Cooperative Union"
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 11, 
+      "name": "Coffee Management Services Ltd", 
+      "sms_name": "cofman", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 11, 
+      "created_on": "2011-11-23 09:19:16", 
+      "modified_on": "2011-11-23 09:19:16", 
+      "logo": "", 
+      "description": "Coffee Management Services Ltd. (CMS) is an agri-business service provider offering a wide range of services to the coffee industry in Kenya. The company is a subsidiary of Dormans Limited"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 11, 
+      "name": "Kenya Co-operative Coffee Exporters Ltd", 
+      "sms_name": "kenyacoop", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 11, 
+      "created_on": "2011-11-23 09:07:13", 
+      "modified_on": "2011-11-23 09:07:13", 
+      "logo": "", 
+      "description": "Kenya Co-operative Coffee Exporters Ltd (KCCE) is a newly established co-operative organization licensed as a commercial coffee marketing agent.\r\n\r\n"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 11, 
+      "name": "Kofinaf Limited", 
+      "sms_name": "kofinaf", 
+      "country": 2, 
+      "is_active": false, 
+      "created_by": 1, 
+      "created_on": "2011-11-21 08:27:56", 
+      "modified_on": "2011-11-23 12:31:34", 
+      "logo": "", 
+      "description": "Kofinaf is a leading private coffee producer contributing to approximately 8.5% of the total coffee produced in Kenya.\r\n \r\nThe company is in addition involved in milling, marketing and exporting the finest and pure Arabica Kenyan coffee.  \r\n"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 11, 
+      "name": "Sasini Limited", 
+      "sms_name": "sasini", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 11, 
+      "created_on": "2011-11-23 08:36:43", 
+      "modified_on": "2011-11-23 08:41:52", 
+      "logo": "", 
+      "description": "Sasini is an integrated business group with operations in growing and trading of tean and coffee in Kenya. The company is listed on the Nairobe Stock Exchange.\r\n\r\nSasini trades in various qualities of coffee from their own estates and for other growers. Aristocrats Coffee and Tea Exporters Limited is the trading and exporting subsidiary of Sasini Limited, with a fully equipped coffee-liquoring laboratory where all the coffee is analyzed in preparation for export.\r\n\r\n"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 11, 
+      "name": "Sustainable Management Services (SMS) Ltd ", 
+      "sms_name": "sustainable", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 11, 
+      "created_on": "2011-11-23 12:41:25", 
+      "modified_on": "2011-11-23 12:41:25", 
+      "logo": "", 
+      "description": "Sustainable Management Services (SMS) Ltd is a subsidiary of ECOM Agroindustrial Corporation Ltd in Kenya. SMS is licensed as a coffee management and marketing agent and offers a wide range of management services touching on all aspects of the coffee business, regardless of the producer\u2019s scale of operations. The company has been instrumental in pioneering global certification programs in Kenya\u2019s smallholder coffee sector including Utz Certified, Fairtrade, Rainforest Alliance, 4C and the 4C Climate Code."
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 11, 
+      "name": "Thika Coffee Mills", 
+      "sms_name": "thika", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-22 12:47:31", 
+      "modified_on": "2011-11-23 08:50:26", 
+      "logo": "", 
+      "description": "Thika Coffee Mills (TCM) is a private limited liability company 100% locally owned and is a leading green coffee expert in Kenya based in Thika which is about 50 kilometres from Nairobi. TCM provides holistic solutions to farmers, green coffee buyers and roasters."
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 11, 
+      "name": "Tropical Farm Management (Kenya) Limited", 
+      "sms_name": "tropical", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 11, 
+      "created_on": "2011-11-23 09:04:03", 
+      "modified_on": "2011-11-23 09:04:03", 
+      "logo": "", 
+      "description": "Tropical Farm Management (Kenya) Limited (TFM) is a subsidiary of the Neumann Kaffee Gruppe (NKG). It is a management company based 50 kilometres north of Nairobi  and plays an important role in successful farm management and transfer of farming technology and know-how.  "
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 10, 
+      "name": "G-32", 
+      "sms_name": "g32", 
+      "country": 3, 
+      "is_active": true, 
+      "created_by": 10, 
+      "created_on": "2011-11-29 13:07:25", 
+      "modified_on": "2011-11-29 13:07:25", 
+      "logo": "", 
+      "description": "This is in Moshi"
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 10, 
+      "name": "KILICAFE", 
+      "sms_name": "kilicafe", 
+      "country": 3, 
+      "is_active": true, 
+      "created_by": 10, 
+      "created_on": "2011-11-29 13:06:51", 
+      "modified_on": "2011-12-02 11:27:12", 
+      "logo": "", 
+      "description": "Kilicafe is in Mbinga"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 10, 
+      "name": "Standalone", 
+      "sms_name": "standalone", 
+      "country": 3, 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-24 10:14:44", 
+      "modified_on": "2011-12-02 11:26:07", 
+      "logo": "", 
+      "description": "This cooperative or FBG does not have a CSP. "
+    }
+  }, 
+  {
+    "pk": 40, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Starbucks", 
+      "sms_name": "starbucks", 
+      "country": 5, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-11 03:06:58", 
+      "modified_on": "2011-10-19 03:15:02", 
+      "logo": "", 
+      "description": "We sell expensive coffee in stores scattered across the United States."
+    }
+  }
+]

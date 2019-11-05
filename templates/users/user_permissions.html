@@ -1,0 +1,109 @@
+{% extends "smartmin/form.html" %}
+{% load smartmin %}
+
+{% block form-span %}span14{% endblock form-span %}
+
+{% block pjax %}
+<div class="row">
+  <div class="span3">
+    <h4>Permissions</h4>
+    <p>From this page you can set the user's permission, at whatever granularity is appropriate.</p>
+    <p>Permissions will cascade from top to bottom, so if a user has a permission set for a country, then they will also get it for all CSPs in that country and all wetmills in that country</p>
+  </div>
+  <div class="offset1 span8">
+    <h4>Reference</h4>
+    <div><b>Edit Wetmills</b> - Allows a user to create and update wetmills.</div>
+    <div><b>View Reports</b> - Allows a user to view transparency reports and scorecards.</div>
+    <div><b>Edit Reports</b> - Allows a user to create, update and edit reports.</div>
+    <div><b>View Finance</b> - Allows a user to view accounting information.</div>
+    <div><b>Edit Finance</b> - Allows a user to edit accounting information.</div>
+  </div>
+</div>
+{{ block.super }}
+{% endblock pjax %}
+
+{% block fields %}
+<table class="permission-table table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Edit Wetmills</th>
+      <th>View Reports</th>
+      <th>Edit Reports</th>
+      <th>View Scorecard</th>
+      <th>Edit Scorecard</th>
+      <th>View Finance</th>
+      <th>Edit Finance</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <tr>
+    <td class="left" colspan="8"><b>Countries</b></td>
+  </tr>
+  {% for country in countries %}
+  <tr>
+    <td class="left">{{ country.name }}</td>
+    {% with country_fields|get:country as row_fields %}
+    {% for check_name in row_fields %} 
+    <td class="check">{{ form|field:check_name }}</td>
+    {% endfor %}
+    {% endwith %}
+  </tr>
+  {% endfor %}
+
+  <tr>
+    <td class="left" colspan="8"><b>Service Providers</b></td>
+  </tr>
+  {% for csp in csps %}
+  <tr>
+    <td class="left">{{ csp.country.country_code }} - {{ csp.name }}</td>
+    {% with csp_fields|get:csp as row_fields %}
+    {% for check_name in row_fields %} 
+    <td class="check">{{ form|field:check_name }}</td>
+    {% endfor %}
+    {% endwith %}
+  </tr>
+  {% endfor %}
+
+  <tr>
+    <td class="left" colspan="8"><b>Wetmills</b></td>
+  </tr>
+  {% for wetmill in wetmills %}
+  <tr>
+    <td class="left">{{ wetmill.country.country_code }} - {{ wetmill.name }}</td>
+    {% with wetmill_fields|get:wetmill as row_fields %}
+    {% for check_name in row_fields %} 
+    <td class="check">{{ form|field:check_name }}</td>
+    {% endfor %}
+    {% endwith %}
+  </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+{% endblock %}
+
+{% block extra-script %}
+<script>
+$(document).ready(function(){
+  $("td.check").click(function(e){ 
+    var input = $(this).children("input");
+    if (!input.attr("checked")){
+      input.attr("checked", "checked");
+    } else {
+      input.removeAttr("checked");
+    }
+    e.stopPropagation()
+  });
+
+  $("td.check input").click(function(e){
+    e.stopPropagation();
+  });
+
+  $("td.check").hover(function(){
+    this.style.cursor = "pointer";
+  }, function(){});
+});
+</script>
+{% endblock %}

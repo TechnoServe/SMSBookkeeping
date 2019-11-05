@@ -1,0 +1,603 @@
+[
+  {
+    "pk": 1,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Umucungamari wu ruganda rwa '{{ existing.name }}' arahari.",
+      "message_en_us": "An accountant '{{ existing.name }}' already exists for this wetmill.",
+      "form": 1,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "An accountant '{{ existing.name }}' already exists for this wetmill.",
+      "slug": "dupe",
+      "description": "Error message when a user tries to register as an accountant when one already exists for a wet mill."
+    }
+  },
+  {
+    "pk": 2,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Warangije kwandikwa nka {{ existing.name }}, banza wohereza 'leave' kugirango wiyandikuze noneho wongere wiyandikishe.",
+      "message_en_us": "You are already registered with {{ existing.name }}, send 'leave' first to unregister and try again.",
+      "form": 12,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "You are already registered with {{ existing.name }}, send 'leave' first to unregister and try again.",
+      "slug": "already_registered",
+      "description": "Error message when a CSP officer tries to register for two different CSPs."
+    }
+  },
+  {
+    "pk": 3,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Wamaze kwandikwa nk'umuntu ugura ikawa kuruganda CPO wa {{ existing.wetmill.name }} uruganda.  Ohereza 'leave' kuvamo utangire bushyasha.",
+      "message_en_us": "You are already registered as a CPO for the {{ existing.wetmill.name }} wetmill.  Send 'leave' to unregister and start over.",
+      "form": 5,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "You are already registered as a CPO for the {{ existing.wetmill.name }} wetmill.  Send 'leave' to unregister and start over.",
+      "slug": "dupe",
+      "description": "Error message when a CPO tries to register for a wet mill after already registering for another."
+    }
+  },
+  {
+    "pk": 4,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Numero ya telefoni yawe ntabwo yanditswe kugirango ibe yakoresha ubu buryo.",
+      "message_en_us": "Your mobile number is not registered with the system.",
+      "form": 7,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Your mobile number is not registered with the system.",
+      "slug": "unknown",
+      "description": "Error message when a user sends 'leave' yet is unknown to the system."
+    }
+  },
+  {
+    "pk": 5,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Inomero ya telefoni yawe ntabwo yanditswe kugirango ube wakoresha ubu buryo.",
+      "message_en_us": "Your mobile number is not registered with the system.",
+      "form": 8,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Your mobile number is not registered with the system.",
+      "slug": "unknown",
+      "description": "Error message sent when a user sends 'lang' but is unknown to the system"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Wanditswe nkuumucunga mari w'uruganda rwa {{ acc.wetmill.name }}.",
+      "message_en_us": "You are registered as an accountant for the {{ acc.wetmill.name }} wet mill.",
+      "form": 10,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "You are registered as an accountant for the {{ acc.wetmill.name }} wet mill.",
+      "slug": "acc",
+      "description": "Response to the 'who' command when a user is an accountant."
+    }
+  },
+  {
+    "pk": 7,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Wanditswe nka Site Collector. {{ cpos }}",
+      "message_en_us": "You are registered as a Site Collector.  {{ cpos }}",
+      "form": 10,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "You are registered as a Site Collector.  {{ cpos }}",
+      "slug": "cpo",
+      "description": "Response for the 'who' command when a user is registered as a CPO."
+    }
+  },
+  {
+    "pk": 8,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Wanditswe nka umukozi wikigo gifasha mubya kawa cyangwa umushoramari  {{ csp.csp.name }}.",
+      "message_en_us": "You are registered as an officer for {{ csp.csp.name }}.",
+      "form": 10,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "You are registered as an officer for {{ csp.csp.name }}.",
+      "slug": "csp",
+      "description": "Response to the 'who' command when the user is registered as a CSP officer."
+    }
+  },
+  {
+    "pk": 9,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Wanditswe nk'indorerezi y'uruganda rwa {{ obs.wetmill.name }} .",
+      "message_en_us": "You are registered as an observer of the {{ obs.wetmill.name }} wet mill.",
+      "form": 10,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "You are registered as an observer of the {{ obs.wetmill.name }} wet mill.",
+      "slug": "obs",
+      "description": "Response to the 'who' command when a user is registered as a wet mill observer."
+    }
+  },
+  {
+    "pk": 10,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Ntabutumwa bwoherejwe mbere bwoguhagarika bwabonetse.",
+      "message_en_us": "No previous submission was found to cancel.",
+      "form": 14,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "No previous submission was found to cancel.",
+      "slug": "none",
+      "description": "Error message sent when no message was found to cancel."
+    }
+  },
+  {
+    "pk": 11,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Ntabwo yashoboye kubona ibitumbwe byagemuwe ku {{ wetmill.name }} by'ikirundo cyumunsi: {{ dlid }}  Nyamuneka genzura numero y'ikirundo cyawe y'umunsi.",
+      "message_en_us": "Unable to find any cherry delivered to {{ wetmill.name }} for the daylot: {{ dlid }}. Please check your daylot id.",
+      "form": 2,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Unable to find any cherry delivered to {{ wetmill.name }} for the daylot: {{ dlid }}. Please check your daylot id.",
+      "slug": "unknown_daylot",
+      "description": "Error response when a user sends a 'store' command with a day lot id that had no cherry delivery."
+    }
+  },
+  {
+    "pk": 12,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Ntabwo yashoboye kubona inyandiko yemerera imodoka ifite pulaki gutwara kawa : {{ license }}",
+      "message_en_us": "Unable to find a shipping record for license plate: {{ license }}",
+      "form": 11,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Unable to find a shipping record for license plate: {{ license }}",
+      "slug": "unknown_license",
+      "description": "Error response when a no shipping record was sent with the same license plate number."
+    }
+  },
+  {
+    "pk": 13,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Numero y'Ikirundo cy'umunsi iteye gutya: DD.MM.YY, urugero: 23.02.11  yari: {{ value }}",
+      "message_en_us": "Day lot id must be in the format: DD.MM.YY, ie: 23.02.11  was: {{ value }}",
+      "form": 2,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Day lot id must be in the format: DD.MM.YY, ie: 23.02.11  was: {{ value }}",
+      "slug": "bad_daylot_format",
+      "description": "Error response when a user sends a daylot id that isn't in the format DD.MM.YY"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "{{ wetmill.name }} uruganda ntabwo rukoresha ubu butumwa.",
+      "message_en_us": "{{ wetmill.name }} wet mill does not support this message.",
+      "form": 5,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ wetmill.name }} wet mill does not support this message.",
+      "slug": "unsupported",
+      "description": "The {{ wetmill.name }} wet mill does not support this message."
+    }
+  },
+  {
+    "pk": 15,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "{{ wetmill.name }} uruganda ntabwo rukoresha ubu butumwa.",
+      "message_en_us": "{{ wetmill.name }} wet mill does not support this message.",
+      "form": 2,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ wetmill.name }} wet mill does not support this message.",
+      "slug": "unsupported",
+      "description": "The {{ wetmill.name }} wet mill does not support this message."
+    }
+  },
+  {
+    "pk": 16,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "There are no Site Collectors for this wet mill. ",
+      "message_en_us": "There are no Site Collectors for this wet mill. ",
+      "form": 9,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "There are no Site Collectors for this wet mill. ",
+      "slug": "none",
+      "description": "There are no CPOs registered for this wet mill."
+    }
+  },
+  {
+    "pk": 17,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": null,
+      "message_en_us": null,
+      "form": 16,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "The {{ wetmill.name }} wet mill does not support this message.",
+      "slug": "unsupported",
+      "description": "The {{ wetmill.name }} wet mill does not support this message."
+    }
+  },
+  {
+    "pk": 18,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Unable to find an SC for this wetmill with id: {{ scid }}",
+      "message_en_us": "Unable to find an SC for this wetmill with id: {{ scid }}",
+      "form": 7,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Unable to find an SC for this wetmill with id: {{ scid }}",
+      "slug": "not_found",
+      "description": "Sent when someone sends leave [sc id] and the id is not recognized."
+    }
+  },
+  {
+    "pk": 19,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": "Your mobile phone is registered as more than one site collector.  Send 'leave [cpo id]'",
+      "message_en_us": "Your mobile phone is registered as more than one site collector.  Send 'leave [cpo id]'",
+      "form": 7,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Your mobile phone is registered as more than one site collector.  Send 'leave [cpo id]'",
+      "slug": "multiple",
+      "description": "Sent when someone sends 'leave' and there is more than one SC registered to their mobile."
+    }
+  },
+  {
+    "pk": 20,
+    "model": "blurbs.blurb",
+    "fields": {
+      "message_rw": null,
+      "message_en_us": null,
+      "form": 6,
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "The {{ wetmill.name }} wet mill does not support this message.",
+      "slug": "unsupported",
+      "description": "The {{ wetmill.name }} wet mill does not support this message."
+    }
+  },
+  {
+    "pk": 1,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Umushoramari yakiriye {{ pakg }} ibiro bya kawa A mu mufuka {{ pab }} n'ibiro {{ pbkg }} bya kawa b mu mifuka {{ pbb }} ku modoka {{ license }}. Ubutohe bungana na {{ moisture }}% na manota gusogo {{ score }}. Nomero yemeza: {{ confirmation_id }}",
+      "message_en_us": "Your CSP received {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} of Parchment B in {{ pbb }} bags on vehicle {{ license }}. The moisture content is {{ moisture }}% and the cupping score is {{ score }}. Confirmation id: {{ confirmation_id }}",
+      "form": 11,
+      "created": "2011-03-07 09:41:50",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Your CSP received {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} of Parchment B in {{ pbb }} bags on vehicle {{ license }}. The moisture content is {{ moisture }}% and the cupping score is {{ score }}. Confirmation id: {{ confirmation_id }}",
+      "reporter_types": [],
+      "slug": "acc",
+      "description": "Message sent to accountant when parchment is received."
+    }
+  },
+  {
+    "pk": 2,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "{{ acc.wetmill.name }} wohereje {{ pakg }} ibiro bya kawa A mu {{ pab }} mumifuka {{ pbkg }} ibiro by'ikawa B mu {{ pbb }} imifuka kumodoka {{ license }}. Ubutumwa bwemeza: {{ confirmation_id }}",
+      "message_en_us": "{{ acc.wetmill.name }} sent {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} kg of Parchment B in {{ pbb }} bags on vehicle {{ license }}.  Confirmation id: {{ confirmation_id }}",
+      "form": 3,
+      "created": "2011-03-07 09:43:24",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ acc.wetmill.name }} sent {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} kg of Parchment B in {{ pbb }} bags on vehicle {{ license }}.  Confirmation id: {{ confirmation_id }}",
+      "reporter_types": [],
+      "slug": "csp",
+      "description": "Message sent to CSP when parchment is shipped."
+    }
+  },
+  {
+    "pk": 3,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Hagemuwe: {{ cherry }} kg. kashi isigye: {{ cash_b }} RFW.Umwenda usigaye: {{ credit_b }} RFW.ibura: {{ missing_cv }}RFW. Ubutumwa bwemeza: {{ confirmation_id|codify:\"CH\" }}.",
+      "message_en_us": "Cherry Delivered: {{ cherry }} kg. Cash balance: {{ cash_b }} RWF. Credit balance: {{ credit_b }} RWF. Missing Coffee: {{ missing_cv }} RWF. Confirmation Id: {{ confirmation_id|codify:\"CH\" }}",
+      "form": 6,
+      "created": "2011-03-07 09:44:01",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Cherry Delivered: {{ cherry }} kg. Cash balance: {{ cash_b }} RWF. Credit balance: {{ credit_b }} RWF. Missing Coffee: {{ missing_cv }} RWF. Confirmation Id: {{ confirmation_id|codify:\"CH\" }}",
+      "reporter_types": [],
+      "slug": "cpo",
+      "description": "Message sent to CPO when a cherry delivery is made."
+    }
+  },
+  {
+    "pk": 4,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Igitabo cyandikwamo amafaranga yinjiye nasohotse cyoherejwe n'uruganda {{ acc.wetmill.name }}.",
+      "message_en_us": "{{ acc.wetmill.name }} sent a cash report. Total Cash In for week was {{ tot_cin }}. Total Cash Out for week was {{ tot_cout }}. Net balance is {{ balance }}.",
+      "form": 4,
+      "created": "2011-03-07 10:50:03",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ acc.wetmill.name }} sent a cash report. Total Cash In for week was {{ tot_cin }}. Total Cash Out for week was {{ tot_cout }}. Net balance is {{ balance }}.",
+      "reporter_types": [
+        47
+      ],
+      "slug": "obs",
+      "description": "Sent to observers of a wet mill when a cash ledger is sent.\r\n\r\nAvailable variables: {{ acc.name }} {{ acc.wetmill.name }} {{ wcap }} {{ income }} {{ advances }} {{ cash_salaries }} {{ scwages }} {{ transwages }} {{ casualwages }} {{ cashout }} {{ advance_disc }}"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Kawa itonoye yatwawe mubuhuniko {{ dlid }}. Icyiciro A: {{ amoved }} Icyiciro B: {{ bmoved }}   ibitumbwe ku ikawa: {{ cherry_to_parchment }}",
+      "message_en_us": "Parchment was moved to store from day lot {{ dlid }}. Grade A: {{ amoved }} Grade B: {{ bmoved }}  Cherry to Parchment: {{ cherry_to_parchment }}",
+      "form": 2,
+      "created": "2011-03-07 10:52:56",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Parchment was moved to store from day lot {{ dlid }}. Grade A: {{ amoved }} Grade B: {{ bmoved }}  Cherry to Parchment: {{ cherry_to_parchment }}",
+      "reporter_types": [
+        47
+      ],
+      "slug": "obs",
+      "description": "Sent to wet mill observers when a store message is sent.\r\n\r\nAvailable variables: {{ acc.name }} {{ acc.wetmill.name }} {{ cherry_to_parchment }} {{ gradea_to_parchment }} {{ amoved }} {{ bmoved }} {{ dlid }}"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "{{ name }} {{ last_name }} yiyandikishije nk'ukusanya kawa wo kuri site w'uruganda rwanyu.  inomero imuranga ni: {{ confirmation_id }}",
+      "message_en_us": "{{ name }} {{ last_name }} has registered as a site collector for your wet mill.  Their id is: {{ confirmation_id }}",
+      "form": 5,
+      "created": "2011-03-07 10:58:38",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ name }} {{ last_name }} has registered as a site collector for your wet mill.  Their id is: {{ confirmation_id }}",
+      "reporter_types": [
+        48
+      ],
+      "slug": "acc",
+      "description": "Sent to accountants for a wet mill when a new CPO registers.\r\n\r\nAvailable variables: {{ wetmill.name }} {{ confirmation_id }} {{ name }} {{ last_name }}"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Umucunga mari {{ user.name }} {{ user.last_name }} yasezeye muruganda {{ user.wetmill.name }}",
+      "message_en_us": "Accountant {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "form": 7,
+      "created": "2011-03-07 11:00:14",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Accountant {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "reporter_types": [],
+      "slug": "acc_leave",
+      "description": "Sent to wet mill observers when an accountant leaves.\r\n\r\nAvailable variables: {{ user.name }} {{ user.last_name }} {{ user.wetmill.name }}"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Ukusanya kawa kuri site {{ user.name }} {{ user.last_name }} yasezeye kuruganda {{ user.wetmill.name }}",
+      "message_en_us": "Site collector {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "form": 7,
+      "created": "2011-03-07 11:01:20",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Site collector {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "reporter_types": [],
+      "slug": "sc_leave",
+      "description": "Sent to accountants when a site collector leaves.\r\n\r\nAvailable variables: { user.name }} {{ user.last_name }} {{ user.wetmill.name }}"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Indorerezi {{ user.name }} {{ user.last_name }} yasezeye muruganda {{ user.wetmill.name }}",
+      "message_en_us": "Observer {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "form": 7,
+      "created": "2011-03-07 11:02:14",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Observer {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "reporter_types": [],
+      "slug": "obs_leave",
+      "description": "Sent to accountants when a wet mill observer leaves.\r\n\r\nAvailable variables: {{ user.name }} {{ user.last_name }} {{ user.wetmill.name }}"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Umushora mari {{ user.name }} {{ user.last_name }} yiyandikuje.",
+      "message_en_us": "CSP Officer {{ user.name }} {{ user.last_name }} has unregistered themselves.",
+      "form": 7,
+      "created": "2011-03-07 11:03:55",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "CSP Officer {{ user.name }} {{ user.last_name }} has unregistered themselves.",
+      "reporter_types": [],
+      "slug": "csp_leave",
+      "description": "Sent to accountants when a CSP officer unregisters.\r\n\r\nAvailable variables: {{ user.name }} {{ user.last_name }} {{ user.wetmill.name }}"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "{{ name }} {{ last_name }} yiyandikishije nk'indorerezi y'uruganda {{ wetmill.name }}.",
+      "message_en_us": "{{ name }} {{ last_name }} has registered as an observer for the {{ wetmill.name }} wet mill.",
+      "form": 13,
+      "created": "2011-03-07 11:05:04",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ name }} {{ last_name }} has registered as an observer for the {{ wetmill.name }} wet mill.",
+      "reporter_types": [
+        48
+      ],
+      "slug": "acc",
+      "description": "Sent to accountants of a wet mill when a new observer registers.\r\n\r\nAvailable variables: {{ wetmill.name }} {{ name }} {{ last_name }} {{ confirmation_id }}"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Ugaruye {{ cash }}. amafaranga yawe asigaye kashi  ni {{ cash_b }}, umwenda wawe usigaye ni {{ credit_b }}.",
+      "message_en_us": "You have returned {{ cash }}.  Your cash balance is {{ cash_b }}, your credit balance is {{ credit_b }}.",
+      "form": 15,
+      "created": "2011-03-07 11:11:22",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "You have returned {{ cash }}.  Your cash balance is {{ cash_b }}, your credit balance is {{ credit_b }}.",
+      "reporter_types": [],
+      "slug": "cpo",
+      "description": "Sent to the site collector that is returning an advance.\r\n\r\nAvailable variables:  {{ acc.name }} {{ acc.wetmill.name }} {{ cash }} {{ cash_b }} {{ credit_b }} {{ missing_cv }} {{ cpo.name }} {{ cpo.last_name }}"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Raporo ya {{ wetmill.name }}: ibitumbwe byakusanyijwe: {{ cherry }} ibyakoreshejwe: {{ paid }} ikigero cyigiciro: {{ avg_price }} RWF/kubiro kawa itonoye yahunitswe: {{ stored }}ibiro  ibyoherejwe: {{ sent }} ibiro ibyasigaye: {{ balance }} mu mafaranga",
+      "message_en_us": "Report for {{ wetmill.name }}: cherry collected: {{ cherry }} spent: {{ paid }} avg price: {{ avg_price }} RWF/kg parchment stored: {{ stored }}kg  sent: {{ sent }}kg balance: {{ balance }} RWF ",
+      "form": 16,
+      "created": "2011-03-23 13:56:14",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Report for {{ wetmill.name }}: cherry collected: {{ cherry }} spent: {{ paid }} avg price: {{ avg_price }} RWF/kg parchment stored: {{ stored }}kg  sent: {{ sent }}kg balance: {{ balance }} RWF ",
+      "reporter_types": [
+        47
+      ],
+      "slug": "obs",
+      "description": "Sent to a wet mill's observers when a summary report is delivered."
+    }
+  },
+  {
+    "pk": 1,
+    "model": "help.helpmessage",
+    "fields": {
+      "message_rw": "Unknown keyword.  Register with 'acc', 'sc', 'csp' or 'obs'",
+      "message_en_us": "Unknown keyword.  Register with 'acc', 'sc', 'csp' or 'obs'",
+      "message_ke_sw": null,
+      "message_am": null,
+      "message_tz_sw": null,
+      "reporter_type": null,
+      "priority": 0,
+      "message": "Unknown keyword.  Register with 'acc', 'sc', 'csp' or 'obs'"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "help.helpmessage",
+    "fields": {
+      "message_rw": "Unknown keyword.  Report cherry deliveries with 'cherry', cash reports with 'cash', store movements with 'store', parchment delivery with 'send'.",
+      "message_en_us": "Unknown keyword.  Report cherry deliveries with 'cherry', cash reports with 'cash', store movements with 'store', parchment delivery with 'send'.",
+      "message_ke_sw": null,
+      "message_am": null,
+      "message_tz_sw": null,
+      "reporter_type": 48,
+      "priority": 10,
+      "message": "Unknown keyword.  Report cherry deliveries with 'cherry', cash reports with 'cash', store movements with 'store', parchment delivery with 'send'."
+    }
+  },
+  {
+    "pk": 3,
+    "model": "help.helpmessage",
+    "fields": {
+      "message_rw": "Unknown keyword.  Unregister by sending 'leave', change language with 'lang'.",
+      "message_en_us": "Unknown keyword.  Unregister by sending 'leave', change language with 'lang'.",
+      "message_ke_sw": null,
+      "message_am": null,
+      "message_tz_sw": null,
+      "reporter_type": 49,
+      "priority": 10,
+      "message": "Unknown keyword.  Unregister by sending 'leave', change language with 'lang'."
+    }
+  },
+  {
+    "pk": 4,
+    "model": "help.helpmessage",
+    "fields": {
+      "message_rw": "Unknown keyword.  Send 'who' to look up your id, or 'leave' to unregister.",
+      "message_en_us": "Unknown keyword.  Send 'who' to look up your id, or 'leave' to unregister.",
+      "message_ke_sw": null,
+      "message_am": null,
+      "message_tz_sw": null,
+      "reporter_type": 50,
+      "priority": 10,
+      "message": "Unknown keyword.  Send 'who' to look up your id, or 'leave' to unregister."
+    }
+  },
+  {
+    "pk": 5,
+    "model": "help.helpmessage",
+    "fields": {
+      "message_rw": "Unknown keyword.  Send 'leave' to unregister, 'lang' to change language.",
+      "message_en_us": "Unknown keyword.  Send 'leave' to unregister, 'lang' to change language.",
+      "message_ke_sw": null,
+      "message_am": null,
+      "message_tz_sw": null,
+      "reporter_type": 47,
+      "priority": 10,
+      "message": "Unknown keyword.  Send 'leave' to unregister, 'lang' to change language."
+    }
+  }
+]

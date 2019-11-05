@@ -1,0 +1,61 @@
+{% extends "smartmin/read.html" %}
+
+{% load i18n %}
+
+{% block content %}
+{% block pjax %}
+<div id="pjax">
+
+<div class="row">
+  <div class="span10">
+  <div class="buttons pull-right">
+      {% if object.get_status != 'PENDING' and object.get_status != 'RUNNING' %}
+      <a class="btn" href="{% url 'aggregates.finalizetask_finalize' object.id %}">Rerun</a>
+      {% endif %}
+  </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span10">
+    <table class="table table-striped table-bordered">
+      <tbody>
+        <tr>
+          <td class="bold">{% trans "Season" %}</td>
+          <td>{{ object.season }}</td>
+        </tr>
+        <tr>
+          <td class="bold">{% trans "Status" %}</td>
+          <td>{{ object.get_status }}
+
+            {% if object.get_status == 'STARTED' or object.get_status == 'RUNNING' %}
+            <img class="pull-right" src="{{ STATIC_URL }}img/loading.gif">            
+            {% endif %}
+          </td>
+        </tr>
+        <tr>
+          <td class="bold">{% trans "Started By" %}</td>
+          <td>{{ object.created_by }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <pre>{{ object.task_log }}</pre>
+  </div>
+</div>
+
+</div>
+{% endblock %}
+{% endblock %}
+
+{% block extra-style %}
+<style>
+  td.bold {
+    font-weight: bold;
+    text-align: right;
+  }
+
+  div.buttons {
+    padding-bottom: 5px;
+  }
+</style>
+{% endblock %}

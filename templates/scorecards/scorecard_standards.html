@@ -1,0 +1,77 @@
+{% extends "smartmin/update.html" %}
+
+{% load smartmin %}
+
+{% block form-span %}span12{% endblock %}
+
+{% block fields %}
+    <div id="attributes">
+        {% for field in attribute_fields %}
+            {% with form|field:field as form_field %}
+                <div class="clearfix control-group {% if form_field.errors %}error{% endif %}">
+                    <label class="control-label" for="{{ field.name }}">{% get_label field %}</label>
+                    <div class="controls">{{ form_field }}
+                        {% with view|field_help:field as help %}
+                            {% if help %}
+                                <span class="help-block">{{ help }}</span>
+                            {% endif %}
+                        {% endwith %}
+
+                        {% if form_field.errors %}
+                            <span class="help-block field-errors">{{ form_field.errors }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endwith %}
+        {% endfor %}
+    </div>
+    <br>
+    {% for category in standard_categories %}
+        <fieldset class="field-group">
+            <legend>{{ category.name }}</legend>
+            {% for standard_field in standard_fields %}
+                {% if category == standard_field.standard.category %}
+                    {% with standard_field.field as field %}
+                        {% with form|field:field as form_field %}
+                            <div class="clearfix control-group {% if form_field.errors %}error{% endif %}">
+                                <div class="span1">{{ standard_field.standard.acronym }}</div>
+                                <div class="span3" for="{{ field.name }}">{% get_label field %}</div>
+                                <div class="span5">
+                                    {{ form_field }}{% if standard_field.standard.kind == 'BP' %}%{% endif %}
+                                    {% with view|field_help:field as help %}
+                                        {% if help %}
+                                            <span class="help-block">{{ help }}</span>
+                                        {% endif %}
+                                    {% endwith %}
+
+                                    {% if form_field.errors %}
+                                        <span class="help-block field-errors">{{ form_field.errors }}</span>
+                                    {% endif %}
+                                </div>
+                                <div class="span2">{{ standard_field.standard.get_kind_display }}</div>
+                            </div>
+                        {% endwith %}
+                    {% endwith %}
+                {% endif %}
+            {% endfor %}
+        </fieldset>
+    {% endfor %}
+{% endblock %}
+
+{% block extra-style %}
+    {{ block.super }}
+    <style>
+        div.input {
+            color: #888;
+        }
+
+        fieldset input[type=text] {
+            text-align: right;
+            width: 300px;
+        }
+
+        fieldset select {
+            width: 310px;
+        }
+    </style>
+{% endblock %}

@@ -1,0 +1,1625 @@
+[
+  {
+    "pk": 4,
+    "model": "seasons.season",
+    "fields": {
+      "has_misc_revenue": false,
+      "has_local_sales": false,
+      "farmer_income_baseline": 0.00,
+      "modified_by": 1,
+      "name": "2011",
+      "country": 1,
+      "has_members": true,
+      "is_active": true,
+      "created_by": 1,
+      "standards": [],
+      "exchange_rate": 600.00,
+      "created_on": "2011-11-14 15:35:05",
+      "default_adjustment": 0.16,
+      "fob_price_baseline": 0.00,
+      "modified_on": "2011-11-14 15:36:33"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "seasons.season",
+    "fields": {
+      "has_misc_revenue": false,
+      "has_local_sales": false,
+      "farmer_income_baseline": 0.00,
+      "modified_by": 1,
+      "name": "2010",
+      "country": 1,
+      "has_members": true,
+      "is_active": true,
+      "created_by": 1,
+      "standards": [],
+      "exchange_rate": 585.00,
+      "created_on": "2011-11-14 15:33:20",
+      "default_adjustment": 0.16,
+      "fob_price_baseline": 0.00,
+      "modified_on": "2011-11-18 12:02:16"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "seasons.season",
+    "fields": {
+      "has_misc_revenue": false,
+      "has_local_sales": false,
+      "farmer_income_baseline": 0.00,
+      "modified_by": 1,
+      "name": "2009",
+      "country": 1,
+      "has_members": false,
+      "is_active": true,
+      "created_by": 1,
+      "standards": [],
+      "exchange_rate": 565.00,
+      "created_on": "2011-11-14 15:31:23",
+      "default_adjustment": 0.16,
+      "fob_price_baseline": 0.00,
+      "modified_on": "2011-11-14 15:32:47"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "seasons.season",
+    "fields": {
+      "has_misc_revenue": false,
+      "has_local_sales": false,
+      "farmer_income_baseline": 0.00,
+      "modified_by": 1,
+      "name": "2008",
+      "country": 1,
+      "has_members": false,
+      "is_active": true,
+      "created_by": 1,
+      "standards": [],
+      "exchange_rate": 545.00,
+      "created_on": "2011-11-14 15:29:38",
+      "default_adjustment": 0.16,
+      "fob_price_baseline": 0.00,
+      "modified_on": "2011-11-14 15:30:45"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 1,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 188,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 1,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 662,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 1,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 849,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 1,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 2,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 2,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 146,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 2,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 611,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 2,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 801,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 2,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 674,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 33,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 861,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 33,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 205,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 40,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 682,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 40,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 879,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 40,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 869,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 37,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 66,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 57,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 216,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 57,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 696,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 57,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 896,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 57,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 882,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 41,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 677,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 34,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 864,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 34,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 59,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 23,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 209,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 23,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 689,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 23,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 889,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 23,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 4,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 60,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 148,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 60,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 613,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 60,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 803,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 60,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 6,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 3,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 150,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 3,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 615,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 3,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 805,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 3,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 12,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 7,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 156,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 7,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 621,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 7,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 811,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 7,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 68,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 58,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 218,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 58,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 698,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 58,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 898,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 58,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 61,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 54,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 211,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 54,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 691,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 54,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 891,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 54,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 43,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 25,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 190,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 25,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 664,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 25,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 851,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 25,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 63,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 55,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 213,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 55,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 693,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 55,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 893,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 55,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 55,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 59,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 200,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 59,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 872,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 59,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 64,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 53,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 214,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 53,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 694,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 53,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 894,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 53,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 45,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 26,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 192,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 26,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 666,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 26,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 853,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 26,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 685,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 42,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 885,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 42,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 8,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 4,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 152,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 4,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 617,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 4,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 807,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 4,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 15,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 8,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 159,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 8,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 624,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 8,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 814,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 8,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 40,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 5,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 187,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 5,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 661,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 5,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 848,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 5,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 69,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 56,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 219,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 56,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 699,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 56,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 899,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 56,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 18,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 10,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 162,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 10,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 627,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 10,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 817,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 10,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 47,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 27,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 194,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 27,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 668,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 27,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 855,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 27,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 21,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 9,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 165,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 9,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 630,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 9,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 820,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 9,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 49,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 28,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 633,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 11,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 823,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 11,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 168,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 14,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 636,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 14,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 826,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 14,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 639,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 13,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 829,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 13,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 24,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 15,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 171,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 15,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 642,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 15,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 832,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 15,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 51,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 31,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 196,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 31,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 670,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 31,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 857,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 31,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 27,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 16,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 174,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 16,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 645,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 16,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 835,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 16,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 678,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 32,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 865,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 32,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 30,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 17,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 177,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 17,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 648,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 17,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 838,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 17,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 56,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 36,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 201,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 36,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 873,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 36,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 33,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 18,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 180,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 18,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 651,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 18,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 841,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 18,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 875,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 38,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 36,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 20,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 183,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 20,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 654,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 20,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 206,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 39,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 686,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 39,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 886,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 39,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 39,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 21,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 186,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 21,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 657,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 21,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 844,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 21,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 660,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 22,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 847,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 22,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 58,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 1,
+      "expense": 44,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 208,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 2,
+      "expense": 44,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 688,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 4,
+      "expense": 44,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 888,
+    "model": "seasons.seasonexpense",
+    "fields": {
+      "season": 3,
+      "expense": 44,
+      "collapse": false
+    }
+  },
+  {
+    "pk": 1,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 1,
+      "season": 1,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 4,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 1,
+      "season": 2,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 38,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 1,
+      "season": 4,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 60,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 1,
+      "season": 3,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 6,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 20,
+      "season": 2,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 8,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 21,
+      "season": 2,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 41,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 3,
+      "season": 4,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 67,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 3,
+      "season": 3,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 2,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 2,
+      "season": 1,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 9,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 2,
+      "season": 2,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 39,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 2,
+      "season": 4,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 65,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 2,
+      "season": 3,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 43,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 4,
+      "season": 4,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 69,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 4,
+      "season": 3,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 62,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 14,
+      "season": 3,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 64,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 15,
+      "season": 3,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 45,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 5,
+      "season": 4,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 71,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 5,
+      "season": 3,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 3,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 10,
+      "season": 1,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 10,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 10,
+      "season": 2,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 46,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 10,
+      "season": 4,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 72,
+    "model": "seasons.seasongrade",
+    "fields": {
+      "grade": 10,
+      "season": 3,
+      "is_top_grade": false
+    }
+  },
+  {
+    "pk": 1,
+    "model": "seasons.seasoncashuse",
+    "fields": {
+      "season": 1,
+      "applies_to": "ALL",
+      "cashuse": 1
+    }
+  },
+  {
+    "pk": 4,
+    "model": "seasons.seasoncashuse",
+    "fields": {
+      "season": 2,
+      "applies_to": "ALL",
+      "cashuse": 1
+    }
+  },
+  {
+    "pk": 12,
+    "model": "seasons.seasoncashuse",
+    "fields": {
+      "season": 4,
+      "applies_to": "BOT",
+      "cashuse": 1
+    }
+  },
+  {
+    "pk": 16,
+    "model": "seasons.seasoncashuse",
+    "fields": {
+      "season": 3,
+      "applies_to": "BOT",
+      "cashuse": 1
+    }
+  },
+  {
+    "pk": 13,
+    "model": "seasons.seasoncashuse",
+    "fields": {
+      "season": 4,
+      "applies_to": "MEM",
+      "cashuse": 2
+    }
+  }
+]

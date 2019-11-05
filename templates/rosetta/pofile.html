@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+
+{% block messages %}
+{% endblock %}
+
+{% load rosetta i18n %}
+
+{% block content %}
+<div class="page-header">
+  <h2>{{ rosetta_i18n_lang_name }} Report Translations</h2>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h4>Instructions</h4>
+    <p>For each translation, enter in the equivalent in the local language.  Some words can appear more than once depending on the context they appear in.</p>
+    <p>Some parts of the words to translate are variable substitutions and should not be changed. Specifically, % signs are markers for variables which will be substitued when displayed.</p>
+    <div class="alert-message block-message warning">
+      Note that changes to these translations will require a server restart to take effect.  Please contact your administrator once all translations have been completed.
+    </div>
+  </div>
+  <div class="span6">
+    <h4>Examples</h4>
+    <pre class="examples">
+<span class="blue">Production</span> - <span class="green">Umusaruro</span>
+<span class="blue">Province: %s</span> - <span class="green">Intara y' %s</span>
+<span class="blue">%(grade)s Buyer</span> - <span class="green">%(grade)s Umuguzi</span></pre>
+  </div>
+</div>
+
+<div class="row trans-header">
+  <div class="span8">
+    <form>
+      <input type="text" name="query" value="{{query}}"></input>
+      <input type="submit" value="Search" class="btn"></input>
+    </form>
+  </div>
+
+  <div class="span6">
+    <div class="pull-right">
+      <form>
+        <select class="filter" name="filter">
+          <option value="all" {% if rosetta_i18n_filter == 'all' %}selected{% endif %}>All</option>
+          <option value="untranslated" {% if rosetta_i18n_filter == 'untranslated' %}selected{% endif %}>Untranslated</option>
+          <option value="translated" {% if rosetta_i18n_filter == 'translated' %}selected{% endif %}>Translated</option>
+        </select>
+        <input type="submit" value="Filter" class="btn"></input>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span14">
+    <form method="post" action="">
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            {% rosetta_csrf_token %}
+            <th>English</th>
+            {% if main_language %}<th>{{ main_language }}</th>{% endif %}
+            <th width="420">{{ rosetta_i18n_lang_name }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for  message in rosetta_messages %}
+          <tr class="{% cycle row1,row2 %}">
+            {% if message.msgid_plural %}
+            <td class="original plural">
+              <div class="plural-container">
+                <span class="part">{{message.msgid|format_message|linebreaksbr}}</span>
+                <span class="part">{{message.msgid_plural|format_message|linebreaksbr}}</span>
+              </div>
+              
+              {% if message.msgctxt %}
+              <span class="context">{% trans "Context hint" %}: {{message.msgctxt}}</span>
+              {% else %}
+              {% if message.comment %}
+              <span class="context">{% trans "Context hint" %}: {{message.comment}}</span>
+              {% endif %}
+              {% endif %}
+              
+            </td>
+            <td class="translation">
+              {% for k, msgstr in message.msgstr_plural.items|dictsort:"0"  %}
+              <label for="m_{{message.md5hash}}_{{k}}">{{k}}:</label>
+              <textarea rows="{{message.msgid|format_message|lines_count}}" cols="40" id="m_{{message.md5hash}}_{{k}}" name="m_{{message.md5hash}}_{{k}}" tabindex="{% increment tab_idx %}">{{msgstr}}</textarea>
+              {% endfor %}
+            </td>
+            {% else %}
+            <td class="original">
+              <span class="message">{{ message.msgid|format_message|linebreaksbr }}</span>
+              {% if message.msgctxt %}
+              <span class="context">{% trans "Contextual hint" %}: "{{message.msgctxt}}"</span>
+              {% else %}
+              {% if message.comment %}
+              <span class="context">{% trans "Context hint" %}: {{message.comment}}</span>
+              {% endif %}                        
+              {% endif %}
+            </td>
+            {% if main_language %}<td class="original">{{ message.main_lang|format_message|linebreaksbr }}</td>{% endif %}
+            <td class="translation">
+              <textarea rows="{{message.msgid|format_message|lines_count}}" cols="40" name="m_{{message.md5hash}}" tabindex="{% increment tab_idx %}">{{message.msgstr}}</textarea>
+            </td>
+            {% endif %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div class="submit-row">
+        <p class="paginator">
+          {% if query %}
+          <input type="hidden" name="query" value="{{query}}"  />
+          {% endif %}
+          
+          {% load smartmin %}
+
+          {% if needs_pagination %}
+          <div class="pagination pagination-right">
+            <ul>
+              {% for i in page_range %}
+                {% if forloop.first %}
+                  {% if page > 1 %}
+                  <li class="prev"><a href="?page={{i}}{% if query %}&amp;query={{query}}{% endif %}">&larr; First</a></li>
+                  {% else %}
+                  <li class="prev disabled"><a href="#">&larr; First</a></li>
+                  {% endif %}
+                {% endif %}
+
+                {% if i == '...' %}
+                {% else %}
+                  {% if i == page %}
+                  <li class="active"><a href="#">{{ page }}</a></li>
+                  {% else %}
+                  <li><a href="?page={{i}}{% if query %}&amp;query={{query}}{% endif %}">{{i}}</a></li>
+                  {% endif %}
+                {% endif %}
+
+                {% if forloop.last %} 
+                  {% if not i == page %}
+                  <li class="next"><a href="?page={{i}}{% if query %}&amp;query={{query}}{% endif %}">Last &rarr;</a></li>
+                  {% else %}
+                  <li class="next disabled"><a href="#">Last &rarr;</a></li>
+                  {% endif %}
+                {% endif %}
+
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+
+          <div style="clear:both;">&nbsp;</div>
+        </p>
+      </div>
+      <div class="actions">
+        <input type="submit" class="btn btn-primary" name="_next" value="{% trans "Save Translations" %}" tabindex="{% increment tab_idx %}"/>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra-style %}
+<style>
+  textarea {
+    width: 400px;
+  }
+
+  select.filter {
+    width: 200px;
+  }
+
+  div.trans-header {
+  }
+
+  span.blue {
+    color: blue;
+  }
+
+  span.green {
+    color: green;
+  }
+
+  pre.examples {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+</style>
+{% endblock %}

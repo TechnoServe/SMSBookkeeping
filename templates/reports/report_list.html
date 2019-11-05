@@ -1,0 +1,11 @@
+{% extends "smartmin/list.html" %}
+
+{% load i18n %}
+
+{% block table-buttons %}
+    <form>
+    <a id="show_report" href ="{% url 'reports.report_create' %}" class="btn btn-primary">{% trans "New Credit Report" %}</a>
+    &nbsp;
+    <a class="btn pull-right" href="{% url 'reportimports.reportimport_list' %}">{% trans "Imports" %}</a>
+    </form>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% load i18n %}
+
+<div class="row">
+  <div class="span12">
+    <div class="well" id="search">
+      <center>
+      <form action="{% url 'public-search' %}">
+        <span class="search-prompt">{% trans "Find a Cooperative" %}</span>
+        <input class="xlarge" type="text" name="query" value="{{ query }}" id="search_box" />
+        <input type="hidden" name="country" value="{{ country.country_code }}" />
+        <button class="btn large btn-primary">{% trans "Search" %}</button>
+      </form>
+      </center>
+    </div>
+  </div>
+</div>
+

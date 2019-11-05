@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>500 Error</title>
+</head>
+
+<body>
+<pre>
+ ___   ___    ___   
+| __) / _ \  / _ \    500 Error
+|__ \( (_) )( (_) )   Oops.  Something went wrong while we were
+(___/ \___/  \___/    trying to serve you.
+
+                      We've been notifed of the error.
+                      {% if request.sentry.id %}Reference: <b>{{ request.sentry.id }}</b>{% endif %}
+</pre>
+</body>
+
+</html>

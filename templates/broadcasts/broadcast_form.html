@@ -1,0 +1,63 @@
+{% extends "smartmin/form.html" %}
+{% load smartmin i18n %}
+
+{% block fields %}
+<fieldset>
+
+<div class="control-group">
+  <label class="control-label" for="to">{% trans "Country" %}</label>
+  <div class="controls">
+    {{ form|field:"country" }}
+    <p class="help-block">{% trans "Which country this broadcast will be sent to" %}</p>
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="to">{% trans "Send to" %}</label>
+  <div class="controls">
+    <div><label>{{ form|field:"to_farmers" }}{% trans "Farmers" %}</label></div>
+    <div><label>{{ form|field:"to_observers" }}{% trans "Observers" %}</label></div>
+    <div><label>{{ form|field:"to_accountants" }}{% trans "Accountants" %}</label></div>
+    <p class="help-block">{% trans "Who this message will be sent to" %}</p>
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="to">{% trans "In Wetmills" %}</label>
+  <div class="controls">
+    {{ form|field:"wetmills" }}
+    <p class="help-block">{% trans "Only include recipients for these wetmills (leave blank for all)" %}</p>
+  </div>
+</div>
+
+<div class="control-group">
+  <label class="control-label" for="to">{% trans "In CSPs" %}</label>
+  <div class="controls">
+    {{ form|field:"csps" }}
+    <p class="help-block">{% trans "Only include wetmills in these CSPs (leave blank for all)" %}</p>
+  </div>
+</div>
+
+{% render_field "exclude_wetmills" %}
+{% render_field "exclude_csps" %}
+
+{% render_field "report_season" %}
+{% render_field "sms_season" %}
+
+</fieldset>
+{% endblock %}
+
+{% block form-buttons %}
+    <div class="form-actions">
+      <input type="submit" class="btn btn-primary" value='{% trans "Set Broadcast Message" %} &raquo;'>
+    </div>
+{% endblock %}
+
+{% block extra-style %}
+<style>
+  .controls div label input {
+    margin-right: 5px;
+    margin-top: -2px;
+  }
+</style>
+{% endblock %}

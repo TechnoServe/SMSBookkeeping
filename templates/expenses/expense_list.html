@@ -1,0 +1,30 @@
+{%  extends "smartmin/list.html" %}
+
+{% load i18n %}
+
+{% block paginator %}{% endblock %}
+
+{%  block table %}
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>{% trans "Name" %}</th>
+      <th>{% trans "Currency" %}</th>
+      <th>{% trans "Included in Credit Report" %}</th>
+      <th>{% trans "Order" %}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%  for expense in sorted_expenses %}
+    <tr class="{% if not expense.is_active %}inactive{% endif %}">
+      <td class="clickable depth-{{expense.depth}}">
+        <a href="{% url 'expenses.expense_update' expense.id %}">{{ expense.name }}</a>
+      </td>
+      <td>{% if expense.in_dollars %}{% trans "US Dollars" %}{% else %}{% trans "Local" %}{% endif %}</td>
+      <td>{{ expense.include_in_credit_report }}</td>
+      <td>{{ expense.order }}</td>
+    </tr>
+    {%  endfor %}
+  </tbody>
+</table>
+{%  endblock  %}

@@ -1,0 +1,30 @@
+{% extends "smartmin/list.html" %}
+
+{% load i18n %}
+
+{% block paginator %}{% endblock %}
+
+{% block table %}
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>{% trans "Name" %}</th>
+      <th>{% trans "Kind" %}</th>
+      <th>{% trans "Included in Credit Report" %}</th>
+      <th>{% trans "Order" %}</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for grade in sorted_grades %}
+    <tr>
+      <td class="clickable depth-{{grade.depth}}"><a href="{% url 'grades.grade_update' grade.id %}">{{ grade.name }}</a></td>
+      <td>{{ grade.get_kind_display }}</td>
+      <td>{{ grade.include_in_credit_report }}</td>
+      <td>{{ grade.order }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+
+</table>
+{% endblock %}

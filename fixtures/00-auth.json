@@ -1,0 +1,254 @@
+[
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "admin", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2011-11-21 08:15:08", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$d863e$07e87b94df0bb5e3f067d2650558a67696b5d51f", 
+      "email": "n@p.com", 
+      "date_joined": "2011-10-08 05:15:16"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "nupur", 
+      "first_name": "Nupur", 
+      "last_name": "Parikh", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-22 15:19:04", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$242ba$6a366ef3977837f58bf6db0a571265c703a38fd6", 
+      "email": "nparikh@tns.org", 
+      "date_joined": "2011-11-14 15:43:06"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "adam", 
+      "first_name": "Adam", 
+      "last_name": "Lilienthal", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-14 15:43:54", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$66962$9fd964120cccea5e813f4a60a4fdee70146ab61c", 
+      "email": "alilienthal@tns.org", 
+      "date_joined": "2011-11-14 15:43:54"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "test_admin", 
+      "first_name": "Test", 
+      "last_name": "Administrator", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-24 12:53:18", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$e5ca9$f51e220473e0f1e9c21de32d62cd6124d395ceac", 
+      "email": "nupurparikh+test@gmail.com", 
+      "date_joined": "2011-11-14 18:28:26"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "mnjama", 
+      "first_name": "Mwanjala", 
+      "last_name": "Njama", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-16 13:14:48", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$fdd59$cce7d1204f2d6f8b7514f84af594b3cf7ee9c7a0", 
+      "email": "MNjama@tns.org", 
+      "date_joined": "2011-11-16 13:14:48"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "jamesdargan", 
+      "first_name": "James", 
+      "last_name": "Dargan", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-17 16:02:32", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$30427$06da1f57de41955234f7b0656c3165981258c356", 
+      "email": "james@rwandatc.com", 
+      "date_joined": "2011-11-17 16:02:32"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "test_viewer", 
+      "first_name": "Test", 
+      "last_name": "Viewer", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-18 06:55:47", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$135d8$d58b60343cf1bc2b80f10836984ead8fd3f87031", 
+      "email": "nupurparikh+test2@gmail.com", 
+      "date_joined": "2011-11-18 06:54:31"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "hamere", 
+      "first_name": "Hamere", 
+      "last_name": "Demissie", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-29 16:16:05", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$663ef$c6eec15a1c472d97f0629147c7ec48b798a3af27", 
+      "email": "edemissie@tns.org", 
+      "date_joined": "2011-11-18 11:46:19"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "phyllis", 
+      "first_name": "Phyllis", 
+      "last_name": "Warui", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-22 14:32:10", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$b497e$416199a087da672e48a588dc4c05a5292cc1b53d", 
+      "email": "pwarui@tns.org", 
+      "date_joined": "2011-11-22 12:33:49"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "amanda", 
+      "first_name": "Amanda", 
+      "last_name": "Satterly", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-28 16:30:33", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$5c033$2cbdb72e3550d62a7988e64ab320c2c44b110def", 
+      "email": "asatterly@tns.org", 
+      "date_joined": "2011-11-22 13:19:49"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "arthur", 
+      "first_name": "Arthur", 
+      "last_name": "Nganga", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-30 09:18:59", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$ca1d4$c2e28d6361a1951551011d1f7369b596b886f266", 
+      "email": "anganga@tns.org", 
+      "date_joined": "2011-11-22 14:35:29"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "allyson", 
+      "first_name": "Allyson", 
+      "last_name": "Stollenwerck", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-23 18:53:02", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$f266d$c8171267b88e0d9c37e3a678a6c4da8062deaafb", 
+      "email": "astollenwerck@tns.org", 
+      "date_joined": "2011-11-22 15:20:57"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "Filagot", 
+      "first_name": "Filagot", 
+      "last_name": "Sileshi", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-30 14:17:24", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$c8401$2f5c37aa7eb073bd9e9b01972c06f27532d78c3c", 
+      "email": "fsileshi@tns.org", 
+      "date_joined": "2011-11-28 14:16:03"
+    }
+  }
+]

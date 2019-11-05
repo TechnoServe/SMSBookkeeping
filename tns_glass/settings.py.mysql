@@ -1,0 +1,60 @@
+# import our default settings
+from settings_common import *
+
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
+# these guys will get email from sentry
+ADMINS = (
+   ('contact-person', 'contact@website.com'),
+)
+
+MANAGERS = ADMINS
+
+ROUTER_PASSWORD="enter-the-password-here"
+ROUTER_URL="http://website/cgi-bin/sendsms?from=xxxx&username=user&password=password&text=%(text)s&to=%(recipient)s&smsc=smc-name"
+ROUTER_WORKERS=1
+
+# add gunicorn
+INSTALLED_APPS += ('gunicorn',)
+
+# static dir is different for prod
+STATIC_URL = '/sitestatic/'
+
+ROUTER_URL = "asdf"
+
+# List of finder classes that know how to find static files in
+# various locations.
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ct',
+        'USER': 'ct',
+        'PASSWORD': 'password',
+        'PORT': '',
+        'OPTIONS': {
+               "init_command": "SET storage_engine=INNODB",
+        }  
+    }
+}
+
+# no debug toolbar in prod
+MIDDLEWARE_CLASSES = (
+    'raven.contrib.django.raven_compat.middleware.SentryResponseErrorIdMiddleware',
+    'raven.contrib.django.raven_compat.middleware.Sentry404CatchMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'smartmin.middleware.AjaxRedirect',
+
+)
+
+MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('debug_toolbar.middleware.DebugToolbarMiddleware',)

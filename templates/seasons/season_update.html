@@ -1,0 +1,296 @@
+{% extends "smartmin/update.html" %}
+
+{% load smartmin i18n %}
+
+{% block form-span %}span10{% endblock %}
+
+{% block form-right %}
+<div class="span2">
+  <h4>{% trans "Import" %}</h4>
+  <p{% trans "Once you have configured your season and saved the changes, you can" %} <a href="{% url 'reportimports.reportimport_create' %}?season={{season.id}}">{% trans "import" %}</a> {% trans "all the reports for a season using an Excel CSV file" %}.</p>
+
+  <h4>{% trans "Finalizing" %}</h4>
+  <p>{% trans "Once all reports have been uploaded and finalized you must" %} <a class="posterize" href="{% url 'aggregates.finalizetask_create' %}?season={{season.id}}">{% trans "finalize" %}</a> {% trans "the season to calculate averages and enable graphs" %}.</p>
+</div>
+{% endblock %}
+
+{% block fields %}
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#attributes" data-toggle="tab">{% trans "Attributes" %}</a></li>
+  <li><a href="#expenses" data-toggle="tab">{% trans "Expenses" %}</a></li>
+  <li><a href="#grades" data-toggle="tab">{% trans "Grades" %}</a></li>
+  <li><a href="#cash" data-toggle="tab">{% trans "Cash" %}</a></li>
+  <li><a href="#standards" data-toggle="tab">{% trans "Standards" %}</a></li>
+  <li><a href="#gauges" data-toggle="tab">{% trans "Gauges" %}</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="attributes" class="active tab-pane">
+    {% render_field "is_active" %}
+    {% render_field "name" %}
+    {% render_field "country" %}
+
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Configuration" %}</legend>
+      {% render_field "has_local_sales" %}
+      {% render_field "has_members" %}
+      {% render_field "has_misc_revenue" %}
+    </fieldset>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Sale Defaults" %}</legend>
+      {% render_field "exchange_rate" %}
+      {% render_field "default_adjustment" %}
+    </fieldset>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Baselines" %}</legend>
+      {% render_field "farmer_income_baseline" %}
+      {% render_field "fob_price_baseline" %}
+    </fieldset>
+  </div>
+  <div id="expenses" class="tab-pane">
+    <div class="alert">
+      <p>{% trans "Select the expenses which are active for this season.  Parent expenses will be included if any of their children are selected." %}</p>
+      <p>{% trans "Any expenses which are marked with" %} <b>{% trans "Collapse" %}</b> {% trans "will not have their child values displayed in the transparency report" %}.</p>
+    </div>
+
+    {% for expense in expense_fields %}
+    {% with expense.field_name as field %}
+    {% with form|field:field as form_field %}
+    <div class="clearfix expense-check field-check depth-{{ expense.depth }} {% if expense.has_children %}item-parent{% endif %}" {% if expense.parent %}parent="id_expense__{{ expense.parent.id }}"{% endif %}>
+
+      {% if expense.collapse_field_name %}
+      {% with expense.collapse_field_name as collapse_field %}
+        {% with form|field:collapse_field as collapse_form_field %}
+        <span class="pull-right right-col">{% trans "Collapse" %} {{ collapse_form_field }}</span>
+        {% endwith %}
+      {% endwith %}
+      {% endif %}
+
+      <label>{{ form_field }}<span>{{ expense.name }}</span></label>
+    </div>
+    {% endwith %}
+    {% endwith %}
+    {% endfor %}
+  </div>
+  <div id="grades" class="tab-pane">
+    <div class="alert">
+      <p>{% trans "Select the grades which are active for this season" %}.</p>
+      <p>{% trans "Grades marked as" %} <b>{% trans "Top Grades" %}</b> {% trans "will have their totals used in production quality graphs" %}.</p>
+    </div>
+
+    {% for grade in grade_fields %}
+
+    {% with grade.field_name as field %}
+    {% with form|field:field as form_field %}
+    <div class="clearfix grade-check field-check depth-{{ grade.depth }} {% if grade.is_parent or grade.depth == 0 %}item-parent{% endif %}" {% if grade.parent %}parent="id_grade__{{ grade.parent.id }}"{% endif %}>
+
+      {% if grade.top_field_name %}
+      {% with grade.top_field_name as top_field %}
+        {% with form|field:top_field as top_form_field %}
+        <span class="pull-right right-col">{% trans "Top Grade" %} {{ top_form_field }}</span>
+        {% endwith %}
+      {% endwith %}
+      {% endif %}
+
+      <label>{{ form_field }}<span>{{ grade.name }}</span></label>
+
+    </div>
+    {% endwith %}
+    {% endwith %}
+
+    {% endfor %}
+  </div>
+  <div id="cash" class="tab-pane">
+    <div class="alert">
+      <p>{% trans "Select the uses of cash that will be active for this season" %}.</p>
+    </div>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Sources of Cash" %}</legend>
+      {% for cashsource in cashsource_fields %}
+      {% with cashsource.field_name as field %}
+      {% with form|field:field as form_field %}
+      <div class="clearfix field-check depth-1">{% if form_field %}<label>{{ form_field }}<span>{{ cashsource.name }}</span></label>{% endif %}</div>
+      {% endwith %}
+      {% endwith %}
+      {% endfor %}
+    </fieldset>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Uses of Cash" %}</legend>
+      {% for cashuse in cashuse_fields %}
+      {% with cashuse.field_name as field %}
+      {% with form|field:field as form_field %}
+      <div class="clearfix field-check depth-1">{% if form_field %}<label>{{ form_field }}<span>{{ cashuse.name }}</span></label>{% endif %}</div>
+      {% endwith %}
+      {% endwith %}
+      {% endfor %}
+    </fieldset>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Farmer Payments" %}</legend>
+      {% for payment in payment_fields %}
+      {% render_field payment.field_name %}
+      {% endfor %}
+    </fieldset>
+  </div>
+  <div id="standards" class="tab-pane">
+    <div class="alert">
+      <p>{% trans "Select the standards which are active for this season" %}.</p>
+    </div>
+
+    {% for category in standard_categories %}
+      <fieldset class="field-group-secondary">
+        <legend>{{ category.name }}</legend>
+        {% for standard in standard_fields %}
+	{% if standard.category == category %}
+	{% with standard.field_name as field %}
+	{% with form|field:field as form_field %}
+	<div class="clearfix field-check depth-1">{% if form_field %}<label>{{ form_field }}<span>{{ standard.name }}</span></label>{% endif %}</div>
+	{% endwith %}
+	{% endwith %}
+	{% endif %}
+        {% endfor %}
+      </fieldset>
+    {% endfor %}
+  </div>
+
+  <div id="gauges" class="tab-pane">
+    <div class="alert">
+      <p>{% trans "These values are used when rendering the gauges on the transparency reports" %}.<p>
+    </div>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Farmer Payment" %}</legend>
+      {% render_field "farmer_payment_left" %}
+      {% render_field "farmer_payment_right" %}
+    </fieldset>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Cherry to Top Grade Ratio" %}</legend>
+      {% render_field "cherry_ratio_left" %}
+      {% render_field "cherry_ratio_right" %}
+    </fieldset>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Total Costs" %}</legend>
+      {% render_field "total_costs_left" %}
+      {% render_field "total_costs_right" %}
+    </fieldset>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Green Sale Price" %}</legend>
+      {% render_field "sale_price_left" %}
+      {% render_field "sale_price_right" %}
+    </fieldset>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block extra-script %}
+{{ block.super }}
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap-tabs.js"></script>
+<script>
+    // maintains sane checking state for our expense tree
+    $(document).ready(function(){
+        $(".expense-check input").change(function(){
+            // if we have been checked, check all our parents
+            if ($(this).attr("checked")){
+                var parent_id = $(this).parents("div").attr("parent");
+                $("#" + parent_id).attr("checked", "checked");
+                $("#" + parent_id).change();
+            } 
+            // if we have been unchecked, uncheck all our children
+            else {
+                var id = $(this).attr("id");
+                $(".expense-check").filter(function(){
+                    return $(this).attr("parent") == id;
+                }).find("input").removeAttr("checked").change();
+            }
+        });
+    });
+  
+  // maintains sane checking state for our grade tree
+  $(document).ready(function(){
+      $(".grade-check input").change(function(){
+          // if we have been checked, check all our parents
+          if ($(this).attr("checked")){
+              var parent_id = $(this).parents("div").attr("parent");
+              $("#" + parent_id).attr("checked", "checked");
+              $("#" + parent_id).change();
+          } 
+          // if we have been unchecked, uncheck all our children
+          else {
+              var id = $(this).attr("id");
+              $(".grade-check").filter(function(){
+                  return $(this).attr("parent") == id;
+              }).find("input").removeAttr("checked").change();
+          }
+      });
+  });
+</script>
+{% endblock %}
+
+{% block extra-style %}
+{{ block.super }}
+<style>
+  input[type="radio"], input[type="checkbox"] {
+    margin-top: 0px;
+  }
+
+  .right-col {
+    padding-top: 0px;
+    padding-right: 100px;
+  }
+
+  .depth-1 {
+    margin-left: 20px;
+  }
+
+  .depth-2 {
+    margin-left: 40px;
+  }
+
+  .depth-3 {
+    margin-left: 60px;
+  }
+
+  .depth-4 {
+    margin-left: 80px;
+  }
+
+  .depth-5 {
+    margin-left: 100px;
+  }
+
+
+  .field-check input {
+    margin-right: 5px;
+  }
+
+  .field-check label {
+    width: 350px;
+    text-align: left;
+  }
+
+  .item-parent label {
+    font-weight: bold;
+  }
+
+  .item-parent {
+    font-weight: bold;
+  }
+
+  .field-check.clearfix {
+    margin-bottom: 2px;
+  }
+
+  fieldset.field-group-secondary {
+      margin: 20px 0px -10px 0;
+  }
+</style>
+{% endblock %}

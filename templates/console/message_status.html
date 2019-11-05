@@ -1,0 +1,20 @@
+{% load i18n %}
+
+<html>
+<head>
+    <title>{% trans "SMS Status" %}</title>
+</head>
+
+<body>
+  <pre>
+{% if unsent > 0 %}
+{% trans "ERROR" %}
+{% else %}
+{% trans "OK" %}
+{% endif %}
+{% trans "Unsent" %}: {{ unsent }}
+{% trans "Errors" %}: {{ error }}
+  </pre>
+</body>
+
+</html>

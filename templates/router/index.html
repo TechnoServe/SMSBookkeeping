@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% load locales i18n %}
+
+{% block title %}
+{% trans "SMS Messages" %}
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="sms span14">
+    <div class="page-header">
+      <h2>{% trans "SMS Message Log" %}</h2>
+    </div>
+    
+    <div class="pull-right">
+      <form method="POST" class="uniForm">
+          {{ search_form.search }}
+          <input type="hidden" name="action" value='{% trans "search" %}'/>
+          {% csrf_token %}
+        <input class="btn btn-primary" type="submit" value='{% trans "Search" %}'/>
+      </form>
+    </div>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th>{% trans "Number" %}</th>
+          <th>{% trans "Message" %}</th>
+          <th>{% trans "Date" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for message in sms_messages.object_list %}
+      <tr>
+        <td valign="top" width="20" style="text-align: center">{% if message.direction == 'I' %}
+          <img src="{{ STATIC_URL }}img/arrow_right.png">
+          {% else %}
+          <img src="{{ STATIC_URL }}img/arrow_left.png">
+          {% endif %}
+        </td>
+        <td valign="top" class="clickable" width="80"><a class="posterize" href="?action=search&search={{message.connection.identity}}">{{ message.connection.identity }}</a></td>
+        <td>{{ message.text }}</td>
+        <td width="100" valign="top">{{ message.date|local_timezone:"%b %e, %H:%M" }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+
+{% with sms_messages.paginator as paginator %}
+
+{% block paginator %}
+<div class="row">
+  <div class="span4">
+    <div class="pagination-text">
+    {% if not paginator or paginator.num_pages <= 1 %}
+    {{ object_list|length }} {% trans "result" %}{% if object_list|length == 0 or object_list|length > 1 %}s{% endif %}
+    {% else %}
+    {% trans "Results" %} {{ sms_messages.start_index }}-{{ sms_messages.end_index }} {% trans "of" %} {{ paginator.count }}
+    {% endif %}
+    </div>
+  </div>
+  <div class="span10">
+    {% if paginator and paginator.num_pages > 1 %}
+    <div class="pagination pull-right">
+      <ul>
+        {% if sms_messages.has_previous %}
+        <li class="prev"><a class="posterize" href="console?page={{sms_messages.previous_page_number}}&action=search&search={{search_form.search.value|default:""}}">&larr; {% trans "Previous" %}</a></li>
+        {% else %}
+        <li class="prev disabled"><a href="#">&larr; {% trans "Previous" %}</a></li>
+        {% endif %}
+
+        {% for page_num in paginator.page_range %}
+          {% if page_num < 10 %}
+            {% if not page_num == sms_messages.number %}
+            <li><a class="posterize" href="console?page={{page_num}}&action=search&search={{search_form.search.value|default:""}}">{{ page_num }}</a></li>
+            {% else %}
+            <li class="active"><a href="#">{{ page_num }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% if sms_messages.has_next %}
+        <li class="next"><a class="posterize" href="console?page={{sms_messages.next_page_number}}&action=search&search={{search_form.search.value|default:""}}">{% trans "Next" %} &rarr;</a></li>
+        {% else %}
+        <li class="next disabled"><a href="#">{% trans "Next" %} &rarr;</a></li>
+        {% endif %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
+{% endwith %}
+
+  </div>
+</div>
+
+<div class="row">
+  <br/><br/>
+  <div class="sender module span14">
+    <div class="page-header">
+      <h2>{% trans "Message Sender" %}</h2>
+    </div>
+    <div>
+      <div class="alert-message block-message">
+        {% trans "You can send a message to a specific user by entering their phone number and the message you want to send." %}
+      </div>
+      <form method="POST" class="uniForm">
+        <fieldset>
+          <div class="clearfix form-field">
+            <label>{% trans "Recipient" %}: </label><div class="input">{{ reply_form.recipient }}</div>
+          </div>
+          <div class="clearfix form-field">
+            <label>{% trans "Message" %}: </label><div class="input">{{ reply_form.message }}</div>
+          </div>
+          <input type="hidden" name="action" value="reply" />
+
+          <div class="actions">
+            <input class="btn btn-primary" type="submit" value='{% trans "Send" %}' />
+          </div>
+          {% csrf_token %}
+        </fieldset>
+      </form>
+      <script language="javascript">
+        function reply(number) {
+            $('#id_recipient').val(number);
+            return void(0);
+        }
+      </script>
+    </div>
+  </div>
+</div>
+
+<div class="row">  
+  <div class="tester module span14">
+    <div class="page-header">
+      <h2>{% trans "Message Tester" %}</h2>
+    </div>
+    <div>
+      <div class="alert-message block-message">
+        {% trans "You can test the functionality of the system by pretending to be a user here.  Enter the phone number you want to simulate and the message you want to send into the system.  The reply will appear above in the message log." %}
+      </div>
+      <form method="POST" class="uniForm">
+        <div class="clearfix form-field">
+          <label>{% trans "Sender" %}: </label><div class="input">{{ form.sender }}</div>
+        </div>
+        <div class="clearfix form-field">
+          <label>{% trans "Message" %}: </label><div class="input">{{ form.text }}</div>
+        </div>
+        <input type="hidden" name="action" value="test"/>
+
+        <div class="actions">
+          <input class="btn btn-primary" type="submit" value='{% trans "Test" %}' />
+        </div>
+        {% csrf_token %}
+      </form>
+    </div>
+  </div>
+  <br/>
+</div>
+
+{% endblock %}
+
+{% block extra-script %}
+{{ block.super }}
+<form id="posterizer" method="post">
+  {% csrf_token %}
+</form>
+<script type="text/javascript" src="{{ STATIC_URL }}js/libs/jquery.url.js"></script>
+<script>
+  $("a.posterize").click(function(event){
+    event.preventDefault();
+
+    var href = $(this).attr("href");
+    var url = $.url(href);
+
+    $("#posterizer").attr("action", url.attr("path"));
+
+    for (var key in url.param()){
+      $("#posterizer").append("<input type='hidden' name='" + key + "' value='" + url.param(key) + "'></input>");
+    }
+
+    $("#posterizer").submit();
+  });
+</script>
+{% endblock %}

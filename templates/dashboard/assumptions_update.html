@@ -1,0 +1,55 @@
+{% extends "smartmin/update.html" %}
+{% load dashboard i18n %}
+
+{% block pre-content %}
+<div class="page-header">
+  <h2 style="margin-bottom:0px">{{ title }}</h2>
+{% if not object.wetmill %}
+<div style="margin-bottom: 10px">
+{% trans "Note: You can also edit settings on a per wetmill basis. Individual Wetmill Settings will override the defaults set here." %}
+</div>
+{% endif %}
+</div>
+{% endblock %}
+
+
+{% block fields %}
+  <fieldset>
+    {% for field in fields %}
+      {% if field == price_transition %}
+        <fieldset class="field-group-secondary">
+          <legend>{% trans "Recommended Price Configuration" %}</legend>
+      {% elif field == alert_transition %}
+        </fieldset>
+        <fieldset class="field-group-secondary">
+        <legend>{% trans "Alert Configuration" %}</legend>
+      {% endif %}
+
+      {% render_assumption_field field %}
+
+
+      {% if forloop.last %}
+        </fieldset>
+      {% endif %}
+
+    {% endfor %}
+
+    {% block extra-fields %}
+    {% endblock %}
+  </fieldset>
+{% endblock fields %}
+
+{% block post-fields %}
+{% if perms.dashboard.assumptions_output and not object.wetmill %}
+<div class="control-group ">
+  <fieldset class="field-group-secondary">
+    <legend>{% trans "Predicted Cherry Output Curve" %}</legend>
+  <label class="control-label" for="">{% trans "Output Curve" %}</label>
+  <div class="controls">
+    <a class="btn btn-primary" href="{% url 'dashboard.assumptions_output' object.id %}">{% trans "Edit Output Curve" %}</a>
+    <p class="help-block">{% trans "Edit the predicted output curve for this season" %}</p>
+  </div>
+  </fieldset>
+</div>
+{% endif %}
+{% endblock %}

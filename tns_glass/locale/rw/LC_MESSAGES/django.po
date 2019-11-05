@@ -1,0 +1,5032 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-02 19:55+0000\n"
+"PO-Revision-Date: 2013-10-15 13:33+0000\n"
+"Last-Translator:   <nicp@nyaruka.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.1\n"
+
+#: aggregates/models.py:12 aggregates/models.py:43 aggregates/models.py:81
+#: dashboard/models.py:652 dashboard/models.py:679 reportimports/models.py:21
+#: reports/models.py:20 scorecardimports/models.py:14 scorecards/models.py:13
+#: seasons/models.py:248 seasons/models.py:258 seasons/models.py:281
+#: sms/models.py:833 sms/models.py:932 sms/models.py:1005 sms/models.py:1094
+#: sms/models.py:1310 sms/models.py:1438 sms/models.py:1601 sms/models.py:1708
+#: sms/models.py:1905 sms/models.py:2113 sms/models.py:2295
+#: templates/aggregates/finalizetask_read.html:24
+#: templates/reportimports/reportimport_read.html:25
+#: templates/scorecardimports/scorecardimport_read.html:25
+#: wetmills/models.py:194
+msgid "Season"
+msgstr ""
+
+#: aggregates/models.py:13
+msgid "The season which will be finalized"
+msgstr ""
+
+#: aggregates/models.py:14
+msgid "Task Log"
+msgstr ""
+
+#: aggregates/models.py:14
+msgid "Any logging collected while finalizing this season"
+msgstr ""
+
+#: aggregates/models.py:15 reportimports/models.py:27
+#: scorecardimports/models.py:20
+msgid "Task Id"
+msgstr ""
+
+#: aggregates/models.py:44 aggregates/models.py:82 blurbs/models.py:12
+#: cc/models.py:40 sms_reports/models.py:43
+msgid "Slug"
+msgstr ""
+
+#: aggregates/models.py:45
+msgid "Label"
+msgstr ""
+
+#: aggregates/models.py:46
+msgid "Is Cost"
+msgstr ""
+
+#: aggregates/models.py:49 reports/models.py:283 reports/models.py:287
+#: reports/models.py:298 reports/models.py:305 reports/models.py:312
+#: reports/models.py:327 reports/models.py:352
+#: templates/public/wetmill.html:170 templates/public/wetmill.html.py:178
+msgid "Report"
+msgstr ""
+
+#: aggregates/models.py:51 reports/models.py:301 reports/models.py:308
+#: reports/models.py:330 scorecards/models.py:166
+msgid "Value"
+msgstr ""
+
+#: aggregates/models.py:83
+#, fuzzy
+msgid "Average"
+msgstr "Umukiriya Usanzwe"
+
+#: aggregates/models.py:84
+msgid "Lowest"
+msgstr ""
+
+#: aggregates/models.py:85
+msgid "Highest"
+msgstr ""
+
+#: aggregates/models.py:86
+msgid "Best"
+msgstr ""
+
+#: aggregates/views.py:19
+#, python-format
+msgid "Finalize %s Season"
+msgstr ""
+
+#: aggregates/views.py:37
+msgid "Finalize Season"
+msgstr ""
+
+#: aggregates/views.py:40 templates/reports/report_read.html:150
+#: templates/scorecards/scorecard_read.html:76
+#: templates/seasons/season_list.html:7
+msgid "Finalize"
+msgstr ""
+
+#: blurbs/models.py:11 cc/models.py:39 smartmin/views.py:837
+msgid "Form"
+msgstr ""
+
+#: blurbs/models.py:13 cc/models.py:45 csps/models.py:14 reports/models.py:284
+#: scorecards/models.py:181 sms_reports/models.py:38 wetmills/models.py:21
+msgid "Description"
+msgstr ""
+
+#: blurbs/models.py:14 cc/models.py:46 help/models.py:34
+#: sms_reports/models.py:51 templates/broadcasts/broadcast_message.html:43
+#: templates/console/message_list.html:81
+#: templates/dashboard/wetmill_wetmill.html:548 templates/router/index.html:30
+#: templates/router/index.html.py:116 templates/router/index.html:150
+msgid "Message"
+msgstr ""
+
+#: broadcasts/models.py:26 templates/broadcasts/broadcast_message.html:32
+msgid "Recipients"
+msgstr ""
+
+#: broadcasts/models.py:28 csps/models.py:6 locales/models.py:134
+#: locales/models.py:190 templates/broadcasts/broadcast_form.html:8
+#: templates/public/search.html:38
+#: templates/wetmills/wetmillimport_read.html:25 wetmills/models.py:12
+#: wetmills/models.py:205
+msgid "Country"
+msgstr ""
+
+#: broadcasts/models.py:31 templates/base.html:58
+#: templates/broadcasts/broadcast_message.html:31
+#: templates/dashboard/wetmill_dashboard.html:101
+#: templates/dashboard/wetmill_wetmill.html:888
+#: templates/public/country.html:61
+msgid "Wetmills"
+msgstr ""
+
+#: broadcasts/models.py:34
+msgid "Exclude Wetmills"
+msgstr ""
+
+#: broadcasts/models.py:35
+msgid "Exclude these wetmills (leave blank for none)"
+msgstr ""
+
+#: broadcasts/models.py:37
+msgid "Exclude wetmills in these CSPs (leave blank for none)"
+msgstr ""
+
+#: broadcasts/models.py:39
+msgid "Report Season"
+msgstr ""
+
+#: broadcasts/models.py:40
+msgid ""
+"Only include wetmills with finalized reports in this season (leave blank for "
+"all)"
+msgstr ""
+
+#: broadcasts/models.py:41
+msgid "SMS Season"
+msgstr ""
+
+#: broadcasts/models.py:42
+msgid ""
+"Only include wetmills with SMS accounting messages in this season (leave "
+"blank for all)"
+msgstr ""
+
+#: broadcasts/models.py:44
+msgid "Text"
+msgstr ""
+
+#: broadcasts/models.py:46
+msgid "Send On"
+msgstr ""
+
+#: broadcasts/models.py:48 sms/models.py:1606 templates/sms/sms_view.html:120
+msgid "Sent"
+msgstr ""
+
+#: broadcasts/models.py:49 templates/broadcasts/broadcast_read.html:23
+msgid "Messages"
+msgstr ""
+
+#: broadcasts/views.py:18
+msgid "Exclude recipients for these wetmills (leave blank for none)"
+msgstr ""
+
+#: broadcasts/views.py:20
+msgid "Exclude recipients for these CSPs (leave blank for none)"
+msgstr ""
+
+#: broadcasts/views.py:31
+msgid "You must specify a country for your broadcast"
+msgstr ""
+
+#: broadcasts/views.py:34
+msgid "You must specify at least one recipient type for your broadcast"
+msgstr ""
+
+#: broadcasts/views.py:37
+msgid "Your report season must match your country"
+msgstr ""
+
+#: broadcasts/views.py:40
+msgid "Your SMS season must match your country"
+msgstr ""
+
+#: broadcasts/views.py:43
+msgid "You must specify at least one season to filter by CSP"
+msgstr ""
+
+#: broadcasts/views.py:51
+msgid "No wetmills match your criteria, please broaden them and try again"
+msgstr ""
+
+#: broadcasts/views.py:69
+msgid "On which date this broadcast will be sent (will not send if blank)"
+msgstr ""
+
+#: broadcasts/views.py:70
+msgid "At which time this broadcast will be sent in GMT. (ie: 16:30)"
+msgstr ""
+
+#: broadcasts/views.py:134
+msgid "** No text, this wetmill would not receive a message **"
+msgstr ""
+
+#: broadcasts/views.py:136
+#, python-format
+msgid "** Error: %s **"
+msgstr ""
+
+#: broadcasts/views.py:144 templates/broadcasts/broadcast_test.html:6
+msgid "Schedule Message"
+msgstr ""
+
+#: broadcasts/views.py:146
+msgid "Save Broadcast"
+msgstr ""
+
+#: broadcasts/views.py:170 broadcasts/views.py:247
+#: templates/broadcasts/broadcast_read.html:10
+msgid "Set Message"
+msgstr ""
+
+#: broadcasts/views.py:217 templates/broadcasts/broadcast_test.html:10
+msgid "Edit Recipients"
+msgstr ""
+
+#: broadcasts/views.py:280
+msgid "SMS Broadcast"
+msgstr ""
+
+#: canvas/page.py:297
+#, python-format
+msgid "Generated on %s"
+msgstr "Yakozwe Kuri %s"
+
+#: cashsources/models.py:5 cashuses/models.py:5
+msgid "Not calculated, value is entered"
+msgstr ""
+
+#: cashsources/models.py:6 reports/pdf/render.py:448
+#, fuzzy
+msgid "Unused Working Capital"
+msgstr "Amafaranga Y'igishoro"
+
+#: cashsources/models.py:7
+#, fuzzy
+msgid "Cash Due from CSP"
+msgstr "Amafaranga Y'inyungu CSP Agomba Guha Koperative %s"
+
+#: cashsources/models.py:10 cashuses/models.py:9 csps/models.py:8
+#: expenses/models.py:12 farmerpayments/models.py:6 grades/models.py:13
+#: locales/models.py:45 locales/models.py:82 locales/models.py:188
+#: seasons/models.py:13 sms/models.py:111 sms_reports/models.py:37
+#: standards/models.py:6 standards/models.py:22
+#: templates/dashboard/wetmill_wetmill.html:505
+#: templates/expenses/expense_list.html:11 templates/grades/grade_list.html:11
+#: templates/public/search.html:37 templates/sms/sms_view.html:291
+#: templates/sms/sms_view.html.py:333 wetmills/models.py:15
+msgid "Name"
+msgstr ""
+
+#: cashsources/models.py:11
+msgid ""
+"The name of this cash source as it will appear in the transparency sheet"
+msgstr ""
+
+#: cashsources/models.py:12 cashuses/models.py:11 expenses/models.py:18
+#, fuzzy
+msgid "Calculated From"
+msgstr "asdfasdf"
+
+#: cashsources/models.py:13
+msgid "How the value for this cash source is calculated, if at all"
+msgstr ""
+
+#: cashsources/models.py:14 cashuses/models.py:13 expenses/models.py:20
+#: farmerpayments/models.py:8 grades/models.py:20 locales/models.py:192
+#: standards/models.py:10 standards/models.py:28
+#: templates/expenses/expense_list.html:13 templates/grades/grade_list.html:13
+msgid "Order"
+msgstr ""
+
+#: cashsources/models.py:15
+msgid ""
+"Controls what order this cash source will be displayed in, items with a "
+"lower order will be displayed first."
+msgstr ""
+
+#: cashuses/models.py:6
+msgid "Retained Profit"
+msgstr "Inyungu Asigaye"
+
+#: cashuses/models.py:10
+msgid "Name of this use of cash"
+msgstr ""
+
+#: cashuses/models.py:12
+msgid "How the value for this cash use is calculated, if at all"
+msgstr ""
+
+#: cashuses/models.py:14
+msgid "The order used when displayed in a list, smaller orders come first"
+msgstr ""
+
+#: cc/models.py:41 sms_reports/models.py:44
+msgid "Reporter Types"
+msgstr ""
+
+#: cc/models.py:42
+msgid ""
+"What reporter types should receive this cc, optional and up to the calling "
+"function to use."
+msgstr ""
+
+#: cc/models.py:47 sms/models.py:114 sms_reports/models.py:53
+msgid "Created"
+msgstr ""
+
+#: csps/models.py:7
+msgid "What country does this CSP operate in"
+msgstr ""
+
+#: csps/models.py:9
+msgid "The name of this CSP in English"
+msgstr ""
+
+#: csps/models.py:10 templates/dashboard/wetmill_wetmill.html:40
+#: wetmills/models.py:18
+msgid "SMS Name"
+msgstr ""
+
+#: csps/models.py:11
+msgid ""
+"A short, simple name that will be used to refer to this CSP in SMS messages"
+msgstr ""
+
+#: csps/models.py:12
+msgid "Logo"
+msgstr ""
+
+#: csps/models.py:13
+msgid "A logo for the CSP, optional"
+msgstr ""
+
+#: csps/models.py:14
+msgid "A brief description for this CSP, history, background etc.."
+msgstr ""
+
+#: csps/models.py:20
+#, fuzzy
+msgid "Coffee Service Provider"
+msgstr "Ikigo Gifasha Mu Bucuruzi Bwa Kawa"
+
+#: csps/models.py:21
+#, fuzzy
+msgid "Coffee Service Providers"
+msgstr "Ikigo Gifasha Mu Bucuruzi Bwa Kawa"
+
+#: dashboard/models.py:133
+#, fuzzy
+msgid "Last Cherry"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: dashboard/models.py:133
+msgid "Volume Cherry Purchased according to Last Daily Cherry Report"
+msgstr ""
+
+#: dashboard/models.py:134 templates/dashboard/wetmill_dashboard.html:55
+#: templates/dashboard/wetmill_wetmill.html:60
+#, fuzzy
+msgid "Cherry YTD"
+msgstr "%s/KG Ibitumbwe"
+
+#: dashboard/models.py:134
+msgid "Total Cherry Purchased according to Daily Cherry Reports"
+msgstr ""
+
+#: dashboard/models.py:135
+#, fuzzy
+msgid "Parchment Delivered"
+msgstr "asdfasdf"
+
+#: dashboard/models.py:135
+msgid "Total parchment reported delivered in Weekly Stock Messages"
+msgstr ""
+
+#: dashboard/models.py:136
+#, fuzzy
+msgid "Parchment in Store"
+msgstr "asdfasdf"
+
+#: dashboard/models.py:136
+msgid ""
+"Total parchment reported in storage - parchment delivered in Weekly Stock "
+"Messages"
+msgstr ""
+
+#: dashboard/models.py:137
+#, fuzzy
+msgid "Est. Parchment on Tables"
+msgstr "asdfasdf"
+
+#: dashboard/models.py:137
+msgid ""
+"Total Cherry &divide; 5.2 = Est. Total Parchment\n"
+"- Parchment Delivered\n"
+"- Parchment in Storage\n"
+"= Est. Parchment on tables"
+msgstr ""
+
+#: dashboard/models.py:138
+#, fuzzy
+msgid "Est. Parchment Processed"
+msgstr "asdfasdf"
+
+#: dashboard/models.py:138
+msgid "Total Cherry &divide; 5.2 = Est. Total Parchment"
+msgstr ""
+
+#: dashboard/models.py:336
+#, fuzzy
+msgid "Avg Cherry Price"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: dashboard/models.py:336
+msgid "Average Farmgate Price Paid over season YTD"
+msgstr ""
+
+#: dashboard/models.py:337 templates/dashboard/wetmill_dashboard.html:283
+#, fuzzy
+msgid "Last Cherry Price"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: dashboard/models.py:337
+msgid "Most recent Farmgate price paid according to last Daily Cherry Report"
+msgstr ""
+
+#: dashboard/models.py:338
+#, fuzzy
+msgid "Recommended Cherry price"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: dashboard/models.py:338
+msgid ""
+"Calculated from NYC - Production Expenses = Recommended Cherry Price\n"
+"Edit production costs for all in Global Settings or a specific wetmill in "
+"Wetmill Settings"
+msgstr ""
+
+#: dashboard/models.py:341 reports/pdf/render.py:445
+msgid "Working Capital Received"
+msgstr "Amafaranga Y'igishoro Yaturutse Umushoramari"
+
+#: dashboard/models.py:341 templates/dashboard/wetmill_dashboard.html:78
+msgid "Total Working Capital reported received in Weekly Cash Reports"
+msgstr ""
+
+#: dashboard/models.py:343
+#, fuzzy
+msgid "% Working Capital on Non-Cherry Expenses"
+msgstr "Amafaranga Y'igishoro Yakoreshejwe"
+
+#: dashboard/models.py:343
+#, python-format
+msgid "% of reported working capital spent on non-cherry operating expenses"
+msgstr ""
+
+#: dashboard/models.py:346
+#, fuzzy
+msgid "Uncollaterized Working Cap"
+msgstr "Amafaranga Y'igishoro"
+
+#: dashboard/models.py:346
+msgid ""
+"Working Capital Received - est. value of Parchment Delivered\n"
+"Edit parchment value for all in Global Settings or a specific wetmill in "
+"Wetmill Settings"
+msgstr ""
+
+#: dashboard/models.py:348
+#, fuzzy
+msgid "Cash Balance"
+msgstr "Avanse Ku Bitumbwe"
+
+#: dashboard/models.py:596
+msgid "Reports Submitted/Total Reports Expected"
+msgstr ""
+
+#: dashboard/models.py:597
+msgid "Reporting Percentage"
+msgstr ""
+
+#: dashboard/models.py:597
+#, python-format
+msgid "% of Reports Submitted"
+msgstr ""
+
+#: dashboard/models.py:598
+#, fuzzy
+msgid "% Cherry Advance Variance"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: dashboard/models.py:598
+msgid ""
+"Variance cherry Advance Reported in Daily Cherry Messages vs. Weekly Cash "
+"Messages\n"
+"Variance should be 0"
+msgstr ""
+
+#: dashboard/models.py:601
+msgid "% Opening Balance Variance"
+msgstr ""
+
+#: dashboard/models.py:601
+msgid ""
+"Variance opening balance reported this week vs. closing balance calculated "
+"last week\n"
+"Variance should be 0"
+msgstr ""
+
+#: dashboard/models.py:653 dashboard/views.py:205 dashboard/views.py:282
+msgid "Week"
+msgstr ""
+
+#: dashboard/models.py:654
+msgid "Percentage"
+msgstr ""
+
+#: dashboard/models.py:675 photos/models.py:14 reports/models.py:22
+#: scorecards/models.py:15 sms/models.py:135 sms/models.py:190
+#: sms/models.py:390 sms/models.py:464 sms/models.py:832 sms/models.py:931
+#: sms/models.py:1004 sms/models.py:1093 sms/models.py:1309 sms/models.py:1437
+#: sms/models.py:1600 sms/models.py:1707 sms/models.py:1746 sms/models.py:1904
+#: sms/models.py:1926 sms/models.py:2112 sms/models.py:2141 sms/models.py:2293
+#: sms/models.py:2303 templates/broadcasts/broadcast_message.html:69
+#: templates/dashboard/wetmill_dashboard.html:239
+#: templates/sms/list_view.html:17 wetmills/models.py:192
+msgid "Wetmill"
+msgstr ""
+
+#: dashboard/models.py:676
+msgid "The wetmill these assumptions apply to.  (leave blank for all)"
+msgstr ""
+
+#: dashboard/models.py:677 sms/models.py:287
+#: templates/dashboard/wetmill_wetmill.html:40
+#: templates/public/wetmill.html:44
+msgid "CSP"
+msgstr ""
+
+#: dashboard/models.py:678
+msgid "The CSP these assumptions apply to."
+msgstr ""
+
+#: dashboard/models.py:680
+msgid "The season these assumptions apply to"
+msgstr ""
+
+#: dashboard/models.py:682
+msgid "Target"
+msgstr ""
+
+#: dashboard/models.py:683
+msgid "The target cherry to be collected for the wetmill"
+msgstr ""
+
+#: dashboard/models.py:686
+#, fuzzy
+msgid "Cherry Parchment Ratio"
+msgstr "Ikilo cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: dashboard/models.py:687
+msgid "The estimated cherry/parchment ratio for this wetmill"
+msgstr ""
+
+#: dashboard/models.py:689
+#, fuzzy
+msgid "Parchment Green Ratio"
+msgstr "Ikilo cy'ikawa itonoye kiva mu bilo by'Iyumye"
+
+#: dashboard/models.py:690
+msgid "The estimated parchment/green ratio for this wetmill"
+msgstr ""
+
+#: dashboard/models.py:692
+msgid "Green Price Differential"
+msgstr ""
+
+#: dashboard/models.py:693 templates/dashboard/wetmill_wetmill.html:487
+msgid "The price differential compared to the NY index in USD/Kg Green"
+msgstr ""
+
+#: dashboard/models.py:695 templates/dashboard/wetmill_wetmill.html:480
+#, fuzzy
+msgid "Parchment Value"
+msgstr "asdfasdf"
+
+#: dashboard/models.py:696
+msgid "The estimated value of parchment per kilo in the local currency"
+msgstr ""
+
+#: dashboard/models.py:699
+msgid "Washing Station Costs"
+msgstr ""
+
+#: dashboard/models.py:700
+msgid "The washing station costs per kilo of green in USD"
+msgstr ""
+
+#: dashboard/models.py:702
+msgid "Milling Costs"
+msgstr ""
+
+#: dashboard/models.py:703
+msgid "The milling costs per kilo of green in USD"
+msgstr ""
+
+#: dashboard/models.py:705
+#, fuzzy
+msgid "Working Capital Costs"
+msgstr "Amafaranga Y'igishoro"
+
+#: dashboard/models.py:706
+msgid "The working capital costs per kilo of green in USD"
+msgstr ""
+
+#: dashboard/models.py:708
+#, fuzzy
+msgid "Capex Costs"
+msgstr "Igiteranyo cy’ayo byatwaye"
+
+#: dashboard/models.py:709
+msgid "The capex costs per kilo of green in USD"
+msgstr ""
+
+#: dashboard/models.py:712
+msgid "The F&I costs per kilo of green in USD"
+msgstr ""
+
+#: dashboard/models.py:714 templates/dashboard/wetmill_wetmill.html:104
+#: templates/dashboard/wetmill_wetmill.html:455
+msgid "Season Start"
+msgstr ""
+
+#: dashboard/models.py:714
+msgid "When the harvest is predicted to begin"
+msgstr ""
+
+#: dashboard/models.py:715 templates/dashboard/wetmill_wetmill.html:112
+#: templates/dashboard/wetmill_wetmill.html:460
+msgid "Season End"
+msgstr ""
+
+#: dashboard/models.py:715
+msgid "When the harvest is predicted to end"
+msgstr ""
+
+#: dashboard/models.py:717
+msgid "High Parchment Tabled Alert"
+msgstr ""
+
+#: dashboard/models.py:718
+msgid ""
+"Absolute amount of tabled parchment in kilos above which an alert will be "
+"triggered. (leave blank for no alert)"
+msgstr ""
+
+#: dashboard/models.py:721
+msgid "Last Cherry Price Alert"
+msgstr ""
+
+#: dashboard/models.py:722 dashboard/models.py:726
+msgid ""
+"Percentage of the recommended price above which an alert should be "
+"triggered. (leave blank for no alert)"
+msgstr ""
+
+#: dashboard/models.py:725
+#, fuzzy
+msgid "Average Cherry Price Alert"
+msgstr "Umukiriya Usanzwe"
+
+#: dashboard/models.py:729
+#, fuzzy
+msgid "Working Capital Operating Expense Alert"
+msgstr "Amafaranga Y'igishoro Yakoreshejwe"
+
+#: dashboard/models.py:730
+msgid ""
+"Percentage of uncollateralized working capital above which an alert should "
+"be triggered. (leave blank for none)"
+msgstr ""
+
+#: dashboard/models.py:732
+msgid "Cash Balance Alert"
+msgstr ""
+
+#: dashboard/models.py:733
+msgid ""
+"Absolute value in local currency below which there should be an alert for "
+"the cash balance. (leave blank for none)"
+msgstr ""
+
+#: dashboard/views.py:99 sms/models.py:816 sms/models.py:1927
+#: sms/models.py:2304 sms_reports/models.py:48
+msgid "Day"
+msgstr ""
+
+#: dashboard/views.py:100 sms/models.py:1316
+msgid "Cash Advance"
+msgstr ""
+
+#: dashboard/views.py:101 sms/models.py:1909 sms/models.py:1929
+msgid "Cash Returned"
+msgstr ""
+
+#: dashboard/views.py:102 sms/models.py:1911 sms/models.py:1930
+#: templates/dashboard/wetmill_dashboard.html:273
+msgid "Cash Spent"
+msgstr ""
+
+#: dashboard/views.py:103 sms/models.py:1913 sms/models.py:1931
+msgid "Credit Spent"
+msgstr ""
+
+#: dashboard/views.py:104 grades/models.py:6 sms/models.py:1315
+#: sms/models.py:1603 templates/dashboard/wetmill_wetmill.html:851
+#: templates/dashboard/wetmill_wetmill.html:960
+#: templates/reports/report_read.html:61 templates/sms/sms_view.html:31
+#: templates/sms/sms_view.html.py:110
+#, fuzzy
+msgid "Cherry"
+msgstr "%s/KG Ibitumbwe"
+
+#: dashboard/views.py:105 sms/models.py:1607 templates/sms/sms_view.html:121
+msgid "Balance"
+msgstr ""
+
+#: dashboard/views.py:106
+#, fuzzy
+msgid "Cherry Price"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: dashboard/views.py:107 dashboard/views.py:217 dashboard/views.py:292
+msgid "Submitted"
+msgstr ""
+
+#: dashboard/views.py:122 dashboard/views.py:168
+msgid "Wetmill Reported as Closed"
+msgstr ""
+
+#: dashboard/views.py:195
+msgid "Daily"
+msgstr ""
+
+#: dashboard/views.py:206 sms/models.py:1711 sms/models.py:1748
+msgid "Opening Balance"
+msgstr ""
+
+#: dashboard/views.py:207 reports/models.py:25 reports/pdf/render.py:435
+#: sms/models.py:1095 sms/models.py:1714 sms/models.py:1749
+#: templates/reports/report_attributes.html:12
+#: templates/reports/report_read.html:81
+msgid "Working Capital"
+msgstr "Amafaranga Y'igishoro"
+
+#: dashboard/views.py:208 sms/models.py:1096
+msgid "Income"
+msgstr ""
+
+#: dashboard/views.py:209 sms/models.py:1720 sms/models.py:1751
+#, fuzzy
+msgid "Advanced"
+msgstr "Avanse Ku Bitumbwe"
+
+#: dashboard/views.py:210 sms/models.py:1723 sms/models.py:1752
+msgid "Full Time Labor"
+msgstr ""
+
+#: dashboard/views.py:211 sms/models.py:1726 sms/models.py:1753
+msgid "Casual Labor"
+msgstr ""
+
+#: dashboard/views.py:212 sms/models.py:1729 sms/models.py:1754
+msgid "Commission"
+msgstr ""
+
+#: dashboard/views.py:213 sms/models.py:1732 sms/models.py:1755
+#: templates/dashboard/wetmill_wetmill.html:853
+msgid "Transport"
+msgstr ""
+
+#: dashboard/views.py:214 sms/models.py:1735 sms/models.py:1756
+msgid "Other Expenses"
+msgstr ""
+
+#: dashboard/views.py:215
+msgid "Closing Balance"
+msgstr ""
+
+#: dashboard/views.py:216 templates/dashboard/wetmill_dashboard.html:391
+#: templates/dashboard/wetmill_dashboard.html:401
+msgid "Variance"
+msgstr ""
+
+#: dashboard/views.py:271 sms/models.py:1440
+#: templates/seasons/season_update.html:22 templates/sms/sms_view.html:38
+#: templates/sms/sms_view.html.py:112 templates/sms/sms_view.html:118
+msgid "Cash"
+msgstr ""
+
+#: dashboard/views.py:283 sms/models.py:835 sms/models.py:2116
+#: sms/models.py:2143
+msgid "Grade A Stored"
+msgstr ""
+
+#: dashboard/views.py:284 sms/models.py:836 sms/models.py:2119
+#: sms/models.py:2144
+msgid "Grade B Stored"
+msgstr ""
+
+#: dashboard/views.py:285 sms/models.py:2122 sms/models.py:2145
+msgid "Grade C Stored"
+msgstr ""
+
+#: dashboard/views.py:286 sms/models.py:2125 sms/models.py:2146
+msgid "Grade A Shipped"
+msgstr ""
+
+#: dashboard/views.py:287
+msgid "Grade B Shipeed"
+msgstr ""
+
+#: dashboard/views.py:288 sms/models.py:2131 sms/models.py:2148
+msgid "Grade C Shipped"
+msgstr ""
+
+#: dashboard/views.py:289
+#, fuzzy
+msgid "Total Stored"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: dashboard/views.py:290
+#, fuzzy
+msgid "Total Shipped"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: dashboard/views.py:291
+msgid "In Store"
+msgstr ""
+
+#: dashboard/views.py:340
+msgid "Stock"
+msgstr ""
+
+#: dashboard/views.py:568
+#, fuzzy, python-format
+msgid "SMS Dashboard - %s %s"
+msgstr "Igipimo cy’imikorore myiza"
+
+#: dashboard/views.py:676
+msgid "Week 1"
+msgstr ""
+
+#: dashboard/views.py:677
+msgid "Week 2"
+msgstr ""
+
+#: dashboard/views.py:678
+msgid "Week 3"
+msgstr ""
+
+#: dashboard/views.py:679
+msgid "Week 4"
+msgstr ""
+
+#: dashboard/views.py:680
+msgid "Week 5"
+msgstr ""
+
+#: dashboard/views.py:681
+msgid "Week 6"
+msgstr ""
+
+#: dashboard/views.py:682
+msgid "Week 7"
+msgstr ""
+
+#: dashboard/views.py:683
+msgid "Week 8"
+msgstr ""
+
+#: dashboard/views.py:684
+msgid "Week 9"
+msgstr ""
+
+#: dashboard/views.py:685
+msgid "Week 10"
+msgstr ""
+
+#: dashboard/views.py:686
+msgid "Week 11"
+msgstr ""
+
+#: dashboard/views.py:687
+msgid "Week 12"
+msgstr ""
+
+#: dashboard/views.py:688
+msgid "Week 13"
+msgstr ""
+
+#: dashboard/views.py:689
+msgid "Week 14"
+msgstr ""
+
+#: dashboard/views.py:690
+msgid "Week 15"
+msgstr ""
+
+#: dashboard/views.py:691
+msgid "Week 16"
+msgstr ""
+
+#: dashboard/views.py:692
+msgid "Week 17"
+msgstr ""
+
+#: dashboard/views.py:693
+msgid "Week 18"
+msgstr ""
+
+#: dashboard/views.py:694
+msgid "Week 19"
+msgstr ""
+
+#: dashboard/views.py:695
+msgid "Week 20"
+msgstr ""
+
+#: dashboard/views.py:696
+msgid "Week 21"
+msgstr ""
+
+#: dashboard/views.py:697
+msgid "Week 22"
+msgstr ""
+
+#: dashboard/views.py:698
+msgid "Week 23"
+msgstr ""
+
+#: dashboard/views.py:699
+msgid "Week 24"
+msgstr ""
+
+#: dashboard/views.py:700
+msgid "Week 25"
+msgstr ""
+
+#: dashboard/views.py:701
+msgid "Week 26"
+msgstr ""
+
+#: dashboard/views.py:702
+msgid "Week 27"
+msgstr ""
+
+#: dashboard/views.py:703
+msgid "Week 28"
+msgstr ""
+
+#: dashboard/views.py:704
+msgid "Week 29"
+msgstr ""
+
+#: dashboard/views.py:705
+msgid "Week 30"
+msgstr ""
+
+#: dashboard/views.py:722
+msgid "Total of the outputs must equal 100%"
+msgstr ""
+
+#: dashboard/views.py:739
+msgid "Output curve updated."
+msgstr ""
+
+#: dashboard/views.py:773
+msgid "Wetmill settings have been updated."
+msgstr ""
+
+#: dashboard/views.py:777
+#, fuzzy
+msgid "Edit Wetmill Settings"
+msgstr "Ubushobozi bw’uruganda"
+
+#: dashboard/views.py:779
+msgid "Edit Global Settings"
+msgstr ""
+
+#: expenses/models.py:6
+msgid "Freight and Insurance was adjusted for FOT to FOB"
+msgstr "Ubwikorezi n’ubwishingizi byashizwe kuri FOB biva kuri FOT"
+
+#: expenses/models.py:7
+msgid "Not calculated, entered manually"
+msgstr ""
+
+#: expenses/models.py:8
+msgid "Calculated freight and insurance"
+msgstr ""
+
+#: expenses/models.py:10 grades/models.py:11
+msgid "Parent"
+msgstr ""
+
+#: expenses/models.py:11
+msgid "The parent this expense belongs to"
+msgstr ""
+
+#: expenses/models.py:13
+msgid "Name this expense"
+msgstr ""
+
+#: expenses/models.py:14
+msgid "In Dollars"
+msgstr ""
+
+#: expenses/models.py:15
+msgid ""
+"Whether this expense is recorded in US Dollars and therefore require an "
+"exchange rate when entered"
+msgstr ""
+
+#: expenses/models.py:16
+#, fuzzy
+msgid "In Advance"
+msgstr "Avanse Ku Bitumbwe"
+
+#: expenses/models.py:17
+msgid ""
+"Whether this expense is considered an advance.  Used for calculating advance "
+"totals in PDF reports"
+msgstr ""
+
+#: expenses/models.py:19
+msgid "Whether the value for this expense is calculated, and if so, how so."
+msgstr ""
+
+#: expenses/models.py:21
+msgid ""
+"The order this expense will displayed in list, smaller orders come first"
+msgstr ""
+
+#: expenses/models.py:29
+msgid "Calculated Value"
+msgstr "asdfasdf"
+
+#: expenses/views.py:19
+msgid "Expense cannot be the parent of itself"
+msgstr ""
+
+#: expenses/views.py:25
+msgid "Expense cannot have one of its children as its parent"
+msgstr ""
+
+#: farmerpayments/models.py:7
+msgid ""
+"The name of for this farmer payment as it will appear in the transparency "
+"sheet"
+msgstr ""
+
+#: farmerpayments/models.py:9
+msgid ""
+"Controls what order this farmer payment will be displayed in, items with a "
+"lower order will be displayed first."
+msgstr ""
+
+#: grades/models.py:7 templates/sms/sms_view.html:111
+#, fuzzy
+msgid "Parchment"
+msgstr "asdfasdf"
+
+#: grades/models.py:8
+#, fuzzy
+msgid "Green"
+msgstr "Ku kiro Cy’ikawa itonoye"
+
+#: grades/models.py:9
+msgid "Unwashed Coffee"
+msgstr ""
+
+#: grades/models.py:12
+msgid "The parent, or category of this grade"
+msgstr ""
+
+#: grades/models.py:14
+msgid "The name of this grade, ie: Green 15+"
+msgstr ""
+
+#: grades/models.py:15 templates/grades/grade_list.html:12
+msgid "Kind"
+msgstr ""
+
+#: grades/models.py:16
+msgid ""
+"What kind of grade this is, child grades must be of the same kind as their "
+"parent"
+msgstr ""
+
+#: grades/models.py:18
+msgid "Not Processed Further"
+msgstr ""
+
+#: grades/models.py:19
+msgid ""
+"Whether this grade does not undergo further processing, for example grades "
+"that are sold locally or are unwashed"
+msgstr ""
+
+#: grades/models.py:21
+msgid ""
+"The order this grade will be displayed in lists, smaller orders come first"
+msgstr ""
+
+#: grades/views.py:18
+msgid "Grade cannot be the parent of itself"
+msgstr ""
+
+#: grades/views.py:24
+msgid "Grade cannot have one of its children as its parent"
+msgstr ""
+
+#: grades/views.py:38
+msgid "Grade kind must agree with parent"
+msgstr ""
+
+#: help/models.py:34
+msgid "The message to send back to the user."
+msgstr ""
+
+#: help/models.py:35
+msgid "Reporter Type"
+msgstr ""
+
+#: help/models.py:36
+msgid "Our reporter object type, must contain a 'connection' field."
+msgstr ""
+
+#: help/models.py:38
+msgid "Priority"
+msgstr ""
+
+#: help/models.py:39
+msgid ""
+"The priority of our help message, matches will be attempted from highest to "
+"lowest"
+msgstr ""
+
+#: locales/models.py:46
+msgid "The name of this weight, ie: Kilogram"
+msgstr ""
+
+#: locales/models.py:47 locales/models.py:86
+msgid "Abbreviation"
+msgstr ""
+
+#: locales/models.py:48
+msgid "An abbreviated name for this weight, used in reports, ie: Kg"
+msgstr ""
+
+#: locales/models.py:50
+msgid "Ratio to Kilogram"
+msgstr ""
+
+#: locales/models.py:83
+msgid "The name of this currency, ie: US Dollars"
+msgstr ""
+
+#: locales/models.py:84
+msgid "Currency Code"
+msgstr ""
+
+#: locales/models.py:85
+msgid "The international currency code for this currency, ie: USD, RWF"
+msgstr ""
+
+#: locales/models.py:87
+msgid "An abbreviated name for this currency, used in reports, ie: US$, RWF"
+msgstr ""
+
+#: locales/models.py:88
+msgid "Has Decimals"
+msgstr ""
+
+#: locales/models.py:89
+msgid "Whether this currency has decimals, ie: cents in US dollars"
+msgstr ""
+
+#: locales/models.py:90
+msgid "Prefix"
+msgstr ""
+
+#: locales/models.py:91
+msgid "Any prefix to display before a value in this currency, ie: $"
+msgstr ""
+
+#: locales/models.py:92
+msgid "Suffix"
+msgstr ""
+
+#: locales/models.py:93
+msgid "Any suffix to display after a value in this currency, ie: RWF"
+msgstr ""
+
+#: locales/models.py:135
+msgid "The name of this country, ie: Rwanda"
+msgstr ""
+
+#: locales/models.py:136
+msgid "Country Code"
+msgstr ""
+
+#: locales/models.py:137
+msgid "The two letter country code, ie: US, RW"
+msgstr ""
+
+#: locales/models.py:138 reports/models.py:357
+#: templates/expenses/expense_list.html:12
+#, fuzzy
+msgid "Currency"
+msgstr "Inyandiko Igaragaza Ukuli %s"
+
+#: locales/models.py:139
+msgid "The local currency in this country."
+msgstr ""
+
+#: locales/models.py:140 templates/sms/sms_view.html:37
+#: templates/sms/sms_view.html.py:117
+msgid "Weight"
+msgstr ""
+
+#: locales/models.py:141
+msgid "The common local weight unit used in this country"
+msgstr ""
+
+#: locales/models.py:143 sms/models.py:112
+msgid "Language"
+msgstr ""
+
+#: locales/models.py:144
+msgid ""
+"The language used in this country, reports will also be offered in this "
+"language"
+msgstr ""
+
+#: locales/models.py:145
+msgid ""
+"The country calling code for this country, leaving off the +, ie, 250 for "
+"Rwanda"
+msgstr ""
+
+#: locales/models.py:146
+msgid "Calling Code"
+msgstr ""
+
+#: locales/models.py:148
+msgid "Phone Format"
+msgstr ""
+
+#: locales/models.py:149
+msgid ""
+"The format to use when displaying phone numbers, use # signs for numbers as "
+"well as spaces and dashes, ie: ### ### ## ##"
+msgstr ""
+
+#: locales/models.py:150
+msgid "National Id Format"
+msgstr ""
+
+#: locales/models.py:151
+msgid ""
+"The format to use when displaying national ids, use # signs for numbers, A "
+"for letters, as well as spaces and dashes, ie: # #### # ####### # ##"
+msgstr ""
+
+#: locales/models.py:152
+msgid "Bounds Latitude"
+msgstr ""
+
+#: locales/models.py:153
+msgid "Bounds Longitude"
+msgstr ""
+
+#: locales/models.py:189
+msgid "The name of this province, ie: Kigali"
+msgstr ""
+
+#: locales/models.py:191
+msgid "The Country where this province belongs, ie: Rwanda"
+msgstr ""
+
+#: locales/models.py:193
+msgid "The number used to order the list of provinces, small comes first"
+msgstr ""
+
+#: locales/views.py:27
+msgid "Pick the country the new wetmill will be located in"
+msgstr ""
+
+#: locales/views.py:36
+msgid "Pick Wetmill Country"
+msgstr ""
+
+#: locales/views.py:37
+msgid "Pick Country"
+msgstr ""
+
+#: locales/views.py:53 locales/views.py:58
+msgid "Map Bounds"
+msgstr ""
+
+#: locales/views.py:53 locales/views.py:58
+msgid "The default map position used for this country, you can set this below."
+msgstr ""
+
+#: locales/widgets.py:64
+msgid ""
+"The latitude and longitude coordinates should use \".\" instead of \",\""
+msgstr ""
+
+#: photos/models.py:8
+#, fuzzy
+msgid "Caption"
+msgstr "Aho uruganda ruherereye"
+
+#: photos/models.py:9
+msgid "A brief description for this photo (optional)"
+msgstr ""
+
+#: photos/models.py:10
+msgid "Image Width"
+msgstr ""
+
+#: photos/models.py:11
+msgid "Image Height"
+msgstr ""
+
+#: photos/models.py:12
+msgid "Image"
+msgstr ""
+
+#: photos/models.py:13
+msgid "Choose an image from your computer, jpg"
+msgstr ""
+
+#: photos/models.py:15
+msgid "Choose the wetmill for this photo"
+msgstr ""
+
+#: photos/models.py:16
+msgid "Is Main"
+msgstr ""
+
+#: photos/models.py:17
+msgid "Make this photo the main photo on the wetmill page"
+msgstr ""
+
+#: photos/views.py:69
+msgid "Currently there is an existing Photo for this wetmill which is main"
+msgstr ""
+
+#: reportimports/models.py:22
+msgid "The season reports are being imported for"
+msgstr ""
+
+#: reportimports/models.py:24 scorecardimports/models.py:17
+#: wetmills/models.py:208
+msgid "Import CSV File"
+msgstr ""
+
+#: reportimports/models.py:25 scorecardimports/models.py:18
+msgid ""
+"The CSV file to import for this season, must be formatted according to the "
+"season template"
+msgstr ""
+
+#: reportimports/models.py:26 scorecardimports/models.py:19
+#: wetmills/models.py:210
+msgid "Any logging information about this import"
+msgstr ""
+
+#: reportimports/models.py:26 scorecardimports/models.py:19
+#: wetmills/models.py:210
+msgid "Import Log"
+msgstr ""
+
+#: reportimports/views.py:11 scorecardimports/views.py:11
+msgid "The season you want a template created for"
+msgstr ""
+
+#: reports/models.py:21
+msgid "The season this report is summarizing"
+msgstr ""
+
+#: reports/models.py:23
+msgid "The wetmill that this report is being prepared for"
+msgstr ""
+
+#: reports/models.py:26
+msgid "The working capital the wetmill was provided in the local currency"
+msgstr ""
+
+#: reports/models.py:27 reports/pdf/render.py:447
+#: templates/reports/report_read.html:82
+msgid "Working Capital Repaid"
+msgstr "Amafaranga Y’igishoro yasubijwe umushoramari"
+
+#: reports/models.py:28
+msgid ""
+"The working capital that was repaid by the wetmill in the local currency"
+msgstr ""
+
+#: reports/models.py:29 reports/pdf/render.py:578
+#: templates/reports/report_attributes.html:23
+#: templates/reports/report_read.html:86
+msgid "Miscellaneous Revenue"
+msgstr "Indo nkomoko y’amafaranga"
+
+#: reports/models.py:30
+msgid ""
+"Miscellaneous revenue the wetmill earned over the course of the season, in "
+"the local currency"
+msgstr ""
+
+#: reports/models.py:31
+msgid "Cherry Production by Members"
+msgstr ""
+
+#: reports/models.py:32
+msgid "The total cherry production in kilos by members"
+msgstr ""
+
+#: reports/models.py:33 templates/broadcasts/broadcast_form.html:18
+#: templates/public/country.html:41 templates/public/home.html:37
+#: templates/reports/report_production.html:20
+#: templates/reports/report_read.html:68
+#, fuzzy
+msgid "Farmers"
+msgstr "Kuba Habaho Kwishyura Umuhinzi"
+
+#: reports/models.py:34
+msgid ""
+"The number of farmers contributing to this wetmill over the course of this "
+"season"
+msgstr ""
+
+#: reports/models.py:35 templates/reports/report_production.html:24
+msgid "Capacity"
+msgstr ""
+
+#: reports/models.py:36
+msgid "The total capacity of this wetmill in kilos of parchment for the season"
+msgstr ""
+
+#: reports/models.py:38 scorecards/models.py:23 seasons/models.py:46
+msgid "Is Finalized"
+msgstr ""
+
+#: reports/models.py:39
+msgid "Whether this report's entries has been finalized"
+msgstr ""
+
+#: reports/models.py:43 templates/public/wetmill.html:139
+#, fuzzy
+msgid "Farmer Price"
+msgstr "Igiciro cy’igigusha"
+
+#: reports/models.py:44
+msgid ""
+"Calculated total farmer price (for members if there are some, or for farmers "
+"if not) In the local currency, per kilo of green"
+msgstr ""
+
+#: reports/models.py:46 templates/public/wetmill.html:149
+#, fuzzy
+msgid "Farmer Share"
+msgstr "Kuba Habaho Kwishyura Umuhinzi"
+
+#: reports/models.py:47
+msgid ""
+"Calculated farmer share (for members if there are some, or for farmers if "
+"not) In the local currency, per kilo of green"
+msgstr ""
+
+#: reports/models.py:49 templates/public/wetmill.html:144
+#, fuzzy
+msgid "Production Cost"
+msgstr "Igereranya Ry'umusaruro"
+
+#: reports/models.py:50
+msgid "Calculated production cost per kilo of green (in local currency)"
+msgstr ""
+
+#: reports/models.py:52 reports/pdf/render.py:991 reports/pdf/render.py:1532
+msgid "Cherry to Green Ratio"
+msgstr "Ikilo 1 cy'ikawa itonoye kiva mu bilo by'ibitumbwe"
+
+#: reports/models.py:53
+#, fuzzy
+msgid "Calculated cherry to green ratio"
+msgstr "Ikilo 1 cy'ikawa itonoye kiva mu bilo by'ibitumbwe"
+
+#: reports/models.py:288 reports/models.py:391 seasons/models.py:259
+#: templates/reports/report_read.html:22
+msgid "Grade"
+msgstr ""
+
+#: reports/models.py:289
+msgid "The coffee grade that was produced"
+msgstr ""
+
+#: reports/models.py:290 reports/models.py:392
+#: templates/reports/report_read.html:21
+#, fuzzy
+msgid "Volume"
+msgstr "1kg cy'ikawa Itonoye kiva mu bilo by'Ibitumbwe"
+
+#: reports/models.py:291
+msgid "The volume of coffee that was produced"
+msgstr ""
+
+#: reports/models.py:299
+#, fuzzy
+msgid "Cash Use"
+msgstr "Avanse Ku Bitumbwe"
+
+#: reports/models.py:300
+msgid "The use of cash that we are recording an entry for"
+msgstr ""
+
+#: reports/models.py:302
+msgid "The value of the cash use, in the local currency"
+msgstr ""
+
+#: reports/models.py:306
+#, fuzzy
+msgid "Cash Source"
+msgstr "Izindi nkomoko "
+
+#: reports/models.py:307
+msgid "The source of cash that we are recording an entry for"
+msgstr ""
+
+#: reports/models.py:309
+msgid "The value of the cash source, in the local currency"
+msgstr ""
+
+#: reports/models.py:313 reports/pdf/render.py:501 seasons/models.py:282
+#: templates/seasons/season_update.html:167
+msgid "Farmer Payment"
+msgstr "Kuba Habaho Kwishyura Umuhinzi"
+
+#: reports/models.py:314
+msgid "The farmer payment that we are recording an entry for"
+msgstr ""
+
+#: reports/models.py:315
+msgid "All per Kilo"
+msgstr ""
+
+#: reports/models.py:316
+msgid "The amount per kilo of cherry given to farmers, in the local currency"
+msgstr ""
+
+#: reports/models.py:317
+msgid "Member per Kilo"
+msgstr ""
+
+#: reports/models.py:318
+msgid "The amount per kilo of cherry given to members, in the local currency"
+msgstr ""
+
+#: reports/models.py:319
+msgid "Non Member per Kilo"
+msgstr ""
+
+#: reports/models.py:320
+msgid ""
+"The amount per kilo of cherry given to non-members, in the local currency"
+msgstr ""
+
+#: reports/models.py:328 seasons/models.py:249
+msgid "Expense"
+msgstr ""
+
+#: reports/models.py:329
+msgid "The expense that we are recording the value for"
+msgstr ""
+
+#: reports/models.py:331
+msgid "The value of the expense for this wetmill and season"
+msgstr ""
+
+#: reports/models.py:332 reports/models.py:361 seasons/models.py:17
+#: templates/reports/report_read.html:25
+msgid "Exchange Rate"
+msgstr ""
+
+#: reports/models.py:333
+msgid "For expenses in dollars, the exchange rate at the time of the expense"
+msgstr ""
+
+#: reports/models.py:343
+msgid "FOT - Free On Truck"
+msgstr ""
+
+#: reports/models.py:344
+msgid "FOB - Free On Board"
+msgstr ""
+
+#: reports/models.py:345
+#, fuzzy
+msgid "Local Sale"
+msgstr "Ikawa yagurishirijwe ku ruganda"
+
+#: reports/models.py:347
+msgid "FOT - Free on Truck"
+msgstr ""
+
+#: reports/models.py:348
+msgid "FOB - Free on Board"
+msgstr ""
+
+#: reports/models.py:354 sms/models.py:817
+#: templates/dashboard/wetmill_wetmill.html:547
+#: templates/reports/report_read.html:20 templates/router/index.html:31
+msgid "Date"
+msgstr ""
+
+#: reports/models.py:354
+msgid "The date this sale was made"
+msgstr ""
+
+#: reports/models.py:355 reports/pdf/render.py:368 reports/pdf/render.py:404
+msgid "Buyer"
+msgstr "Umuguzi"
+
+#: reports/models.py:356
+msgid "The name of the buyer in this sale"
+msgstr ""
+
+#: reports/models.py:358
+msgid "The currency used to pay for this sale"
+msgstr ""
+
+#: reports/models.py:359 templates/dashboard/wetmill_wetmill.html:995
+#: templates/reports/report_read.html:23
+#, fuzzy
+msgid "Price"
+msgstr "Igiciro cy’igigusha"
+
+#: reports/models.py:360
+msgid "The price paid per kilo"
+msgstr ""
+
+#: reports/models.py:362
+msgid "The exchange rate if the sale was made in US Dollars"
+msgstr ""
+
+#: reports/models.py:363 templates/reports/sale_form.html:50
+#, fuzzy
+msgid "Sale Type"
+msgstr "Igiciro cy’igigusha"
+
+#: reports/models.py:364
+msgid "The type of sale, whether it was Free on Board, or Free on Truck"
+msgstr ""
+
+#: reports/models.py:365 templates/reports/report_read.html:24
+msgid "Adjustment"
+msgstr ""
+
+#: reports/models.py:366
+msgid "The adjustment price based on the sale type"
+msgstr ""
+
+#: reports/models.py:390 templates/reports/report_read.html:19
+msgid "Sale"
+msgstr ""
+
+#: reports/views.py:40
+msgid ""
+"Unable to amend transparency report because the following fields are "
+"missing: "
+msgstr ""
+
+#: reports/views.py:228 reports/views.py:238
+#, fuzzy, python-format
+msgid "%s Total"
+msgstr "Igiteranyo %s"
+
+#: reports/views.py:229
+#, python-format
+msgid "The total amount distributed as a %s, in the local currency"
+msgstr ""
+
+#: reports/views.py:239
+#, python-format
+msgid "The total amount spent on the %s, in the local currency"
+msgstr ""
+
+#: reports/views.py:252
+#, python-format
+msgid "%s per Kilo"
+msgstr ""
+
+#: reports/views.py:253
+#, python-format
+msgid ""
+"The amount distributed to farmers as a %s per kilo of cherry, in the local "
+"currency"
+msgstr ""
+
+#: reports/views.py:260
+#, python-format
+msgid "Member %s per Kilo"
+msgstr ""
+
+#: reports/views.py:261
+#, python-format
+msgid ""
+"The amount distributed to members as a %s per kilo of cherry, in the local "
+"currency"
+msgstr ""
+
+#: reports/views.py:268
+#, python-format
+msgid "Non-Member %s per Kilo"
+msgstr ""
+
+#: reports/views.py:269
+#, python-format
+msgid ""
+"The amount distributed to non-members as a %s per kilo of cherry, in the "
+"local currency"
+msgstr ""
+
+#: reports/views.py:385
+#, python-format
+msgid "The amount spent on %s during this season"
+msgstr ""
+
+#: reports/views.py:391
+#, python-format
+msgid "%s Exchange Rate"
+msgstr ""
+
+#: reports/views.py:482
+#, python-format
+msgid "The amount of %s collected this season, in kilos"
+msgstr ""
+
+#: reports/views.py:541
+msgid "Your Report has been finalized"
+msgstr ""
+
+#: reports/views.py:568
+msgid "You must specify at least one grade and volume component for this sale"
+msgstr ""
+
+#: reports/views.py:579
+msgid "You must specify an exchange rate if the sale was in US dollars"
+msgstr ""
+
+#: reports/pdf/farmer.py:105
+msgid "Advance Payment"
+msgstr "Avanse Ku Bitumbwe"
+
+#: reports/pdf/farmer.py:133 reports/pdf/render.py:872
+msgid "Total Farmer Payment"
+msgstr "Igiteranyo Cy'amafaranga Ashobora Kwishyurwa Umuhinzi"
+
+#: reports/pdf/render.py:327 templates/reports/report_production.html:7
+#: templates/reports/report_read.html:57
+msgid "Production"
+msgstr "Umusaruro"
+
+#: reports/pdf/render.py:327 scorecards/pdf/render.py:294
+#: templates/scorecards/scorecard_read.html:33
+msgid "Type"
+msgstr "Ubwoko"
+
+#: reports/pdf/render.py:327 reports/pdf/render.py:368
+#: reports/pdf/render.py:404
+#, python-format
+msgid "%s"
+msgstr ""
+
+#: reports/pdf/render.py:346
+msgid "Production Ratios"
+msgstr "Igereranya Ry'umusaruro"
+
+#: reports/pdf/render.py:348
+msgid "Washed Coffee Production Ratios"
+msgstr "Igereranya Ry'umusaruro w’ikawa yogejwe"
+
+#: reports/pdf/render.py:352
+msgid "Cherry to Parchment"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: reports/pdf/render.py:354
+msgid "Parchment to Green"
+msgstr "asdfasdf"
+
+#: reports/pdf/render.py:356 templates/public/wetmill.html:154
+msgid "Cherry to Green"
+msgstr "1kg cy'ikawa Itonoye kiva mu bilo by'Ibitumbwe"
+
+#: reports/pdf/render.py:366
+msgid "Green Coffee Sales (FOT Actual and FOB Equivalent)"
+msgstr "Ikawa Itonoye Yagurishijwe"
+
+#: reports/pdf/render.py:368
+#, fuzzy, python-format
+msgid "%s/%s (FOT or Equiv)"
+msgstr "%s/Kilo (FOT Kigali)"
+
+#: reports/pdf/render.py:369
+#, fuzzy, python-format
+msgid "%s/%s (FOB or Equiv)"
+msgstr "%s/Kilo (FOB Mombasa)"
+
+#: reports/pdf/render.py:369
+#, python-format
+msgid "FOB Revenue %s"
+msgstr "FOB Ayinjira %s"
+
+#: reports/pdf/render.py:384
+msgid "* Sale was FOT originally"
+msgstr "* Igurisha ryari FOT hambere"
+
+#: reports/pdf/render.py:392
+msgid "Total Sales"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: reports/pdf/render.py:402
+msgid "Local Sales"
+msgstr "Ikawa yagurishirijwe ku ruganda"
+
+#: reports/pdf/render.py:404 reports/pdf/render.py:405
+#, python-format
+msgid "%s/%s"
+msgstr ""
+
+#: reports/pdf/render.py:425
+msgid "Total Local Sales"
+msgstr "Igiteranyo Cy’ikawa yagurishirijwe ku ruganda"
+
+#: reports/pdf/render.py:446
+msgid "Working Capital Utilized"
+msgstr "Amafaranga Y'igishoro Yakoreshejwe"
+
+#: reports/pdf/render.py:466 reports/pdf/render.py:504
+#: reports/pdf/render.py:558
+msgid "Average Client"
+msgstr "Umukiriya Usanzwe"
+
+#: reports/pdf/render.py:466 reports/pdf/render.py:504
+#: reports/pdf/render.py:558
+msgid "Best Client"
+msgstr "Umukiriya Ukomeye"
+
+#: reports/pdf/render.py:469 reports/pdf/render.py:561
+#, python-format
+msgid "Total (%s)"
+msgstr "Igiteranyo (%s)"
+
+#: reports/pdf/render.py:469 reports/pdf/render.py:509
+#, fuzzy, python-format
+msgid "%s/%s Cherry"
+msgstr "%s/KG Ibitumbwe"
+
+#: reports/pdf/render.py:476
+msgid "SOURCES OF CASH"
+msgstr "AHO AMAFARANGA ATURUK"
+
+#: reports/pdf/render.py:482
+msgid "USE OF CASH"
+msgstr "UKO AMAFARANGA AZAKORESHWA"
+
+#: reports/pdf/render.py:509 reports/pdf/render.py:561
+#, fuzzy, python-format
+msgid "%s/%s Green"
+msgstr "%s/Kilo Itonoye"
+
+#: reports/pdf/render.py:518
+#, python-format
+msgid "%s (Members)"
+msgstr "%s (Abanyamuryango)"
+
+#: reports/pdf/render.py:520
+#, python-format
+msgid "%s (Non-Members)"
+msgstr "%s (Abatari Abanyamuryango)"
+
+#: reports/pdf/render.py:534
+#, python-format
+msgid "Proportion of Profit Paid to Farmers: %d%%"
+msgstr "Urugero rw'inyungu yishyuwe abahinzi: %d%%"
+
+#: reports/pdf/render.py:539
+#, python-format
+msgid ""
+"Farmer Share of Average Sale Price %(member_share)d%% (Members), "
+"%(non_member_share)d%% (Non-Members)"
+msgstr ""
+"Uruhare ku giciro cyo kohereza ikawa hanze %(member_share)d%% "
+"(Abanyamuryango), %(non_member_share)d%% (Abatari Abanyamuryango)"
+
+#: reports/pdf/render.py:543
+#, python-format
+msgid "Farmer Share of Average Sale Price %d%%"
+msgstr "Uruhare ku giciro cyo kohereza ikawa hanze %d%%"
+
+#: reports/pdf/render.py:555
+msgid "Profit and Loss"
+msgstr "Inyungu N'igihombo"
+
+#: reports/pdf/render.py:575
+msgid "Total Coffee Revenue"
+msgstr "Igiteranyo cy’amafaranga y’injira ava kw'ikawa"
+
+#: reports/pdf/render.py:582
+msgid "TOTAL REVENUE"
+msgstr "Igiteranyo cy’amafaranga y’injira"
+
+#: reports/pdf/render.py:608
+#, python-format
+msgid "Total %s"
+msgstr "Igiteranyo %s"
+
+#: reports/pdf/render.py:615
+msgid "Total Non-Advance Expenses"
+msgstr "Igiteranyo cy’amafaramafaranga asohoka hatarimo aya avansi"
+
+#: reports/pdf/render.py:622
+msgid "TOTAL EXPENSES"
+msgstr "Igiteranyo cy’amafaranga yasohotse"
+
+#: reports/pdf/render.py:625
+msgid "FOREIGN EXCHANGE LOSS (GAIN)"
+msgstr "Inyungu/Igihombo kiva mw’ivunjisha "
+
+#: reports/pdf/render.py:629
+msgid "TOTAL PROFIT (LOSS)"
+msgstr "Igtieranyo cy’inungu/igihombo"
+
+#: reports/pdf/render.py:910 templates/public/wetmill.html:27
+msgid "Location"
+msgstr "Aho uruganda ruherereye"
+
+#: reports/pdf/render.py:977
+msgid "Performance Dashboard"
+msgstr "Igipimo cy’imikorore myiza"
+
+#: reports/pdf/render.py:981
+msgid "Wetmill Utilization"
+msgstr "Ubushobozi bw’uruganda"
+
+#: reports/pdf/render.py:989 templates/seasons/season_update.html:173
+msgid "Cherry to Top Grade Ratio"
+msgstr "Ikilo 1 cy'ikawa nziza kiva mu bilo by'ibitumbwe"
+
+#: reports/pdf/render.py:998 templates/seasons/season_update.html:179
+msgid "Total Costs"
+msgstr "Igiteranyo cy’ayo byatwaye"
+
+#: reports/pdf/render.py:1003
+#, fuzzy, python-format
+msgid "/ %s Green"
+msgstr "Ku kiro Cy’ikawa itonoye"
+
+#: reports/pdf/render.py:1005
+msgid "Sale Price"
+msgstr "Igiciro cy’igigusha"
+
+#: reports/pdf/render.py:1010
+#, fuzzy, python-format
+msgid "/ %s Green(FOT)"
+msgstr "Ku kiro Cy’ikawa itonoye (FOT)"
+
+#: reports/pdf/render.py:1200 reports/pdf/render.py:1391
+msgid "Average TechnoServe"
+msgstr "Ikigereranyo cya Technoserve"
+
+#: reports/pdf/render.py:1414
+msgid "Province: "
+msgstr "Intara:"
+
+#: reports/pdf/render.py:1420
+msgid "Coffee Service Provider: "
+msgstr "Ikigo Gifasha Mu Bucuruzi Bwa Kawa"
+
+#: reports/pdf/render.py:1433
+#, python-format
+msgid "%s Transparency Sheet"
+msgstr "Inyandiko Igaragaza Ukuli %s"
+
+#: reports/pdf/render.py:1513
+msgid "Cherry to Parchment Ratio"
+msgstr "Ikilo cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: reports/pdf/render.py:1519
+msgid "Parchment to Green Ratio"
+msgstr "Ikilo cy'ikawa itonoye kiva mu bilo by'Iyumye"
+
+#: reports/pdf/render.py:1526
+msgid "Proportion for Top Grade"
+msgstr "Ikigereranyo kw’ikawa nziza"
+
+#: reports/pdf/render.py:1559
+#, fuzzy, python-format
+msgid "Coffee Washing Station Expenses (US$/%s Green)"
+msgstr "Amafaranga Asohoka Ku Ruganda (US$/KG Green)"
+
+#: responses/views.py:41
+msgid "Any other keywords you want active for this form"
+msgstr ""
+
+#: responses/views.py:48
+#, python-format
+msgid "The keyword '%s' is already taken by another form."
+msgstr ""
+
+#: responses/views.py:92
+#, python-format
+msgid "Response message for successful submission for %s"
+msgstr ""
+
+#: responses/views.py:182
+msgid "An error ocurred saving your responses, please check their format."
+msgstr ""
+
+#: responses/views.py:222
+#, python-format
+msgid "Supplied length for '%s' is not less than %s characters"
+msgstr ""
+
+#: responses/views.py:224
+#, python-format
+msgid "Supplied length for '%s' is not greater than %s characters"
+msgstr ""
+
+#: responses/views.py:226
+#, python-format
+msgid "Supplied value for '%s' is not %s or greater"
+msgstr ""
+
+#: responses/views.py:228
+#, python-format
+msgid "Supplied value for '%s' is not %s or less"
+msgstr ""
+
+#: responses/views.py:230
+#, python-format
+msgid "Required field '%s' is missing from submission"
+msgstr ""
+
+#: responses/views.py:232
+#, python-format
+msgid "Supplied value for '%s' does not match the regex '%s'"
+msgstr ""
+
+#: responses/views.py:234
+#, python-format
+msgid "Error message for '%s'"
+msgstr ""
+
+#: scorecardimports/models.py:15
+msgid "The season scorecards are being imported for"
+msgstr ""
+
+#: scorecardimports/views.py:48
+msgid "Import Season Scorecards"
+msgstr ""
+
+#: scorecards/models.py:14
+msgid "The season this scorecard is summarizing"
+msgstr ""
+
+#: scorecards/models.py:16
+msgid "The wetmill that this scorecard is being prepared for"
+msgstr ""
+
+#: scorecards/models.py:17 scorecards/pdf/render.py:105
+#, fuzzy
+msgid "Client ID"
+msgstr "Umukiriya Ukomeye"
+
+#: scorecards/models.py:18
+#, fuzzy
+msgid "The client ID"
+msgstr "Umukiriya Ukomeye"
+
+#: scorecards/models.py:19 scorecards/pdf/render.py:109
+msgid "Auditor"
+msgstr ""
+
+#: scorecards/models.py:20
+msgid "The auditor of this scorecard"
+msgstr ""
+
+#: scorecards/models.py:21 scorecards/pdf/render.py:113
+msgid "Audit Date"
+msgstr ""
+
+#: scorecards/models.py:22
+msgid "The audit date of this scorecard"
+msgstr ""
+
+#: scorecards/models.py:24
+msgid "Whether this scorecard's entries have been finalized"
+msgstr ""
+
+#: scorecards/models.py:25
+msgid "Rating"
+msgstr ""
+
+#: scorecards/models.py:26
+msgid "Contains the calculated value of the scorecard ratings"
+msgstr ""
+
+#: scorecards/models.py:163 scorecards/models.py:180
+#: templates/public/wetmill.html:220 templates/public/wetmill.html.py:228
+msgid "Scorecard"
+msgstr ""
+
+#: scorecards/models.py:164 scorecards/pdf/render.py:294
+#: templates/scorecards/scorecard_read.html:32
+msgid "Standard"
+msgstr ""
+
+#: scorecards/models.py:165
+msgid "The standard that we are recording the value for"
+msgstr ""
+
+#: scorecards/models.py:167
+msgid "The value of the standard for this wetmill and season"
+msgstr ""
+
+#: scorecards/views.py:30
+msgid "Unable to amend scorecard because the following fields are missing:  "
+msgstr ""
+
+#: scorecards/views.py:295
+msgid "Your Scorecard has been finalized"
+msgstr ""
+
+#: scorecards/pdf/render.py:117
+msgid "Report Date"
+msgstr ""
+
+#: scorecards/pdf/render.py:147
+msgid "Sustainability Standards Scorecard Summary"
+msgstr ""
+
+#: scorecards/pdf/render.py:148 standards/models.py:16 templates/base.html:93
+msgid "Standard Categories"
+msgstr ""
+
+#: scorecards/pdf/render.py:148
+msgid "All Minimum Requirements Met?"
+msgstr ""
+
+#: scorecards/pdf/render.py:148 scorecards/pdf/render.py:177
+msgid "Best Practice with Full Compliance (%)"
+msgstr ""
+
+#: scorecards/pdf/render.py:235
+msgid "All Minimum Requirement Met?"
+msgstr ""
+
+#: scorecards/pdf/render.py:245
+msgid "Sustainability Standards Scorecard Summary Graph"
+msgstr ""
+
+#: scorecards/pdf/render.py:285
+msgid "Sustainability Standards Scorecard Details"
+msgstr ""
+
+#: scorecards/pdf/render.py:294 templates/scorecards/scorecard_read.html:31
+msgid "ID"
+msgstr ""
+
+#: scorecards/pdf/render.py:294 templates/dashboard/wetmill_dashboard.html:109
+#: templates/dashboard/wetmill_wetmill.html:132
+#: templates/scorecards/scorecard_read.html:34
+msgid "Compliance"
+msgstr ""
+
+#: scorecards/pdf/render.py:325 scorecards/pdf/render.py:355
+#, fuzzy, python-format
+msgid "%s (%s)"
+msgstr "%s (Abanyamuryango)"
+
+#: scorecards/pdf/render.py:326 scorecards/pdf/render.py:356
+#, python-format
+msgid "%s Sustainability Standards Scorecard Sheet"
+msgstr ""
+
+#: seasons/models.py:14
+msgid "The name of the season, typically just the year"
+msgstr ""
+
+#: seasons/models.py:15
+msgid "country"
+msgstr ""
+
+#: seasons/models.py:16
+msgid "The country this season took place in"
+msgstr ""
+
+#: seasons/models.py:18
+msgid "The exchange rate to US dollars to use for this season"
+msgstr ""
+
+#: seasons/models.py:19
+msgid "Default Adjustment"
+msgstr ""
+
+#: seasons/models.py:20
+msgid "The default FOT/FOB adjustment to use for this season, in US dollars"
+msgstr ""
+
+#: seasons/models.py:21
+#, fuzzy
+msgid "Has Local Sales"
+msgstr "Ikawa yagurishirijwe ku ruganda"
+
+#: seasons/models.py:22
+msgid "Whether local sales are supported for this season"
+msgstr ""
+
+#: seasons/models.py:23
+#, fuzzy
+msgid "Has Member"
+msgstr "%s (Abanyamuryango)"
+
+#: seasons/models.py:24
+msgid ""
+"Whether the wetmills in this season have members.  Tanzania for example does "
+"not"
+msgstr ""
+
+#: seasons/models.py:26
+#, fuzzy
+msgid "Has miscellaneous revenue"
+msgstr "Indo nkomoko y’amafaranga"
+
+#: seasons/models.py:27
+msgid ""
+"Whether reports should include a field for miscellaneous revenue. Tanzania "
+"for example does."
+msgstr ""
+
+#: seasons/models.py:30
+msgid "Income Baseline"
+msgstr ""
+
+#: seasons/models.py:31
+msgid ""
+"The baseline farmer income for this country in season, in the local "
+"currency, per kilo of green"
+msgstr ""
+
+#: seasons/models.py:33
+msgid "FOB Baseline"
+msgstr ""
+
+#: seasons/models.py:34
+msgid ""
+"The baseline FOB export price for coffee, in the local currency, per kilo of "
+"green"
+msgstr ""
+
+#: seasons/models.py:36 templates/base.html:73
+#: templates/dashboard/wetmill_wetmill.html:847
+#: templates/reports/report_read.html:114
+#: templates/seasons/season_update.html:20
+msgid "Expenses"
+msgstr ""
+
+#: seasons/models.py:37
+msgid "The expenses that are active for this season"
+msgstr ""
+
+#: seasons/models.py:39
+msgid "The grades that are active for this season"
+msgstr ""
+
+#: seasons/models.py:40
+msgid "standards"
+msgstr ""
+
+#: seasons/models.py:41
+msgid "The standards that are active for this season"
+msgstr ""
+
+#: seasons/models.py:42 templates/base.html:76
+#, fuzzy
+msgid "Cash Sources"
+msgstr "Izindi nkomoko "
+
+#: seasons/models.py:43
+msgid "The sources of cash that are active for this season"
+msgstr ""
+
+#: seasons/models.py:44
+#, fuzzy
+msgid "Cash Uses"
+msgstr "Izindi nkomoko "
+
+#: seasons/models.py:45
+msgid "The uses of cash that are active for this season"
+msgstr ""
+
+#: seasons/models.py:47
+msgid "Whether this season has been finalized at least once"
+msgstr ""
+
+#: seasons/models.py:49
+#, fuzzy
+msgid "Farmer Payment Left"
+msgstr "Kuba Habaho Kwishyura Umuhinzi"
+
+#: seasons/models.py:50
+msgid ""
+"The left value for the farmer payment gauge, in the local currency per kilo "
+"of cherry"
+msgstr ""
+
+#: seasons/models.py:51
+#, fuzzy
+msgid "Farmer Payment Right"
+msgstr "Kuba Habaho Kwishyura Umuhinzi"
+
+#: seasons/models.py:52
+msgid ""
+"The right value for the farmer payment gauge, in the local currency per kilo "
+"of cherry"
+msgstr ""
+
+#: seasons/models.py:54
+#, fuzzy
+msgid "Cherry Ratio Left"
+msgstr "1kg cy'ikawa Itonoye kiva mu bilo by'Ibitumbwe"
+
+#: seasons/models.py:55
+msgid "The left value for the cherry ratio gauge"
+msgstr ""
+
+#: seasons/models.py:56
+#, fuzzy
+msgid "Cherry Ratio Right"
+msgstr "%s/KG Ibitumbwe"
+
+#: seasons/models.py:57
+msgid "The right value for the cherry ratio gauge"
+msgstr ""
+
+#: seasons/models.py:59
+#, fuzzy
+msgid "Total Costs Left"
+msgstr "Igiteranyo cy’ayo byatwaye"
+
+#: seasons/models.py:60
+msgid ""
+"The left value for the total cost gauge, in the local currency per kilo of "
+"green"
+msgstr ""
+
+#: seasons/models.py:61
+#, fuzzy
+msgid "Total Costs Right"
+msgstr "Igiteranyo cy’ayo byatwaye"
+
+#: seasons/models.py:62
+msgid ""
+"The right value for the total cost gauage, in the local currency per kilo of "
+"green"
+msgstr ""
+
+#: seasons/models.py:64
+#, fuzzy
+msgid "Sale Price Left"
+msgstr "Igiciro cy’igigusha"
+
+#: seasons/models.py:65
+msgid ""
+"The left value for the sale price gauge, in the local currency per kilo of "
+"green (FOT)"
+msgstr ""
+
+#: seasons/models.py:66
+#, fuzzy
+msgid "Sale Price Right"
+msgstr "Igiciro cy’igigusha"
+
+#: seasons/models.py:67
+msgid ""
+"The right value for the sale price gauge, in the local currency per kilo of "
+"green (FOT)"
+msgstr ""
+
+#: seasons/models.py:250 templates/seasons/season_update.html:56
+#: templates/seasons/season_update.html:67
+msgid "Collapse"
+msgstr ""
+
+#: seasons/models.py:251
+msgid ""
+"Whether to collapse this expense and hide its children when displayed in a "
+"report"
+msgstr ""
+
+#: seasons/models.py:260
+msgid "Is Top Grade"
+msgstr ""
+
+#: seasons/models.py:261
+msgid ""
+"Whether this grade should be considered one of the 'top grades' for this "
+"season"
+msgstr ""
+
+#: seasons/models.py:267 seasons/models.py:274
+msgid "Coop members only"
+msgstr ""
+
+#: seasons/models.py:268 seasons/models.py:275
+msgid "Non members only"
+msgstr ""
+
+#: seasons/models.py:269 seasons/models.py:276
+msgid "Both members and non-members"
+msgstr ""
+
+#: seasons/models.py:270 seasons/models.py:278
+msgid "No membership, applies to all"
+msgstr ""
+
+#: seasons/models.py:272
+msgid "Not used for this season"
+msgstr ""
+
+#: seasons/models.py:283
+msgid "Applies to"
+msgstr ""
+
+#: smartmin/views.py:830
+#, fuzzy
+msgid "Submit"
+msgstr "%s/KG Ibitumbwe"
+
+#: smartmin/views.py:1089
+#, python-format
+msgid "Edit %s"
+msgstr ""
+
+#: smartmin/views.py:1158 templates/responses/edit.html:37
+#: templates/responses/edit_report.html:23
+msgid "Save Changes"
+msgstr ""
+
+#: smartmin/views.py:1253
+msgid "Create"
+msgstr ""
+
+#: smartmin/views.py:1269
+#, python-format
+msgid "Your new %s has been created."
+msgstr ""
+
+#: smartmin/views.py:1278
+#, python-format
+msgid "Create %s"
+msgstr ""
+
+#: smartmin/views.py:1288
+#, python-format
+msgid "Import %s"
+msgstr ""
+
+#: smartmin/templates/smartmin/delete_confirm.html:11
+msgid "Remove Item?"
+msgstr ""
+
+#: smartmin/templates/smartmin/delete_confirm.html:13
+#, python-format
+msgid ""
+"\n"
+"    Are you sure you want to remove <b>%(object)s</b>?\n"
+"    "
+msgstr ""
+
+#: smartmin/templates/smartmin/delete_confirm.html:17
+msgid ""
+"Once it is removed, it will be gone forever. There is no way to undo this "
+"operation."
+msgstr ""
+
+#: smartmin/templates/smartmin/delete_confirm.html:24
+#: smartmin/templates/smartmin/form.html:49
+#: smartmin/templates/smartmin/update.html:7 templates/responses/edit.html:36
+#: templates/responses/edit_report.html:22
+msgid "Cancel"
+msgstr ""
+
+#: smartmin/templates/smartmin/delete_confirm.html:26
+#: smartmin/templates/smartmin/update.html:9
+#: templates/reports/sale_update.html:9
+msgid "Remove"
+msgstr ""
+
+#: smartmin/templates/smartmin/list.html:14
+#: templates/console/message_list.html:14
+#: templates/dashboard/wetmill_dashboard.html:138
+#: templates/public/search_box.html:11 templates/qbs/quickblock_list.html:14
+#: templates/router/index.html:21
+msgid "Search"
+msgstr ""
+
+#: smartmin/templates/smartmin/list.html:25 templates/photos/photo_list.html:8
+#: templates/public/country.html:61 templates/qbs/quickblock_list.html:27
+#: templates/reports/report_read.html:14 templates/reports/sale_form.html:23
+#: templates/seasons/season_list.html:8 templates/wetmills/wetmill_list.html:8
+msgid "Add"
+msgstr ""
+
+#: smartmin/templates/smartmin/list.html:79
+#, python-format
+msgid ""
+"\n"
+"\t %(counter)s result\n"
+"\t"
+msgid_plural ""
+"\n"
+"         %(counter)s results\n"
+"        "
+msgstr[0] ""
+msgstr[1] ""
+
+#: smartmin/templates/smartmin/list.html:85
+#, python-format
+msgid ""
+"\n"
+"\tResults %(start)s-%(end)s of %(count)s\n"
+"\t"
+msgstr ""
+
+#: smartmin/templates/smartmin/list.html:96
+#: smartmin/templates/smartmin/list.html:98 templates/router/index.html:69
+#: templates/router/index.html.py:71
+msgid "Previous"
+msgstr ""
+
+#: smartmin/templates/smartmin/list.html:129
+#: smartmin/templates/smartmin/list.html:131 templates/router/index.html:85
+#: templates/router/index.html.py:87
+msgid "Next"
+msgstr ""
+
+#: smartmin/templates/smartmin/read.html:13
+msgid "edit"
+msgstr ""
+
+#: smartmin/templates/smartmin/users/login.html:10
+msgid "Sign in"
+msgstr ""
+
+#: smartmin/templates/smartmin/users/login.html:33 templates/base.html:168
+msgid "Login"
+msgstr ""
+
+#: smartmin/templates/smartmin/users/login.html:35
+msgid "Forgot Password?"
+msgstr ""
+
+#: smartmin/templates/smartmin/users/user_expired.html:7
+msgid "Token Expired"
+msgstr ""
+
+#: smartmin/templates/smartmin/users/user_failed.html:9
+msgid "Login Failure"
+msgstr ""
+
+#: smartmin/templates/smartmin/users/user_failed.html:11
+#, python-format
+msgid ""
+"\n"
+"      Sorry, you cannot log in at this time because we received "
+"%(failed_login_limit)s incorrect login attempts.\n"
+"      "
+msgstr ""
+
+#: smartmin/templates/smartmin/users/user_failed.html:18
+#, python-format
+msgid ""
+"\n"
+"      Please wait %(lockout_timeout)s minutes before to try log in again.\n"
+"      "
+msgstr ""
+
+#: smartmin/templates/smartmin/users/user_failed.html:25
+msgid ""
+"Alternatively, you can fill out the form below to have your password reset "
+"via e-mail."
+msgstr ""
+
+#: smartmin/templates/smartmin/users/user_failed.html:27
+msgid "Please contact the website administrator to have your password reset."
+msgstr ""
+
+#: smartmin/templates/smartmin/users/user_failed.html:39
+msgid "Email Address"
+msgstr ""
+
+#: smartmin/templates/smartmin/users/user_failed.html:41
+msgid "Recover"
+msgstr ""
+
+#: smartmin/templates/smartmin/users/user_forget.html:6
+msgid ""
+"Please enter the email address you used to sign up and we will help you "
+"recover your password."
+msgstr ""
+
+#: smartmin/templates/smartmin/users/user_newpassword.html:7
+#, python-format
+msgid ""
+"\n"
+"  <strong>Your password has expired.</strong> Site policy states that you "
+"must pick a new password every %(expire_days)s days, and that passwords must "
+"not have been used within the previous %(window_days)s days.\n"
+"  "
+msgstr ""
+
+#: smartmin/users/views.py:28 smartmin/users/views.py:64
+#: smartmin/users/views.py:79 smartmin/users/views.py:124
+#: smartmin/users/views.py:220 smartmin/users/views.py:247
+msgid "New Password"
+msgstr ""
+
+#: smartmin/users/views.py:36 smartmin/users/views.py:70
+#: smartmin/users/views.py:102 smartmin/users/views.py:148
+msgid ""
+"Passwords must have at least 8 characters, including one uppercase, one "
+"lowercase and one number"
+msgstr ""
+
+#: smartmin/users/views.py:73 smartmin/users/views.py:105
+#: smartmin/users/views.py:151
+msgid ""
+"You have used this password before in the past year, please use a new "
+"password."
+msgstr ""
+
+#: smartmin/users/views.py:78 smartmin/users/views.py:198
+#: smartmin/users/views.py:246
+msgid "Password"
+msgstr ""
+
+#: smartmin/users/views.py:80
+msgid "Confirm Password"
+msgstr ""
+
+#: smartmin/users/views.py:86
+msgid "Please enter your password to save changes."
+msgstr ""
+
+#: smartmin/users/views.py:95
+msgid "Confirm the new password by filling the this field"
+msgstr ""
+
+#: smartmin/users/views.py:98
+msgid "New password doesn't match with its confirmation"
+msgstr ""
+
+#: smartmin/users/views.py:110
+msgid "Your Email"
+msgstr ""
+
+#: smartmin/users/views.py:117
+msgid ""
+"E-mail recovery is not supported, please contact the website administrator "
+"to reset your password manually."
+msgstr ""
+
+#: smartmin/users/views.py:122
+msgid "Current Password"
+msgstr ""
+
+#: smartmin/users/views.py:123
+msgid "Your current password"
+msgstr ""
+
+#: smartmin/users/views.py:125
+msgid "Your new password."
+msgstr ""
+
+#: smartmin/users/views.py:126
+msgid "Confirm new Password"
+msgstr ""
+
+#: smartmin/users/views.py:127
+msgid "Confirm your new password."
+msgstr ""
+
+#: smartmin/users/views.py:132
+msgid "Please enter your password to save changes"
+msgstr ""
+
+#: smartmin/users/views.py:141
+msgid "Confirm your new password by entering it here"
+msgstr ""
+
+#: smartmin/users/views.py:144
+msgid "Mismatch between your new password and confirmation, try again"
+msgstr ""
+
+#: smartmin/users/views.py:194
+msgid "New user created successfully."
+msgstr ""
+
+#: smartmin/users/views.py:197 smartmin/users/views.py:219
+msgid "Groups"
+msgstr ""
+
+#: smartmin/users/views.py:197
+msgid "Users will only get those permissions that are allowed for their group."
+msgstr ""
+
+#: smartmin/users/views.py:198
+msgid "Set the user's initial password here."
+msgstr ""
+
+#: smartmin/users/views.py:217
+msgid "Last Login"
+msgstr ""
+
+#: smartmin/users/views.py:218 sms/models.py:1739 sms/models.py:1920
+#: sms/models.py:2135 sms/models.py:2297
+msgid "Is Active"
+msgstr ""
+
+#: smartmin/users/views.py:218
+msgid "Whether this user is allowed to log into the site"
+msgstr ""
+
+#: smartmin/users/views.py:219
+msgid "Users will only get those permissions that are allowed for their group"
+msgstr ""
+
+#: smartmin/users/views.py:220
+msgid "You can reset the user's password by entering a new password here"
+msgstr ""
+
+#: smartmin/users/views.py:245
+msgid "Username"
+msgstr ""
+
+#: smartmin/users/views.py:246
+msgid "Your password"
+msgstr ""
+
+#: smartmin/users/views.py:247
+msgid "If you want to set a new password, enter it here"
+msgstr ""
+
+#: smartmin/users/views.py:248
+msgid "Confirm New Password"
+msgstr ""
+
+#: smartmin/users/views.py:248
+msgid "Confirm your new password"
+msgstr ""
+
+#: smartmin/users/views.py:263
+msgid "Edit your profile"
+msgstr ""
+
+#: smartmin/users/views.py:266 smartmin/users/views.py:295
+msgid "Password Recovery"
+msgstr ""
+
+#: smartmin/users/views.py:270
+msgid "An Email has been sent to your account with further instructions."
+msgstr ""
+
+#: smartmin/users/views.py:299
+msgid "Password Recovery Request"
+msgstr ""
+
+#: smartmin/users/views.py:308
+msgid "Pick a new password"
+msgstr ""
+
+#: smartmin/users/views.py:310
+msgid "Your password has successfully been updated, thank you."
+msgstr ""
+
+#: smartmin/users/views.py:336
+#, python-format
+msgid "You are now logged in as %s"
+msgstr ""
+
+#: smartmin/users/views.py:349
+msgid ""
+"Password Updated Successfully. Now you can log in using your new password."
+msgstr ""
+
+#: smartmin/users/views.py:352
+msgid "Reset your Password"
+msgstr ""
+
+#: smartmin/users/views.py:363
+msgid ""
+"Your link has expired for security reasons. Please reinitiate the process by "
+"entering your email here."
+msgstr ""
+
+#: sms/models.py:110
+#, fuzzy
+msgid "Connection"
+msgstr "Aho uruganda ruherereye"
+
+#: sms/models.py:113 sms/models.py:818 sms_reports/models.py:52
+msgid "Active"
+msgstr ""
+
+#: sms/models.py:389
+msgid "CPO ID"
+msgstr ""
+
+#: sms/models.py:815
+#, fuzzy
+msgid "Submission"
+msgstr "%s/KG Ibitumbwe"
+
+#: sms/models.py:820
+msgid "Created by"
+msgstr ""
+
+#: sms/models.py:821
+msgid "What user created this submission if any"
+msgstr ""
+
+#: sms/models.py:831 sms/models.py:930 sms/models.py:1308 sms/models.py:1436
+#: sms/models.py:1706 sms/models.py:1903 sms/models.py:2111 sms/models.py:2292
+#: sms/views.py:643 templates/dashboard/wetmill_wetmill.html:517
+#: templates/dashboard/wetmill_wetmill.html:589
+#: templates/sms/sms_view.html:303
+msgid "Accountant"
+msgstr ""
+
+#: sms/models.py:834 sms/models.py:1312 sms/models.py:1602
+msgid "Daylot"
+msgstr ""
+
+#: sms/models.py:933
+#, fuzzy
+msgid "Parchment A Kgs"
+msgstr "asdfasdf"
+
+#: sms/models.py:935
+#, fuzzy
+msgid "Parchment B Kgs"
+msgstr "asdfasdf"
+
+#: sms/models.py:936
+#, fuzzy
+msgid "Parchment B Bags"
+msgstr "asdfasdf"
+
+#: sms/models.py:937
+msgid "Licence Plate"
+msgstr ""
+
+#: sms/models.py:1002
+msgid "Officer"
+msgstr ""
+
+#: sms/models.py:1003
+msgid "License Plate"
+msgstr ""
+
+#: sms/models.py:1006 sms/models.py:1008
+#, fuzzy
+msgid "Parchmenta Kg"
+msgstr "asdfasdf"
+
+#: sms/models.py:1007 sms/models.py:1009
+#, fuzzy
+msgid "Parchmenta Bags"
+msgstr "asdfasdf"
+
+#: sms/models.py:1010
+msgid "Moisture Consent"
+msgstr ""
+
+#: sms/models.py:1011
+msgid "Cupping Score"
+msgstr ""
+
+#: sms/models.py:1092
+msgid "accountant"
+msgstr ""
+
+#: sms/models.py:1097
+#, fuzzy
+msgid "Cash Advances"
+msgstr "Avanse Ku Bitumbwe"
+
+#: sms/models.py:1098
+msgid "Salaries"
+msgstr ""
+
+#: sms/models.py:1099
+msgid "Site Collector Wages"
+msgstr ""
+
+#: sms/models.py:1100
+#, fuzzy
+msgid "Cherry Transport Wages"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: sms/models.py:1101
+msgid "Casual Wages"
+msgstr ""
+
+#: sms/models.py:1102
+msgid "Other Cash Out"
+msgstr ""
+
+#: sms/models.py:1311 sms/models.py:1439
+msgid "CPO"
+msgstr ""
+
+#: sms/models.py:1313
+#, fuzzy
+msgid "Cash Price"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: sms/models.py:1314
+#, fuzzy
+msgid "Credit Price"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: sms/models.py:1317
+#, fuzzy
+msgid "Cherry Paid Off"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: sms/models.py:1318
+#, fuzzy
+msgid "Cherry Paid Cash"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: sms/models.py:1319
+#, fuzzy
+msgid "Cherry Paid Credit"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: sms/models.py:1599
+msgid "Accontant"
+msgstr ""
+
+#: sms/models.py:1604
+msgid "Paid"
+msgstr ""
+
+#: sms/models.py:1605 templates/dashboard/wetmill_dashboard.html:206
+#: templates/sms/sms_view.html:119
+#, fuzzy
+msgid "Stored"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: sms/models.py:1709 sms/models.py:2114
+msgid "Start of Week"
+msgstr ""
+
+#: sms/models.py:1710 sms/models.py:2115
+msgid "The day the period for this report began. (weeks start on Fridays)"
+msgstr ""
+
+#: sms/models.py:1713
+msgid "The opening balance at this wetmill for the week"
+msgstr ""
+
+#: sms/models.py:1716
+#, fuzzy
+msgid "The total working capital received"
+msgstr "Amafaranga Y'igishoro Yaturutse Umushoramari"
+
+#: sms/models.py:1717 sms/models.py:1750
+msgid "Other Income"
+msgstr ""
+
+#: sms/models.py:1719
+msgid "Total of other income received"
+msgstr ""
+
+#: sms/models.py:1722
+msgid "Total cash advanced to sites"
+msgstr ""
+
+#: sms/models.py:1725
+msgid "Total full time labor expenses"
+msgstr ""
+
+#: sms/models.py:1728
+msgid "Total casual labor expenses"
+msgstr ""
+
+#: sms/models.py:1731
+msgid "Total site collection commission paid"
+msgstr ""
+
+#: sms/models.py:1734
+msgid "Total cherry transport costs incurred"
+msgstr ""
+
+#: sms/models.py:1737
+msgid "Total other expenses this week"
+msgstr ""
+
+#: sms/models.py:1741 sms/models.py:1921
+msgid "Whether this submission is active"
+msgstr ""
+
+#: sms/models.py:1747 sms/models.py:2142
+msgid "Week Starting"
+msgstr ""
+
+#: sms/models.py:1906 sms/models.py:2294
+msgid "Report Day"
+msgstr ""
+
+#: sms/models.py:1907 sms/models.py:1928
+msgid "Cash Advanced"
+msgstr ""
+
+#: sms/models.py:1908
+msgid "The total cash advanced to sites on this day"
+msgstr ""
+
+#: sms/models.py:1910
+msgid "The total cash returned from sites on this day"
+msgstr ""
+
+#: sms/models.py:1912
+msgid "Total of cash spent on cherry by all sites"
+msgstr ""
+
+#: sms/models.py:1914
+msgid "Total of credit spent on cherry by all sites"
+msgstr ""
+
+#: sms/models.py:1915 sms/models.py:1932
+#: templates/dashboard/wetmill_dashboard.html:282
+#, fuzzy
+msgid "Cherry Purchased"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: sms/models.py:1916
+msgid "The total cherry purchased today at all sites"
+msgstr ""
+
+#: sms/models.py:1917 sms/models.py:1933
+msgid "Credit Cleared"
+msgstr ""
+
+#: sms/models.py:1918
+msgid "Total credit cleared with cash today"
+msgstr ""
+
+#: sms/models.py:2118
+msgid "Total A grade parchment moved to store in the past week"
+msgstr ""
+
+#: sms/models.py:2121
+msgid "Total B grade parchment moved to store in the past week"
+msgstr ""
+
+#: sms/models.py:2124
+msgid "Total C grade parchment moved to store in the past week"
+msgstr ""
+
+#: sms/models.py:2127
+msgid "Total A grade parchment shipped to store in the past week"
+msgstr ""
+
+#: sms/models.py:2128 sms/models.py:2147
+msgid "Grade B Shipped"
+msgstr ""
+
+#: sms/models.py:2130
+msgid "Total B grade parchment shipped to store in the past week"
+msgstr ""
+
+#: sms/models.py:2133
+msgid "Total C grade parchment shipped to store in the past week"
+msgstr ""
+
+#: sms/models.py:2136 sms/models.py:2298
+msgid "Whether this row is active"
+msgstr ""
+
+#: sms/views.py:187
+msgid "Cash submission deleted."
+msgstr ""
+
+#: sms/views.py:204
+msgid "Cash Submission"
+msgstr ""
+
+#: sms/views.py:205
+msgid "Cash submission created."
+msgstr ""
+
+#: sms/views.py:231
+msgid "Stock submission deleted."
+msgstr ""
+
+#: sms/views.py:248
+msgid "Stock Submission"
+msgstr ""
+
+#: sms/views.py:249
+msgid "Stock submission created."
+msgstr ""
+
+#: sms/views.py:308
+msgid "Ibitumbwe submission deleted."
+msgstr ""
+
+#: sms/views.py:319
+#, fuzzy
+msgid "Daily Submission"
+msgstr "%s/KG Ibitumbwe"
+
+#: sms/views.py:320
+msgid "Daily submission created."
+msgstr ""
+
+#: sms/views.py:361
+msgid "Closed submission removed."
+msgstr ""
+
+#: sms/views.py:476
+#, python-format
+msgid "Messages cleared for %s wetmill"
+msgstr ""
+
+#: sms/views.py:491
+#, python-format
+msgid "%s removed from wetmill"
+msgstr ""
+
+#: sms/views.py:659
+msgid "CSP Officer"
+msgstr ""
+
+#: sms/views.py:678
+msgid "Site Collector Officer"
+msgstr ""
+
+#: sms/views.py:696
+msgid "Wetmill Observer"
+msgstr ""
+
+#: sms/views.py:708
+msgid "Unknown"
+msgstr ""
+
+#: sms_reports/models.py:37
+msgid "The name shown to the user when editing responses"
+msgstr ""
+
+#: sms_reports/models.py:38
+msgid "The description shown to the user when editing responses"
+msgstr ""
+
+#: sms_reports/models.py:39
+msgid "Monday"
+msgstr ""
+
+#: sms_reports/models.py:39
+msgid "Tuesday"
+msgstr ""
+
+#: sms_reports/models.py:39
+msgid "Wednesday"
+msgstr ""
+
+#: sms_reports/models.py:40
+msgid "Thursday"
+msgstr ""
+
+#: sms_reports/models.py:40
+msgid "Friday"
+msgstr ""
+
+#: sms_reports/models.py:40
+msgid "Saturday"
+msgstr ""
+
+#: sms_reports/models.py:41
+msgid "Sunday"
+msgstr ""
+
+#: sms_reports/models.py:41
+msgid "Everyday"
+msgstr ""
+
+#: sms_reports/models.py:43
+msgid ""
+"Slug to identity this report, used to tie this object to a calling function."
+msgstr ""
+
+#: sms_reports/models.py:45
+msgid ""
+"What reporter types should receive this report, optional and up to the "
+"calling function to use."
+msgstr ""
+
+#: sms_reports/models.py:49
+msgid "On what day we should send this report."
+msgstr ""
+
+#: sms_reports/models.py:50
+msgid "Hour"
+msgstr ""
+
+#: sms_reports/models.py:50
+msgid "At what hour we should send the report. (0-23)"
+msgstr ""
+
+#: sms_reports/models.py:51
+msgid "The message to be sent, can include template variables."
+msgstr ""
+
+#: sms_reports/models.py:52
+msgid "Whether this report is active."
+msgstr ""
+
+#: standards/models.py:7
+msgid "Name this category"
+msgstr ""
+
+#: standards/models.py:8
+msgid "Acronym"
+msgstr ""
+
+#: standards/models.py:9
+msgid "The acronym of this category"
+msgstr ""
+
+#: standards/models.py:11
+msgid ""
+"The order this category will displayed in list, smaller orders come first"
+msgstr ""
+
+#: standards/models.py:12
+msgid "Pulic Display"
+msgstr ""
+
+#: standards/models.py:13
+msgid ""
+"Whether to display the score for this category on the public wetmill page "
+"for finalized scorecards"
+msgstr ""
+
+#: standards/models.py:23
+msgid "Name this standard"
+msgstr ""
+
+#: standards/models.py:24
+msgid "Category"
+msgstr ""
+
+#: standards/models.py:25
+msgid "The category this standard belongs to"
+msgstr ""
+
+#: standards/models.py:26
+msgid "Minimum Requirement"
+msgstr ""
+
+#: standards/models.py:26
+msgid "Best Practice"
+msgstr ""
+
+#: standards/models.py:27
+msgid "What kind of standard is this"
+msgstr ""
+
+#: standards/models.py:29
+msgid ""
+"The order used when displayed in lists, standards with smaller orders come "
+"first"
+msgstr ""
+
+#: templates/base.html:53
+msgid "Organization"
+msgstr ""
+
+#: templates/base.html:57
+#, fuzzy
+msgid "Service Providers"
+msgstr "Ikigo Gifasha Mu Bucuruzi Bwa Kawa"
+
+#: templates/base.html:59
+#, fuzzy
+msgid "Seasons"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/base.html:66
+#, fuzzy
+msgid "Transparency"
+msgstr "Inyandiko Igaragaza Ukuli %s"
+
+#: templates/base.html:70 templates/dashboard/wetmill_dashboard.html:105
+#: templates/dashboard/wetmill_wetmill.html:128
+msgid "Reports"
+msgstr ""
+
+#: templates/base.html:74 templates/seasons/season_update.html:21
+msgid "Grades"
+msgstr ""
+
+#: templates/base.html:75 templates/seasons/season_update.html:123
+msgid "Uses of Cash"
+msgstr ""
+
+#: templates/base.html:77 templates/seasons/season_update.html:134
+#, fuzzy
+msgid "Farmer Payments"
+msgstr "Kuba Habaho Kwishyura Umuhinzi"
+
+#: templates/base.html:85
+msgid "Sustainability"
+msgstr ""
+
+#: templates/base.html:89
+msgid "Scorecards"
+msgstr ""
+
+#: templates/base.html:92 templates/seasons/season_update.html:23
+msgid "Standards"
+msgstr ""
+
+#: templates/base.html:103
+msgid "Finance"
+msgstr ""
+
+#: templates/base.html:108 templates/dashboard/wetmill_wetmill.html:39
+#, fuzzy
+msgid "Dashboard"
+msgstr "Igipimo cy’imikorore myiza"
+
+#: templates/base.html:112
+msgid "SMS Responses"
+msgstr ""
+
+#: templates/base.html:115
+msgid "Broadcasts"
+msgstr ""
+
+#: templates/base.html:118
+msgid "Blurbs"
+msgstr ""
+
+#: templates/base.html:122
+msgid "Message Log"
+msgstr ""
+
+#: templates/base.html:130
+msgid "Admin"
+msgstr ""
+
+#: templates/base.html:135
+msgid "Countries"
+msgstr ""
+
+#: templates/base.html:138
+#, fuzzy
+msgid "Currencies"
+msgstr "Inyandiko Igaragaza Ukuli %s"
+
+#: templates/base.html:141
+msgid "Weights"
+msgstr ""
+
+#: templates/base.html:144
+#, fuzzy
+msgid "Provinces"
+msgstr "Intara:"
+
+#: templates/base.html:148
+msgid "Translations"
+msgstr ""
+
+#: templates/base.html:152
+msgid "Content"
+msgstr ""
+
+#: templates/base.html:154
+msgid "Content Types"
+msgstr ""
+
+#: templates/base.html:159
+msgid "Users"
+msgstr ""
+
+#: templates/base.html:177
+msgid "Profile"
+msgstr ""
+
+#: templates/base.html:178
+msgid "Logout"
+msgstr ""
+
+#: templates/public_base.html:10 templates/public/search.html:10
+msgid "Rwanda"
+msgstr ""
+
+#: templates/public_base.html:11 templates/public/search.html:11
+msgid "Kenya"
+msgstr ""
+
+#: templates/public_base.html:12 templates/public/search.html:12
+msgid "Tanzania"
+msgstr ""
+
+#: templates/public_base.html:13 templates/public/search.html:13
+msgid "Ethiopia"
+msgstr ""
+
+#: templates/aggregates/finalizetask_read.html:28
+#: templates/reportimports/reportimport_read.html:29
+#: templates/scorecardimports/scorecardimport_read.html:29
+#: templates/wetmills/wetmillimport_read.html:29
+msgid "Status"
+msgstr ""
+
+#: templates/aggregates/finalizetask_read.html:37
+msgid "Started By"
+msgstr ""
+
+#: templates/broadcasts/broadcast_form.html:11
+msgid "Which country this broadcast will be sent to"
+msgstr ""
+
+#: templates/broadcasts/broadcast_form.html:16
+msgid "Send to"
+msgstr ""
+
+#: templates/broadcasts/broadcast_form.html:19
+msgid "Observers"
+msgstr ""
+
+#: templates/broadcasts/broadcast_form.html:20
+#, fuzzy
+msgid "Accountants"
+msgstr "Igipimo cy’imikorore myiza"
+
+#: templates/broadcasts/broadcast_form.html:21
+msgid "Who this message will be sent to"
+msgstr ""
+
+#: templates/broadcasts/broadcast_form.html:26
+msgid "In Wetmills"
+msgstr ""
+
+#: templates/broadcasts/broadcast_form.html:29
+msgid "Only include recipients for these wetmills (leave blank for all)"
+msgstr ""
+
+#: templates/broadcasts/broadcast_form.html:34
+msgid "In CSPs"
+msgstr ""
+
+#: templates/broadcasts/broadcast_form.html:37
+msgid "Only include wetmills in these CSPs (leave blank for all)"
+msgstr ""
+
+#: templates/broadcasts/broadcast_form.html:52
+msgid "Set Broadcast Message"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:7
+msgid ""
+"You can specify and test the message sent using this page.  The variables "
+"inserted will be substituted for each wetmill."
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:8
+msgid "Note that you can use all the utilities available to"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:8
+msgid "Django Templates"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:8
+msgid ", some examples are given below."
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:9
+msgid "Round total profit to within two decimal places."
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:11
+msgid "Round total profit to the nearest whole number."
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:14
+msgid ""
+"Get the rank for the total profit in kg/cherry compared to other wetmills in "
+"this season"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:17
+msgid ""
+"Get the best, min, max and average for the total profit in kg/cherry for "
+"this season"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:24
+msgid ""
+"Only include 'Conditional Message' if the cherry to parchment ratio is "
+"greater than 5"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:33
+msgid "SMS Length"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:34
+msgid "SMS Count"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:35
+#, fuzzy
+msgid "Total SMS"
+msgstr "Igiteranyo %s"
+
+#: templates/broadcasts/broadcast_message.html:47
+msgid "Insert Variable"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:58
+msgid ""
+"The text that will be sent to the wetmills (append __rank to a variable to "
+"insert the wetmill rank instead)"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:79
+msgid "You can test your message by clicking preview"
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:80
+msgid "You can preview your message for the specified wetmill here."
+msgstr ""
+
+#: templates/broadcasts/broadcast_message.html:86
+msgid "Preview Message For All Wetmills"
+msgstr ""
+
+#: templates/broadcasts/broadcast_read.html:8
+msgid "Preview Message"
+msgstr ""
+
+#: templates/broadcasts/broadcast_read.html:11
+#: templates/broadcasts/broadcast_schedule.html:7
+msgid "Set Schedule"
+msgstr ""
+
+#: templates/broadcasts/broadcast_read.html:12
+msgid "Set Recipients"
+msgstr ""
+
+#: templates/broadcasts/broadcast_read.html:17
+#: templates/sms/submission_create.html:21
+msgid "Delete"
+msgstr ""
+
+#: templates/broadcasts/broadcast_read.html:26
+msgid ""
+"No messages sent for this broadcast yet, once this broadcast is sent they "
+"will appear here."
+msgstr ""
+
+#: templates/broadcasts/broadcast_test.html:9
+msgid "Edit Message"
+msgstr ""
+
+#: templates/broadcasts/broadcast_test.html:15
+msgid "Preview of Messages to Send"
+msgstr ""
+
+#: templates/broadcasts/broadcast_test.html:25
+msgid "No matching recipients, no message would be sent"
+msgstr ""
+
+#: templates/console/message_list.html:8
+#: templates/dashboard/wetmill_wetmill.html:21 templates/sms/sms_view.html:15
+msgid "All"
+msgstr ""
+
+#: templates/console/message_list.html:20
+#: templates/dashboard/wetmill_dashboard.html:16
+#: templates/dashboard/wetmill_wetmill.html:15
+msgid "Export"
+msgstr ""
+
+#: templates/console/message_list.html:23
+msgid "Monthly Usage"
+msgstr ""
+
+#: templates/console/message_list.html:28 templates/router/index.html:13
+msgid "SMS Message Log"
+msgstr ""
+
+#: templates/console/message_list.html:51
+msgid "Incoming test message"
+msgstr ""
+
+#: templates/console/message_list.html:52
+msgid "Incoming message"
+msgstr ""
+
+#: templates/console/message_list.html:53
+msgid "Outgoing message still unsent"
+msgstr ""
+
+#: templates/console/message_list.html:56
+msgid "Outgoing test message"
+msgstr ""
+
+#: templates/console/message_list.html:58
+msgid "Outgoing message sent"
+msgstr ""
+
+#: templates/console/message_list.html:70 templates/router/index.html:139
+msgid "Message Tester"
+msgstr ""
+
+#: templates/console/message_list.html:74 templates/router/index.html:143
+msgid ""
+"You can test the functionality of the system by pretending to be a user "
+"here.  Enter the phone number you want to simulate and the message you want "
+"to send into the system.  The reply will appear above in the message log."
+msgstr ""
+
+#: templates/console/message_list.html:78 templates/router/index.html:147
+msgid "Sender"
+msgstr ""
+
+#: templates/console/message_monthly.html:6
+msgid "Monthly Message Usage"
+msgstr ""
+
+#: templates/console/message_monthly.html:17
+msgid "Incoming Messages"
+msgstr ""
+
+#: templates/console/message_monthly.html:18
+msgid "Outgoing Messages"
+msgstr ""
+
+#: templates/console/message_monthly.html:19
+#: templates/dashboard/wetmill_wetmill.html:344 templates/sms/sms_view.html:43
+#: templates/sms/sms_view.html.py:46 templates/sms/sms_view.html:211
+#, fuzzy
+msgid "Total"
+msgstr "Igiteranyo %s"
+
+#: templates/console/message_status.html:5
+msgid "SMS Status"
+msgstr ""
+
+#: templates/console/message_status.html:11
+msgid "ERROR"
+msgstr ""
+
+#: templates/console/message_status.html:13
+msgid "OK"
+msgstr ""
+
+#: templates/console/message_status.html:15
+msgid "Unsent"
+msgstr ""
+
+#: templates/console/message_status.html:16
+msgid "Errors"
+msgstr ""
+
+#: templates/dashboard/assumptions_output.html:7
+msgid ""
+"Each season has a defined curve for the predicted rate of the cherry harvest "
+"week by week."
+msgstr ""
+
+#: templates/dashboard/assumptions_output.html:8
+#, python-format
+msgid ""
+"For each week you must define the percentage of a wetmill's total crop that "
+"will be harvested.  Note that the total of all weeks must total 100%%.  If "
+"the season is predicted to be less than 30 weeks, simply leave the last "
+"fields empty."
+msgstr ""
+
+#: templates/dashboard/assumptions_update.html:9
+msgid ""
+"Note: You can also edit settings on a per wetmill basis. Individual Wetmill "
+"Settings will override the defaults set here."
+msgstr ""
+
+#: templates/dashboard/assumptions_update.html:21
+#, fuzzy
+msgid "Recommended Price Configuration"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/assumptions_update.html:25
+msgid "Alert Configuration"
+msgstr ""
+
+#: templates/dashboard/assumptions_update.html:46
+msgid "Predicted Cherry Output Curve"
+msgstr ""
+
+#: templates/dashboard/assumptions_update.html:47
+msgid "Output Curve"
+msgstr ""
+
+#: templates/dashboard/assumptions_update.html:49
+msgid "Edit Output Curve"
+msgstr ""
+
+#: templates/dashboard/assumptions_update.html:50
+msgid "Edit the predicted output curve for this season"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:14
+#: templates/public/wetmill.html:181 templates/public/wetmill.html.py:231
+msgid "View"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:19
+#, fuzzy
+msgid "Global Settings"
+msgstr "Ubushobozi bw’uruganda"
+
+#: templates/dashboard/wetmill_dashboard.html:35
+#, fuzzy
+msgid "Accounting Dashboard"
+msgstr "Igipimo cy’imikorore myiza"
+
+#: templates/dashboard/wetmill_dashboard.html:53
+#, python-format
+msgid ""
+"Total Cherry reported in Daily Cherry Reports (%(dashboard_weight_name)s)"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:61
+#, python-format
+msgid "Average price paid per %(weight_name)s of Cherry in %(currency_code)s"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:63
+#: templates/dashboard/wetmill_wetmill.html:68
+#, fuzzy
+msgid "Avg Price"
+msgstr "Igiciro cy’igigusha"
+
+#: templates/dashboard/wetmill_dashboard.html:69
+#, python-format
+msgid ""
+"Parchment Stored - Parchment Delivered reported in Weekly Stock Reports "
+"(%(dashboard_weight_name)s)"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:71
+#: templates/dashboard/wetmill_wetmill.html:76
+#, fuzzy
+msgid "Parchment YTD"
+msgstr "asdfasdf"
+
+#: templates/dashboard/wetmill_dashboard.html:80
+#: templates/dashboard/wetmill_dashboard.html:305
+#: templates/dashboard/wetmill_dashboard.html:313
+#: templates/dashboard/wetmill_wetmill.html:84
+#, fuzzy
+msgid "Working Capital YTD"
+msgstr "Amafaranga Y'igishoro"
+
+#: templates/dashboard/wetmill_dashboard.html:86
+#, fuzzy, python-format
+msgid "%% of Working Capital reportedly spent on non-cherry operating expenses"
+msgstr "Amafaranga Y'igishoro Yakoreshejwe"
+
+#: templates/dashboard/wetmill_dashboard.html:88
+#: templates/dashboard/wetmill_wetmill.html:92
+msgid "Operating Exp"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:143
+msgid "Stocks"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:145
+msgid "Finances"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:147
+msgid "Reporting Compliance"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:167
+#: templates/dashboard/wetmill_dashboard.html:250
+#: templates/dashboard/wetmill_dashboard.html:363
+#, fuzzy
+msgid "Totals"
+msgstr "Igiteranyo %s"
+
+#: templates/dashboard/wetmill_dashboard.html:184
+#: templates/dashboard/wetmill_dashboard.html:190
+#, fuzzy
+msgid "Last Daily Report:"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:195
+#: templates/dashboard/wetmill_dashboard.html:199
+msgid "Last Reported for Week"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:204
+#, fuzzy
+msgid "Est. Processed"
+msgstr "asdfasdf"
+
+#: templates/dashboard/wetmill_dashboard.html:205
+#, fuzzy
+msgid "Shipped"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: templates/dashboard/wetmill_dashboard.html:212
+#, fuzzy
+msgid "Cherry to date"
+msgstr "1kg cy'ikawa Itonoye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:213
+#: templates/dashboard/wetmill_wetmill.html:781
+msgid "C:P Ratio"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:272
+#, fuzzy
+msgid "Cherry Bought"
+msgstr "%s/KG Ibitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:279
+#, fuzzy
+msgid "Last Cherry Report"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:280
+msgid "Cash/Credit Spent"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:289
+#, fuzzy
+msgid "NYC Price"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:290
+#, fuzzy
+msgid "Production Costs"
+msgstr "Igereranya Ry'umusaruro"
+
+#: templates/dashboard/wetmill_dashboard.html:291
+msgid "C:G Ratio"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:298
+#: templates/dashboard/wetmill_dashboard.html:321
+msgid "Last Cash Message"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:306
+msgid "Operating Expenses YTD"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:312
+#, fuzzy
+msgid "Parchment Shipped YTD"
+msgstr "asdfasdf"
+
+#: templates/dashboard/wetmill_dashboard.html:314
+#, fuzzy
+msgid "Parchment Value per KG"
+msgstr "asdfasdf"
+
+#: templates/dashboard/wetmill_dashboard.html:383
+#, fuzzy
+msgid "Season start"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:384
+#, fuzzy
+msgid "Season end"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:389
+#, fuzzy
+msgid "Cherry Advance Sum"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:390
+#, fuzzy
+msgid "Cash Advance Last"
+msgstr "Avanse Ku Bitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:392
+msgid "Week of"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:399
+#, fuzzy
+msgid "Last Closing Balance"
+msgstr "Avanse Ku Bitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:400
+#, fuzzy
+msgid "Last Opening balance"
+msgstr "Avanse Ku Bitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:431
+msgid ""
+"Compares total volume cherry purchased (actual) to date by each week to "
+"total predicted (target) volume by that week."
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:436
+msgid ""
+"Compares total volume cherry purchased (actual) for each week to total "
+"predicted (target) for each week."
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:507
+msgid "Cherry: Weekly Actual vs Target"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:525
+#: templates/dashboard/wetmill_dashboard.html:601
+#: templates/dashboard/wetmill_wetmill.html:708
+#, fuzzy
+msgid "Cherry Collection"
+msgstr "Ikilo 1 cy'ikawa itonoye kiva mu bilo by'ibitumbwe"
+
+#: templates/dashboard/wetmill_dashboard.html:543
+#: templates/dashboard/wetmill_dashboard.html:619
+#: templates/dashboard/wetmill_wetmill.html:726
+msgid "Predicted"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:550
+#: templates/dashboard/wetmill_dashboard.html:626
+#: templates/dashboard/wetmill_wetmill.html:734
+msgid "Actual"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:558
+#: templates/dashboard/wetmill_dashboard.html:634
+#: templates/dashboard/wetmill_wetmill.html:742
+msgid "This Week"
+msgstr ""
+
+#: templates/dashboard/wetmill_dashboard.html:583
+msgid "Cherry: Cumulative Actual vs Target"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:18
+msgid "Configure"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:120
+#, fuzzy
+msgid "Cherry Target"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:165 templates/sms/sms_view.html:25
+#, fuzzy
+msgid "Daily Summary"
+msgstr "%s/KG Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:299
+msgid "Graphs"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:314
+msgid "SMS Users"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:317 templates/router/index.html:6
+msgid "SMS Messages"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:321
+msgid "Assumptions"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:371
+#: templates/dashboard/wetmill_wetmill.html:376
+#: templates/dashboard/wetmill_wetmill.html:380
+#, fuzzy
+msgid "Missing Submission"
+msgstr "%s/KG Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:372
+msgid "Mark Wetmill Closed"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:373
+#, fuzzy
+msgid "Add Daily Report"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:377
+#, fuzzy
+msgid "Add Cash Report"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:381
+#, fuzzy
+msgid "Add Stock Report"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:387
+msgid "Click here to edit submission for this week"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:389
+msgid "Click here to edit submission for this day"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:413
+msgid "No confirmed submissions."
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:417
+msgid ""
+"You are viewing only confirmed messages. Click here to see all messages."
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:417
+#, fuzzy
+msgid "View All Submissions"
+msgstr "%s/KG Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:457
+msgid "The start date of the coffee season"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:462
+msgid "The end date of the coffee season"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:465
+#, fuzzy
+msgid "Season Cherry Target"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:467
+msgid "The estimated kilos of cherry that this wetmill will collect"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:470
+#, fuzzy
+msgid "Cherry / Parchment Ratio"
+msgstr "Ikilo cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:472
+#, fuzzy
+msgid "The estimated cherry to parchment ratio"
+msgstr "Ikilo cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:475
+#, fuzzy
+msgid "Parchment / Green Ratio"
+msgstr "Ikilo cy'ikawa itonoye kiva mu bilo by'Iyumye"
+
+#: templates/dashboard/wetmill_wetmill.html:477
+#, fuzzy
+msgid "The estimated parchment to green ratio"
+msgstr "Ikilo cy'ikawa itonoye kiva mu bilo by'Iyumye"
+
+#: templates/dashboard/wetmill_wetmill.html:482
+#, fuzzy
+msgid "The estimated parchment value per kilo in"
+msgstr "Ikilo cy'ikawa itonoye kiva mu bilo by'Iyumye"
+
+#: templates/dashboard/wetmill_wetmill.html:485
+msgid "Green price differential"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:492
+#, fuzzy
+msgid "Edit Individual Wetmill Settings"
+msgstr "Ubushobozi bw’uruganda"
+
+#: templates/dashboard/wetmill_wetmill.html:506
+#: templates/dashboard/wetmill_wetmill.html:578
+#: templates/sms/sms_view.html:292 templates/sms/sms_view.html.py:334
+msgid "Phone Number"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:507
+#: templates/dashboard/wetmill_wetmill.html:579
+#: templates/sms/sms_view.html:293
+msgid "Role"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:529
+#: templates/dashboard/wetmill_wetmill.html:602
+#: templates/sms/sms_view.html:315
+msgid "Observer"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:616
+#, fuzzy
+msgid "Farmer"
+msgstr "Kuba Habaho Kwishyura Umuhinzi"
+
+#: templates/dashboard/wetmill_wetmill.html:690
+#, fuzzy
+msgid "Total Cherry"
+msgstr "%s/KG Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:767
+#, fuzzy
+msgid "Cherry:Parchment Ratio"
+msgstr "Ikilo cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:813
+#: templates/dashboard/wetmill_wetmill.html:900
+msgid "All Wetmills"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:852
+msgid "Labor"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:854
+msgid "Other"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:861
+msgid "Percent"
+msgstr ""
+
+#: templates/dashboard/wetmill_wetmill.html:929
+#, fuzzy
+msgid "Daily Cherry"
+msgstr "%s/KG Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:973
+#: templates/dashboard/wetmill_wetmill.html:983
+#, fuzzy
+msgid "Cherry Volume"
+msgstr "1kg cy'ikawa Itonoye kiva mu bilo by'Ibitumbwe"
+
+#: templates/dashboard/wetmill_wetmill.html:1004
+#, fuzzy
+msgid "Recommended Price from NYC"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/expenses/expense_list.html:22
+msgid "US Dollars"
+msgstr ""
+
+#: templates/expenses/expense_list.html:22
+#, fuzzy
+msgid "Local"
+msgstr "Ikawa yagurishirijwe ku ruganda"
+
+#: templates/locales/country_form.html:12
+msgid ""
+"Maps are used throughout the system to display information and to allow "
+"users to select GPS coordinates."
+msgstr ""
+
+#: templates/locales/country_form.html:13
+msgid ""
+"The zoom level and centering of this map will be used whenever working with "
+"data for this country."
+msgstr ""
+
+#: templates/locales/country_form.html:16
+msgid "Set Bounds"
+msgstr ""
+
+#: templates/public/country.html:33 templates/public/country.html.py:40
+#: templates/public/home.html:29 templates/public/home.html.py:36
+msgid "Participating"
+msgstr ""
+
+#: templates/public/country.html:34 templates/public/home.html:30
+msgid "Cooperatives"
+msgstr ""
+
+#: templates/public/search.html:31
+msgid "Sorry, there were no matches for your query, please try again."
+msgstr ""
+
+#: templates/public/search.html:39 wetmills/models.py:24
+#, fuzzy
+msgid "Province"
+msgstr "Intara:"
+
+#: templates/public/search.html:40
+msgid "Started"
+msgstr ""
+
+#: templates/public/search_box.html:8
+msgid "Find a Cooperative"
+msgstr ""
+
+#: templates/public/wetmill.html:11
+msgid "WETMILL"
+msgstr ""
+
+#: templates/public/wetmill.html:32
+#, fuzzy
+msgid "Elevation"
+msgstr "Aho uruganda ruherereye"
+
+#: templates/public/wetmill.html:38
+msgid "Established"
+msgstr ""
+
+#: templates/public/wetmill.html:55
+msgid "SMS"
+msgstr ""
+
+#: templates/public/wetmill.html:61 templates/public/wetmill.html.py:173
+#: templates/public/wetmill.html:223 templates/responses/forms.html:25
+#: templates/responses/forms.html.py:47 templates/responses/forms.html:51
+#: templates/responses/forms.html.py:80
+msgid "Edit"
+msgstr ""
+
+#: templates/public/wetmill.html:62
+msgid "Edit Photos"
+msgstr ""
+
+#: templates/public/wetmill.html:140 templates/public/wetmill.html.py:145
+#: templates/reports/report_read.html:98
+msgid "Per Kilo"
+msgstr ""
+
+#: templates/public/wetmill.html:150
+msgid "Of Export Price"
+msgstr ""
+
+#: templates/public/wetmill.html:155
+#, fuzzy
+msgid "Ratio"
+msgstr "Aho uruganda ruherereye"
+
+#: templates/public/wetmill.html:290 templates/public/wetmill.html.py:298
+#: templates/reports/report_read.html:181
+msgid "Download"
+msgstr ""
+
+#: templates/qbs/quickblock_form.html:7
+msgid "Gallery"
+msgstr ""
+
+#: templates/qbs/quickblock_form.html:14
+msgid "Add Image"
+msgstr ""
+
+#: templates/reportimports/reportimport_create.html:9
+msgid ""
+"You can import all the reports for a season using a properly formatted CSV "
+"file."
+msgstr ""
+
+#: templates/reportimports/reportimport_create.html:10
+msgid ""
+"Note that imports will overwrite all existing report data for the season for "
+"the wetmills being imported."
+msgstr ""
+
+#: templates/reportimports/reportimport_create.html:11
+#: templates/scorecardimports/scorecardimport_create.html:11
+#: templates/wetmills/wetmillimport_create.html:11
+msgid "It is recommended that you first"
+msgstr ""
+
+#: templates/reportimports/reportimport_create.html:11
+#: templates/scorecardimports/scorecardimport_create.html:11
+#: templates/wetmills/wetmillimport_create.html:11
+msgid "download a sample file"
+msgstr ""
+
+#: templates/reportimports/reportimport_create.html:11
+#: templates/scorecardimports/scorecardimport_create.html:11
+msgid "for the"
+msgstr ""
+
+#: templates/reportimports/reportimport_create.html:11
+#: templates/scorecardimports/scorecardimport_create.html:11
+#, fuzzy
+msgid "season to get started."
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/reportimports/reportimport_list.html:15
+msgid "Template"
+msgstr ""
+
+#: templates/reportimports/reportimport_list.html:16
+#: templates/scorecardimports/scorecardimport_list.html:16
+#: templates/seasons/season_update.html:9
+msgid "Import"
+msgstr ""
+
+#: templates/reportimports/reportimport_read.html:13
+#: templates/scorecardimports/scorecardimport_read.html:13
+#: templates/wetmills/wetmillimport_read.html:13
+msgid "Retry"
+msgstr ""
+
+#: templates/reportimports/reportimport_read.html:14
+#: templates/scorecardimports/scorecardimport_read.html:14
+#: templates/wetmills/wetmillimport_read.html:14
+msgid "New File"
+msgstr ""
+
+#: templates/reportimports/reportimport_read.html:37
+#: templates/scorecardimports/scorecardimport_read.html:37
+#: templates/wetmills/wetmillimport_read.html:37
+msgid "File"
+msgstr ""
+
+#: templates/reports/report_list.html:6
+#: templates/scorecards/scorecard_list.html:6
+#: templates/wetmills/wetmill_list.html:7
+msgid "Imports"
+msgstr ""
+
+#: templates/reports/report_production.html:28
+#, fuzzy
+msgid "Member Production"
+msgstr "Umusaruro"
+
+#: templates/reports/report_read.html:7
+msgid "Download Report"
+msgstr ""
+
+#: templates/reports/report_read.html:14
+#, fuzzy
+msgid "Sales"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: templates/reports/report_read.html:49
+#, fuzzy
+msgid "Production and Capital"
+msgstr "Igereranya Ry'umusaruro"
+
+#: templates/reports/report_read.html:62
+#, fuzzy
+msgid "Member"
+msgstr "%s (Abanyamuryango)"
+
+#: templates/reports/report_read.html:63
+#, fuzzy
+msgid "Non-Member"
+msgstr "%s (Abatari Abanyamuryango)"
+
+#: templates/reports/report_read.html:69
+msgid "Wet Mill Capacity (Parchment)"
+msgstr ""
+
+#: templates/reports/report_read.html:77
+#, fuzzy
+msgid "Capital and Payments"
+msgstr "Igiteranyo Cy'amafaranga Ashobora Kwishyurwa Umuhinzi"
+
+#: templates/reports/report_read.html:83
+#, fuzzy
+msgid "Miscellaneous Sources"
+msgstr "Indo nkomoko y’amafaranga"
+
+#: templates/reports/report_read.html:101
+#, fuzzy
+msgid "Per Kilo (Members)"
+msgstr "%s (Abanyamuryango)"
+
+#: templates/reports/report_read.html:104
+#, fuzzy
+msgid "Per Kilo (Non-Members)"
+msgstr "%s (Abatari Abanyamuryango)"
+
+#: templates/reports/sale_form.html:14
+msgid "Manifest"
+msgstr ""
+
+#: templates/reports/sale_form.html:17
+msgid "Grade and Volume"
+msgstr ""
+
+#: templates/reports/sale_form.html:29
+msgid "Enter the grade and volume of this component of the sale"
+msgstr ""
+
+#: templates/reports/sale_form.html:39
+#, fuzzy
+msgid "Pricing"
+msgstr "Igiciro cy’igigusha"
+
+#: templates/responses/edit.html:10
+msgid "Responses"
+msgstr ""
+
+#: templates/responses/edit.html:14
+msgid "Error"
+msgstr ""
+
+#: templates/responses/edit.html:15
+msgid ""
+"There are one or more errors in your form, please scroll down to fix them."
+msgstr ""
+
+#: templates/responses/edit.html:21
+msgid ""
+"Below are all the messages that are sent as a response to incoming messages "
+"for the keyword"
+msgstr ""
+
+#: templates/responses/edit_report.html:11
+msgid "Update the message for the report"
+msgstr ""
+
+#: templates/responses/edit_report.html:11
+msgid "This report is sent"
+msgstr ""
+
+#: templates/responses/forms.html:18
+msgid "Report Messages"
+msgstr ""
+
+#: templates/responses/forms.html:39
+msgid "Help Messages"
+msgstr ""
+
+#: templates/responses/forms.html:48
+msgid "Sent to"
+msgstr ""
+
+#: templates/responses/forms.html:48
+msgid "when they send in a message which is unrecognized."
+msgstr ""
+
+#: templates/responses/forms.html:50
+msgid "Generic Help"
+msgstr ""
+
+#: templates/responses/forms.html:52
+msgid ""
+"Sent to unrecognized users when they send in a message which is unrecognized."
+msgstr ""
+
+#: templates/responses/forms.html:66
+msgid "Form Messages"
+msgstr ""
+
+#: templates/rosetta/pofile.html:76 templates/rosetta/pofile.html.py:79
+#: templates/rosetta/pofile.html:97
+msgid "Context hint"
+msgstr ""
+
+#: templates/rosetta/pofile.html:94
+msgid "Contextual hint"
+msgstr ""
+
+#: templates/rosetta/pofile.html:156 templates/translate/db.html:96
+msgid "Save Translations"
+msgstr ""
+
+#: templates/router/index.html:19
+msgid "search"
+msgstr ""
+
+#: templates/router/index.html:29
+msgid "Number"
+msgstr ""
+
+#: templates/router/index.html:58
+msgid "result"
+msgstr ""
+
+#: templates/router/index.html:60
+msgid "Results"
+msgstr ""
+
+#: templates/router/index.html:60
+msgid "of"
+msgstr ""
+
+#: templates/router/index.html:104
+msgid "Message Sender"
+msgstr ""
+
+#: templates/router/index.html:108
+msgid ""
+"You can send a message to a specific user by entering their phone number and "
+"the message you want to send."
+msgstr ""
+
+#: templates/router/index.html:113
+msgid "Recipient"
+msgstr ""
+
+#: templates/router/index.html:121
+msgid "Send"
+msgstr ""
+
+#: templates/router/index.html:155
+msgid "Test"
+msgstr ""
+
+#: templates/scorecardimports/scorecardimport_create.html:9
+msgid ""
+"You can import all the scorecards for a season using a properly formatted "
+"CSV file."
+msgstr ""
+
+#: templates/scorecardimports/scorecardimport_create.html:10
+msgid ""
+"Note that scorecards will overwrite all existing scorecard data for the "
+"season for the wetmills being imported."
+msgstr ""
+
+#: templates/scorecards/scorecard_read.html:8
+msgid "Download Scorecard"
+msgstr ""
+
+#: templates/seasons/season_create.html:10
+#: templates/seasons/season_update.html:35
+#, fuzzy
+msgid "Configuration"
+msgstr "Aho uruganda ruherereye"
+
+#: templates/seasons/season_create.html:17
+#: templates/seasons/season_update.html:42
+msgid "Sale Defaults"
+msgstr ""
+
+#: templates/seasons/season_create.html:23
+#: templates/seasons/season_update.html:48
+msgid "Baselines"
+msgstr ""
+
+#: templates/seasons/season_update.html:10
+msgid "Once you have configured your season and saved the changes, you can"
+msgstr ""
+
+#: templates/seasons/season_update.html:10
+msgid "import"
+msgstr ""
+
+#: templates/seasons/season_update.html:10
+msgid "all the reports for a season using an Excel CSV file"
+msgstr ""
+
+#: templates/seasons/season_update.html:12
+msgid "Finalizing"
+msgstr ""
+
+#: templates/seasons/season_update.html:13
+msgid "Once all reports have been uploaded and finalized you must"
+msgstr ""
+
+#: templates/seasons/season_update.html:13
+msgid "finalize"
+msgstr ""
+
+#: templates/seasons/season_update.html:13
+msgid "the season to calculate averages and enable graphs"
+msgstr ""
+
+#: templates/seasons/season_update.html:19
+msgid "Attributes"
+msgstr ""
+
+#: templates/seasons/season_update.html:24
+msgid "Gauges"
+msgstr ""
+
+#: templates/seasons/season_update.html:55
+msgid ""
+"Select the expenses which are active for this season.  Parent expenses will "
+"be included if any of their children are selected."
+msgstr ""
+
+#: templates/seasons/season_update.html:56
+msgid "Any expenses which are marked with"
+msgstr ""
+
+#: templates/seasons/season_update.html:56
+msgid "will not have their child values displayed in the transparency report"
+msgstr ""
+
+#: templates/seasons/season_update.html:80
+msgid "Select the grades which are active for this season"
+msgstr ""
+
+#: templates/seasons/season_update.html:81
+msgid "Grades marked as"
+msgstr ""
+
+#: templates/seasons/season_update.html:81
+msgid "Top Grades"
+msgstr ""
+
+#: templates/seasons/season_update.html:81
+msgid "will have their totals used in production quality graphs"
+msgstr ""
+
+#: templates/seasons/season_update.html:93
+msgid "Top Grade"
+msgstr ""
+
+#: templates/seasons/season_update.html:108
+msgid "Select the uses of cash that will be active for this season"
+msgstr ""
+
+#: templates/seasons/season_update.html:112
+msgid "Sources of Cash"
+msgstr ""
+
+#: templates/seasons/season_update.html:142
+msgid "Select the standards which are active for this season"
+msgstr ""
+
+#: templates/seasons/season_update.html:163
+msgid ""
+"These values are used when rendering the gauges on the transparency reports"
+msgstr ""
+
+#: templates/seasons/season_update.html:185
+#, fuzzy
+msgid "Green Sale Price"
+msgstr "Igiciro cy’igigusha"
+
+#: templates/sms/list_view.html:9 templates/sms/sms_view.html:18
+#, fuzzy
+msgid "SMS Accounting"
+msgstr "Igipimo cy’imikorore myiza"
+
+#: templates/sms/list_view.html:18
+#, fuzzy
+msgid "A Shipped"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: templates/sms/list_view.html:19
+#, fuzzy
+msgid "B Shipped"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: templates/sms/list_view.html:20
+#, fuzzy
+msgid "C Shipped"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: templates/sms/list_view.html:21
+#, fuzzy
+msgid "A Stored"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: templates/sms/list_view.html:22
+#, fuzzy
+msgid "B Stored"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: templates/sms/list_view.html:23
+#, fuzzy
+msgid "C Stored"
+msgstr "Igiteranyo Cy'igurisha"
+
+#: templates/sms/list_view.html:24
+#, fuzzy
+msgid "Cherry (kg)"
+msgstr "%s/KG Ibitumbwe"
+
+#: templates/sms/list_view.html:25
+#, fuzzy
+msgid "Parchment (kg)"
+msgstr "asdfasdf"
+
+#: templates/sms/list_view.html:26
+msgid "C/P Ratio"
+msgstr ""
+
+#: templates/sms/list_view.html:27
+#, fuzzy
+msgid "Avg Price (RWF)"
+msgstr "Igiciro cy’igigusha"
+
+#: templates/sms/sms_list.html:7 templates/sms/submission_create.html:8
+msgid "Back"
+msgstr ""
+
+#: templates/sms/sms_view.html:32
+#, fuzzy
+msgid "Parchment Stored"
+msgstr "asdfasdf"
+
+#: templates/sms/sms_view.html:33
+#, fuzzy
+msgid "Parchment Shipped"
+msgstr "asdfasdf"
+
+#: templates/sms/sms_view.html:39
+#, fuzzy
+msgid "Credit"
+msgstr "1kg cy'ikawa Yumye kiva mu bilo by'Ibitumbwe"
+
+#: templates/sms/sms_view.html:40
+#, fuzzy
+msgid "Avg. Price"
+msgstr "Igiciro cy’igigusha"
+
+#: templates/sms/sms_view.html:41 templates/sms/sms_view.html.py:44
+msgid "Grade A"
+msgstr ""
+
+#: templates/sms/sms_view.html:42 templates/sms/sms_view.html.py:45
+msgid "Grade B"
+msgstr ""
+
+#: templates/sms/sms_view.html:96 templates/sms/sms_view.html.py:145
+#: templates/sms/sms_view.html:205
+msgid "No confirmed submissions"
+msgstr ""
+
+#: templates/sms/sms_view.html:160
+msgid "Configure Assumptions"
+msgstr ""
+
+#: templates/sms/sms_view.html:163
+msgid "Clear Season Messages"
+msgstr ""
+
+#: templates/sms/sms_view.html:166 templates/sms/sms_view.html.py:234
+msgid "Raw Messages"
+msgstr ""
+
+#: templates/sms/sms_view.html:225 templates/sms/sms_view.html.py:277
+msgid "View All"
+msgstr ""
+
+#: templates/sms/sms_view.html:235
+msgid "Clear All Messages"
+msgstr ""
+
+#: templates/sms/sms_view.html:287
+msgid "Data Managers"
+msgstr ""
+
+#: templates/sms/sms_view.html:329
+#, fuzzy
+msgid "Site Collectors"
+msgstr "Ikilo 1 cy'ikawa itonoye kiva mu bilo by'ibitumbwe"
+
+#: templates/sms/sms_view.html:335
+msgid "Id"
+msgstr ""
+
+#: templates/sms/submission_create.html:18
+msgid "Save"
+msgstr ""
+
+#: templates/wetmills/wetmill_form.html:17
+msgid "CSP Assignment"
+msgstr ""
+
+#: templates/wetmills/wetmill_form.html:19
+#: templates/wetmills/wetmill_form.html:25
+msgid "Edit Per Season"
+msgstr ""
+
+#: templates/wetmills/wetmill_form.html:23 wetmills/models.py:196
+#, fuzzy
+msgid "Accounting System"
+msgstr "Igipimo cy’imikorore myiza"
+
+#: templates/wetmills/wetmillimport_create.html:9
+msgid ""
+"You can import wetmills for a country using a properly formatted CSV file."
+msgstr ""
+
+#: templates/wetmills/wetmillimport_create.html:10
+msgid ""
+"Note that if an import contains data for an existing wetmill in the country, "
+"then the attributes for that wetmill will be overwritten by the data "
+"contained in the import file."
+msgstr ""
+
+#: templates/wetmills/wetmillimport_create.html:11
+msgid "to get started."
+msgstr ""
+
+#: tns_users/views.py:41 tns_users/views.py:93
+msgid "Is this user a site administrator who has all privileges"
+msgstr ""
+
+#: tns_users/views.py:44 tns_users/views.py:96
+msgid "Is this user a country administrator"
+msgstr ""
+
+#: tns_users/views.py:47 tns_users/views.py:99
+msgid "Is this user an SMS administrator"
+msgstr ""
+
+#: tns_users/views.py:50 tns_users/views.py:102
+msgid ""
+"Is this user a compliance officer that doesn't get to see financial data "
+"(guatemala)"
+msgstr ""
+
+#: tns_users/views.py:53 tns_users/views.py:105
+msgid ""
+"Is this user an accountant that enters data through the website (guatemala)"
+msgstr ""
+
+#: wetmills/models.py:13
+msgid "What country this wetmill is located in"
+msgstr ""
+
+#: wetmills/models.py:16
+msgid "The name of this wetmill, in English"
+msgstr ""
+
+#: wetmills/models.py:19
+msgid ""
+"The short name used when referring to this wetmill via SMS. Must be unique "
+"and cannot contains spaces."
+msgstr ""
+
+#: wetmills/models.py:22
+msgid ""
+"A short description of this wetmill. This will be displayed on the public "
+"page."
+msgstr ""
+
+#: wetmills/models.py:25
+msgid "What province this wetmill is located in"
+msgstr ""
+
+#: wetmills/models.py:27
+msgid "Year Started"
+msgstr ""
+
+#: wetmills/models.py:28
+msgid "When this wetmill was started"
+msgstr ""
+
+#: wetmills/models.py:30
+msgid "Latitude"
+msgstr ""
+
+#: wetmills/models.py:32
+msgid "Longitude"
+msgstr ""
+
+#: wetmills/models.py:34
+msgid "Altitude"
+msgstr ""
+
+#: wetmills/models.py:35
+msgid "The altitude of this wetmill, in meters."
+msgstr ""
+
+#: wetmills/models.py:181
+#, fuzzy
+msgid "No Data Collection"
+msgstr "Ikilo 1 cy'ikawa itonoye kiva mu bilo by'ibitumbwe"
+
+#: wetmills/models.py:182
+msgid "2011 SMS System (legacy)"
+msgstr ""
+
+#: wetmills/models.py:183
+msgid "2011 Light System (legacy)"
+msgstr ""
+
+#: wetmills/models.py:184
+msgid "Full SMS Data Collection (current)"
+msgstr ""
+
+#: wetmills/models.py:185
+msgid "Light SMS Data Collection (current)"
+msgstr ""
+
+#: wetmills/models.py:186
+msgid "Guatemala Web Accouting (current)"
+msgstr ""
+
+#: wetmills/models.py:193
+msgid "The wetmill the accounting system is for"
+msgstr ""
+
+#: wetmills/models.py:195
+msgid "The season we are talking about"
+msgstr ""
+
+#: wetmills/models.py:197
+msgid "What accounting system should be used for this wetmill for this season"
+msgstr ""
+
+#: wetmills/models.py:206
+msgid "The country the wetmills will be imported to"
+msgstr ""
+
+#: wetmills/models.py:209
+msgid ""
+"The CSV file to import, must be formatted according to the wetmill import "
+"template"
+msgstr ""
+
+#: wetmills/models.py:211
+msgid "Task ID"
+msgstr ""
+
+#: wetmills/views.py:12
+msgid ""
+"The latitude and longitude coordinates of this wetmill.  You can either "
+"enter these manually or double click on the map above to set them."
+msgstr ""
+
+#: wetmills/views.py:15
+msgid "What accounting system to use for this wetmill, if any"
+msgstr ""
+
+#: wetmills/views.py:20
+msgid "Please set the latitude and longitude coordinates"
+msgstr ""
+
+#: wetmills/views.py:157
+msgid "Edit Accounting System"
+msgstr ""
+
+#: wetmills/views.py:166
+#, python-format
+msgid "The accounting system used in %s"
+msgstr ""
+
+#: wetmills/views.py:189
+msgid "Edit CSP Assignments"
+msgstr ""
+
+#: wetmills/views.py:198
+#, python-format
+msgid "The CSP that managed this wetmill in %s"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Cherry YTD (mT)"
+#~ msgstr "%s/KG Ibitumbwe"
+
+#~ msgid "KGs"
+#~ msgstr "Kilos"
+
+#~ msgid "%s/KG"
+#~ msgstr "%s/Kilo"
+
+#, fuzzy
+#~ msgid "Kg Cherry"
+#~ msgstr "%s/KG Ibitumbwe"
+
+#~ msgid "Unused Working Capital with Cooperative"
+#~ msgstr "Amafaranga Akarakoreshejwe Muri Sizeni"

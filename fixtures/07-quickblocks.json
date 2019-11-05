@@ -1,0 +1,234 @@
+[
+  {
+    "pk": 1, 
+    "model": "django_quickblocks.quickblocktype", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Country Header", 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-11-02 11:28:12", 
+      "modified_on": "2011-11-02 11:28:12", 
+      "slug": "country_headers", 
+      "description": ""
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "django_quickblocks.quickblocktype", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Home Page Header", 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-11-02 11:48:28", 
+      "modified_on": "2011-11-02 11:48:28", 
+      "slug": "home_headers", 
+      "description": ""
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "django_quickblocks.quickblocktype", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Home Page Bottom Sections", 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-11-02 11:48:41", 
+      "modified_on": "2011-11-02 11:48:41", 
+      "slug": "home_sections", 
+      "description": "\r\n"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "django_quickblocks.quickblocktype", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Wetmill Scorecard Description", 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-11-02 11:49:34", 
+      "modified_on": "2011-11-02 11:49:34", 
+      "slug": "scorecard_headers", 
+      "description": ""
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "django_quickblocks.quickblocktype", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Wetmill Report Description", 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-11-02 11:49:49", 
+      "modified_on": "2011-11-02 11:49:49", 
+      "slug": "report_headers", 
+      "description": ""
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "django_quickblocks.quickblock", 
+    "fields": {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+      "modified_by": 1, 
+      "title": "Rwanda", 
+      "image": "", 
+      "tags": " rwanda ", 
+      "is_active": true, 
+      "created_by": 1, 
+      "quickblock_type": 1, 
+      "created_on": "2011-11-02 11:28:40", 
+      "link": "", 
+      "modified_on": "2011-11-14 14:49:10", 
+      "priority": 0
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "django_quickblocks.quickblock", 
+    "fields": {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+      "modified_by": 1, 
+      "title": "Tanzania", 
+      "image": "", 
+      "tags": " tanzania ", 
+      "is_active": true, 
+      "created_by": 1, 
+      "quickblock_type": 1, 
+      "created_on": "2011-11-02 11:28:59", 
+      "link": "", 
+      "modified_on": "2011-11-14 14:49:06", 
+      "priority": 0
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "django_quickblocks.quickblock", 
+    "fields": {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+      "modified_by": 1, 
+      "title": "Ethiopia", 
+      "image": "", 
+      "tags": " ethiopia ", 
+      "is_active": true, 
+      "created_by": 1, 
+      "quickblock_type": 1, 
+      "created_on": "2011-11-02 11:29:30", 
+      "link": "", 
+      "modified_on": "2011-11-14 14:49:03", 
+      "priority": 0
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "django_quickblocks.quickblock", 
+    "fields": {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+      "modified_by": 1, 
+      "title": "Kenya", 
+      "image": "", 
+      "tags": " kenya ", 
+      "is_active": true, 
+      "created_by": 1, 
+      "quickblock_type": 1, 
+      "created_on": "2011-11-02 11:29:45", 
+      "link": "", 
+      "modified_on": "2011-11-14 14:49:14", 
+      "priority": 0
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "django_quickblocks.quickblock", 
+    "fields": {
+      "content": "Sustainable, transparent enterprises generate jobs and income opportunities, along with the promise of hope and prosperity for farmers, families and communities.", 
+      "modified_by": 12, 
+      "title": "Changing Lives", 
+      "image": "quickblocks/820x250.jpeg", 
+      "tags": "", 
+      "is_active": true, 
+      "created_by": 1, 
+      "quickblock_type": 2, 
+      "created_on": "2011-11-02 11:50:12", 
+      "link": "", 
+      "modified_on": "2011-12-02 21:07:14", 
+      "priority": 0
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "django_quickblocks.quickblock", 
+    "fields": {
+      "content": "Strong and enduring businesses operate with respect for producers, workers and the environment.  All washing stations have been trained in a set of sustainability standards and measured against them. Standards address production and farm management, social responsibility and ethics, occupational health and safety, environmental responsibility and economic transparency.  Click here for audited results of washing station performance.\r\n\r\n", 
+      "modified_by": 12, 
+      "title": "Home Page Left", 
+      "image": "quickblocks/home_bottom_left.jpg", 
+      "tags": "", 
+      "is_active": true, 
+      "created_by": 1, 
+      "quickblock_type": 3, 
+      "created_on": "2011-11-02 11:50:35", 
+      "link": "", 
+      "modified_on": "2011-12-02 21:03:10", 
+      "priority": 0
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "django_quickblocks.quickblock", 
+    "fields": {
+      "content": "Transparent operations build healthy businesses.   Producers become loyal cherry suppliers when they understand washing station expenses, profits and payments.  Service providers have immediate access to washing station financials, allowing for real time monitoring of investments and course correction.  Benchmarking across washing stations can identify opportunities for operational improvements and efficiencies.  Click here to review washing station financial information.", 
+      "modified_by": 12, 
+      "title": "Home Page Right", 
+      "image": "quickblocks/home_bottom_right.jpg", 
+      "tags": "", 
+      "is_active": true, 
+      "created_by": 1, 
+      "quickblock_type": 3, 
+      "created_on": "2011-11-02 11:50:47", 
+      "link": "", 
+      "modified_on": "2011-12-02 21:56:52", 
+      "priority": 1
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "django_quickblocks.quickblock", 
+    "fields": {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+      "modified_by": 1, 
+      "title": "Price Premium", 
+      "image": "", 
+      "tags": "", 
+      "is_active": true, 
+      "created_by": 1, 
+      "quickblock_type": 5, 
+      "created_on": "2011-11-02 11:51:38", 
+      "link": "", 
+      "modified_on": "2011-11-02 11:51:38", 
+      "priority": 0
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "django_quickblocks.quickblock", 
+    "fields": {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+      "modified_by": 1, 
+      "title": "Sustainability Standards", 
+      "image": "", 
+      "tags": "", 
+      "is_active": true, 
+      "created_by": 1, 
+      "quickblock_type": 4, 
+      "created_on": "2011-11-02 11:51:55", 
+      "link": "", 
+      "modified_on": "2011-11-02 11:51:55", 
+      "priority": 0
+    }
+  }
+]

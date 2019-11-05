@@ -1,0 +1,10 @@
+{% extends "smartmin/list.html" %}
+
+{% load i18n %}
+
+{% block table-buttons %}
+<div class="pull-right">
+<a class="btn" href="{% url 'aggregates.finalizetask_create' %}">{% trans "Finalize" %}</a>
+<a class="btn btn-primary" href="./clone/">{% trans "Add" %}</a>
+</div>
+{% endblock table-buttons %}

@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+  ct_db:
+    image: ct-mysql
+    build: .
+    environment:
+      MYSQL_ROOT_PASSWORD: sql_password
+      MYSQL_DATABASE: ct
+    ports:
+      - 3306:3306

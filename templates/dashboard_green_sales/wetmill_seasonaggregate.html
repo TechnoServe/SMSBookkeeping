@@ -1,0 +1,564 @@
+{% extends "smartmin/list.html" %}
+
+{% load smartmin locales dashboard perms i18n l10n %}
+{% load dashcharts_tags %}
+{% load humanize %}
+
+{% block pre-content %}
+  <div class="page-header" style="height: 95px;margin-bottom:7px;">
+
+    {% if season.country.country_code == 'RW' %}
+    <div class="country_img" style="float: left">
+      <img width="100" height="90" src="{{ STATIC_URL }}img/dashboard/rw_small.png">
+    </div>
+    {% elif wetmill.country.country_code == 'TZ' %}
+    <div class="country_img" style="float: left">
+      <img width="95" height="90" src="{{ STATIC_URL }}img/dashboard/tz_small.png">
+    </div>
+    {% endif %}
+      <div class="wetmill_name" style="float:left;">
+          <h2 style="font-size:25px;margin-bottom:0">{% trans "Sales Dashboard" %}</h2>
+          <div class='mini'>{{ season }}</div></h2>
+          {% if not show_compliance_only %}
+              <div class="mini">
+                  <a href="{% url 'dashboard.wetmill_dashboard' %}?season={{ season.id }}">{% trans "Accounting Dashboard" %}</a>
+              </div>
+          {% endif %}
+      </div>
+      <div class="pull-right">
+          <form>
+              <select id="season" name="season" style="width:200px;margin-bottom:0px;">
+                  {% for s in seasons %}
+                      <option value="{{ s.id }}" {% if s.id == season.id %}selected{% endif %}>{{ s }}</option>
+                  {% endfor %}
+              </select>
+              <a class="btn btn-primary" href="#" onclick="showSeasonDashboard()">{% trans "View" %}</a>
+          </form>
+      </div>
+  </div>
+{% endblock %}
+
+{% block container-tag %}
+    <div class="container-fluid">
+{% endblock %}
+
+
+{% block content %}
+    <div style="display: inline-block;margin-right:20px">
+        {% if currency.currency_code == 'USD' %}
+            <a href="#" onclick="switchCurrencyTo('{{ local.currency_code }}')">{{ local.currency_code }}</a> | <b>USD</b>
+        {% else %}
+            <b>{{ local.currency_code }}</b> | <a href="#" onclick="switchCurrencyTo('USD')">USD</a>
+        {% endif %}
+    </div>
+    <br/><br/>
+
+    <div class="row-fluid" style="min-width: 300px">
+      <div class="span9">
+          <div class="summary">
+                <div class="summary">
+                    <div class="section_label">{% trans "Overall Sales" %}</div>
+                    {% if total_sales_ytd or total_sales_ytd == 0 %}
+                    <div class="number_widget">
+                        <div class="metric">
+                            <div class="big">{{ total_sales_ytd|convert_currency:exchange_rate|format_currency_summary:currency}}</div>
+                            <div class="big_label">{% trans "Total Sales YTD" %}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if avg_sales_price or avg_sales_price == 0 %}
+                    <div class="number_widget">
+                        <div class="metric">
+                            <div class="big">{{ avg_sales_price|convert_currency:exchange_rate|format_currency_summary:currency }}</div>
+                            <div class="big_label">{% trans "Average Sales Price YTD" %}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if estmated_parchment_vol_remaining or estmated_parchment_vol_remaining == 0 %}
+                    <div class="number_widget">
+                        <div class="metric">
+                            <div class="big">{{ estmated_parchment_vol_remaining|format_weight_rounded_use_decimals:dashboard_weight }}<span class="med">{{ dashboard_weight.abbreviation }}</span></div>
+                            <div class="big_label">{% trans "Estimated Parchment Volume Remaining" %}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if estimated_percent_sold_ytd or estimated_percent_sold_ytd == 0%}
+                    <div class="number_widget">
+                        <div class="metric">
+                            <div class="big">{{ estimated_percent_sold_ytd|floatformat:"0" }}<span class="med">%</span></div>
+                            <div class="big_label">{% trans "Estimated % Sold YTD" %}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if sales_expenses_ytd or sales_expenses_ytd == 0 %}
+                    <div class="number_widget">
+                            <div class="metric">
+                                <div class="big">{{ sales_expenses_ytd|convert_currency:exchange_rate|format_currency_rounded_summary:currency  }}</div>
+                                <div class="big_label">{% trans "Sales Expenses YTD" %}</div>
+                            </div>
+                    </div>
+                    {% endif %}
+                </div>
+          </div>
+      </div>
+    </div>
+    <div class="row-fluid" style="min-width: 300px;">
+        <div class="span9">
+          <div class="summary">
+                <div class="summary">
+                    <div class="section_label">{% trans "Export Sales" %}</div>
+                    {% if total_export_sales_ytd or total_export_sales_ytd == 0 %}
+                    <div class="number_widget">
+                            <div class="metric">
+                                <div class="big">{{ total_export_sales_ytd|convert_currency:exchange_rate|format_currency_rounded_summary:currency }}</div>
+                                <div class="big_label">{% trans "Total Export Sales YTD" %}</div>
+                            </div>
+                    </div>
+                    {% endif %}
+                    {% if avg_export_sales_price or avg_export_sales_price == 0 %}
+                    <div class="number_widget">
+                        <div class="metric">
+                            <div class="big">{{ avg_export_sales_price|convert_currency:exchange_rate|format_currency_rounded_summary:currency }}</div>
+                            <div class="big_label">{% trans "Average Export Sales YTD" %}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if total_export_vol_ytd or total_export_vol_ytd == 0 %}
+                    <div class="number_widget">
+                        <div class="metric">
+                            <div class="big">{{ total_export_vol_ytd|format_weight_rounded_use_one_decimal_place:dashboard_weight}}<span class="med">{{ dashboard_weight.abbreviation }}</span></div>
+                            <div class="big_label">{% trans "Total Export Volume YTD" %}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if percent_of_total_sales_revenue or percent_of_total_sales_revenue == 0 %}
+                    <div class="number_widget">
+                            <div class="metric">
+                                <div class="big">{{ percent_of_total_sales_revenue|floatformat:"0"  }}<span class="med">%</span></div>
+                                <div class="big_label">{% trans "% of Total Sales Revenue YTD" %}</div>
+                            </div>
+                    </div>
+                    {% endif %}
+                </div>
+          </div>
+        </div>
+    </div>
+    <div class="row-fluid" style="min-width: 300px;">
+        <div class="span9">
+          <div class="summary">
+                <div class="summary">
+                    <div class="section_label">{% trans "Local Sales" %}</div>
+                    {% if total_local_sales_ytd or total_local_sales_ytd == 0  %}
+                    <div class="number_widget">
+                            <div class="metric">
+                                <div class="big">{{ total_local_sales_ytd|convert_currency:exchange_rate|format_currency_rounded_summary:currency }}</div>
+                                <div class="big_label">{% trans "Total Local Sales YTD" %}</div>
+                            </div>
+                    </div>
+                    {% endif %}
+                    {% if average_local_sales_ytd or average_local_sales_ytd == 0 %}
+                    <div class="number_widget">
+                        <div class="metric">
+                            <div class="big">{{ average_local_sales_ytd|convert_currency:exchange_rate|format_currency_rounded_summary:currency }}</div>
+                            <div class="big_label">{% trans "Average Local Sales YTD" %}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if total_local_vol_ytd or total_local_vol_ytd == 0 %}
+                    <div class="number_widget">
+                        <div class="metric">
+                            <div class="big">{{ total_local_vol_ytd|format_weight_rounded_use_one_decimal_place:dashboard_weight}}<span class="med">{{ dashboard_weight.abbreviation }}</span></div>
+                            <div class="big_label">{% trans "Total Local Volume YTD" %}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if percent_of_local_sales_vol or percent_of_local_sales_vol == 0 %}
+                    <div class="number_widget">
+                            <div class="metric">
+                                <div class="big">{{ percent_of_local_sales_vol|floatformat:"0"  }}<span class="med">%</span></div>
+                                <div class="big_label">{% trans "% of Total Sales Volume" %}</div>
+                            </div>
+                    </div>
+                    {% endif %}
+                </div>
+          </div>
+        </div>
+    </div>
+
+         <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Selling Expenses</a>
+            </li>
+
+          </ul>
+         <div class="tab-content" id="myTabContent">
+            <div class="tab-pane show active tab_style" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <p>
+                <div class="row">
+                    <div class="table-responsive">
+                    <table id="sales_table" class="table table-bordered table-striped table-condensed table-fixed-header" style="width:100%;margin-left: 25px;margin-right: 100px;"></table>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div class="tab-pane tab_style" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <p>
+                    <div class="row">
+                        <div class="table-responsive">
+                        <table id="selling_expenses_table" class="table table-bordered table-striped table-condensed table-fixed-header" style="width:100%;margin-left: 25px;margin-right: 100px;"></table>
+                        </div>
+                    </div>
+                    </p>
+            </div>
+
+          </div>
+
+
+{% endblock content %}
+
+{% block extra-script %}
+    {{ block.super }}
+    {{ tables|load_tables:"sales_table, selling_expenses_table" }}
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/offline-exporting.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+    {{ sales_table.to_string }}
+    </script>
+  <script>
+    function showSeasonDashboard() {
+      var seasonId = $("#season").val();
+      document.location = "{% url 'dashboard_green_sales.wetmill_seasonaggregate' %}?season=" + seasonId;
+    }
+
+    function switchCurrencyTo(currencyCode) {
+      var activeTabName = $('.nav-tabs .active').children('a').attr('href');
+      document.location = "{% url 'dashboard_green_sales.wetmill_seasonaggregate' %}?season={{ season.id }}&currency="+ currencyCode +"&weight={{ weight.abbreviation|upper }}&active_tab=" + activeTabName;
+    }
+
+    function switchWeightTo(weightCode) {
+      var activeTabName = $('.nav-tabs .active').children('a').attr('href');
+
+      document.location = "{% url 'dashboard_green_sales.wetmill_seasonaggregate' %}?season={{ season.id }}&currency={{ currency.currency_code }}&weight=" + weightCode + "&active_tab=" + activeTabName;
+    }
+
+
+  </script>
+
+{% endblock %}
+
+{% block extra-style %}
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <style>
+  .mini {
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: -5px;
+      padding:  0;
+  }
+
+    h2, h3 {
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size:  20px;
+        margin-bottom: 0px;
+    }
+
+    h2 a, h2 a:hover {
+        color: #719E41;
+    }
+
+    .tooltip-inner {
+        white-space:pre-wrap;
+        text-align:right;
+    }
+
+    .table tr.totals td {
+      font-weight: bold;
+    }
+
+    #dashboardTabs {
+      margin-bottom: 0;
+    }
+
+    .form-search {
+      margin-bottom: 0;
+    }
+
+    .table.table-tabbed td.view-all {
+        text-align: left;
+        font-size:  12px;
+    }
+
+    .table th, .table td {
+      font-size: 10px;
+    }
+
+    .table.table-tabbed th, .table.table-tabbed td {
+      font-size: 10px;
+      text-align: center;
+    }
+
+    #dashTable th {
+      vertical-align: middle;
+    }
+
+    .table td.data {
+      text-align: right;
+    }
+
+    .table td.name {
+      width: 100px;
+      padding-left: 50px;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    .table-bordered.table-tabbed {
+      border-top: 0;
+      -webkit-border-top-left-radius: 0;
+      -moz-border-top-left-radius: 0;
+      border-top-left-radius: 0;
+      -webkit-border-top-right-radius: 0;
+      -moz-border-top-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .table-bordered.table-tabbed thead:first-child tr:first-child > th:first-child, .table-bordered.table-tabbed tbody:first-child tr:first-child > td:first-child {
+      -webkit-border-top-left-radius: 0;
+      border-top-left-radius: 0;
+      -moz-border-radius-topleft: 0;
+    }
+
+    th.dashboard-data {
+        width: 14%;
+    }
+
+    #complianceTable th.dashboard-data {
+        width: 25%;
+    }
+
+    #financeData th.dashboard-data {
+        width: 14%;
+    }
+
+    tr.daily-late td.cherry-last, tr.daily-late td.cherry-ytd, tr.daily-late td.cherry-variance {
+        background-color: #FFFB76 !important;
+    }
+
+    tr.sitoki-late td.parchment-shipped-ytd, tr.sitoki-late td.parchment-stored-ytd,
+    tr.sitoki-late td.est-parchment-tabled, tr.sitoki-late td.est-parchment-processed {
+        background-color: #FFFB76 !important;
+    }
+
+    tr.daily-late td.cherry-price-last, tr.daily-late td.cherry-price-ytd {
+        background-color: #FFFB76 !important;
+    }
+
+    tr.amafaranga-late td.working-capital-capex, tr.amafaranga-late td.working-capital-unc,
+    tr.amafaranga-late td.cash-balance, tr.amafaranga-late td.working-capital-ytd {
+        background-color: #FFFB76 !important;
+    }
+
+    td.warn {
+        background-color: #FFFB76 !important;
+    }
+
+    .compliance table {
+        float: right;
+        font-size:  12px;
+        line-height: 100%;
+    }
+
+
+    .section_label{
+        color: #849F32;
+        font-size: 20px;
+    }
+
+    .compliance td.compliance-label {
+        padding-right: 10px;
+        text-align: right;
+        font-weight: 600;
+        color: #719E41;
+    }
+
+    .compliance td.compliance-value {
+        text-align: right;
+    }
+
+    .compliance td.compliance-value a {
+        color: #333;
+    }
+
+    .number_widget{
+        float: left;
+        padding-left: 5.5%;
+        padding-right: 0.5%;
+    }
+
+    .tab_style{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .metric {
+        display: inline-block;
+        padding-bottom: 15px;
+        margin-top: -5px;
+    }
+    div.big {
+        font-size: 42px;
+        font-weight: bold;
+        color: #849F32;
+        line-height: 1;
+        letter-spacing: -1px;
+        text-align: right;
+    }
+    span.med {
+        font-size: 24px;
+        font-weight: bold;
+        color: #849F32;
+        margin-right: 0px;
+    }
+    div.big_label {
+        font-size: 13px;
+        font-weight: bold;
+        color: #666;;
+        text-align: right;
+        width:100px;
+    }
+
+    .summary table {
+        width:  100%;
+        text-align:  center;
+    }
+
+    .missing {
+        background-color: #fffb76;
+        border: 1px solid #ccc;
+        padding: 1px 3px;
+    }
+
+    .table-striped tbody tr.missing_daily td, .table-striped tbody tr.missing_amafaranga td, .table-striped tbody tr.missing_sitoki td {
+        background-color: #fffb76 !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .table-striped tbody tr td.date {
+        text-align: center !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .table-striped tbody tr td.week {
+        text-align: right !important;
+        padding-right: 10px !important;
+        padding-left: 0px !important;
+    }
+
+    .table-striped tbody tr td.user {
+        text-align: center !important;
+        padding-right: 0px !important;
+    }
+
+    .table-striped tbody tr.ibitumbwe td {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .table-striped tbody tr.sitoki td {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .table-striped tbody tr.amafaranga td {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .nav-tabs .secondary-nav {
+        float:right;
+        margin-left:10px;
+        margin-right:0;
+    }
+
+    #assumptions table td:first-child {
+        font-weight: bold;
+        text-align: right;
+    }
+
+    #assumptions table td:last-child {
+        font-style: italic;
+        text-align: left;
+    }
+
+    .total {
+        background-color: #eee !important;
+        font-weight: bold;
+        text-align: right !important;
+        padding-right: 10px !important;
+        color: black !important;
+    }
+
+    .table td.sms-message, .table th.sms-message {
+        text-align: left;
+        font-size: 10px;
+    }
+
+    .table td.sms-date {
+        white-space: nowrap;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    table tr.sms-I td {
+        background-color: #ddeedd;
+    }
+
+    table tr.sms-I.error td {
+        background-color: #eedddd;
+    }
+
+    td.direction {
+        width: 10px;
+        height: 15px;
+    }
+
+    td.direction div {
+        width: 10px;
+        height: 15px;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+
+    div.in {
+        background-image: url("{{ STATIC_URL }}console/in.png");
+    }
+
+    div.delivered {
+        background-image: url("{{ STATIC_URL }}console/delivered.png");
+    }
+
+    div.sent {
+        background-image: url("{{ STATIC_URL }}console/sent.png");
+    }
+
+    div.queued {
+        background-image: url("{{ STATIC_URL }}console/queued.png");
+    }
+
+    .country_img {
+      padding-right: 5px;
+    }
+  </style>
+{% endblock %}

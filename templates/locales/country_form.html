@@ -1,0 +1,20 @@
+{% extends "smartmin/form.html" %}
+
+{% load smartmin i18n %}
+
+{% block post-fields %}
+<div class="row">
+  <div id="bounds_map" class="span9">
+  </div>
+</div>
+<div class="row" id="map_instructions">
+  <div class="span7 help-block">
+    <p>{% trans "Maps are used throughout the system to display information and to allow users to select GPS coordinates." %}</p>
+    <p>{% trans "The zoom level and centering of this map will be used whenever working with data for this country." %}</p>
+  </div>
+  <div class="span2">
+    <a class="btn pull-right" onclick="setBounds()" href="javascript:void(0);"> {% trans "Set Bounds" %}</a>
+  </div>
+</div>
+{% endblock %}
+

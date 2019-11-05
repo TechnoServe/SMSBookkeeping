@@ -1,0 +1,32 @@
+{% extends "smartmin/update.html" %}
+
+{% load smartmin i18n %}
+
+{% block fields %}
+<fieldset class="field-group">
+  <legend>{% trans "Production" %}</legend>
+
+  {% for parent_grade in parent_grades %}
+  <fieldset class="field-group-secondary">
+    <legend>{{ parent_grade.name }}</legend>
+    {% for grade_field in parent_grade.fields %}
+    {% render_field grade_field %}
+    {% endfor %}
+  </fieldset>
+  {% endfor %}
+
+</fieldset>
+<fieldset class="field-group">
+  <legend>{% trans "Farmers" %}</legend>
+  {% render_field "farmers" %}
+</fieldset>
+<fieldset class="field-group">
+  <legend>{% trans "Capacity" %}</legend>
+  {% render_field "capacity" %}
+</fieldset>
+<fieldset class="field-group">
+  <legend>{% trans "Member Production" %}</legend>
+  {% render_field "cherry_production_by_members" %}
+</fieldset>
+{% endblock %}
+

@@ -1,0 +1,44 @@
+{% extends "smartmin/create.html" %}
+
+{% load smartmin i18n %}
+
+{% block pjax %}
+    {% if creation_message %}
+    <div class="alert alert-success">{{ creation_message }}</div>
+    {% endif %}
+    <form class="smartmin-form form-horizontal" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>
+        <label for="season">{% trans "Season" %}</label>
+        <select id="season" name="season" onchange="seasonChanged()" style="width:200px;margin-bottom:0px;">
+            <option value="-1" disabled selected>--Select One--</option>
+            {% for s in seasons %}
+                <option value="{{ s.id }}"
+                        {% if s.id == season %}
+                        selected
+                        {% endif %}>
+                    {{ s }}
+                </option>
+            {% endfor %}
+        </select>
+        <label for="wetmill">{% trans "Wetmill" %}</label>
+        <select id="wetmill" name="wetmill" style="width:200px;margin-bottom:0px;">
+            <option value="-1" disabled selected>--Select One--</option>
+            {% for w in wetmills %}
+                <option value="{{ w.id }}" {% if w.id == wetmill %}selected{% endif %}>{{ w }}</option>
+            {% endfor %}
+        </select>
+        </p>
+        <input type="submit" id="btnSubmitTheForm" value="Save" class="btn btn-primary"/>
+    </form>
+
+{% endblock %}
+
+{% block extra-script %}
+    <script type="text/javascript">
+        function seasonChanged(){
+            $("#wetmill").val("-1"); {% comment %} We're disselecting the wetmill{% endcomment %}
+            $("#btnSubmitTheForm").click();
+        }
+    </script>
+{% endblock %}

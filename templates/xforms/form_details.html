@@ -1,0 +1,6 @@
+<a class="btn" onclick="editFormDetails('{{xform.pk}}');" href="javascript:void(0);">Edit</a>
+<a class="btn" href="/xforms/odk/get/{{ xform.pk }}/">XForm</a>
+<br/><br/>
+<h2>{{xform.name}} <span class="keyword">({{xform.keyword}})</span></h2>
+<div class="description">{{xform.description}}</div>
+<div class="response">Response: {{xform.response}}</div>

@@ -1,0 +1,48 @@
+{% extends "smartmin/read.html" %}
+
+{% load i18n %}
+
+{% block read-buttons %}
+<div class="pull-right">
+  {% if not object.sent %}
+  <a class="btn btn-primary" href="{% url 'broadcasts.broadcast_test' object.id %}">{% trans "Preview Message" %}</a>
+  {% endif %}
+  <a class="btn" href="{% url 'broadcasts.broadcast_message' object.id %}">{% trans "Set Message" %}</a>
+  <a class="btn" href="{% url 'broadcasts.broadcast_schedule' object.id %}">{% trans "Set Schedule" %}</a>
+  <a class="btn" href="{% url 'broadcasts.broadcast_update' object.id %}">{% trans "Set Recipients" %}</a>
+</div>
+
+<div>
+  {% if not object.messages.all %}
+  <a class="btn btn-danger" href="{% url 'broadcasts.broadcast_delete' object.id %}">{% trans "Delete" %}</a>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block post-fields %}
+<h3>{% trans "Messages" %}</h3>
+{% if not object.messages.all %}
+<div class="alert">
+<p>{% trans "No messages sent for this broadcast yet, once this broadcast is sent they will appear here." %}</p>
+</div>
+{% else %}
+<table class="table table-bordered table-striped">
+  <tbody>
+    {% for message in object.messages.all %}
+    <tr>
+      <td class="msg-identity">{{ message.connection.identity }}</td>
+      <td class="msg-text">{{ message.text }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+{% endblock %}
+
+{% block extra-style %}
+<style>
+  td.read-label {
+    white-space: nowrap;
+  }
+</style>
+{% endblock %}

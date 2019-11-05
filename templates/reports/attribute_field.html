@@ -1,0 +1,20 @@
+{% load smartmin %}
+
+{% with form|field:field as form_field %}
+<div class="clearfix form-field {% if form_field.errors %}error{% endif %}">
+  <label for="{{ field.name }}">{% get_label field %}</label>
+  <div class="input">{{ form_field }} 
+    {{ unit }}
+    {% with view|field_help:field as help %}
+    {% if help %}
+    <span class="help-block">{{ help }}</span>
+    {% endif %}
+    {% endwith %}
+    
+    {% if form_field.errors %}
+    <span class="help-block field-errors">{{ form_field.errors }}</span>
+    {% endif %}
+  </div>
+</div>
+{% endwith %} 
+

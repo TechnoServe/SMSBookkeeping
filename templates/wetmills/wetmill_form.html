@@ -1,0 +1,29 @@
+{% extends "smartmin/form.html" %}
+
+{% load i18n %}
+
+{% block pre-fields %}
+<div class="control-group">
+  <div class="controls">
+    <div id="coordinates_picker">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block post-fields %}
+{% if object %}
+<div class="clearfix control-group">
+  <label class="control-label" for="permissions">{% trans "CSP Assignment" %}</label>
+  <div class="controls">
+    <a class="btn" href="{% url 'wetmills.wetmill_csps' object.id %}">{% trans "Edit Per Season" %}</a>
+  </div>
+</div>
+<div class="clearfix control-group">
+  <label class="control-label" for="permissions">{% trans "Accounting System" %}</label>
+  <div class="controls">
+    <a class="btn" href="{% url 'wetmills.wetmill_accounting' object.id %}">{% trans "Edit Per Season" %}</a>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

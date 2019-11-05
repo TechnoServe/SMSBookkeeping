@@ -1,0 +1,21 @@
+{% extends "smartmin/list.html" %}
+
+{% load smartmin i18n %}
+
+{% block table-controls %}
+<div class="row">
+  <div class="span14">
+    <form method="POST" action="{% url 'reportimports.reportimport_action' %}" class="pull-right">
+      <select name="season">
+        {% for season in seasons %}
+        <option value="{{season.id}}" name="season">{{ season }}</option>
+        {% endfor %}
+      </select>
+      {% csrf_token %}
+      <input type="submit" class="btn" value='{% trans "Template" %}' name="template"></input>
+      <input type="submit" class="btn btn-primary" value='{% trans "Import" %}' name="create"></input>
+    </form>
+  </div>
+</div>
+{% endblock %}
+

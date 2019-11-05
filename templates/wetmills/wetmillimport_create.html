@@ -1,0 +1,15 @@
+{% extends "smartmin/create.html" %}
+
+{% load smartmin i18n %}
+
+{% block pre-form %}
+<div class="row">
+  <div class="span10">
+    <div class="alert-message block-message warning">
+      <p>{% trans "You can import wetmills for a country using a properly formatted CSV file." %}</p>
+      <p><b>{% trans "Note that if an import contains data for an existing wetmill in the country, then the attributes for that wetmill will be overwritten by the data contained in the import file." %}</b></p>
+      <p>{% trans "It is recommended that you first" %} <a href="{{ STATIC_URL }}sample_wetmill_import.csv">{% trans "download a sample file" %}</a> {% trans "to get started." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

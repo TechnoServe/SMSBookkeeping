@@ -1,0 +1,36 @@
+[
+  {
+    "pk": 128,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. You must include the start date of the week for your amafaranga submission.",
+      "message_en_us": "Error. You must include the start date of the week for your amafaranga submission.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 91,
+      "test": "None",
+      "message": "Error. You must include the start date of the week for your amafaranga submission.",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 129,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. You must include the start date of the week for your sitoki submission.",
+      "message_en_us": "Error. You must include the start date of the week for your sitoki submission.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 93,
+      "test": "None",
+      "message": "Error. You must include the start date of the week for your sitoki submission.",
+      "type": "req_val",
+      "order": 0
+    }
+  }
+]
+
+

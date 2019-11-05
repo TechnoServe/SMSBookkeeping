@@ -1,0 +1,406 @@
+[
+  {
+    "pk": 5,
+    "model": "locales.currency",
+    "fields": {
+      "has_decimals": true,
+      "modified_by": 1,
+      "name": "Ethiopian Birr",
+      "is_active": true,
+      "prefix": "",
+      "created_by": 1,
+      "abbreviation": "BR",
+      "created_on": "2011-11-10 13:18:39",
+      "modified_on": "2011-11-10 13:18:39",
+      "currency_code": "ETB",
+      "suffix": " Br"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "locales.currency",
+    "fields": {
+      "has_decimals": true,
+      "modified_by": 1,
+      "name": "Euro",
+      "is_active": true,
+      "prefix": "\u20ac ",
+      "created_by": 1,
+      "abbreviation": "EUR",
+      "created_on": "2011-10-10 05:29:02",
+      "modified_on": "2011-10-18 06:24:19",
+      "currency_code": "EUR",
+      "suffix": ""
+    }
+  },
+  {
+    "pk": 4,
+    "model": "locales.currency",
+    "fields": {
+      "has_decimals": false,
+      "modified_by": 1,
+      "name": "Kenyan Shilling",
+      "is_active": true,
+      "prefix": "",
+      "created_by": 1,
+      "abbreviation": "KES",
+      "created_on": "2011-10-18 09:14:22",
+      "modified_on": "2011-10-18 09:14:22",
+      "currency_code": "KES",
+      "suffix": " =/"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "locales.currency",
+    "fields": {
+      "has_decimals": false,
+      "modified_by": 1,
+      "name": "Rwanda Franc",
+      "is_active": true,
+      "prefix": "",
+      "created_by": 1,
+      "abbreviation": "RWF",
+      "created_on": "2011-10-08 05:21:40",
+      "modified_on": "2011-10-08 05:21:40",
+      "currency_code": "RWF",
+      "suffix": " RWF"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "locales.currency",
+    "fields": {
+      "has_decimals": false,
+      "modified_by": 1,
+      "name": "Tanzanian Shilling",
+      "is_active": true,
+      "prefix": "",
+      "created_by": 1,
+      "abbreviation": "TSH",
+      "created_on": "2011-11-10 13:20:45",
+      "modified_on": "2011-11-10 13:20:45",
+      "currency_code": "TZS",
+      "suffix": " TSH"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "locales.currency",
+    "fields": {
+      "has_decimals": true,
+      "modified_by": 1,
+      "name": "US Dollar",
+      "is_active": true,
+      "prefix": "$",
+      "created_by": 1,
+      "abbreviation": "US$",
+      "created_on": "2011-10-08 06:43:24",
+      "modified_on": "2011-10-10 01:57:26",
+      "currency_code": "USD",
+      "suffix": ""
+    }
+  },
+  {
+    "pk": 4,
+    "model": "locales.country",
+    "fields": {
+      "calling_code": 251,
+      "bounds_zoom": 5,
+      "national_id_format": "###########",
+      "modified_by": 1,
+      "name": "Ethiopia",
+      "language": "am",
+      "bounds_lng": "40.915301",
+      "is_active": true,
+      "created_by": 1,
+      "currency": 5,
+      "created_on": "2011-11-10 13:21:39",
+      "phone_format": "### ### ## ##",
+      "country_code": "ET",
+      "bounds_lat": "9.677578",
+      "modified_on": "2011-11-10 13:21:39"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "locales.country",
+    "fields": {
+      "calling_code": 254,
+      "bounds_zoom": 6,
+      "national_id_format": "################",
+      "modified_by": 1,
+      "name": "Kenya",
+      "language": "ke_sw",
+      "bounds_lng": "38.036883",
+      "is_active": true,
+      "created_by": 1,
+      "currency": 4,
+      "created_on": "2011-10-18 09:14:56",
+      "phone_format": "### ### ## ##",
+      "country_code": "KE",
+      "bounds_lat": "0.605261",
+      "modified_on": "2011-10-18 09:14:56"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "locales.country",
+    "fields": {
+      "calling_code": 250,
+      "bounds_zoom": 8,
+      "national_id_format": "# #### # ###### # ##",
+      "modified_by": 1,
+      "name": "Rwanda",
+      "language": "rw",
+      "bounds_lng": "30.016863",
+      "is_active": true,
+      "created_by": 1,
+      "currency": 1,
+      "created_on": "2011-10-08 05:39:48",
+      "phone_format": "### ### ## ##",
+      "country_code": "RW",
+      "bounds_lat": "-2.003572",
+      "modified_on": "2011-10-10 04:29:45"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "locales.country",
+    "fields": {
+      "calling_code": 255,
+      "bounds_zoom": 5,
+      "national_id_format": "##########",
+      "modified_by": 1,
+      "name": "Tanzania",
+      "language": "tz_sw",
+      "bounds_lng": "34.806902",
+      "is_active": true,
+      "created_by": 1,
+      "currency": 6,
+      "created_on": "2011-11-10 13:22:28",
+      "phone_format": "### ### ## ##",
+      "country_code": "TZ",
+      "bounds_lat": "-6.128613",
+      "modified_on": "2011-11-10 13:22:28"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "locales.country",
+    "fields": {
+      "calling_code": 1,
+      "bounds_zoom": 3,
+      "national_id_format": "###-##-####",
+      "modified_by": 1,
+      "name": "United States of America",
+      "language": "en_us",
+      "bounds_lng": "-95.315168",
+      "is_active": true,
+      "created_by": 1,
+      "currency": 2,
+      "created_on": "2011-10-08 06:44:13",
+      "phone_format": "(###) ###-####",
+      "country_code": "US",
+      "bounds_lat": "40.188049",
+      "modified_on": "2011-10-10 01:57:16"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "locales.province",
+    "fields": {
+      "modified_by": 1,
+      "name": "Kigali City",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "created_on": "2011-10-19 02:58:24",
+      "modified_on": "2011-10-19 02:58:24",
+      "order": 1
+    }
+  },
+  {
+    "pk": 2,
+    "model": "locales.province",
+    "fields": {
+      "modified_by": 1,
+      "name": "Northern",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "created_on": "2011-10-11 02:32:07",
+      "modified_on": "2011-10-19 03:04:16",
+      "order": 2
+    }
+  },
+  {
+    "pk": 3,
+    "model": "locales.province",
+    "fields": {
+      "modified_by": 1,
+      "name": "Southern",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "created_on": "2011-10-11 02:31:46",
+      "modified_on": "2011-10-11 02:31:46",
+      "order": 2
+    }
+  },
+  {
+    "pk": 4,
+    "model": "locales.province",
+    "fields": {
+      "modified_by": 1,
+      "name": "Eastern",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "created_on": "2011-10-11 02:31:02",
+      "modified_on": "2011-10-19 03:04:24",
+      "order": 3
+    }
+  },
+  {
+    "pk": 5,
+    "model": "locales.province",
+    "fields": {
+      "modified_by": 1,
+      "name": "Western",
+      "country": 1,
+      "is_active": true,
+      "created_by": 1,
+      "created_on": "2011-10-19 02:58:42",
+      "modified_on": "2011-10-19 03:03:56",
+      "order": 4
+    }
+  },
+
+  {
+    "pk": 11, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 2, 
+      "name": "Jimma", 
+      "country": 4, 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-25 08:30:05", 
+      "modified_on": "2011-11-25 08:30:05", 
+      "order": 1
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 4, 
+      "name": "Illubabor", 
+      "country": 4, 
+      "is_active": true, 
+      "created_by": 4, 
+      "created_on": "2011-11-25 08:34:15", 
+      "modified_on": "2011-11-25 08:34:15", 
+      "order": 2
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 4, 
+      "name": "Kaffa", 
+      "country": 4, 
+      "is_active": true, 
+      "created_by": 4, 
+      "created_on": "2011-11-25 08:34:31", 
+      "modified_on": "2011-11-25 08:34:31", 
+      "order": 3
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 2, 
+      "name": "Central", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-22 12:37:22", 
+      "modified_on": "2011-11-22 12:37:22", 
+      "order": 1
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Western", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-19 02:58:24", 
+      "modified_on": "2011-10-19 02:58:24", 
+      "order": 3
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 2, 
+      "name": "Eastern", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-22 12:37:45", 
+      "modified_on": "2011-11-22 12:37:45", 
+      "order": 3
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 10, 
+      "name": "Mbeya", 
+      "country": 3, 
+      "is_active": true, 
+      "created_by": 10, 
+      "created_on": "2011-11-28 08:15:02", 
+      "modified_on": "2011-11-28 08:15:02", 
+      "order": 1
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 10, 
+      "name": "Ruvuma", 
+      "country": 3, 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-22 13:24:58", 
+      "modified_on": "2011-11-28 08:14:23", 
+      "order": 1
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 10, 
+      "name": "Kilimanjaro", 
+      "country": 3, 
+      "is_active": true, 
+      "created_by": 10, 
+      "created_on": "2011-11-29 13:12:04", 
+      "modified_on": "2011-11-29 13:12:04", 
+      "order": 10
+    }
+  }
+]

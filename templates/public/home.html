@@ -1,0 +1,59 @@
+{% extends "public_base.html" %}
+
+{% load quickblocks markup humanize i18n %}
+
+{% block header-block %}
+{% load_qbs "home_headers" %}
+{% with home_headers|first as home_header %}
+<div class="header-image">
+  <img src="{{ MEDIA_URL }}{{ home_header.image }}">
+</div>
+{% endwith %}
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+  {% load_qbs "home_headers" %}
+  {% with home_headers|first as home_header %}
+  <div class="span8">
+    <h1>{{ home_header.title }}</h1>
+    <p>{{ home_header.content|markdown }}</p>
+  </div>
+  {% endwith %}
+  <div class="span4">
+    <div class="metrics">
+      <div class="metric-block">
+        <div class="metric">{{ wetmill_count|intcomma }}</div>
+        <div class="metric-label">
+          <p>{% trans "Participating" %}</p>
+          <p>{% trans "Cooperatives" %}</p>
+        </div>
+      </div>
+      <div class="metric-block">
+        <div class="metric">{{ farmer_count|intcomma }}</div>
+        <div class="metric-label">
+          <p>{% trans "Participating" %}</p>
+          <p>{% trans "Farmers" %}</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "public/search_box.html" %}
+
+<div class="row">
+  {% load_qbs "home_sections" %}
+  {% for home_section in home_sections %}
+  <div class="span6">
+    <div class="home-half">
+      <img src="{{ MEDIA_URL }}{{ home_section.image }}">
+      <h3>{{ home_section.title }}</h3>
+      <p>{{ home_section.content }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

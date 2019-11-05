@@ -1,0 +1,401 @@
+{% extends "public_base.html" %}
+
+{% load thumbnail %}
+{% load perms quickblocks locales i18n %}
+
+{% block header-block %}
+<div class="row wetmill-header">
+  <div class="span8 wetmill-image" style="background: url('{{STATIC_URL}}img/520x250.jpeg')">
+    <div class="wetmill-name">
+      <h2>{{ wetmill.name }}</h2>
+      <p>{% trans "WETMILL" %}</p>
+    </div>
+  </div>
+  <div class="span4">
+    <canvas width="280" height="250" id="wetmill_map" class="wetmill-map">
+      <img width="280" height="250" src="{{ STATIC_URL }}img/{{wetmill.country.country_code|lower}}.png">
+    </canvas>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="span4">
+    <div class="wetmill-stats">
+      <div class="wetmill-stat">
+        <label>{% trans "Location" %}</label>
+        <p>{{ wetmill.province.name }}, {{ wetmill.country.name }}</p>
+      </div>
+      {% if wetmill.altitude %}
+      <div class="wetmill-stat">
+        <label>{% trans "Elevation" %}</label>
+        <p>{{ wetmill.altitude }}m</p>
+      </div>
+      {% endif %}
+      {% if wetmill.year_started %}
+      <div class="wetmill-stat">
+        <label>{% trans "Established" %}</label>
+        <p>{{ wetmill.year_started }}</p>
+      </div>
+      {% endif %}
+      {% if wetmill.current_csp %}
+      <div class="wetmill-stat">
+        <label>{% trans "CSP" %}</label>
+        <p>{{ wetmill.current_csp }}</p>
+      </div>
+      {% endif %}
+    </div>
+
+    <div>
+      <span class="pull-right">
+        {% if accounting_system != 'NONE' %}
+        {% set_has_wetmill_permission wetmill "sms_view" %}
+        {% if sms_view %}
+        <a class="btn" href="{% url 'dashboard.wetmill_wetmill' wetmill.id %}">{% trans "SMS" %}</a>
+        {% endif %}
+        {% endif %}
+
+        {% set_has_wetmill_permission wetmill "wetmill_edit" %}
+        {% if wetmill_edit %}
+        <a class="btn" href="{% url 'wetmills.wetmill_update' wetmill.id %}">{% trans "Edit" %}</a>
+        <a class="btn" href="{% url 'photos.photo_list' %}?wetmill={{wetmill.id}}">{% trans "Edit Photos" %}</a>
+        {% endif %}
+      </span>
+    </div>
+  </div>
+  <div class="span8">
+      <p>{% if wetmill.description %}{{ wetmill.description }}{% endif %}</p>
+  </div>
+</div>
+
+
+{% if wetmill.photos.all %}
+<div class="row top-margin">
+
+  <div class="span4">
+    {% for photo in wetmill.get_non_main_photos %}
+
+    {% if wetmill.get_photo_count == 1 %}
+
+    {% thumbnail photo.image photo.get_resolution crop="center" upscale=False  as im %}
+    <a href="{{im.url}}" rel="lightbox" title="{{photo.caption}}">
+    {% endthumbnail %}
+    {% thumbnail photo.image "295x300" crop="center" as im %}
+    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" />
+    {% endthumbnail %}
+
+    {% endif %}
+
+    {% if wetmill.get_photo_count > 1 %}
+    {% if forloop.first %}
+    {% thumbnail photo.image photo.get_resolution crop="center" upscale=False  as im %}
+    <a href="{{im.url}}" rel="lightbox" title="{{photo.caption}}">
+    {% endthumbnail %}
+    {% thumbnail photo.image "295x145" crop="center" as im %}
+    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" />
+    {% endthumbnail %}
+
+    {% endif %}
+
+    {% ifequal forloop.counter0 1 %}
+
+    {% thumbnail photo.image photo.get_resolution crop="center" upscale=False  as im %}
+    <a href="{{im.url}}" rel="lightbox" title="{{photo.caption}}">
+    {% endthumbnail %}
+    {% thumbnail photo.image "295x150" crop="center" as im %}
+    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" />
+    {% endthumbnail %}
+    {% endifequal %}
+
+    {% endif %}
+
+    {% endfor %}
+  </div>
+
+  <div class="span8" style="float:right;">
+    {% thumbnail wetmill.get_main_photo.image wetmill.get_main_photo.get_resolution crop="center" upscale=False as im %}
+    <a href="{{im.url}}" rel="lightbox" title="{{photo.caption}}">
+      {% endthumbnail %}
+      {% thumbnail wetmill.get_main_photo.image "520x300" crop="center" as im %}
+      <img src="{{im.url}}" title="{{photo.caption}}"/>
+      {% endthumbnail %}
+    </a>
+  </div>
+
+</div>
+{% endif %}
+
+{% set_has_wetmill_permission wetmill "report_view" %}
+{% set_has_wetmill_permission wetmill "report_edit" %}
+{% set_has_wetmill_permission wetmill "wetmill_edit" %}
+
+{% if last_report or report_view or report_edit or wetmill_edit %}
+<div class="row top-margin">
+  <div class="span4" style="text-align: right; margin-top: 5px;">
+    {% if last_report %}
+    <div class="metric">
+      <div class="big"><span class="med">$</span>{{ last_report.farmer_price_usd|floatformat:2 }}</div>
+      <div class="big_label">{% trans "Farmer Price" %}</div>
+      <div class="big_label">{% trans "Per Kilo" %}</div>
+    </div>
+    <div class="metric">
+      <div class="big"><span class="med">$</span>{{ last_report.production_cost_usd|floatformat:2 }}</div>
+      <div class="big_label">{% trans "Production Cost" %}</div>
+      <div class="big_label">{% trans "Per Kilo" %}</div>
+    </div>
+    <div class="metric">
+      <div class="big">{{ last_report.farmer_share|floatformat:0 }}<span class="med">%</span></div>
+      <div class="big_label">{% trans "Farmer Share" %}</div>
+      <div class="big_label">{% trans "Of Export Price" %}</div>
+    </div>
+    <div class="metric">
+      <div class="big">{{ last_report.cherry_to_green_ratio|floatformat:2 }}</div>
+      <div class="big_label">{% trans "Cherry to Green" %}</div>
+      <div class="big_label">{% trans "Ratio" %}</div>
+    </div>
+    {% endif %}
+  </div>
+  <div class="span8">
+    {% load_qbs "report_headers" %}
+    {% with report_headers|first as report_header %}
+    <h3>{{ report_header.title }}</h3>
+    <p>{{ report_header.content }}</p>
+    {% endwith %}
+
+    <div class="report-control">
+      {% if report_edit or wetmill_edit %}
+      <select id="edit_report_season">
+        {% for season in seasons %}
+        <option value="{{season.id}}">{{ season.name }} {% trans "Report" %}</option>
+        {% endfor %}
+      </select>
+      <a id="edit_report" href="#" class="btn btn-primary">{% trans "Edit" %}</a>
+      {% else %}
+      {% if report_view and finalized_reports %}
+      <select id="view_report">
+        {% for report in finalized_reports %}
+        <option value="{{report.id}}">{{ report.season.name }} {% trans "Report" %}</option>
+        {% endfor %}
+      </select> &nbsp
+      <a id="show_report" href="#" onclick="jascript:showViewOptions('#show_report')" title="PDF Report" class="btn btn-primary pull-right">{% trans "View" %}</a>
+      {% endif %}
+      {% endif %}
+      &nbsp;
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% set_has_wetmill_permission wetmill "scorecard_view" %}
+{% set_has_wetmill_permission wetmill "scorecard_edit" %}
+{% set_has_wetmill_permission wetmill "wetmill_edit" %}
+
+{% if last_scorecard or scorecard_view or scorecard_edit or wetmill_edit %}
+
+<div class="row top-margin">
+    <div class="span4" style="text-align: right; margin-top: 5px;">
+    {% if last_scorecard %}
+    {% for category in last_scorecard.display_categories %}
+    <div class="metric">
+      <div class="big">{{ category.score }}<span class="med">%</span></div>
+      <div class="big_label">{{ category.name }}</div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    </div>
+
+    <div class="span8">
+      {% load_qbs "scorecard_headers" %}
+      {% with scorecard_headers|first as scorecard_header %}
+      <h3>{{ scorecard_header.title }}</h3>
+      <p>{{ scorecard_header.content }}</p>
+      {% endwith %}
+
+      <div class="scorecard-control">
+
+        {% if scorecard_edit or wetmill_edit %}
+        <select id="edit_scorecard_season">
+          {% for season in seasons %}
+          <option value="{{season.id}}">{{ season.name }} {% trans "Scorecard" %}</option>
+          {% endfor %}
+        </select>
+        <a id="edit_scorecard" href="#" class="btn btn-primary">{% trans "Edit" %}</a>
+        {% else %}
+        {% if scorecard_view and finalized_scorecards %}
+        <select id="view_scorecard">
+          {% for scorecard in finalized_scorecards %}
+          <option value="{{scorecard.id}}">{{ scorecard.season.name }} {% trans "Scorecard" %}</option>
+          {% endfor %}
+        </select> &nbsp
+        <a id="show_scorecard" href="#" onclick="jascript:showViewOptions('#show_scorecard')" title="Scorecard Report" class="btn btn-primary pull-right">{% trans "View" %}</a>
+
+        {% endif %}
+        {% endif %}
+        &nbsp;
+      </div>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}
+
+{% block extra-script %}
+{{ block.super }}
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap-twipsy.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap-popover.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/slimbox2.js"></script>
+
+<script>
+  function loadWetmillCoordinate(){
+    var point = {}
+    point.lat = parseFloat('{{wetmill.latitude}}');
+    point.lng = parseFloat('{{wetmill.longitude}}');
+
+    {% with wetmill.country.country_code|lower as country_code %}
+      {% ifequal country_code 'et' %}
+        drawPointOnMap('wetmill_map', '{{ STATIC_URL }}img/{{country_code}}.png', 750, 16.246320061113007, 32.34537390234368, 6, point.lat, point.lng, 5);
+      {% endifequal %}
+      {% ifequal country_code 'ke' %}
+        drawPointOnMap('wetmill_map', '{{ STATIC_URL }}img/{{country_code}}.png', 1100, 5.276947815060244, 31.99381140234368, 7, point.lat, point.lng, 5);
+      {% endifequal %}
+      {% ifequal country_code 'rw' %}
+        drawPointOnMap('wetmill_map', '{{ STATIC_URL }}img/{{country_code}}.png', 800, -0.9914665581757157, 28.79953649999993, 9, point.lat, point.lng, 5);
+      {% endifequal %}
+      {% ifequal country_code 'tz' %}
+        drawPointOnMap('wetmill_map', '{{ STATIC_URL }}img/{{country_code}}.png', 640, -0.2581777667486595, 27.61301306249993, 6, point.lat, point.lng, 5);
+      {% endifequal %}
+    {% endwith %}
+  }
+
+  $(window).load(function(){
+    $("#edit_report").click(function(){
+      window.location.href = "/reports/report/lookup/{{ wetmill.id }}/" + $("#edit_report_season").val() + "/";
+    });
+    $("#edit_scorecard").click(function(){
+      window.location.href = "/scorecards/scorecard/lookup/{{ wetmill.id }}/" + $("#edit_scorecard_season").val() + "/";
+    });
+    loadWetmillCoordinate();
+  });
+
+  function getViewContent(id){
+      var content = '';
+      if (id == '#show_report') {
+          content = '<center><select id="report_version" class="report-options">' +
+          {% for language in languages %}
+          {% for currency in currencies %}
+          '<option value="lang={{ language.language_code }}&currency={{ currency.currency_code }}">{{ language.name }} - {{currency.currency_code}}</option>' +
+              {% endfor %}
+          {% endfor %}
+          '</select> <a href="#" onclick="downloadReport(\'' + id + '\')" class="btn btn-primary">{% trans "Download" %}</a></center>';
+      }else{
+          content = '<center><select id="report_version" class="report-options">' +
+          {% for language in languages %}
+          {% for currency in currencies %}
+          '<option value="lang={{ language.language_code }}&currency={{ currency.currency_code }}">{{ language.name }}</option>' +
+              {% endfor %}
+          {% endfor %}
+          '</select> <a href="#" onclick="downloadReport(\'' + id + '\')" class="btn btn-primary">{% trans "Download" %}</a></center>';
+      }
+
+      return content;
+  }
+
+  function getViewTitle(id){
+      if(id == "#show_report") {
+          return "Show Report Versions<a href='#' onclick='javascript:hideViewOptions(\"" + id + "\")' class='close'>x</a>";
+      }else{
+          return "Show Scorecard Versions<a href='#' onclick='javascript:hideViewOptions(\"" + id + "\")' class='close'>x</a>";
+      }
+  }
+
+  function showViewOptions(id){
+      $(id).popover("show");
+  }
+
+  function hideViewOptions(id){
+      $(id).popover("hide");
+  }
+
+  function downloadReport(id){
+      hideViewOptions(id);
+      if(id == "#show_report") {
+          document.location.href = "/reports/report/pdf/" + $('#view_report').val() + "?" + $('#report_version').val();
+      }else{
+          document.location.href = "/scorecards/scorecard/pdf/" + $('#view_scorecard').val() + "?" + $('#report_version').val();
+      }
+  }
+
+  $(function(){
+      $("#show_report").popover({ trigger: "manual",
+                                  placement: "southwest",
+                                  html: true,
+                                  title: function(){ return getViewTitle("#show_report") },
+                                  content: function(){return getViewContent("#show_report") }
+                                });
+      $("#show_scorecard").popover({ trigger: "manual",
+                                  placement: "southwest",
+                                  html: true,
+                                  title: function(){ return getViewTitle("#show_scorecard") },
+                                  content: function() {return getViewContent("#show_scorecard") }
+                                });
+  });
+
+</script>
+
+{% endblock %}
+
+{% block extra-style %}
+{{ block.super }}
+<link rel="stylesheet" href="{{ STATIC_URL }}css/slimbox2.css" type="text/css" media="screen" />
+
+<style>
+  div.report-control {
+      text-align: right;
+  }
+  div.report-control select {
+      width: 200px;
+  }
+
+  div.scorecard-control {
+      text-align: right;
+  }
+  div.scorecard-control select {
+      width: 200px;
+  }
+  .metric {
+      width: 125px;
+      display: inline-block;
+      padding-bottom: 15px;
+  }
+  div.big {
+      font-size: 42px;
+      font-weight: bold;
+      color: #849F32;
+      line-height: 1;
+      letter-spacing: -1px;
+      text-align: right;
+  }
+  span.med {
+      font-size: 24px;
+      font-weight: bold;
+      color: #849F32;
+      margin-right: 0px;
+  }
+  div.big_label {
+      font-size: 13px;
+      font-weight: bold;
+      color: #666;;
+      text-align: right;
+  }
+  .spacer {
+      margin-right: 10px;
+  }
+
+  .row img {
+      padding: 0px;
+      margin: 0px;
+  }
+
+</style>
+{% endblock %}

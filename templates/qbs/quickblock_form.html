@@ -1,0 +1,79 @@
+{% extends "smartmin/form.html" %}
+{% load thumbnail i18n %}
+
+{% block extra-fields %}
+{% if object and type.has_gallery %}
+<div class="control-group ">
+  <label class="control-label" for="">{% trans "Gallery" %}</label>
+  <div class="controls">
+    {% for img in object.sorted_images %}
+    {% thumbnail img.image "100x100" crop="center" as im %}
+    <a href="{% url 'django_quickblocks.quickblockimage_update' img.id %}"><img class="thumb" src="{{ im.url }}" width="{{ img.x }}" height="{{ img.y }}" /></a>
+    {% endthumbnail %}
+    {% endfor %}
+    <a class="btn btn-small" href="{% url 'django_quickblocks.quickblockimage_create' %}?quickblock={{ object.id }}">{% trans "Add Image" %}</a>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+
+{% block extra-style %}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/prettify.css"></link>
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/bootstrap-wysihtml5.css"></link>
+<style>
+{% if type.has_rich_text %}
+#id_content {
+  width: 93%;
+  height: 250px;
+  margin-right: 20px;
+}
+#id_summary {
+  width: 93%;
+  height: 150px;
+  margin-right: 20px;
+}
+{% endif %}
+img.thumb {
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+</style>
+{% endblock %}
+
+{% block extra-script %}
+<script src="{{ STATIC_URL }}js/wysihtml5-advanced.js"></script>
+<script src="{{ STATIC_URL }}js/wysihtml5-0.4.0pre.min.js"></script>
+<script src="{{ STATIC_URL }}js/prettify.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-wysihtml5.js"></script>
+
+<script>
+{% if type.has_rich_text %}
+$(function(){
+  $("#id_content").wysihtml5({
+    parserRules: wysihtml5ParserRules,
+    color: true,
+    html: true,  
+    image: false,                             
+{% if user.is_superuser or perms.django_quickblocks.quickblock_html %}                            
+    html: true,
+{% else %}
+    html: false,
+{% endif %}
+    stylesheets: ["{{ STATIC_URL }}css/wysiwyg-color.css"], 
+  });
+  $("#id_summary").wysihtml5({
+    color: true,
+    html: true,  
+    image: false,                             
+{% if user.is_superuser %}                            
+    html: true,
+{% else %}
+    html: false,
+{% endif %}
+    stylesheets: ["{{ STATIC_URL }}css/wysiwyg-color.css"], 
+  });
+});
+{% endif %}
+</script>
+{% endblock %}

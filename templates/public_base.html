@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block pre-container %}
+<div class="public-header">
+  <div class="container">
+    <div class="country-nav">
+      <ul>
+        <li><a href="{% url 'public-country' 'rw' %}" {% if country.country_code == 'RW' %}class="selected"{% endif %}>{% trans "Rwanda" %}</a></li>
+        <li><a href="{% url 'public-country' 'ke' %}" {% if country.country_code == 'KE' %}class="selected"{% endif %}>{% trans "Kenya" %}</a></li>
+        <li><a href="{% url 'public-country' 'tz' %}" {% if country.country_code == 'TZ' %}class="selected"{% endif %}>{% trans "Tanzania" %}</a></li>
+        <li><a href="{% url 'public-country' 'et' %}" {% if country.country_code == 'ET' %}class="selected"{% endif %}>{% trans "Ethiopia" %}</a></li>
+      </ul>
+    </div>
+
+    {% block header-block %}
+    {% endblock %}
+  </div>
+</div>
+{% endblock %}
+
+{% block extra-style %}
+  {{ block.super }}
+  <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/public_styles.css?v2">
+{% endblock %}
+
+{% block extra-script %}
+  {{ block.super }}
+  <script type="text/javascript" src="{{ STATIC_URL }}js/map_profile.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $("td.clickable").hover(function(){
+      this.style.cursor='pointer'
+    },
+    function(){});
+
+    $("td.clickable").click(function(){
+      document.location = $(this).children("a").attr("href");
+    });
+
+    $("#search_box").focus();
+  });
+  </script>
+{% endblock %}

@@ -1,0 +1,368 @@
+[
+  {
+    "pk": 1,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": "Cherry",
+      "modified_by": 1,
+      "name": "Cherry",
+      "parent": null,
+      "is_active": true,
+      "kind": "CHE",
+      "created_by": 1,
+      "order": 0,
+      "created_on": "2011-10-14 07:29:07",
+      "name_am": null,
+      "modified_on": "2011-10-18 06:50:39",
+      "name_tz_sw": "asdfasdf",
+      "name_en_us": "Cherry",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 20,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "A1",
+      "parent": 2,
+      "is_active": true,
+      "kind": "PAR",
+      "created_by": 1,
+      "order": 0,
+      "created_on": "2011-11-10 13:26:52",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:26:52",
+      "name_tz_sw": null,
+      "name_en_us": "A1",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 16,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Dry-milled",
+      "parent": 13,
+      "is_active": true,
+      "kind": "UNW",
+      "created_by": 1,
+      "order": 0,
+      "created_on": "2011-11-10 13:11:10",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:11:10",
+      "name_tz_sw": null,
+      "name_en_us": "Dry-milled",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 11,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Washed",
+      "parent": 1,
+      "is_active": true,
+      "kind": "CHE",
+      "created_by": 1,
+      "order": 0,
+      "created_on": "2011-11-10 13:03:17",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:03:17",
+      "name_tz_sw": null,
+      "name_en_us": "Washed",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 17,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Sold locally",
+      "parent": 13,
+      "is_active": true,
+      "kind": "UNW",
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-11-10 13:11:46",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:11:46",
+      "name_tz_sw": null,
+      "name_en_us": "Sold locally",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 21,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "A2",
+      "parent": 2,
+      "is_active": true,
+      "kind": "PAR",
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-11-10 13:27:02",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:27:02",
+      "name_tz_sw": null,
+      "name_en_us": "A2",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 12,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Converted to Natural",
+      "parent": 1,
+      "is_active": true,
+      "kind": "CHE",
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-11-10 13:03:50",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:03:50",
+      "name_tz_sw": null,
+      "name_en_us": "Converted to Natural",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 3,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "15+",
+      "parent": 10,
+      "is_active": true,
+      "kind": "GRE",
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-10-14 07:34:06",
+      "name_am": null,
+      "modified_on": "2011-10-18 06:50:59",
+      "name_tz_sw": null,
+      "name_en_us": "15+",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 2,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": "asdf",
+      "modified_by": 1,
+      "name": "Parchment",
+      "parent": null,
+      "is_active": true,
+      "kind": "PAR",
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-10-14 07:29:24",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:04:17",
+      "name_tz_sw": null,
+      "name_en_us": "Parchment",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 13,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Jenfel",
+      "parent": null,
+      "is_active": true,
+      "kind": "UNW",
+      "created_by": 1,
+      "order": 2,
+      "created_on": "2011-11-10 13:04:45",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:04:45",
+      "name_tz_sw": null,
+      "name_en_us": "Jenfel",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 4,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "13,14",
+      "parent": 10,
+      "is_active": true,
+      "kind": "GRE",
+      "created_by": 1,
+      "order": 2,
+      "created_on": "2011-10-14 07:34:15",
+      "name_am": null,
+      "modified_on": "2011-10-18 06:51:16",
+      "name_tz_sw": null,
+      "name_en_us": "13,14",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 14,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Dry-milled",
+      "parent": 2,
+      "is_active": true,
+      "kind": "PAR",
+      "created_by": 1,
+      "order": 2,
+      "created_on": "2011-11-10 13:10:35",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:27:08",
+      "name_tz_sw": null,
+      "name_en_us": "Dry-milled",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 15,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Sold locally",
+      "parent": 2,
+      "is_active": true,
+      "kind": "PAR",
+      "created_by": 1,
+      "order": 3,
+      "created_on": "2011-11-10 13:10:48",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:27:14",
+      "name_tz_sw": null,
+      "name_en_us": "Sold locally",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 5,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Low Grades",
+      "parent": 10,
+      "is_active": true,
+      "kind": "GRE",
+      "created_by": 1,
+      "order": 3,
+      "created_on": "2011-10-18 06:51:31",
+      "name_am": null,
+      "modified_on": "2011-10-18 06:51:31",
+      "name_tz_sw": null,
+      "name_en_us": "Low Grades",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 10,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Green",
+      "parent": null,
+      "is_active": true,
+      "kind": "GRE",
+      "created_by": 1,
+      "order": 3,
+      "created_on": "2011-10-14 07:34:06",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:04:23",
+      "name_tz_sw": null,
+      "name_en_us": "Green",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 18,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Washed",
+      "parent": 10,
+      "is_active": true,
+      "kind": "GRE",
+      "created_by": 1,
+      "order": 5,
+      "created_on": "2011-11-10 13:11:58",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:11:58",
+      "name_tz_sw": null,
+      "name_en_us": "Washed",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 19,
+    "model": "grades.grade",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Naturals",
+      "parent": 10,
+      "is_active": true,
+      "kind": "GRE",
+      "created_by": 1,
+      "order": 6,
+      "created_on": "2011-11-10 13:12:07",
+      "name_am": null,
+      "modified_on": "2011-11-10 13:12:07",
+      "name_tz_sw": null,
+      "name_en_us": "Naturals",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 1,
+    "model": "cashuses.cashuse",
+    "fields": {
+      "modified_by": 1,
+      "name": "Second Payment",
+      "is_active": true,
+      "created_by": 1,
+      "created_on": "2011-11-10 14:01:57",
+      "modified_on": "2011-11-10 14:01:57",
+      "order": 0
+    }
+  },
+  {
+    "pk": 2,
+    "model": "cashuses.cashuse",
+    "fields": {
+      "modified_by": 1,
+      "name": "Dividend",
+      "is_active": true,
+      "created_by": 1,
+      "created_on": "2011-11-10 14:02:05",
+      "modified_on": "2011-11-10 14:02:05",
+      "order": 1
+    }
+  }
+]

@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load rosetta i18n %}
+
+{% block content %}
+<div class="page-header">
+  <h2>{{ language }} DB Translations</h2>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h4>Instructions</h4>
+    <p>For each translation, enter in the equivalent in the local language.  Some words can appear more than once depending on their type</p>
+    <p>Translations entered here will take effect immediately upon submission.</p>
+  </div>
+  <div class="span4">
+    <h4>Examples</h4>
+    <pre class="examples">
+<span class="blue">Production</span> - <span class="green">Umusaruro</span>
+<span class="blue">Green</span> - <span class="green">Ikawa Yumye</span></pre>
+</div>
+</div>
+
+<div class="row trans-header">
+  <div class="span8">
+    &nbsp;
+  </div>
+
+  <div class="span4">
+    <div class="pull-right">
+      <form>
+        <select class="filter" name="filter">
+          <option value="all" {% if filter == 'all' %}selected{% endif %}>All</option>
+          <option value="untranslated" {% if filter == 'untranslated' %}selected{% endif %}>Untranslated</option>
+          <option value="translated" {% if filter == 'translated' %}selected{% endif %}>Translated</option>
+        </select>
+        <input type="submit" value="Filter" class="btn"></input>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <form method="post" action="">
+      {% csrf_token %}
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>English</th>
+            <th width="420">{{ language }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for record in page_obj.object_list %}
+          <tr>
+            <td>{{ record.type }}</td>
+            <td>{{ record.original }}</td>
+            <td class="translation">
+              <textarea rows="1" cols="40" name="{{ record.key }}" index="{% increment tab_idx %}">{% if record.translated %}{{ record.translated }}{% endif %}</textarea>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+    {% if paginator and paginator.num_pages > 1 %}
+    <div class="pagination pull-right">
+      <ul>
+        {% if page_obj.has_previous %}
+        <li class="prev"><a href="?page={{page_obj.previous_page_number}}&filter={{filter}}">&larr; Previous</a></li>
+        {% else %}
+        <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+        {% endif %}
+
+        {% for page_num in paginator.page_range %}
+          {% if page_num < 10 %}
+            {% if not page_num == page_obj.number %}
+            <li><a href="?page={{page_num}}&filter={{filter}}">{{ page_num }}</a></li>
+            {% else %}
+            <li class="active"><a href="#">{{ page_num }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+        <li class="next"><a href="?page={{page_obj.next_page_number}}&filter={{filter}}">Next &rarr;</a></li>
+        {% else %}
+        <li class="next disabled"><a href="#">Next &rarr;</a></li>
+        {% endif %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <div class="actions clear-both">
+      <input type="submit" class="btn btn-primary" name="_next" value="{% trans "Save Translations" %}" tabindex="{% increment tab_idx %}"/>
+    </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra-style %}
+<style>
+  .pagination {
+    margin-bottom: 15px;
+  }
+
+  .clear-both {
+    clear: both;
+  }
+
+  textarea {
+    width: 400px;
+  }
+
+  select.filter {
+    width: 200px;
+    margin-bottom: 0px;
+    height: 28px;
+  }
+
+  div.trans-header {
+  }
+
+  span.blue {
+    color: blue;
+  }
+
+  span.green {
+    color: green;
+  }
+
+  pre.examples {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+</style>
+{% endblock %}

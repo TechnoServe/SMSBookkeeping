@@ -1,0 +1,27 @@
+{% extends "smartmin/create.html" %}
+
+{% load smartmin i18n %}
+
+{% block fields %}
+    {% render_field "name" %}
+    {% render_field "country" %}
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Configuration" %}</legend>
+      {% render_field "has_local_sales" %}
+      {% render_field "has_members" %}
+      {% render_field "has_misc_revenue" %}
+    </fieldset>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Sale Defaults" %}</legend>
+      {% render_field "exchange_rate" %}
+      {% render_field "default_adjustment" %}
+    </fieldset>
+
+    <fieldset class="field-group-secondary">
+      <legend>{% trans "Baselines" %}</legend>
+      {% render_field "farmer_income_baseline" %}
+      {% render_field "fob_price_baseline" %}
+    </fieldset>
+{% endblock %}

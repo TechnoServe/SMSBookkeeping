@@ -1,0 +1,48 @@
+[
+  {
+    "pk": 1,
+    "model": "sms_reports.report",
+    "fields": {
+      "message_rw": "{{ wetmill.name }} yaguze ibiro {{ cherry }} byibitumbwe ku {{ avg_price }} RWF/kiro yose hamwe {{ spent }} RWF. Asigaye kashi {{ balance }} RWF na y'umuhinzi asiye ni {{ credit }} RWF. ",
+      "name": "Daily Report",
+      "hour": 20,
+      "created": "2011-03-07 12:43:37",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "day": "ALL",
+      "active": true,
+      "message_en_us": "{{ wetmill.name }} purchased {{ cherry }} kg of cherry at {{ avg_price }} RWF/kg for a total of {{ spent }} RWF. Cash balance is {{ balance }} RWF and farmer credit balance is {{ credit }} RWF.",
+      "message": "{{ wetmill.name }} purchased {{ cherry }} kg of cherry at {{ avg_price }} RWF/kg for a total of {{ spent }} RWF. Cash balance is {{ balance }} RWF and farmer credit balance is {{ credit }} RWF.",
+      "reporter_types": [
+        48,
+        47
+      ],
+      "slug": "daily",
+      "description": "Daily Report sent out to accountants and observers.\r\n\r\nAvailable variables: {{ avg_price }} {{ cherry }} {{ spent }} {{ balance }} {{ credit }} {{ wetmill.name }}"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "sms_reports.report",
+    "fields": {
+      "message_rw": "{{ wetmill.name }} - ibitumbwe byaguzwe ibiciro byose: {{ cost_ratio }} Ibitumbwe ikawa: {{ cherry_parchment_ratio }} Gukaranga: {{ burn_rate }} RWF/umunsi. Iminsi isigaye: {{ days_left }}",
+      "name": "Weekly Report",
+      "hour": 18,
+      "created": "2011-03-07 12:52:43",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "day": "SAT",
+      "active": true,
+      "message_en_us": "{{ wetmill.name }} - Cherry Purchase to All Costs: {{ cost_ratio }} Cherry:Parch: {{ cherry_parchment_ratio }} Burn Rate: {{ burn_rate }} RWF/day. Days of Working Capital remaining: {{ days_left }}",
+      "message": "{{ wetmill.name }} - Cherry Purchase to All Costs: {{ cost_ratio }} Cherry:Parch: {{ cherry_parchment_ratio }} Burn Rate: {{ burn_rate }} RWF/day. Days of Working Capital remaining: {{ days_left }}",
+      "reporter_types": [
+        48,
+        47
+      ],
+      "slug": "weekly",
+      "description": "Sent weekly to observers and accountants.\r\n\r\nAvailable variables: {{ wetmill.name }} {{ cost_ratio }} {{ cherry_parchment_ratio }} {{ burn_rate }} {{ days_left }}"
+    }
+  }
+]

@@ -1,0 +1,323 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Coffee Transparency{% endblock %}</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico">
+
+  <!-- CSS: implied media="all" -->
+  {# load compress #}
+  {# compress css #}
+  <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css?v3">
+  <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/smartmin_styles.css?v3">
+  <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/styles.css?v3">
+  {% block extra-style %}{% endblock %}
+
+  {# endcompress #}
+
+  <script>
+    if (window.location.hostname == "localhost" || window.location.hostname == "127.0.0.1"){
+    document.write(unescape('%3Cscript src="{{ STATIC_URL }}js/libs/jquery.1.8.3.min.js"%3E%3C/script%3E'));
+    } else {
+    document.write(unescape('%3Cscript src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"%3E%3C/script%3E'));
+    }
+  </script>
+</head>
+
+{% load i18n perms %}
+
+{% set_has_any_permission "scorecard_edit" %}
+
+<body class="has-top-bar">
+
+<div class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="brand" href="/">Coffee Transparency</a>
+      
+      <div class="nav-collapse">
+        <ul class="nav">
+          {% if perms.csps.csp_list %}
+	      <li class="dropdown">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Organization" %}
+              <b class="caret"></b>
+            </a>
+		    <ul class="dropdown-menu">
+		      <li><a href="{% url 'csps.csp_list' %}">{% trans "Service Providers" %}</a></li>
+		      <li><a href="{% url 'wetmills.wetmill_list' %}">{% trans "Wetmills" %}</a></li>
+		      <li><a href="{% url 'seasons.season_list' %}">{% trans "Seasons" %}</a></li>
+		    </ul>
+	      </li>
+          {% endif %}
+
+          {% if perms.reports.report_list and not perms.reports.report_credit_only %}
+	      <li class="dropdown">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Transparency" %}
+              <b class="caret"></b>
+            </a>
+		    <ul class="dropdown-menu">
+		      <li><a href="{% url 'reports.report_list' %}?report_mode=TR">{% trans "Reports" %}</a></li>
+              {% if perms.expenses.expense_list %}
+		      <li class="divider"></li>
+		      <li><a href="{% url 'expenses.expense_list' %}">{% trans "Expenses" %}</a></li>
+		      <li><a href="{% url 'grades.grade_list' %}">{% trans "Grades" %}</a></li>
+		      <li><a href="{% url 'cashuses.cashuse_list' %}">{% trans "Uses of Cash" %}</a></li>
+		      <li><a href="{% url 'cashsources.cashsource_list' %}">{% trans "Cash Sources" %}</a></li>
+		      <li><a href="{% url 'farmerpayments.farmerpayment_list' %}">{% trans "Farmer Payments" %}</a></li>
+              {% endif %}
+		    </ul>
+	      </li>
+          {% endif %}
+
+          {% if perms.reports.report_list %}
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Credit" %}
+                      <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a href="{% url 'reports.report_list' %}?report_mode=CR">{% trans "Reports" %}</a></li>
+                      {% if perms.expenses.expense_list %}
+                          <li class="divider"></li>
+                          <li><a href="{% url 'expenses.expense_list' %}">{% trans "Expenses" %}</a></li>
+                          <li><a href="{% url 'grades.grade_list' %}">{% trans "Grades" %}</a></li>
+                      {% endif %}
+                  </ul>
+              </li>
+          {% endif %}
+
+          {% if perms.scorecards.scorecard_list or scorecard_edit %}
+	      <li class="dropdown">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Sustainability" %}
+              <b class="caret"></b>
+            </a>
+		    <ul class="dropdown-menu">
+		      <li><a href="{% url 'scorecards.scorecard_list' %}">{% trans "Scorecards" %}</a></li>
+              {% if perms.standards.standard_list %}
+		      <li class="divider"></li>
+		      <li><a href="{% url 'standards.standard_list' %}">{% trans "Standards" %}</a></li>
+		      <li><a href="{% url 'standards.standardcategory_list' %}">{% trans "Standard Categories" %}</a></li>
+              {% endif %}
+		    </ul>
+	      </li>
+          {% endif %}
+
+        {% load perms %}
+        {% set_has_any_permission "sms_view" %}
+        {% if perms.broadcasts.broadcast_list or sms_view or perms.broadcasts_season_end.broadcastsonseasonend_list or request.user.is_superuser or perms.rapidsms_httprouter.message_list %}
+	      <li class="dropdown">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Finance" %}
+              <b class="caret"></b>
+            </a>
+		    <ul class="dropdown-menu">
+          {% if sms_view or perms.broadcasts.broadcast_list %}
+             <li><a href="{% url 'dashboard.wetmill_dashboard' %}">{% trans "Dashboard" %}</a></li>
+          {% endif %}
+          {% if perms.broadcasts.broadcast_list %}
+          <li class="divider"></li>
+		      <li><a href="{% url 'xform-list' %}">{% trans "SMS Responses" %}</a></li>
+          {% endif %}
+          {% if perms.broadcasts.broadcast_list %}
+		        <li><a href="{% url 'broadcasts.broadcast_list' %}">{% trans "Broadcasts" %}</a></li>
+          {% endif %}
+          {% if perms.broadcasts_season_end.broadcastsonseasonend_list %}
+              <li><a href="{% url 'broadcasts_season_end.broadcastsonseasonend_list' %}">{% trans "End of Season Message Templates" %}</a></li>
+          {% endif %}
+          {% if request.user.is_superuser %}
+            <li><a href="{% url 'blurbs.blurb_list' %}">{% trans "Blurbs" %}</a></li>
+          {% endif %}
+          {% if perms.rapidsms_httprouter.message_list %}
+              <li class="divider"></li>
+              <li><a href="{% url 'console.message_list' %}">{% trans "Message Log" %}</a></li>
+          {% endif %}
+  		  </ul>
+	      </li>
+          {% endif %}
+
+          {% if perms.auth.user_list or perms.locales.country_list or perms.locales.province_list %}
+	      <li class="dropdown">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Admin" %}
+              <b class="caret"></b>
+            </a>
+		    <ul class="dropdown-menu">
+  		      {% if perms.locales.country_list %}
+		      <li><a href="{% url 'locales.country_list' %}">{% trans "Countries" %}</a></li>
+		      {% endif %}
+		      {% if perms.locales.currency_list %}
+		      <li><a href="{% url 'locales.currency_list' %}">{% trans "Currencies" %}</a></li>
+  		      {% endif %}
+		      {% if perms.locales.weight_list %}
+		      <li><a href="{% url 'locales.weight_list' %}">{% trans "Weights" %}</a></li>
+		      {% endif %}
+  		      {% if perms.locales.province_list %}
+		      <li><a href="{% url 'locales.province_list' %}">{% trans "Provinces" %}</a></li>
+		      {% endif %}
+  		      {% if perms.locales.country_translate %}
+		      <li class="divider"></li>
+		      <li><a href="{% url 'translate_index' %}">{% trans "Translations" %}</a></li>
+		      {% endif %}
+              {% if perms.django_quickblocks.quickblock_list %}
+              <li class="divider"></li>
+              <li><a href="{% url 'qbs.quickblock_list' %}">{% trans "Content" %}</a></li>
+              {% if perms.django_quickblocks.quickblocktype_list %}
+              <li><a href="{% url 'django_quickblocks.quickblocktype_list' %}">{% trans "Content Types" %}</a></li>
+              {% endif %}
+              {% endif %}
+		      {% if perms.auth.user_list %}
+		      <li class="divider"></li>
+		      <li><a href="{% url 'users.user_list' %}">{% trans "Users" %}</a></li>
+		      {% endif %}
+		  </ul>
+	    </li>
+        {% endif %}
+        </ul>
+
+        {% if request.user.is_anonymous %}
+        <ul class="nav pull-right">
+          <li><a href="{% url 'users.user_login' %}">{% trans "Login" %}</a></li>
+        </ul>
+        {% else %}
+        <ul class="nav pull-right">
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ request.user.first_name|slice:"12" }}
+             <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+          <li><a href="{% url 'users.user_profile' 0 %}">{%  trans "Profile" %}</a></li>
+          <li><a href="/users/logout/?go=/">{% trans "Logout" %}</a></li>
+          </ul>
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% block pre-container %}
+{% endblock %}
+
+{% block container-tag %}
+<div class="container">
+{% endblock %}
+
+  {% load smartmin %}
+
+  <br/><br/>
+  {% block pre-content-div %}
+  {% endblock %}
+      
+  {% block content-div %}
+    <div class="content">
+      {% block messages %}
+  	  {% if messages %}
+	  {% for message in messages %}
+	    <div class="alert alert-{{message.tags}}">
+	      <button type="button" class="close" data-dismiss="alert">×</button>
+	      <p>{{ message }}</p>
+	    </div>
+	  {% endfor %}
+	  {% endif %}
+      {% endblock messages %}
+    
+      {% block pre-content %}
+      {% endblock %}
+  
+      {% block content %}
+      {% endblock %}
+  
+      {% block post-content %}
+      {% endblock %}
+    </div>
+  {% endblock %}
+
+  <footer>
+  <div class="row-fluid">
+    <div class="span4">
+      <a href="http://www.technoserve.org/" style="color: #999999; text-decoration: none;">TechnoServe</a>
+    </div>
+    <div class="span4 languages">
+      <a href="#" onclick="setLanguage('en-us')">english</a> | <a href="#" onclick="setLanguage('es')" >español</a>
+    </div>
+    <div class="span4">
+      <a href="http://www.nyaruka.com/" style="float: right;"><img src="{{ STATIC_URL }}img/nyaruka.png" /></a>
+    </div>
+  </div>
+  </footer>
+
+</div> <!-- /container -->
+
+{% block scripts %}
+  <script>
+    $(document).ready(function(){
+        $('#topbar').dropdown();
+
+        console.log(location.hash.length);
+        if (location.hash.length) {
+            var activeTab = $('[href=' + location.hash + ']');
+
+            {% if active_tab %}
+                var activeTab = $('[href=' + active_tab + ']');
+            {% endif %}
+
+            if (activeTab) {
+                activeTab.on('shown', function (e) {
+                    setTimeout(function () {
+                        window.scrollTo(0, 0);
+                    }, 100);
+                });
+                activeTab.tab('show');
+            }
+        }
+
+    });
+
+    function setLanguage(languageCode) {
+      if (languageCode == 'es') {
+        var url = "{% url 'set-language' 'es' %}";
+      } else {
+        var url = "{% url 'set-language' 'en-us' %}";
+      }
+
+      var activeTabName = $('.nav-tabs .active').children('a').attr('href');
+      if (typeof activeTabName == 'undefined') {
+          activeTabName = '';
+      }
+      document.location =  url + "?next={{request.path}}?{% for get_param in request.GET %}{% if not forloop.first %}&{% endif %}{{ get_param }}={{ request.GET|get:get_param }}{% endfor %}&active_tab=" + activeTabName;
+    }
+
+  </script>
+
+  {# compress js #}
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.pjax.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+
+  {# media associated with any form we are displaying #}
+  {% if form %}
+    {{ form.media }}
+  {% endif %}
+  
+  {% block extra-script %}{% endblock %}
+  {% block script %}{% endblock %}
+  {# endcompress #}
+
+{% endblock %}
+
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <!--script type="text/javascript">
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script-->
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+[
+  {
+    "pk": 202,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Accountant",
+      "created": "2012-01-20T09:14:55",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:24:36",
+      "type": null,
+      "slug": "day_accountant",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 212,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Date",
+      "created": "2012-01-25T11:19:54",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:19:54",
+      "type": null,
+      "slug": "day_date",
+      "name": "Date"
+    }
+  },
+  {
+    "pk": 213,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Cherry",
+      "created": "2012-01-25T11:19:54",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:19:54",
+      "type": null,
+      "slug": "day_cherry_purchased",
+      "name": "Cherry"
+    }
+  },
+  {
+    "pk": 129,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Day",
+      "keyword": "day",
+      "response_ke_sw": "{{ wetmill.name }} report saved for {{ date }}.",
+      "command_prefix": null,
+      "response_rw": "{{ wetmill.name }} report saved for {{ date }}.",
+      "created": "2012-01-20T09:09:37",
+      "restrict_message": "",
+      "modified": "2012-02-02T14:35:34",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": "{{ wetmill.name }} report saved for {{ date }}.",
+      "response": "{{ wetmill.name }} report saved for {{ date }}.",
+      "response_en_us": "{{ wetmill.name }} report saved for {{ date}}.",
+      "description": "Summary message sent by lite reporting systems."
+    }
+  },
+  {
+    "pk": 134,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. You must be an accountant in order to send daily reports.  Register with 'acc'",
+      "message_en_us": "Error. You must be an accountant in order to send daily reports.  Register with 'acc'",
+      "message_am": null,
+      "message_ke_sw": "Error. You must be an accountant in order to send daily reports.  Register with 'acc'",
+      "message_tz_sw": "Error. You must be an accountant in order to send daily reports.  Register with 'acc'",
+      "field": 202,
+      "test": "None",
+      "message": "Error. You must be an accountant in order to send daily reports.  Register with 'acc'",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 135,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. You must include the date for the day report.",
+      "message_en_us": "Error. You must include the date for the day report.",
+      "message_am": null,
+      "message_ke_sw": "Error. You must include the date for the day report.",
+      "message_tz_sw": "Error. You must include the date for the day report.",
+      "field": 212,
+      "test": "None",
+      "message": "Error. You must include the date that the day report.",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 136,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. You must include the cherry collected.",
+      "message_en_us": "Error. You must include the cherry collected.",
+      "message_am": null,
+      "message_ke_sw": "Error. You must include the cherry collected.",
+      "message_tz_sw": "Error. You must include the cherry collected.",
+      "field": 213,
+      "test": "None",
+      "message": "Error. You must include the cherry collected.",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 137,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Cherry collected cannot be negative.",
+      "message_en_us": "Error. Cherry collected cannot be negative.",
+      "message_am": null,
+      "message_ke_sw": "Error. Cherry collected cannot be negative.",
+      "message_tz_sw": "Error. Cherry collected cannot be negative.",
+      "field": 213,
+      "test": "0",
+      "message": "Error. Cherry collected cannot be negative.",
+      "type": "min_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 202,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "accountant",
+      "order": 2,
+      "xform": 129
+    }
+  },
+  {
+    "pk": 212,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "daylot",
+      "command": "date",
+      "order": 0,
+      "xform": 129
+    }
+  },
+  {
+    "pk": 213,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "cherry_purchased",
+      "order": 1,
+      "xform": 129
+    }
+  }
+]
+
+

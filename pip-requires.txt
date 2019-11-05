@@ -1,0 +1,38 @@
+-e git+http://github.com/nyaruka/nsms.git#egg=nsms
+Django==1.5.1
+Markdown==2.3.1
+Pillow
+RapidSMS==0.9.6a
+South==0.8.4
+celery==3.0.17
+coverage==3.5.1
+django-celery==3.0.17
+django-compressor==1.1
+django-debug-toolbar
+django-digest==1.13
+django-guardian==1.0.3
+-e git+git://github.com/nyaruka/django-eav.git#egg=django-eav
+-e git+https://github.com/nyaruka/django-modeltranslation.git#egg=django_modeltranslation-dev
+django-nose==0.1.3
+-e git+http://github.com/nyaruka/django-quickblocks.git#egg=django_quickblocks
+django-rosetta==0.7.1
+gunicorn==0.17.2
+nose==1.1.2
+pisa==3.0.33
+pytz==2011k
+raven==3.3.3
+-e git+http://github.com/nyaruka/rapidsms-httprouter.git#egg=rapidsms_httprouter
+-e git+http://github.com/nyaruka/rapidsms-xforms.git#egg=rapidsms_xforms
+redis==2.7.1
+reportlab==2.5
+simplejson==2.2.1
+-e git+http://github.com/nyaruka/smartmin.git@4ca8b9df1648cb00e6c1aaa9b6fe94290e00f281#egg=smartmin-master
+sorl-thumbnail
+django_select2
+requests==1.1.0
+lxml==3.1.0
+cssselect
+xlutils
+mysql-python
+
+

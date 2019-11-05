@@ -1,0 +1,72 @@
+{% extends "smartmin/update.html" %}
+
+{% load smartmin %}
+
+{% block form-span %}span13{% endblock %}
+
+{% block fields %}
+{% with report.season.country.currency as curr %}
+{% for expense_field in expense_fields %}
+  {% if expense_field.expense.depth == 0 %}
+  {% if not forloop.first %}
+  </fieldset>
+  {% endif %}
+
+  <fieldset class="field-group">
+    <legend>{{ expense_field.expense.name }}</legend>
+  {% else %}
+    {% if expense_field.expense.is_parent %}
+      </fieldset>
+      <fieldset class="field-group-secondary">
+        <legend>{{ expense_field.expense.name }}</legend>
+    {% else %}
+      {% with expense_field.field as field %}
+      {% with form|field:field as form_field %}
+      <div class="clearfix form-field {% if expense_field.expense.in_dollars %}dollar-input {% with form|field:expense_field.exchange_field as exchange_field %}{% if exchange_field.errors %}error {% endif %}{% endwith %}{% endif %} {% if form_field.errors %}error{% endif %}">
+        <label for="{{ field.name }}">{% get_label field %}</label>
+        <div class="input">{{ form_field }} 
+          {% if expense_field.expense.in_dollars %}USD&nbsp;&nbsp;&nbsp;
+            {% with form|field:expense_field.exchange_field as exchange_field %}
+            {{ exchange_field }} {{curr.currency_code}}/USD
+            {% endwith %}
+          {% else %}
+            {{curr.currency_code}}
+          {% endif %}
+          {% with view|field_help:field as help %}
+          {% if help %}
+          <span class="help-block">{{ help }}</span>
+          {% endif %}
+          {% endwith %}
+            
+          {% if form_field.errors %}
+          <span class="help-block field-errors">{{ form_field.errors }}</span>
+          {% endif %}
+        </div>
+      </div>
+      {% endwith %} 
+      {% endwith %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</fieldset>
+{% endwith %}
+{% endblock %}
+
+{% block extra-style %}
+{{ block.super }}
+<style>
+div.input {
+    color: #888;
+}
+
+div.input input:nth-child(2) {
+   width: 50px;
+}
+
+input[type=text] {
+   text-align: right;
+   width: 300px;
+}
+</style>
+{% endblock %}
+

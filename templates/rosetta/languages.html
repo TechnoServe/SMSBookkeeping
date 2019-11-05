@@ -1,0 +1,34 @@
+{% load i18n %}
+
+<div class="row">
+  <div class="span14">
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th class="lang">Language</th>
+          <th class="progress">Progress</th>
+          <th class="messages">Messages</th>
+          <th class="translated">Translated</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        {% for lid,language,pos in languages %}
+        {% for app,path,po in pos %}
+        <tr>
+          <td class="clickable"><a href="{% url 'rosetta-language-selection' lid forloop.counter0 %}{% if do_django %}?django{% endif %}{% if do_rosetta %}?rosetta{% endif %}">{{ language }}</a></td>
+          <td>{{po.percent_translated|floatformat:0}}%</td>
+          {% with po.untranslated_entries|length as len_untranslated_entries %}
+          <td>{{po.translated_entries|length|add:len_untranslated_entries}}</td>
+          {% endwith %}
+          <td>{{po.translated_entries|length}}</td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+

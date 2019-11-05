@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}XForms{% endblock %}
+
+{% block content %}
+<script type="text/javascript">
+function deleteForm(form_id, form_name) {
+	if (confirm("Are you sure you want to delete \"" + form_name + "\" ?")) {
+		document.form.action += form_id + "/delete/";
+		document.form.submit();
+	}
+}
+</script>
+
+{% if reports %}
+<h2>{% trans "Report Messages" %}</h2>
+<hr style="width:100%"/>
+
+{% for report in reports %}
+<div class="report">
+  <div class="copy">
+    <h3>{{report.name}}</h3>
+    <a class="btn pull-right" href="{% url 'edit-report-responses' report.pk %}">{% trans "Edit" %}</a>
+    Sent {{report.get_schedule}}
+  </div>
+  <div class="sms-format"><pre>{{report.message}}</pre>
+  <small>
+  </small>
+</div>
+</div>
+{% endfor %}
+
+<br/>
+{% endif %}
+
+{% if helps %}
+<h2>{% trans "Help Messages" %}</h2>
+<hr style="width:100%"/>
+
+{% for h in helps %}
+<div class="form">
+  <div class="copy">
+    {% if h.reporter_type %}
+    <h3>{{h.reporter_type|capfirst}}</h3>
+    <a class="btn pull-right" href="{% url 'help.helpmessage_update' h.pk %}">{% trans "Edit" %}</a>
+    {% trans "Sent to" %} {{h.reporter_type}}s {% trans "when they send in a message which is unrecognized." %}
+    {% else %}
+    <h3>{% trans "Generic Help" %}</h3>
+    <a class="btn pull-right" href="{% url 'help.helpmessage_update' h.pk %}">{% trans "Edit" %}</a>
+    {% trans "Sent to unrecognized users when they send in a message which is unrecognized." %}
+    {% endif %}
+  </div>
+  <div class="sms-format"><pre>{{h.message}}</pre>
+  <small>
+  </small>
+</div>
+</div>
+{% endfor %}
+
+<br/>
+{% endif %}
+
+{% if forms %}
+<h2>{% trans "Form Messages" %}</h2>
+<hr style="width:100%"/>
+{% endif %}
+
+{% for f in forms %}
+<div class="form">
+  <h3>{{ f.form }}
+  <span class="pull-right">
+    <code>{{f.form.get_primary_keyword}}</code>
+    {% for extra_keyword in f.form.get_extra_keywords %}
+    <code>{{extra_keyword}}</code>
+    {% endfor %}
+  </span>
+  </h3>
+  <div class="description"><a class="btn pull-right" href="{% url 'edit-xform-responses' f.form.pk %}">{% trans "Edit" %}</a>
+     {{ f.form.description}}
+  </div>
+  <div class="sms-format">
+    <pre>{% if f.form.keyword_prefix %}{{f.form.keyword_prefix}}{% endif %}{{ f.form.get_primary_keyword }} {% for field in f.fields %} ({{ field.name }}) {% endfor %}</pre>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}

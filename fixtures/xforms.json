@@ -1,0 +1,4776 @@
+[
+  {
+    "pk": 90,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "",
+      "created": "2012-01-20T10:17:20",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T10:17:29",
+      "type": null,
+      "slug": "ok_accountant",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Must be an accountant to send this message",
+      "created": "2011-02-22T23:19:03",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:46",
+      "type": null,
+      "slug": "cash_acc",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 82,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Accountant",
+      "created": "2012-01-20T09:14:55",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:24:36",
+      "type": null,
+      "slug": "ibitumbwe_accountant",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The accountant recording this transaction.",
+      "created": "2011-02-23T12:39:20",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:45:16",
+      "type": null,
+      "slug": "cherry_acc",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The accountant at the wet mill.",
+      "created": "2011-02-24T14:07:27",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-24T14:07:27",
+      "type": null,
+      "slug": "lookup_acc",
+      "name": "accountant"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Must be an accountant to supply this",
+      "created": "2011-02-22T23:16:35",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T12:49:35",
+      "type": null,
+      "slug": "send_acc",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 89,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Accountant",
+      "created": "2012-01-20T09:28:47",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:23:25",
+      "type": null,
+      "slug": "sitoki_accountant",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 75,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "You must be registered as an accountant to submit this report.",
+      "created": "2012-01-17T08:20:11",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:22:34",
+      "type": null,
+      "slug": "amafaranga_accountant",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 63,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The registered accountant who sent this message.",
+      "created": "2011-03-15T11:50:10",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-15T11:50:10",
+      "type": null,
+      "slug": "sum_acc",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 57,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The accountant sending the message.",
+      "created": "2011-03-03T07:49:45",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:49:45",
+      "type": null,
+      "slug": "return_acc",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "This must be submitted by an accountant.",
+      "created": "2011-02-22T15:25:28",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:32",
+      "type": null,
+      "slug": "store_acc",
+      "name": "Accountant"
+    }
+  },
+  {
+    "pk": 69,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total cash advanced to sites this week",
+      "created": "2012-01-17T08:00:39",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-17T08:00:39",
+      "type": null,
+      "slug": "amafaranga_advanced",
+      "name": "Advanced"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total amount the CWS is paying back in cash advance.",
+      "created": "2011-02-23T12:37:10",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:45:16",
+      "type": null,
+      "slug": "cherry_cash_advance",
+      "name": "Cash Advance"
+    }
+  },
+  {
+    "pk": 76,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Cash Advance",
+      "created": "2012-01-20T09:09:59",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-23T13:18:02",
+      "type": null,
+      "slug": "ibitumbwe_cash_advanced",
+      "name": "Cash Advanced"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total of cash advances this week.",
+      "created": "2011-02-22T22:52:57",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:43:58",
+      "type": null,
+      "slug": "cash_advances",
+      "name": "Cash Advances"
+    }
+  },
+  {
+    "pk": 62,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Current cash balance for the wet mill.",
+      "created": "2011-03-15T11:49:35",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-15T11:49:35",
+      "type": null,
+      "slug": "sum_balance",
+      "name": "Cash Balance"
+    }
+  },
+  {
+    "pk": 56,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The value of the cash being paid back.",
+      "created": "2011-03-03T07:49:05",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:49:52",
+      "type": null,
+      "slug": "return_cash",
+      "name": "Cash Paid Back"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The price paid for cherry bought in cash per kilo, in RWFs.",
+      "created": "2011-02-23T12:36:27",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-08T08:56:20",
+      "type": null,
+      "slug": "cherry_cash_price",
+      "name": "Cash Price"
+    }
+  },
+  {
+    "pk": 77,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Cash Returned",
+      "created": "2012-01-20T09:10:22",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T09:10:47",
+      "type": null,
+      "slug": "ibitumbwe_cash_returned",
+      "name": "Cash Returned"
+    }
+  },
+  {
+    "pk": 79,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Cash Spent",
+      "created": "2012-01-20T09:11:24",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T09:11:24",
+      "type": null,
+      "slug": "ibitumbwe_cash_spent",
+      "name": "Cash Spent"
+    }
+  },
+  {
+    "pk": 71,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total casual labor expenses this week",
+      "created": "2012-01-17T08:01:42",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-17T15:59:53",
+      "type": null,
+      "slug": "amafaranga_casual_labor",
+      "name": "Casual Labor"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Casual wages in FRW",
+      "created": "2011-02-22T22:54:54",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:46",
+      "type": null,
+      "slug": "cash_casualwages",
+      "name": "Casual Wages"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The total amount of cherry delivered, in kilos.",
+      "created": "2011-02-23T12:36:43",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:45:16",
+      "type": null,
+      "slug": "cherry_cherry",
+      "name": "Cherry"
+    }
+  },
+  {
+    "pk": 58,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total amount of cherry collected for the day.",
+      "created": "2011-03-15T11:44:57",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-15T11:48:37",
+      "type": null,
+      "slug": "sum_cherry",
+      "name": "Cherry Collected"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "How much cherry was bought in cash on this day by the CPO.",
+      "created": "2011-02-23T12:38:32",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:45:16",
+      "type": null,
+      "slug": "cherry_cherry_cash",
+      "name": "Cherry Paid in Cash"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "How much cherry was bought on credit on this day by the CPO.",
+      "created": "2011-02-23T12:38:55",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:45:16",
+      "type": null,
+      "slug": "cherry_cherry_credit",
+      "name": "Cherry Paid on Credit"
+    }
+  },
+  {
+    "pk": 78,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Cherry Purchased",
+      "created": "2012-01-20T09:11:06",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T09:11:06",
+      "type": null,
+      "slug": "ibitumbwe_cherry_purchased",
+      "name": "Cherry Purchased"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Wages paid for transport of cherry",
+      "created": "2011-02-22T22:54:34",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:46",
+      "type": null,
+      "slug": "cash_transwages",
+      "name": "Cherry Transport Wages"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The id of the cpo",
+      "created": "2011-02-23T12:35:47",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:45:16",
+      "type": null,
+      "slug": "cherry_cpo",
+      "name": "Collection Point Officer"
+    }
+  },
+  {
+    "pk": 72,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total site collector commission paid this week",
+      "created": "2012-01-17T08:02:14",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-17T08:02:14",
+      "type": null,
+      "slug": "amafaranga_commission",
+      "name": "Commission"
+    }
+  },
+  {
+    "pk": 55,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The CPO who is paying back the advance.",
+      "created": "2011-03-03T07:48:29",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:49:58",
+      "type": null,
+      "slug": "return_cpo",
+      "name": "CPO"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "How much credit was paid off by the CPO.",
+      "created": "2011-02-23T12:38:01",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:45:16",
+      "type": null,
+      "slug": "cherry_credit_paid_off",
+      "name": "Credit Paid Off"
+    }
+  },
+  {
+    "pk": 54,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The price paid for cherry bought on credit per kilo, in RWF.",
+      "created": "2011-03-03T07:45:11",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-03T07:45:31",
+      "type": null,
+      "slug": "cherry_credit_price",
+      "name": "Credit Price"
+    }
+  },
+  {
+    "pk": 80,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Credit Spent",
+      "created": "2012-01-20T09:11:37",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T09:11:37",
+      "type": null,
+      "slug": "ibitumbwe_credit_spent",
+      "name": "Credit Spent"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The CSP the user is registering for.",
+      "created": "2011-02-28T13:43:17",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T13:43:17",
+      "type": null,
+      "slug": "csp_csp",
+      "name": "CSP"
+    }
+  },
+  {
+    "pk": 44,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The cupping score.",
+      "created": "2011-02-28T12:02:34",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-12T12:44:39",
+      "type": null,
+      "slug": "rec_score",
+      "name": "Cupping Score"
+    }
+  },
+  {
+    "pk": 93,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Date",
+      "created": "2012-01-25T11:20:12",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:20:12",
+      "type": null,
+      "slug": "sitoki_date",
+      "name": "Date"
+    }
+  },
+  {
+    "pk": 92,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Date",
+      "created": "2012-01-25T11:19:54",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:19:54",
+      "type": null,
+      "slug": "ibitumbwe_date",
+      "name": "Date"
+    }
+  },
+  {
+    "pk": 91,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "date",
+      "created": "2012-01-25T11:19:31",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-25T11:19:31",
+      "type": null,
+      "slug": "amafaranga_date",
+      "name": "Date"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The date the cherry was received.  In the format: DD.MM.YY, ie: 23.02.11",
+      "created": "2011-02-22T22:39:59",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-16T15:05:26",
+      "type": null,
+      "slug": "store_dlid",
+      "name": "Day Lot ID"
+    }
+  },
+  {
+    "pk": 70,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total full time labor expenses this week",
+      "created": "2012-01-17T08:01:09",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-17T15:59:42",
+      "type": null,
+      "slug": "amafaranga_full_time_labor",
+      "name": "Full Time Labor"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Grade A parchment moved to store",
+      "created": "2011-02-22T22:40:34",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:32",
+      "type": null,
+      "slug": "store_amoved",
+      "name": "Grade A Moved"
+    }
+  },
+  {
+    "pk": 86,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Grade A Shipped",
+      "created": "2012-01-20T09:25:28",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T09:25:28",
+      "type": null,
+      "slug": "sitoki_grade_a_shipped",
+      "name": "Grade A Shipped"
+    }
+  },
+  {
+    "pk": 83,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Grade A Stored",
+      "created": "2012-01-20T09:24:42",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T09:24:42",
+      "type": null,
+      "slug": "sitoki_grade_a_stored",
+      "name": "Grade A Stored"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Grade B Parchment moved to store.",
+      "created": "2011-02-22T22:41:21",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:32",
+      "type": null,
+      "slug": "store_bmoved",
+      "name": "Grade B Moved"
+    }
+  },
+  {
+    "pk": 87,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Grade B Shipped",
+      "created": "2012-01-20T09:25:41",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T09:25:41",
+      "type": null,
+      "slug": "sitoki_grade_b_shipped",
+      "name": "Grade B Shipped"
+    }
+  },
+  {
+    "pk": 84,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Grade B Stored",
+      "created": "2012-01-20T09:24:55",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T09:24:55",
+      "type": null,
+      "slug": "sitoki_grade_b_stored",
+      "name": "Grade B Stored"
+    }
+  },
+  {
+    "pk": 88,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Grade C Shipped",
+      "created": "2012-01-20T09:25:57",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T09:25:57",
+      "type": null,
+      "slug": "sitoki_grade_c_shipped",
+      "name": "Grade C Shipped"
+    }
+  },
+  {
+    "pk": 85,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Grade C Stored",
+      "created": "2012-01-20T09:25:13",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-20T09:26:06",
+      "type": null,
+      "slug": "sitoki_grade_c_stored",
+      "name": "Grade C Stored"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The sum of membership feeds, shares sold, final proceeds, and any other income.",
+      "created": "2011-02-22T22:52:03",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:46",
+      "type": null,
+      "slug": "cash_income",
+      "name": "Income"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The language that they want to use.  Must be either 'en' or 'rw'",
+      "created": "2011-02-24T13:35:08",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-24T13:35:08",
+      "type": null,
+      "slug": "lang_lang",
+      "name": "Language"
+    }
+  },
+  {
+    "pk": 53,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The optional last name, this field will be merged with name if included.",
+      "created": "2011-02-28T19:13:20",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T19:13:20",
+      "type": null,
+      "slug": "obs_last_name",
+      "name": "Last Name"
+    }
+  },
+  {
+    "pk": 52,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The optional last name, this will be merged into the name field if included.",
+      "created": "2011-02-28T19:12:46",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T19:12:46",
+      "type": null,
+      "slug": "csp_last_name",
+      "name": "Last Name"
+    }
+  },
+  {
+    "pk": 51,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Optional last name, this will be merged into the name field if included.",
+      "created": "2011-02-28T19:12:11",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-07T12:14:08",
+      "type": null,
+      "slug": "sc_last_name",
+      "name": "Last Name"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "An optional last name.  This field will be combined with the first name if included.",
+      "created": "2011-02-28T19:11:36",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T19:11:36",
+      "type": null,
+      "slug": "acc_last_name",
+      "name": "Last Name"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The license plate of the truck.",
+      "created": "2011-02-22T22:49:29",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T12:49:35",
+      "type": null,
+      "slug": "send_license",
+      "name": "License Plate"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The license plate of the truck that made the delivery.",
+      "created": "2011-02-28T11:55:01",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T11:58:28",
+      "type": null,
+      "slug": "rec_license",
+      "name": "License Plate"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The moisture content.",
+      "created": "2011-02-28T12:02:18",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T12:02:18",
+      "type": null,
+      "slug": "rec_moisture",
+      "name": "Moisture Content"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The name of the CPO officer.",
+      "created": "2011-02-23T12:33:26",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-07T12:14:08",
+      "type": null,
+      "slug": "sc_name",
+      "name": "Name"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The name of the observer.",
+      "created": "2011-02-28T14:47:26",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T14:47:26",
+      "type": null,
+      "slug": "obs_name",
+      "name": "Name"
+    }
+  },
+  {
+    "pk": 46,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The name of the user.",
+      "created": "2011-02-28T13:43:34",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T13:43:34",
+      "type": null,
+      "slug": "csp_name",
+      "name": "Name"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The name of the accountant.",
+      "created": "2011-02-22T15:24:08",
+      "datatype": "text",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-22T15:28:37",
+      "type": null,
+      "slug": "acc_name",
+      "name": "Name"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "This message must be sent by someone registered as a CSP officer.",
+      "created": "2011-02-28T14:21:56",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T14:22:04",
+      "type": null,
+      "slug": "rec_officer",
+      "name": "Officer"
+    }
+  },
+  {
+    "pk": 65,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The opening balance for the week in RWF",
+      "created": "2012-01-17T07:58:59",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-23T11:17:48",
+      "type": null,
+      "slug": "amafaranga_opening_balance",
+      "name": "Opening Balance"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Sum of fuels, oils, batteries, lighting, bags, tarpulin, strings, parchment transport, and other general expenses.",
+      "created": "2011-02-22T22:56:04",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:46",
+      "type": null,
+      "slug": "cash_cashout",
+      "name": "Other Cash Out"
+    }
+  },
+  {
+    "pk": 74,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total other expenses this week",
+      "created": "2012-01-17T08:02:58",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-23T11:17:15",
+      "type": null,
+      "slug": "amafaranga_other_expenses",
+      "name": "Other Expenses"
+    }
+  },
+  {
+    "pk": 67,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total other income this week",
+      "created": "2012-01-17T07:59:49",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-17T07:59:49",
+      "type": null,
+      "slug": "amafaranga_other_income",
+      "name": "Other Income"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Number of bags of Grade A parchment",
+      "created": "2011-02-22T22:48:05",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T12:49:35",
+      "type": null,
+      "slug": "send_pab",
+      "name": "Parchment A Bags"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Number of bags of Grade A parchment.",
+      "created": "2011-02-28T11:56:56",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T11:56:56",
+      "type": null,
+      "slug": "rec_pab",
+      "name": "Parchment A Bags"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Amount of Grade A parchment received.",
+      "created": "2011-02-28T11:56:33",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T11:58:38",
+      "type": null,
+      "slug": "rec_pakg",
+      "name": "Parchment A Kilos"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Amount in kilos of parchment A",
+      "created": "2011-02-22T22:47:40",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T12:49:35",
+      "type": null,
+      "slug": "send_pakg",
+      "name": "Parchment A Kilos"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Number of bags of Grade B Parchment.",
+      "created": "2011-02-28T11:58:14",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T11:58:14",
+      "type": null,
+      "slug": "rec_pbb",
+      "name": "Parchment B Bags"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Number of bags of Grade B parchment",
+      "created": "2011-02-22T22:48:52",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T12:49:35",
+      "type": null,
+      "slug": "send_pbb",
+      "name": "Parchment B Bags"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Amount of Grade B parchment received.",
+      "created": "2011-02-28T11:57:47",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T11:59:12",
+      "type": null,
+      "slug": "rec_pbkg",
+      "name": "Parchment B Kilos"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Amount in kilos of parchment B",
+      "created": "2011-02-22T22:48:29",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T12:49:35",
+      "type": null,
+      "slug": "send_pbkg",
+      "name": "Parchment B Kilos"
+    }
+  },
+  {
+    "pk": 61,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total amount of parchment sent to the CSP by truck.",
+      "created": "2011-03-15T11:48:57",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-15T11:48:57",
+      "type": null,
+      "slug": "sum_sent",
+      "name": "Parchment Shipped"
+    }
+  },
+  {
+    "pk": 60,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total amount of parchment moved to the stored on the previous day.",
+      "created": "2011-03-15T11:47:51",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-15T11:47:51",
+      "type": null,
+      "slug": "sum_stored",
+      "name": "Parchment Stored"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Salary total in FRW",
+      "created": "2011-02-22T22:53:20",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:46",
+      "type": null,
+      "slug": "cash_salaries",
+      "name": "Salaries"
+    }
+  },
+  {
+    "pk": 64,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The id of the site collector.",
+      "created": "2011-04-16T09:49:45",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-04-16T09:49:45",
+      "type": null,
+      "slug": "leave_scid",
+      "name": "Site Collector Id"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Amount of wages for site collectors (not permanent salaries)",
+      "created": "2011-02-22T22:54:00",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:46",
+      "type": null,
+      "slug": "cash_scwages",
+      "name": "Site Collector Wages"
+    }
+  },
+  {
+    "pk": 59,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The total amount paid for the cherry intake for the day, in RWF.",
+      "created": "2011-03-15T11:46:31",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-15T11:50:49",
+      "type": null,
+      "slug": "sum_paid",
+      "name": "Total Paid"
+    }
+  },
+  {
+    "pk": 73,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "Total cherry transport costs paid this week",
+      "created": "2012-01-17T08:02:38",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-17T08:02:38",
+      "type": null,
+      "slug": "amafaranga_transport",
+      "name": "Transport"
+    }
+  },
+  {
+    "pk": 48,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The wet mill that will be observed.",
+      "created": "2011-02-28T14:47:07",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-28T14:47:07",
+      "type": null,
+      "slug": "obs_wetmill",
+      "name": "Wet Mill"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The wetmill this CPO is registering for",
+      "created": "2011-02-23T12:32:41",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-03-07T12:14:08",
+      "type": null,
+      "slug": "sc_wetmill",
+      "name": "Wetmill"
+    }
+  },
+  {
+    "pk": 94,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The wetmill this farmer is registering for",
+      "created": "2013-01-11T08:45:21",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2013-01-11T08:45:21",
+      "type": null,
+      "slug": "farmer_wetmill",
+      "name": "wetmill"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The wet mill this accountant is registering for.",
+      "created": "2011-02-22T15:23:53",
+      "datatype": "object",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-16T14:41:40",
+      "type": null,
+      "slug": "acc_wetmill",
+      "name": "Wetmill Name"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The amount of working capital in FRW",
+      "created": "2011-02-22T22:51:22",
+      "datatype": "int",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2011-02-23T14:51:46",
+      "type": null,
+      "slug": "cash_wcap",
+      "name": "Working Capital"
+    }
+  },
+  {
+    "pk": 66,
+    "model": "eav.attribute",
+    "fields": {
+      "description": "The total working capital received this week",
+      "created": "2012-01-17T07:59:27",
+      "datatype": "float",
+      "enum_group": null,
+      "required": false,
+      "site": 1,
+      "modified": "2012-01-17T07:59:27",
+      "type": null,
+      "slug": "amafaranga_working_capital",
+      "name": "Working Capital Received"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Accountant Registration",
+      "keyword": "acc",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo. Wanditswe nku mucungamari w'uruganda rwa {{ wetmill.name }}.",
+      "created": "2011-02-22T15:23:30",
+      "restrict_message": null,
+      "modified": "2011-04-01T10:31:55",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success. You have registered as the accountant for the wetmill {{ wetmill.name }}.",
+      "response_en_us": "Success. You have registered as the accountant for the wetmill {{ wetmill.name }}.",
+      "description": "Registers a new accountant with a name and a wetmill. Once an accountant is registered they can submit cherry or parchment reports.\n\nAvailable variables: {{ wetmill.name }} {{ name }} {{ last_name }}"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Store",
+      "keyword": "store",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo. Ibintumbwe ku ikawa yumye: {{cherry_to_parchment}}. Icyiciro A ku ikawa yumye: {{gradea_to_parchment}}. Numero y'ubutumwa bwemeza: {{confirmation_id}}.",
+      "created": "2011-02-22T15:25:07",
+      "restrict_message": null,
+      "modified": "2012-01-25T08:45:45",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success. Cherry to Parchment: {{cherry_to_parchment}}  Grade A to Parchment: {{gradea_to_parchment}}  Confirmation Id: {{confirmation_id}}.",
+      "response_en_us": "Success. Cherry to Parchment: {{cherry_to_parchment}}  Grade A to Parchment: {{gradea_to_parchment}}  Confirmation Id: {{confirmation_id}}.",
+      "description": "Parchment movements to the store.\n\nAvailable variables: {{ acc.name }}, {{ acc.wetmill.name }} {{ amoved }} {{ bmoved }} {{ dlid }}"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Parchment Shipment",
+      "keyword": "send",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo. Wohereje ibiro {{ pakg }} bya kawa yumye A mumifuka {{ pab }} n'ibiro {{ pbkg }} bya kawa yumye B mumufuka {{ pbb }} iri kumodoka ifite pulaki {{ license }}. Nomero Ubutumwa bwemeza: {{ confirmation_id }}.",
+      "created": "2011-02-22T22:47:02",
+      "restrict_message": null,
+      "modified": "2011-05-02T07:44:59",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success. You sent {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} kg of Parchment B in {{ pbb }} bags on vehicle {{ license }}.  Confirmation id: {{ confirmation_id }}",
+      "response_en_us": "Success. You sent {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} kg of Parchment B in {{ pbb }} bags on vehicle {{ license }}.  Confirmation id: {{ confirmation_id }}",
+      "description": "Shipping of parchment to CSP\n\nAvailable Variables: {{ acc.name }} {{ acc.wetmill.name }} {{ pakg }} {{ pab }} {{ pbkg }} {{ pbb }} {{ license }}"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Cash Ledger",
+      "keyword": "cash",
+      "response_ke_sw": null,
+      "command_prefix": "+",
+      "response_rw": "Byanyuzemo. Kashi yinjiye mu cyumweru: {{ tot_cin }}. Kashi yasohotse mu cyumweru: {{ tot_cout }}. Kashi isigaye: {{ balance }}. Ikinyuranyo cya Avanse y'ibitumbwe: {{ advance_disc }}. Numero y'ubutumwa yemeza: {{ confirmation_id }}.",
+      "created": "2011-02-22T22:50:58",
+      "restrict_message": null,
+      "modified": "2011-04-01T13:50:50",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success. Cash in for week: {{ tot_cin }} Cash out for week: {{ tot_cout }} Cash Balance: {{ balance }}. Cherry Advance Discrepency: {{ cherry_disc }}  Confirmation Id: {{ confirmation_id }}",
+      "response_en_us": "Success. Cash in for week: {{ tot_cin }} Cash out for week: {{ tot_cout }} Cash Balance: {{ balance }}. Cherry Advance Discrepency: {{ cherry_disc }}  Confirmation Id: {{ confirmation_id }}",
+      "description": "The cash balance ledger.\r\n\r\nAvailable Variables: {{ acc.name }} {{ acc.wetmill.name }} {{ wcap }} {{ income }} {{ advances }} {{ salaries }} {{ scwages }} {{ transwages }} {{ casualwages }} {{ cashout }} {{ advance_disc }} {{ balance }} {{ tot_cin }} {{ tot_cout }}"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Site Collector Registration",
+      "keyword": "sc",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo.  Wanditswe nkuwo kuruganda {{ wetmill.name }}.  Ikikuranga ni: {{ confirmation_id }}.",
+      "created": "2011-02-23T12:32:24",
+      "restrict_message": null,
+      "modified": "2011-04-01T10:50:54",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success.  You are registered for the {{ wetmill.name }} wet mill.  Your id is: {{ confirmation_id }}",
+      "response_en_us": "Success.  You are registered for the {{ wetmill.name }} wet mill.  Your id is: {{ confirmation_id }}",
+      "description": "Register a CPO for a wetmill, the user will receive a confirmation id.\n\nAvailable Variables: {{ wetmill.name }} {{ confirmation_id }} {{ name }} {{ last_name }}"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Cherry Delivery",
+      "keyword": "cherry",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Hagmuwe: {{ cherry }}. Asigaye: {{ cash_b }}. Umwenda: {{ credit_b }}. Bura: {{ missing_cv }}. Ikrund: {{ daylot }}. Ubutmwa: {{ confirmation_id|codify:\"CH\" }}.",
+      "created": "2011-02-23T12:35:28",
+      "restrict_message": null,
+      "modified": "2011-04-15T12:18:04",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Cherry Delivered: {{ cherry }} kg. Cash balance: {{ cash_b }} RWF. Credit balance: {{ credit_b }} RWF. Missing Coffee: {{ missing_cv }} RWF. Daylot: {{ daylot }}  Confirmation Id: {{ confirmation_id|codify:\"CH\" }}",
+      "response_en_us": "Cherry Delivered: {{ cherry }} kg. Cash balance: {{ cash_b }} RWF. Credit balance: {{ credit_b }} RWF. Missing Coffee: {{ missing_cv }} RWF. Daylot: {{ daylot }}  Confirmation Id: {{ confirmation_id|codify:\"CH\" }}",
+      "description": "Sent by accountants whenever a CPO delivers cherry.\r\n\r\nAvailable variables: {{cpo.name}} {{cash_price}} {{credit_price}} {{cherry}} {{cash_advance}} {{credit_paid_off}} {{cherry_cash}} {{cherry_credit}} {{acc.name}} {{cash_b}} {{credit_b}} {{missing_cv}} {{daylot}} {{confirmation_id}}"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Leave",
+      "keyword": "leave",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo.  Ukuwe mugitabo cyabiyandikishije.  Numero y'ubutumwa bwemeza: {{ confirmation_id|codify:\"LV\" }}",
+      "created": "2011-02-23T12:35:28",
+      "restrict_message": null,
+      "modified": "2011-04-01T11:28:28",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success.  You have been unregistered.  Confirmation id: {{ confirmation_id|codify:\"LV\" }}",
+      "response_en_us": "Success.  You have been unregistered.  Confirmation id: {{ confirmation_id|codify:\"LV\" }}",
+      "description": "Sent when an accountant wants to leave a wet mill, removing themselves as the user for it."
+    }
+  },
+  {
+    "pk": 8,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Lang",
+      "keyword": "lang",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo.  Ururimi rwawe ni Icyongereza {{ lang }}",
+      "created": "2011-02-24T13:10:14",
+      "restrict_message": null,
+      "modified": "2011-04-01T14:20:23",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success.  Your language is set to {{ lang }}",
+      "response_en_us": "Success.  Your language is set to {{ lang }}",
+      "description": "Allows the user to either set or get what language they are currently using."
+    }
+  },
+  {
+    "pk": 9,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Lookup",
+      "keyword": "lookup",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Ukusanya kuri site SCs: {{ cpos }} ",
+      "created": "2011-02-24T14:04:51",
+      "restrict_message": null,
+      "modified": "2011-04-01T14:27:06",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "SCs: {{ cpos }}",
+      "response_en_us": "SCs: {{ cpos }}",
+      "description": "Looks up all the CPOs for the accountants wet mill and returns them in a few messages."
+    }
+  },
+  {
+    "pk": 10,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Who",
+      "keyword": "who",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Sorry. You are not registered. Please register with 'acc', 'sc', 'obs', or 'csp' and a registered wet mill/CSP. ",
+      "created": "2011-02-24T15:21:10",
+      "restrict_message": null,
+      "modified": "2011-04-16T09:58:27",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Sorry. You are not registered. Please register with 'acc', 'sc', 'obs', or 'csp' and a registered wet mill/CSP. ",
+      "response_en_us": "Sorry. You are not registered. Please register with 'acc', 'sc', 'obs', or 'csp' and a registered wet mill/CSP. ",
+      "description": "Returns how this mobile number is registered in the system. IE, what wet mill it is associated with, any id etc."
+    }
+  },
+  {
+    "pk": 11,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Parchment Received",
+      "keyword": "rec",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo. Ibiro {{ pakg }} bya kawa A mumifuk {{ pab }} n'ibiro {{ pbkg }} kawa B mumifuka {{ pbb }} mu modoka {{ license }} byahageze .Ubutohe {{ moisture }}% uburyohe {{ score }}.ubutumwa {{ confirmation_id }}",
+      "created": "2011-02-28T11:54:31",
+      "restrict_message": null,
+      "modified": "2011-04-01T13:45:15",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success. {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} of Parchment B in {{ pbb }} bags on vehicle {{ license }} arrived. The moisture content is {{ moisture }}% and the cupping score is {{ score }}. Confirmation id: {{ confirmation_id }}",
+      "response_en_us": "Success. {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} of Parchment B in {{ pbb }} bags on vehicle {{ license }} arrived. The moisture content is {{ moisture }}% and the cupping score is {{ score }}. Confirmation id: {{ confirmation_id }}",
+      "description": "Sent by the CSP when they receive a shipment of parchment from the wet mill.\n\nAvailable Variables: {{ wetmill.name }} {{ officer.name }} {{ pakg }} {{ pab }} {{ pbkg }} {{ pbb }} {{ license }} {{ moisture }} {{ score }} {{ license }}"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "CSP Officer Registration",
+      "keyword": "csp",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo. Wanditswe nku umukozi w'ikigo gitera inkunga ibya kawa cyangwa se umushoramari {{ csp.name }}.",
+      "created": "2011-02-28T13:39:41",
+      "restrict_message": null,
+      "modified": "2011-04-01T11:01:21",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success. You have been registered as an officer for {{ csp.name }}.",
+      "response_en_us": "Success. You have been registered as an officer for {{ csp.name }}.",
+      "description": "Register this phone number as an officer for the CSP.\n\nAvailable Variables: {{ csp.name }} {{ name }} {{ last_name }} {{ confirmation_id }}"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Observer Registration",
+      "keyword": "obs",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo.  Wanditswe nk'indorerezi y'uruganda rwa {{ wetmill.name }}.",
+      "created": "2011-02-28T14:46:49",
+      "restrict_message": null,
+      "modified": "2011-03-29T15:07:10",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success.  You have been registered as an observer of the {{ wetmill.name }} wetmill.",
+      "response_en_us": "Success.  You have been registered as an observer of the {{ wetmill.name }} wetmill.",
+      "description": "Allows someone to register as an observer of a wet mill.\n\nAvailable variables: {{ wetmill.name }} {{ name }} {{ last_name }} {{ confirmation_id }}"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Undo",
+      "keyword": "undo",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo. Ubutumwa bwawe {{ msg.message }} bwa hagaritswe.",
+      "created": "2011-02-28T15:14:07",
+      "restrict_message": null,
+      "modified": "2011-04-01T12:31:25",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success. Your message {{ msg.message }} has been cancelled.",
+      "response_en_us": "Success. Your message {{ msg.message }} has been cancelled.",
+      "description": "Cancels the last message sent by the user."
+    }
+  },
+  {
+    "pk": 15,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Advance Return",
+      "keyword": "return",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo. Kashi isigaye: {{ cash_b }}. Umwenda usigaye: {{ credit_b }}. Agaciro k'Ibitumbwe bibura: {{ missing_cv }}.",
+      "created": "2011-03-03T07:46:53",
+      "restrict_message": null,
+      "modified": "2011-04-01T13:55:30",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success.  Cash balance: {{ cash_b }}  Credit balance: {{ credit_b }}  Missing Cherry Value: {{ missing_cv }}",
+      "response_en_us": "Success.  Cash balance: {{ cash_b }}  Credit balance: {{ credit_b }}  Missing Cherry Value: {{ missing_cv }}",
+      "description": "Sent when a CPO repays their balance to the wet mill at the end of the season.\n\nAvailable Variables: {{ acc.name }} {{ acc.wetmill.name }} {{ cash }} {{ cash_b }} {{ credit_b }} {{ missing_cv }}"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Summary Report",
+      "keyword": "sum",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byakiriwe. Raporo ya{{ wetmill.name }} yakiriwe.Ibitumbwe: {{ cherry }} Yakoreshejwe: {{ paid }} Yahunitswe: {{ stored }} kg  Yoherejwe: {{ sent }} kg  Yasigaye: {{ balance }} RWF Ubutumwa bwemeza: {{ confirmation_id|codify:\"SM\" }}",
+      "created": "2011-03-15T11:43:56",
+      "restrict_message": null,
+      "modified": "2011-03-29T15:24:25",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Success. {{ wetmill.name }} report recorded.  Cherry: {{ cherry }} Spent: {{ paid }} RWF Avg Price: {{ avg_price }} RWF/kg Stored: {{ stored }} kg  Sent: {{ sent }} kg Balance: {{ balance }} RWF  Confirmation: {{ confirmation_id|codify:\"SM\" }}",
+      "response_en_us": "Success. {{ wetmill.name }} report recorded.  Cherry: {{ cherry }} Spent: {{ paid }} RWF Avg Price: {{ avg_price }} RWF/kg Stored: {{ stored }} kg  Sent: {{ sent }} kg Balance: {{ balance }} RWF  Confirmation: {{ confirmation_id|codify:\"SM\" }}",
+      "description": "Sent by the accountants of wet mills using the Lite accounting system.  Simply summarizes the day's activities in a single message."
+    }
+  },
+  {
+    "pk": 17,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "test",
+      "keyword": "test",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": null,
+      "created": "2012-01-16T14:09:38",
+      "restrict_message": "",
+      "modified": "2012-01-16T14:09:38",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "test",
+      "response_en_us": "test",
+      "description": "test"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Amafaranga",
+      "keyword": "amafaranga",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "FRW ku ntangiro y'icyumweru: {{ opening_balance }} fr; FRW yinjiye: {{ cash_inflow }} fr;  FRW yasohotse: {{ cash_outflow }} fr; , FRW Asigaye: {{ closing_balance }} fr, niba bihuye ongera wohereze ijambo OK",
+      "created": "2012-01-17T07:58:32",
+      "restrict_message": "",
+      "modified": "2012-01-25T11:38:43",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Week's opening balance: {{ opening_balance }} fr; cash inflows: {{ cash_inflow }} fr;  cash outflows: {{ cash_outflow }} fr; closing cash balance: {{ closing_balance }} fr.",
+      "response_en_us": "Week's opening balance: {{ opening_balance }} fr; cash inflows: {{ cash_inflow }} fr;  cash outflows: {{ cash_outflow }} fr; closing cash balance: {{ closing_balance }} fr.",
+      "description": "Sent on a weekly basis."
+    }
+  },
+  {
+    "pk": 19,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Ibitumbwe",
+      "keyword": "ibitumbwe",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "{{ wetmill.name }} yaguze ibiro {{ cherry_purchased }}  byibitumbwe ku giciro {{ cherry_price }} fr ku kiro. FRW {{ cash_balance }} fr yasigaye kuri site. Umwenda ku bahinzi  ni {{ credit_outstanding }} fr. niba bihuye ongera wohereze ijambo OK.",
+      "created": "2012-01-20T09:09:37",
+      "restrict_message": "",
+      "modified": "2012-02-02T14:35:34",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "{{ wetmill.name }} purchased {{ cherry_purchased }} kilograms of cherry today at a price of {{ cherry_price }} fr per kilo. Total cash balance at sites is {{ cash_balance }} fr and total credit outstanding to farmers is {{ credit_outstanding }} fr.",
+      "response_en_us": "{{ wetmill.name }} purchased {{ cherry_purchased }} kilograms of cherry today at a price of {{ cherry_price }} fr per kilo. Total cash balance at sites is {{ cash_balance }} fr and total credit outstanding to farmers is {{ credit_outstanding }} fr.",
+      "description": "Daily message sent for cherry brought in."
+    }
+  },
+  {
+    "pk": 20,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Sitoki",
+      "keyword": "sitoki",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Uruganda {{ wetmill.name }} Rwanuye ibiro {{ total_stored }} by'ikawa yumye mu cyumweru gishize {{ week_end }}; Wohereje ibiro {{ total_shipped }} kumushoramari; Ufite Ibiro {{ in_store }} by'ikawa yumye mububiko, niba bihuye ongera wohereze ijambo OK",
+      "created": "2012-01-20T09:16:41",
+      "restrict_message": "",
+      "modified": "2012-02-02T14:27:02",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Wetmill {{ wetmill.name }} moved {{ total_stored }} kilos of parchment into the store in the week ending {{ week_end }};  you shipped {{ total_shipped }}  to the CSP and you have {{ in_store }} kilos of parchment in the store in total.",
+      "response_en_us": "Wetmill {{ wetmill.name }} moved {{ total_stored }} kilos of parchment into the store in the week ending {{ week_end }};  you shipped {{ total_shipped }}  to the CSP and you have {{ in_store }} kilos of parchment in the store in total.",
+      "description": "Stock message, sent weekly."
+    }
+  },
+  {
+    "pk": 21,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Ok",
+      "keyword": "ok",
+      "response_ke_sw": null,
+      "command_prefix": null,
+      "response_rw": "Byanyuzemo, Ubutumwa bwawe bwemewe.",
+      "created": "2012-01-20T10:17:13",
+      "restrict_message": "",
+      "modified": "2012-01-25T13:24:46",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Your message has been confirmed.",
+      "response_en_us": "Your message has been confirmed.",
+      "description": "Confirms that the last submission of sitoki, amafaranga or ibitumbwe is correct and should be sent to all CC'ed."
+    }
+  },
+  {
+    "pk": 22,
+    "model": "rapidsms_xforms.xform",
+    "fields": {
+      "name": "Farmer",
+      "keyword": "farmer",
+      "response_ke_sw": null,
+      "command_prefix": "+",
+      "response_rw": null,
+      "created": "2013-01-11T08:45:00",
+      "restrict_message": "",
+      "modified": "2013-01-11T08:45:55",
+      "site": 1,
+      "owner": 1,
+      "response_am": null,
+      "separator": null,
+      "keyword_prefix": null,
+      "restrict_to": [],
+      "active": true,
+      "response_tz_sw": null,
+      "response": "Thank you for registering as a farmer.",
+      "response_en_us": "Thank you for registering as a farmer.",
+      "description": "Allows farmers to register for a wetmill."
+    }
+  },
+  {
+    "pk": 1,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "wetmill",
+      "command": "wetmill",
+      "order": 0,
+      "xform": 1
+    }
+  },
+  {
+    "pk": 26,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "wetmill",
+      "command": "wetmill",
+      "order": 0,
+      "xform": 5
+    }
+  },
+  {
+    "pk": 36,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "lang",
+      "order": 0,
+      "xform": 8
+    }
+  },
+  {
+    "pk": 37,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "acc",
+      "order": 0,
+      "xform": 9
+    }
+  },
+  {
+    "pk": 38,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "license",
+      "order": 0,
+      "xform": 11
+    }
+  },
+  {
+    "pk": 45,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "csp",
+      "command": "csp",
+      "order": 0,
+      "xform": 12
+    }
+  },
+  {
+    "pk": 48,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "wetmill",
+      "command": "wetmill",
+      "order": 0,
+      "xform": 13
+    }
+  },
+  {
+    "pk": 55,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "cpo",
+      "command": "cpo",
+      "order": 0,
+      "xform": 15
+    }
+  },
+  {
+    "pk": 58,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "cherry",
+      "order": 0,
+      "xform": 16
+    }
+  },
+  {
+    "pk": 64,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "scid",
+      "order": 0,
+      "xform": 7
+    }
+  },
+  {
+    "pk": 65,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "opening_balance",
+      "order": 0,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 76,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "cash_advanced",
+      "order": 0,
+      "xform": 19
+    }
+  },
+  {
+    "pk": 83,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "grade_a_stored",
+      "order": 0,
+      "xform": 20
+    }
+  },
+  {
+    "pk": 90,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "accountant",
+      "order": 0,
+      "xform": 21
+    }
+  },
+  {
+    "pk": 94,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "wetmill",
+      "command": "wetmill",
+      "order": 0,
+      "xform": 22
+    }
+  },
+  {
+    "pk": 2,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "name",
+      "order": 1,
+      "xform": 1
+    }
+  },
+  {
+    "pk": 8,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "daylot",
+      "command": "dlid",
+      "order": 1,
+      "xform": 2
+    }
+  },
+  {
+    "pk": 11,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "pakg",
+      "order": 1,
+      "xform": 3
+    }
+  },
+  {
+    "pk": 16,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "wcap",
+      "order": 1,
+      "xform": 4
+    }
+  },
+  {
+    "pk": 27,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "name",
+      "order": 1,
+      "xform": 5
+    }
+  },
+  {
+    "pk": 28,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "cpo",
+      "command": "cpo",
+      "order": 1,
+      "xform": 6
+    }
+  },
+  {
+    "pk": 39,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "pakg",
+      "order": 1,
+      "xform": 11
+    }
+  },
+  {
+    "pk": 46,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "name",
+      "order": 1,
+      "xform": 12
+    }
+  },
+  {
+    "pk": 49,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "name",
+      "order": 1,
+      "xform": 13
+    }
+  },
+  {
+    "pk": 56,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "cash",
+      "order": 1,
+      "xform": 15
+    }
+  },
+  {
+    "pk": 59,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "paid",
+      "order": 1,
+      "xform": 16
+    }
+  },
+  {
+    "pk": 66,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "working_capital",
+      "order": 1,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 77,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "cash_returned",
+      "order": 1,
+      "xform": 19
+    }
+  },
+  {
+    "pk": 84,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "grade_b_stored",
+      "order": 1,
+      "xform": 20
+    }
+  },
+  {
+    "pk": 9,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "amoved",
+      "order": 2,
+      "xform": 2
+    }
+  },
+  {
+    "pk": 12,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "pab",
+      "order": 2,
+      "xform": 3
+    }
+  },
+  {
+    "pk": 17,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "income",
+      "order": 2,
+      "xform": 4
+    }
+  },
+  {
+    "pk": 29,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "cash_price",
+      "order": 2,
+      "xform": 6
+    }
+  },
+  {
+    "pk": 40,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "pab",
+      "order": 2,
+      "xform": 11
+    }
+  },
+  {
+    "pk": 50,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "last_name",
+      "order": 2,
+      "xform": 1
+    }
+  },
+  {
+    "pk": 51,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "last_name",
+      "order": 2,
+      "xform": 5
+    }
+  },
+  {
+    "pk": 52,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "last_name",
+      "order": 2,
+      "xform": 12
+    }
+  },
+  {
+    "pk": 53,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "last_name",
+      "order": 2,
+      "xform": 13
+    }
+  },
+  {
+    "pk": 57,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "acc",
+      "order": 2,
+      "xform": 15
+    }
+  },
+  {
+    "pk": 60,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "stored",
+      "order": 2,
+      "xform": 16
+    }
+  },
+  {
+    "pk": 67,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "other_income",
+      "order": 2,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 79,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "cash_spent",
+      "order": 2,
+      "xform": 19
+    }
+  },
+  {
+    "pk": 85,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "grade_c_stored",
+      "order": 2,
+      "xform": 20
+    }
+  },
+  {
+    "pk": 10,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "bmoved",
+      "order": 3,
+      "xform": 2
+    }
+  },
+  {
+    "pk": 13,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "pbkg",
+      "order": 3,
+      "xform": 3
+    }
+  },
+  {
+    "pk": 18,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "advances",
+      "order": 3,
+      "xform": 4
+    }
+  },
+  {
+    "pk": 41,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "pbkg",
+      "order": 3,
+      "xform": 11
+    }
+  },
+  {
+    "pk": 54,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "credit_price",
+      "order": 3,
+      "xform": 6
+    }
+  },
+  {
+    "pk": 61,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "sent",
+      "order": 3,
+      "xform": 16
+    }
+  },
+  {
+    "pk": 80,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "credit_spent",
+      "order": 3,
+      "xform": 19
+    }
+  },
+  {
+    "pk": 86,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "grade_a_shipped",
+      "order": 3,
+      "xform": 20
+    }
+  },
+  {
+    "pk": 3,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "acc",
+      "order": 4,
+      "xform": 2
+    }
+  },
+  {
+    "pk": 14,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "pbb",
+      "order": 4,
+      "xform": 3
+    }
+  },
+  {
+    "pk": 19,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "salaries",
+      "order": 4,
+      "xform": 4
+    }
+  },
+  {
+    "pk": 30,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "cherry",
+      "order": 4,
+      "xform": 6
+    }
+  },
+  {
+    "pk": 42,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "pbb",
+      "order": 4,
+      "xform": 11
+    }
+  },
+  {
+    "pk": 62,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "balance",
+      "order": 4,
+      "xform": 16
+    }
+  },
+  {
+    "pk": 69,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "advanced",
+      "order": 4,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 78,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "cherry_purchased",
+      "order": 4,
+      "xform": 19
+    }
+  },
+  {
+    "pk": 87,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "grade_b_shipped",
+      "order": 4,
+      "xform": 20
+    }
+  },
+  {
+    "pk": 15,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "text",
+      "command": "license",
+      "order": 5,
+      "xform": 3
+    }
+  },
+  {
+    "pk": 20,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "scwages",
+      "order": 5,
+      "xform": 4
+    }
+  },
+  {
+    "pk": 31,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "cash_advance",
+      "order": 5,
+      "xform": 6
+    }
+  },
+  {
+    "pk": 43,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "moisture",
+      "order": 5,
+      "xform": 11
+    }
+  },
+  {
+    "pk": 63,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "acc",
+      "order": 5,
+      "xform": 16
+    }
+  },
+  {
+    "pk": 70,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "full_time_labor",
+      "order": 5,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 88,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "grade_c_shipped",
+      "order": 5,
+      "xform": 20
+    }
+  },
+  {
+    "pk": 21,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "transwages",
+      "order": 6,
+      "xform": 4
+    }
+  },
+  {
+    "pk": 24,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "acc",
+      "order": 6,
+      "xform": 3
+    }
+  },
+  {
+    "pk": 32,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "credit_paid_off",
+      "order": 6,
+      "xform": 6
+    }
+  },
+  {
+    "pk": 44,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "score",
+      "order": 6,
+      "xform": 11
+    }
+  },
+  {
+    "pk": 71,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "casual_labor",
+      "order": 6,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 22,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "casualwages",
+      "order": 7,
+      "xform": 4
+    }
+  },
+  {
+    "pk": 33,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "cherry_cash",
+      "order": 7,
+      "xform": 6
+    }
+  },
+  {
+    "pk": 47,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "csp_off",
+      "command": "officer",
+      "order": 7,
+      "xform": 11
+    }
+  },
+  {
+    "pk": 72,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "commission",
+      "order": 7,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 92,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "daylot",
+      "command": "date",
+      "order": 7,
+      "xform": 19
+    }
+  },
+  {
+    "pk": 93,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "daylot",
+      "command": "date",
+      "order": 7,
+      "xform": 20
+    }
+  },
+  {
+    "pk": 23,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "cashout",
+      "order": 8,
+      "xform": 4
+    }
+  },
+  {
+    "pk": 34,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "int",
+      "command": "cherry_credit",
+      "order": 8,
+      "xform": 6
+    }
+  },
+  {
+    "pk": 73,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "transport",
+      "order": 8,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 25,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "acc",
+      "order": 9,
+      "xform": 4
+    }
+  },
+  {
+    "pk": 35,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "acc",
+      "order": 9,
+      "xform": 6
+    }
+  },
+  {
+    "pk": 74,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "float",
+      "command": "other_expenses",
+      "order": 9,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 91,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "daylot",
+      "command": "date",
+      "order": 11,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 75,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "accountant",
+      "order": 12,
+      "xform": 18
+    }
+  },
+  {
+    "pk": 82,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "accountant",
+      "order": 12,
+      "xform": 19
+    }
+  },
+  {
+    "pk": 89,
+    "model": "rapidsms_xforms.xformfield",
+    "fields": {
+      "field_type": "acc",
+      "command": "accountant",
+      "order": 12,
+      "xform": 20
+    }
+  },
+  {
+    "pk": 1,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo ariko biteye. Kugirango wiyandikishe ohereza: acc [uruganda_izina] [izina ryawe].",
+      "message_en_us": "Incorrect format. To register send: acc [wetmill_name] [your name].",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 1,
+      "test": "None",
+      "message": "Incorrect format. To register send: acc [wetmill_name] [your name].",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 2,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo ariko biyeye. Kugirango wiyandikishe ohereza: acc [uruganda_izina] [izina ryawe].",
+      "message_en_us": "Incorrect format. To register send: acc [wetmill_name] [your name]. ",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 2,
+      "test": "None",
+      "message": "Incorrect format. To register send: acc [wetmill_name] [your name]. ",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 3,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ugomba kuba umucungamari kungirango wohereze raporo zoguhunika.  Iyandikishe nka 'acc'",
+      "message_en_us": "You must be an accountant to submit store reports.  Register with 'acc'",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 3,
+      "test": "None",
+      "message": "You must be an accountant to submit store reports.  Register with 'acc'",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 4,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo aruko byandikwa. Ohereza: store [ikirundo cy'umunsi_numero] [icyiciro a itwawe] [icyiciro b itwawe]",
+      "message_en_us": "Incorrect format. Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 8,
+      "test": "None",
+      "message": "Incorrect format. Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 5,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo aruko byandikwa. Ohereza: store [ikirundo cy'umunsi_numero] [icyiciro a gitwawe] [icyiciro b itwawe]",
+      "message_en_us": "Incorrect format. Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 9,
+      "test": "None",
+      "message": "Incorrect format. Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 6,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo ari uko byandikwa. Ohereza: store [numero_y'ikirundo cy'umunsi] [icyiciro a itwawe] [icyiciro b itwawe]",
+      "message_en_us": "Incorrect format.  Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 10,
+      "test": "None",
+      "message": "Incorrect format.  Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 7,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  Ugomba kuba uri umucungamari kugirango wohereze kawa.  Iyandikishe nka 'acc'",
+      "message_en_us": "Error. You must be an accountant to send shipments. Register with 'acc'",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 24,
+      "test": "None",
+      "message": "Error. You must be an accountant to send shipments. Register with 'acc'",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 8,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo aruko byandikwa. Ohereza: send [ibiro bya kawa yumye a] [imifuka ya kawa yumye a] [ibiro bya kawa yumye b] [imifuka ya kawa yumye b] [pulaki z'imodoka]",
+      "message_en_us": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 11,
+      "test": "None",
+      "message": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 9,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo aruko byandikwa. Ohereza: send [ibiro bya kawa yumye a] [imifuka ya kawa yumye a] [ibiro bya kawa yumye b] [imifuka ya kawa yumye b] [pulaki]",
+      "message_en_us": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 12,
+      "test": "None",
+      "message": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 10,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Kwandika bidakwiye. Ohereza: send [ibiro bya kawa yumye a] [imifuka ya kawa yumye a] [ibiro bya kawa yumye b] [imifuka ya kawa yumye b] [pulaki]",
+      "message_en_us": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 13,
+      "test": "None",
+      "message": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 11,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo aruko byandikwa.Ohereza: send [ibiro bya kawa yumye a] [imifuka ya kawa yumye a] [ibiro bya kawa yumye b] [imifuka ya kawa yumye b] [pulaki]",
+      "message_en_us": "Incorrect Format.  Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 14,
+      "test": "None",
+      "message": "Incorrect Format.  Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 12,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Kwandika bidakwiye. Ohereza: send [ibiro bya kawa yumye a] [imifuka ya kawa yumye a] [ibiro bya kawa yumye b] [imifuka ya kawa yumye b] [pulaki]",
+      "message_en_us": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 15,
+      "test": "None",
+      "message": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 13,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Kugirango wohereze raporo za kashi ugomba kuba uri umucungamari.  Iyandikishe nka 'acc'",
+      "message_en_us": "Error. You must be an accountant to send cash report. Register with 'acc'",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 25,
+      "test": "None",
+      "message": "Error. You must be an accountant to send cash report. Register with 'acc'",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 14,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Uko byandikwa: cash [amafaranga_y'igishoro] [igiteranyo cyandi mafaranga] [avanse kashi] [imishahara] [ukusanya] [ubwikorezi] [imibyizi] [andi]",
+      "message_en_us": "Error. Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 16,
+      "test": "None",
+      "message": "Error. Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 15,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. uko byandikwa: cash [amafaranga_y'igishoro] [igiteranyo cyandi mafaranga] [avanse kashi] [imishahara] [ukusanya] [ubwikorezi] [imibyizi] [andi]",
+      "message_en_us": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 17,
+      "test": "None",
+      "message": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 16,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. uko byandikwa: cash [amafaranga_y'igishoro] [igiteranyo cyandi mafaranga] [avanse kashi] [imishahara] [ukusanya] [ubwikorezi] [imibyizi] [andi]",
+      "message_en_us": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 18,
+      "test": "None",
+      "message": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 17,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. uko byandikwa: cash [amafararanga_y'igishoro] [igiteranyo cyandi mafaranga] [avanse kashi] [imishahara] [ukusanya] [ubwikorezi] [imibyizi] [andi]",
+      "message_en_us": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 19,
+      "test": "None",
+      "message": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 18,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. uko biteye: cash [amafaranga_y'igishoro] [igiteranyo cyandi mafaranga] [avanse kashi] [imishahara] [ukusanya] [ubwikorezi] [imibyizi] [andi]",
+      "message_en_us": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 20,
+      "test": "None",
+      "message": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 19,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. uko byandikwa: cash [amafaranga_y'igishoro] [igiteranyo cyandi mafaranga] [avanse kashi] [imishahara] [ukusanya] [ubwikorezi] [imibyizi] [andi]",
+      "message_en_us": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 21,
+      "test": "None",
+      "message": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 20,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. uko byandikwa: cash [amafaranga_y'igishoro] [igiteranyo cyandi mafaranga] [avanse kashi] [imishahara] [ukusanya] [ubwikorezi] [imibyizi] [andi]",
+      "message_en_us": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 22,
+      "test": "None",
+      "message": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 21,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. uko byandikwa: cash [amafaranga_y'igishoro] [igiteranyo cyandi mafaranga] [avanse kashi] [imishahara] [ukusanya] [ubwikorezi] [imibyizi] [andi]",
+      "message_en_us": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 23,
+      "test": "None",
+      "message": "Error.  Format: cash [working_cap] [sum of other cash] [cash advances] [salaries] [collector] [transport] [casual] [other expenses]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 22,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: cpo [izina ry'uruganda] [izina ryawe]",
+      "message_en_us": "Error.  Format: cpo [wet mill name] [your name]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 26,
+      "test": "None",
+      "message": "Error.  Format: cpo [wet mill name] [your name]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 23,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: cpo [izina ry'uruganda] [izina ryawe]",
+      "message_en_us": "Error.  Format: cpo [wet mill name] [your name]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 27,
+      "test": "None",
+      "message": "Error.  Format: cpo [wet mill name] [your name]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 24,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Ugomba kuba uri umucungamari kugirango wohereze raporo z'ikusanya z'ibitumbwe. Iyandikishe nka 'acc'",
+      "message_en_us": "Error. You must be an accountant in order to send cherry collection reports.  Register with 'acc'",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 35,
+      "test": "None",
+      "message": "Error. You must be an accountant in order to send cherry collection reports.  Register with 'acc'",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 25,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 34,
+      "test": "None",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 26,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 33,
+      "test": "None",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 27,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amkosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 32,
+      "test": "None",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 28,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 31,
+      "test": "None",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 29,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 30,
+      "test": "None",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 30,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amkosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 29,
+      "test": "None",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 31,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 28,
+      "test": "None",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 32,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Uko byandikwa: lang [rw|en]",
+      "message_en_us": "Error.  Format: lang [rw|en]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 36,
+      "test": "(rw|en)",
+      "message": "Error.  Format: lang [rw|en]",
+      "type": "regex",
+      "order": 0
+    }
+  },
+  {
+    "pk": 33,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  Ugomba kuba uri umucungamari kugirango ube washakisha SCs y'uruganda.  Iyandikishe ukoresheje 'acc'",
+      "message_en_us": "Error.  You must be registered as an accountant to look up wet mill SCs.  Register with 'acc'",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 37,
+      "test": "None",
+      "message": "Error.  You must be registered as an accountant to look up wet mill SCs.  Register with 'acc'",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 34,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: rec [pulaki] [ibiro by'icyiciro a][imifuka y'icyiciro a] [ibiro by'icyiciro b] [imifuka y'icyikciro b] [ubutohe] [gusogongera]",
+      "message_en_us": "Error.  Format: rec [license plate] [grade a kgs] [ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 38,
+      "test": "None",
+      "message": "Error.  Format: rec [license plate] [grade a kgs] [ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 35,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: rec [pulaki] [ibiro by'icyiciro a][imifuka y'icyiciro a] [ibiro by'icyiciro b] [imifuka y'icyikciro b] [ubutohe] [gusogongera]",
+      "message_en_us": "Error.  Format: rec [license plate] [grade a kgs] [ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 39,
+      "test": "None",
+      "message": "Error.  Format: rec [license plate] [grade a kgs] [ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 36,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. uko byandikwa: rec [pulaki] [ibiro by'icyiciro a][imifuka y'icyiciro a] [ibiro by'icyiciro b] [imifuka y'icyikciro b] [ubutohe] [gusogongera]",
+      "message_en_us": "Error.  Format: rec [license plate] [grade a kgs][ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 40,
+      "test": "None",
+      "message": "Error.  Format: rec [license plate] [grade a kgs][ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 37,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: rec [pulaki] [ibiro by'icyiciro a][imifuka y'icyiciro a] [ibiro by'icyiciro b] [imifuka y'icyikciro b] [ubutohe] [gusogongera]",
+      "message_en_us": "Error.  Format: rec [license plate] [grade a kgs][ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 41,
+      "test": "None",
+      "message": "Error.  Format: rec [license plate] [grade a kgs][ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 38,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: rec [pulaki] [ibiro by'icyiciro a][imifuka y'icyiciro a] [ibiro by'icyiciro b] [imifuka y'icyikciro b] [ubutohe] [gusogongera]",
+      "message_en_us": "Error.  Format: rec [license plate] [grade a kgs][ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 42,
+      "test": "None",
+      "message": "Error.  Format: rec [license plate] [grade a kgs][ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 39,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: rec [pulaki] [ibiro by'icyiciro a][imifuka y'icyiciro a] [ibiro by'icyiciro b] [imifuka y'icyikciro b] [ubutohe] [gusogongera]",
+      "message_en_us": "Error.  Format: rec [license plate] [grade a kgs][ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 43,
+      "test": "None",
+      "message": "Error.  Format: rec [license plate] [grade a kgs][ grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 41,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Uko byandikwa: csp [izina rya csp] [izina ryawe]",
+      "message_en_us": "Error. Format: csp [csp name] [your name]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 45,
+      "test": "None",
+      "message": "Error. Format: csp [csp name] [your name]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 42,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Uko byandikwa: csp [izina rya csp] [izina ryawe]",
+      "message_en_us": "Error. Format: csp [csp name] [your name]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 46,
+      "test": "None",
+      "message": "Error. Format: csp [csp name] [your name]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 43,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Ugomba kuba wanditswe nk'umukozi wikigo gifasha mubya kawa cyangwa umushoramari CPS kugirango ube wakwandika kawa izanwe ikakirwa.  Iyandikishe nka 'cs",
+      "message_en_us": "Error. You must be registered as a CSP officer to record shipments as received.  Register with 'csp'",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 47,
+      "test": "None",
+      "message": "Error. You must be registered as a CSP officer to record shipments as received.  Register with 'csp'",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 44,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: obs [izina ry'uruganda] [izina ryawe]",
+      "message_en_us": "Error.  Format: obs [wet mill name] [your name]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 48,
+      "test": "None",
+      "message": "Error.  Format: obs [wet mill name] [your name]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 45,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: obs [izina ry'uruganda] [izina ryawe]",
+      "message_en_us": "Error.  Format: obs [wet mill name] [your name]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 49,
+      "test": "None",
+      "message": "Error.  Format: obs [wet mill name] [your name]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 46,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 54,
+      "test": "None",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 47,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa,umukozi wo kuruganda CPO iyo abuze.  uko byandikwa: return [inomero yuwo mukozi cpo ] [avanse yagaruwe kashi]",
+      "message_en_us": "Error, missing CPO.  Format: return [cpo id] [cash advance returned]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 55,
+      "test": "None",
+      "message": "Error, missing CPO.  Format: return [cpo id] [cash advance returned]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 48,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa, Umubare wa avanse yabuze.  uko byandikwa: return [inomero y'umukozi cpo ] [avanse yagaruwe kashi]",
+      "message_en_us": "Error, missing cash advance value.  Format: return [cpo id] [cash advance returned]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 56,
+      "test": "None",
+      "message": "Error, missing cash advance value.  Format: return [cpo id] [cash advance returned]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 49,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Ugomba kuba wanditswe nk'umucungamari kugirango wohereze raporo 'garura'.  Iyandikishe nka 'acc'.",
+      "message_en_us": "Error. You must be registered as an accountant to send 'return' report.  Register with 'acc'.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 57,
+      "test": "None",
+      "message": "Error. You must be registered as an accountant to send 'return' report.  Register with 'acc'.",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 50,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Agaciro kagomba kuba 0 cyangwa kakarenga .  Ohereza: store [ikirundo cy'umunsi_numero] [icyiciro a itwawe] [icyiciro b itwawe]",
+      "message_en_us": "Value must be 0 or greater.  Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 9,
+      "test": "0",
+      "message": "Value must be 0 or greater.  Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 51,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Agaciro kagomba kuba 0 cyangwa kakarenga.  Ohereza: store [ikirundo cy'umunsi_numero] [icyiciro a itwawe] [icyiciro b itwawe]",
+      "message_en_us": "Value must be 0 or greater.  Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 9,
+      "test": "0",
+      "message": "Value must be 0 or greater.  Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "type": "min_val",
+      "order": 2
+    }
+  },
+  {
+    "pk": 52,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Agakiro kagomba kuba 0 cyangwa kakarenga.  Ohereza: store [ikirundo cyumunsi_numero] [icyiciro a itwawe] [icyiciro b itwawe]",
+      "message_en_us": "Value must be 0 or greater.  Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 10,
+      "test": "0",
+      "message": "Value must be 0 or greater.  Send: store [daylot_id] [grade a moved] [grade b moved]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 53,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo aruko byandikwa. Ohereza: send [ibiro bya kawa yumye a] [imifuka ya kawa yumye a] [ibiro bya kawa yumye b] [imifuka ya kawa yumye b] [pulaki z'modoka]",
+      "message_en_us": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 11,
+      "test": "0",
+      "message": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 54,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo aruko byandikwa. Ohereza:send [kawa yumye a ibiro] [kawa yumye a imifuka][kawa yumye b ibiro] [kawa yumye b imifuka] [pulaki z'imodoka]",
+      "message_en_us": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 11,
+      "test": "0",
+      "message": "Incorrect Format. Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "type": "min_val",
+      "order": 2
+    }
+  },
+  {
+    "pk": 55,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo aruko byandikwa.Ohereza: send [ibiro bya kawa yumye a] [imifuka ya kawa yumye a] [ibiro bya kawa yumye b] [imifuka ya kawa yumye b] [pulaki]",
+      "message_en_us": "Incorrect Format.  Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 13,
+      "test": "0",
+      "message": "Incorrect Format.  Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 56,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ntabwo aruko byandikwa.Ohereza: send [ibiro bya kawa yumye a] [imifuka ya kawa yumye a] [ibiro bya kawa yumye b] [imifuka ya kawa yumye b] [pulaki]",
+      "message_en_us": "Incorrect Format.  Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 14,
+      "test": "0",
+      "message": "Incorrect Format.  Send: send [parchment a kgs] [parchment a bags] [parchment b kilos] [parchment b bags] [license plate]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 57,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amkosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 29,
+      "test": "0",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 58,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amkosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 54,
+      "test": "0",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 59,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 30,
+      "test": "0",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 61,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 33,
+      "test": "0",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 62,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 34,
+      "test": "0",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 63,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 32,
+      "test": "0",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 64,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. Biteye: cherry [no cpo] [Igciro kash] [igciro iden] [ibiro by'ibtubwe] [avans kash] [umwed wishyuw] [ibtmbwe by'ishyuwe kash][ibtubwe by'ishyuwe umwed]",
+      "message_en_us": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 31,
+      "test": "0",
+      "message": "Error.  Format: cherry [cpo id] [cash price] [credit price] [cherry kg] [cash advance] [credit paid] [cherry paid cash] [cherry paid credit]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 65,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa. uko byandikwa: rec [pulaki] [ibiro by'icyiciro a][imifuka y'icyiciro a] [ibiro by'icyiciro b] [imifuka y'icyikciro b] [ubutohe] [gusogongera]",
+      "message_en_us": "Error.  Format: rec [license plate] [grade a kgs] [grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 39,
+      "test": "0",
+      "message": "Error.  Format: rec [license plate] [grade a kgs] [grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 66,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: rec [pulaki] [ibiro by'icyiciro a][imifuka y'icyiciro a] [ibiro by'icyiciro b] [imifuka y'icyikciro b] [ubutohe] [gusogongera]",
+      "message_en_us": "Error.  Format: rec [license plate] [grade a kgs] [grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 40,
+      "test": "0",
+      "message": "Error.  Format: rec [license plate] [grade a kgs] [grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 67,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: rec [pulaki] [ibiro by'icyiciro a][imifuka y'icyiciro a] [ibiro by'icyiciro b] [imifuka y'icyikciro b] [ubutohe] [gusogongera]",
+      "message_en_us": "Error.  Format: rec [license plate] [grade a kgs] [grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 41,
+      "test": "0",
+      "message": "Error.  Format: rec [license plate] [grade a kgs] [grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 68,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: rec [pulaki] [ibiro by'icyiciro a][imifuka y'icyiciro a] [ibiro by'icyiciro b] [imifuka y'icyikciro b] [ubutohe] [gusogongera]",
+      "message_en_us": "Error.  Format: rec [license plate] [grade a kgs] [grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 42,
+      "test": "0",
+      "message": "Error.  Format: rec [license plate] [grade a kgs] [grade a bags] [grade b kgs] [grade b bags] [moisture] [cupping]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 69,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: sum [igiteranyo cy'ibitumbwe mu biro] [yose hamwe yishyuwe frw] [ibiro bihunitswe] [ibiro byoherejwe] [asigaye kashi]",
+      "message_en_us": "Error.  Format: sum [total cherry kg] [total paid rwf] [kgs stored] [kgs sent] [cash balance]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 58,
+      "test": "None",
+      "message": "Error.  Format: sum [total cherry kg] [total paid rwf] [kgs stored] [kgs sent] [cash balance]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 70,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: sum [igiteranyo cy'ibitumbwe mu biro] [yose hamwe yishyuwe frw] [ibiro bihunitswe] [ibiro byoherejwe] [asigaye kashi]",
+      "message_en_us": "Error.  Format: sum [total cherry kg] [total paid rwf] [kgs stored] [cash balance]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 58,
+      "test": "0",
+      "message": "Error.  Format: sum [total cherry kg] [total paid rwf] [kgs stored] [cash balance]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 71,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko biteye: sum [igiteranyo cy'ibitumbwe mu biro] [yose hamwe yishyuwe frw] [ibiro bihunitswe] [ibiro byoherejwe] [asigaye kashi]",
+      "message_en_us": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 59,
+      "test": "None",
+      "message": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 72,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: sum [igiteranyo cy'ibitumbwe mu biro] [yose hamwe yishyuwe frw] [ibiro bihunitswe] [ibiro byoherejwe] [asigaye kashi]",
+      "message_en_us": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 59,
+      "test": "0",
+      "message": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 73,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: sum [igiteranyo cy'ibitumbwe mu biro] [yose hamwe yishyuwe frw] [ibiro bihunitswe] [ibiro byoherejwe] [asigaye kashi]",
+      "message_en_us": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 60,
+      "test": "None",
+      "message": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 74,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko biteye: sum [igiteranyo cy'ibitumbwe mu biro] [yose hamwe yishyuwe frw] [ibiro bihunitswe] [ibiro byoherejwe] [asigaye kashi]",
+      "message_en_us": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 60,
+      "test": "0",
+      "message": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 75,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: sum [igiteranyo cy'ibitumbwe mu biro] [yose hamwe yishyuwe frw] [ibiro bihunitswe] [ibiro byoherejwe] [asigaye kashi]",
+      "message_en_us": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 61,
+      "test": "None",
+      "message": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 76,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: sum [igiteranyo cy'ibitumbwe mu biro] [yose hamwe yishyuwe frw] [ibiro bihunitswe] [ibiro byoherejwe] [asigaye kashi]",
+      "message_en_us": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 61,
+      "test": "0",
+      "message": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 77,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: sum [igiteranyo cy'ibitumbwe mu biro] [yose hamwe yishyuwe frw] [ibiro bihunitswe] [ibiro byoherejwe] [asigaye kashi]",
+      "message_en_us": "Amakosa.  Format: sum [total of cherries in kg] [Total paid RFW] [stored kgs] [sent kg] [cash balance]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 62,
+      "test": "None",
+      "message": "Amakosa.  Format: sum [total of cherries in kg] [Total paid RFW] [stored kgs] [sent kg] [cash balance]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 78,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  uko byandikwa: sum [igiteranyo cy'ibitumbwe mu biro] [yose hamwe yishyuwe frw] [ibiro bihunitswe] [ibiro byoherejwe] [asigaye kashi]",
+      "message_en_us": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 62,
+      "test": "0",
+      "message": "Error.  Format: sum [total cherry kg] [total paid rwf] [kg stored] [kg sent] [cash balance]",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 79,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Amakosa.  Ugomba kuba wariyandikishije nk'umucungamari kugirango wohereze raporo y'incyamake. Iyandikishe muri 'acc'",
+      "message_en_us": "You must be a registered accountant to send summary reports.  Register with 'acc'",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 63,
+      "test": "None",
+      "message": "You must be a registered accountant to send summary reports.  Register with 'acc'",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 80,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Format: amafaranga [FRW ku ntangiro y\u2019icyumweru] [Igishoro] [Andi yinjiye] [Ayagarutse] [Abakozi bahoraho] [Nyakabyizi] [FRW Y\u2019abaguzi] [Ubwikor",
+      "message_en_us": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 65,
+      "test": "None",
+      "message": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 81,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. FRW ku ntagiro y\u2019icyumweru agomba kuba 0 cyangwase hejuru yayo",
+      "message_en_us": "Error.  Opening Balance must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 65,
+      "test": "0",
+      "message": "Error.  Opening Balance must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 82,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Format: amafaranga [FRW ku ntangiro y\u2019icyumweru] [Igishoro] [Andi yinjiye] [Ayagarutse] [Abakozi bahoraho] [Nyakabyizi] [FRW Y\u2019abaguzi] [Ubwikor",
+      "message_en_us": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 66,
+      "test": "None",
+      "message": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 83,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. FRW y'igishoro kigomba kuba 0 cyangwase hejuru yayo",
+      "message_en_us": "Error.  Working Capital Received must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 66,
+      "test": "0",
+      "message": "Error.  Working Capital Received must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 84,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ugomba kuba wanditse nk\u2019umucungamari kugira ngo wohereze ubwo butumwa.",
+      "message_en_us": "You must be registered as an Accountant to send this message.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 75,
+      "test": "None",
+      "message": "You must be registered as an Accountant to send this message.",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 85,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Format: amafaranga [FRW ku ntangiro y\u2019icyumweru] [Igishoro] [Andi yinjiye] [Ayagarutse] [Abakozi bahoraho] [Nyakabyizi] [FRW Y\u2019abaguzi] [Ubwikor",
+      "message_en_us": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 67,
+      "test": "None",
+      "message": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 86,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. FRW Andi yinjiye agomba kuba 0 cyangwase hejuru yayo",
+      "message_en_us": "Error. Other Income must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 67,
+      "test": "0",
+      "message": "Error. Other Income must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 89,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Format: amafaranga [FRW ku ntangiro y\u2019icyumweru] [Igishoro] [Andi yinjiye] [Ayagarutse] [Abakozi bahoraho] [Nyakabyizi] [FRW Y\u2019abaguzi] [Ubwikor",
+      "message_en_us": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 69,
+      "test": "None",
+      "message": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 90,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. FRW ya Avansi agomba kuba 0 cyangwase hejuru yayo",
+      "message_en_us": "Error. Advanced must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 69,
+      "test": "0",
+      "message": "Error. Advanced must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 91,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Format: amafaranga [FRW ku ntangiro y\u2019icyumweru] [Igishoro] [Andi yinjiye] [Ayagarutse] [Abakozi bahoraho] [Nyakabyizi] [FRW Y\u2019abaguzi] [Ubwikor",
+      "message_en_us": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 70,
+      "test": "None",
+      "message": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 92,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. FRW Y'abakozi bahoraho agomba kuba 0 cyangwase hejuru yayo",
+      "message_en_us": "Error. Full Time Labor must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 70,
+      "test": "0",
+      "message": "Error. Full Time Labor must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 93,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Format: amafaranga [FRW ku ntangiro y\u2019icyumweru] [Igishoro] [Andi yinjiye] [Ayagarutse] [Abakozi bahoraho] [Nyakabyizi] [FRW Y\u2019abaguzi] [Ubwikor",
+      "message_en_us": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 71,
+      "test": "None",
+      "message": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 94,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. FRW Y'abanyakabyizi agomba kuba 0 cyangwase hejuru yayo",
+      "message_en_us": "Error. Casual Labor must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 71,
+      "test": "0",
+      "message": "Error. Casual Labor must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 95,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Format: amafaranga [FRW ku ntangiro y\u2019icyumweru] [Igishoro] [Andi yinjiye] [Ayagarutse] [Abakozi bahoraho] [Nyakabyizi] [FRW Y\u2019abaguzi] [Ubwikor",
+      "message_en_us": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 72,
+      "test": "None",
+      "message": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 96,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. FRW Y\u2019abaguzi agomba kuba 0 cyangwase hejuru yayo",
+      "message_en_us": "Error. Commission must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 72,
+      "test": "0",
+      "message": "Error. Commission must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 97,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Format: amafaranga [FRW ku ntangiro y\u2019icyumweru] [Igishoro] [Andi yinjiye] [Ayagarutse] [Abakozi bahoraho] [Nyakabyizi] [FRW Y\u2019abaguzi] [Ubwikor",
+      "message_en_us": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 73,
+      "test": "None",
+      "message": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 98,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. FRW Y\u2019ubwikorezi agomba kuba 0 cyangwase hejuru yayo",
+      "message_en_us": "Error. Transport must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 73,
+      "test": "0",
+      "message": "Error. Transport must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 99,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Format: amafaranga [FRW ku ntangiro y\u2019icyumweru] [Igishoro] [Andi yinjiye] [Ayagarutse] [Abakozi bahoraho] [Nyakabyizi] [FRW Y\u2019abaguzi] [Ubwikor",
+      "message_en_us": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 74,
+      "test": "None",
+      "message": "Error. Format: amafaranga [opening balance] [capital received] [income] [advanced] [full time labor] [casual labor] [commission] [transport] [other]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 100,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. FRW y'ibindi agomba kuba 0 cyangwase hejuru yayo",
+      "message_en_us": "Error. Other must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 74,
+      "test": "0",
+      "message": "Error. Other must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 101,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa.  Format: ibitumbwe [Avansi] [FRW yagarutse] [FRW yishyuwe] [Umwenda] [Ibitumbwe byaguzwe] [Umwenda wishyuwe]",
+      "message_en_us": "Error.  Format: ibitumbwe [cash advances] [cash returned] [cash spent] [credit spent] [cherry purchased] [credit cleared]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 76,
+      "test": "None",
+      "message": "Error.  Format: ibitumbwe [cash advances] [cash returned] [cash spent] [credit spent] [cherry purchased] [credit cleared]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 102,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Avansi igomba kuba 0 cyangwa hejuru yayo",
+      "message_en_us": "Error.  Cash Advance must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 76,
+      "test": "0",
+      "message": "Error.  Cash Advance must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 103,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa.  Format: ibitumbwe [Avansi] [FRW yagarutse] [FRW yishyuwe] [Umwenda] [Ibitumbwe byaguzwe] [Umwenda wishyuwe]",
+      "message_en_us": "Error.  Format: ibitumbwe [cash advances] [cash returned] [cash spent] [credit spent] [cherry purchased] [credit cleared]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 77,
+      "test": "None",
+      "message": "Error.  Format: ibitumbwe [cash advances] [cash returned] [cash spent] [credit spent] [cherry purchased] [credit cleared]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 104,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Ayagarutse agomba kuba 0 cyangwa hejuru yayo",
+      "message_en_us": "Error.  Cash Returned must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 77,
+      "test": "0",
+      "message": "Error.  Cash Returned must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 105,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa.  Format: ibitumbwe [Avansi] [FRW yagarutse] [FRW yishyuwe] [Umwenda] [Ibitumbwe byaguzwe] [Umwenda wishyuwe]",
+      "message_en_us": "Error.  Format: ibitumbwe [cash advances] [cash returned] [cash spent] [credit spent] [cherry purchased] [credit cleared]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 78,
+      "test": "None",
+      "message": "Error.  Format: ibitumbwe [cash advances] [cash returned] [cash spent] [credit spent] [cherry purchased] [credit cleared]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 106,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Ibitumbwe byaguzwe bigomba kuba 0 cyangwa hejuru yayo.",
+      "message_en_us": "Error, Cherry Purchased must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 78,
+      "test": "0",
+      "message": "Error, Cherry Purchased must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 107,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa.  Format: ibitumbwe [Avansi] [FRW yagarutse] [FRW yishyuwe] [Umwenda] [Ibitumbwe byaguzwe] [Umwenda wishyuwe]",
+      "message_en_us": "Error.  Format: ibitumbwe [cash advances] [cash returned] [cash spent] [credit spent] [cherry purchased] [credit cleared]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 79,
+      "test": "None",
+      "message": "Error.  Format: ibitumbwe [cash advances] [cash returned] [cash spent] [credit spent] [cherry purchased] [credit cleared]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 108,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. amafaranga y'ishyuwe agomba kuba 0 cyangwa hejuru yayo",
+      "message_en_us": "Error, Cash Spent must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 79,
+      "test": "0",
+      "message": "Error, Cash Spent must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 109,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa.  Format: ibitumbwe [Avansi] [FRW yagarutse] [FRW yishyuwe] [Umwenda] [Ibitumbwe byaguzwe] [Umwenda wishyuwe]",
+      "message_en_us": "Error.  Format: ibitumbwe [cash advances] [cash returned] [cash spent] [credit spent] [cherry purchased] [credit cleared]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 80,
+      "test": "None",
+      "message": "Error.  Format: ibitumbwe [cash advances] [cash returned] [cash spent] [credit spent] [cherry purchased] [credit cleared]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 110,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Umwenda ugomba kuba 0 cyangwa hejuru yayo",
+      "message_en_us": "Error, Credit Spent must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 80,
+      "test": "0",
+      "message": "Error, Credit Spent must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 113,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ugomba kuba wanditse nk\u2019umucungamari kugira ngo wohereze ubwo butumwa",
+      "message_en_us": "You must be an accountant to submit this message.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 82,
+      "test": "None",
+      "message": "You must be an accountant to submit this message.",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 114,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Format: sitoki [grade A Yabitswe] [grade B Yabitswe] [grade C Yabitswe] [grade A yagemuwe] [grade B yagemuwe] [grade C yagemuwe]",
+      "message_en_us": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 83,
+      "test": "None",
+      "message": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 115,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Grade A Yabitswe igomba kuba 0 cyangwa hejuru yayo.",
+      "message_en_us": "Error. Grade A Stored must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 83,
+      "test": "0",
+      "message": "Error. Grade A Stored must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 116,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Format: sitoki [grade A Yabitswe] [grade B Yabitswe] [grade C Yabitswe] [grade A yagemuwe] [grade B yagemuwe] [grade C yagemuwe]",
+      "message_en_us": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 84,
+      "test": "None",
+      "message": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 117,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Grade B Yabitswe igomba kuba 0 cyangwa hejuru yayo.",
+      "message_en_us": "Error. Grade B Stored must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 84,
+      "test": "0",
+      "message": "Error. Grade B Stored must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 118,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Format: sitoki [grade A Yabitswe] [grade B Yabitswe] [grade C Yabitswe] [grade A yagemuwe] [grade B yagemuwe] [grade C yagemuwe]",
+      "message_en_us": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 85,
+      "test": "None",
+      "message": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 119,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Grade C Yabitswe igomba kuba 0 cyangwa hejuru yayo.",
+      "message_en_us": "Error. Grade C Stored must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 85,
+      "test": "0",
+      "message": "Error. Grade C Stored must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 120,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Format: sitoki [grade A Yabitswe] [grade B Yabitswe] [grade C Yabitswe] [grade A yagemuwe] [grade B yagemuwe] [grade C yagemuwe]",
+      "message_en_us": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 86,
+      "test": "None",
+      "message": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 121,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Grade A Yagemuwe igomba kuba 0 cyangwa hejuru yayo.",
+      "message_en_us": "Error. Grade A Shipped must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 86,
+      "test": "0",
+      "message": "Error. Grade A Shipped must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 122,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Format: sitoki [grade A Yabitswe] [grade B Yabitswe] [grade C Yabitswe] [grade A yagemuwe] [grade B yagemuwe] [grade C yagemuwe]",
+      "message_en_us": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 87,
+      "test": "None",
+      "message": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 123,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Grade B Yagemuwe igomba kuba 0 cyangwa hejuru yayo.",
+      "message_en_us": "Error. Grade B Shipped must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 87,
+      "test": "0",
+      "message": "Error. Grade B Shipped must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 124,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Format: sitoki [grade A Yabitswe] [grade B Yabitswe] [grade C Yabitswe] [grade A yagemuwe] [grade B yagemuwe] [grade C yagemuwe]",
+      "message_en_us": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 88,
+      "test": "None",
+      "message": "Error. Format: sitoki [grade a moved] [grade b moved] [grade c moved] [grade a shipped] [grade b shipped] [grade c shipped]",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 125,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Error. Grade C Yagemuwe igomba kuba 0 cyangwa hejuru yayo.",
+      "message_en_us": "Error. Grade C Shipped must be 0 or greater.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 88,
+      "test": "0",
+      "message": "Error. Grade C Shipped must be 0 or greater.",
+      "type": "min_val",
+      "order": 1
+    }
+  },
+  {
+    "pk": 126,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ugomba kuba wanditswe nk'umucungamari kugia ngo wohereze ubu butumwa",
+      "message_en_us": "You must be an accountant to submit the sitoki message.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 89,
+      "test": "None",
+      "message": "You must be an accountant to submit the sitoki message.",
+      "type": "req_val",
+      "order": 0
+    }
+  },
+  {
+    "pk": 127,
+    "model": "rapidsms_xforms.xformfieldconstraint",
+    "fields": {
+      "message_rw": "Ikosa. Ugomba kuba wandaitse nk'umucungamari kugirango wohereze ubutumwa bwo kwemeza. ",
+      "message_en_us": "Error. You must be registered as an accountant to send confirmation messages.",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "field": 90,
+      "test": "None",
+      "message": "Error. You must be registered as an accountant to send confirmation messages.",
+      "type": "req_val",
+      "order": 0
+    }
+  }
+]

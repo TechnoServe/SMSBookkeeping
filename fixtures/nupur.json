@@ -1,0 +1,6046 @@
+[
+  {
+    "pk": 3, 
+    "model": "locales.currency", 
+    "fields": {
+      "has_decimals": true, 
+      "modified_by": 1, 
+      "name": "Euro", 
+      "is_active": true, 
+      "prefix": "\u20ac ", 
+      "created_by": 1, 
+      "created_on": "2011-10-10 05:29:02", 
+      "modified_on": "2011-10-18 06:24:19", 
+      "currency_code": "EUR", 
+      "suffix": ""
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "locales.currency", 
+    "fields": {
+      "has_decimals": false, 
+      "modified_by": 1, 
+      "name": "Kenyan Shilling", 
+      "is_active": true, 
+      "prefix": "", 
+      "created_by": 1, 
+      "created_on": "2011-10-18 09:14:22", 
+      "modified_on": "2011-10-18 09:14:22", 
+      "currency_code": "KES", 
+      "suffix": " =/"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "locales.currency", 
+    "fields": {
+      "has_decimals": false, 
+      "modified_by": 1, 
+      "name": "Rwanda Franc", 
+      "is_active": true, 
+      "prefix": "", 
+      "created_by": 1, 
+      "created_on": "2011-10-08 05:21:40", 
+      "modified_on": "2011-10-08 05:21:40", 
+      "currency_code": "RWF", 
+      "suffix": " RWF"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "locales.currency", 
+    "fields": {
+      "has_decimals": true, 
+      "modified_by": 1, 
+      "name": "US Dollar", 
+      "is_active": true, 
+      "prefix": "$", 
+      "created_by": 1, 
+      "created_on": "2011-10-08 06:43:24", 
+      "modified_on": "2011-10-10 01:57:26", 
+      "currency_code": "USD", 
+      "suffix": ""
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "locales.country", 
+    "fields": {
+      "calling_code": 254, 
+      "bounds_zoom": 6, 
+      "national_id_format": "################", 
+      "modified_by": 1, 
+      "name": "Kenya", 
+      "bounds_lng": "38.036883", 
+      "is_active": true, 
+      "created_by": 1, 
+      "currency": 4, 
+      "created_on": "2011-10-18 09:14:56", 
+      "phone_format": "### ### ## ##", 
+      "country_code": "KE", 
+      "bounds_lat": "0.605261", 
+      "modified_on": "2011-10-18 09:14:56"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "locales.country", 
+    "fields": {
+      "calling_code": 250, 
+      "bounds_zoom": 8, 
+      "national_id_format": "# #### # ###### # ##", 
+      "modified_by": 1, 
+      "name": "Rwanda", 
+      "bounds_lng": "30.016863", 
+      "is_active": true, 
+      "created_by": 1, 
+      "currency": 1, 
+      "created_on": "2011-10-08 05:39:48", 
+      "phone_format": "### ### ## ##", 
+      "country_code": "RW", 
+      "bounds_lat": "-2.003572", 
+      "modified_on": "2011-10-10 04:29:45"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "locales.country", 
+    "fields": {
+      "calling_code": 1, 
+      "bounds_zoom": 3, 
+      "national_id_format": "###-##-####", 
+      "modified_by": 1, 
+      "name": "United States of America", 
+      "bounds_lng": "-95.315168", 
+      "is_active": true, 
+      "created_by": 1, 
+      "currency": 2, 
+      "created_on": "2011-10-08 06:44:13", 
+      "phone_format": "(###) ###-####", 
+      "country_code": "US", 
+      "bounds_lat": "40.188049", 
+      "modified_on": "2011-10-10 01:57:16"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Western", 
+      "country": 3, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-19 02:58:24", 
+      "modified_on": "2011-10-19 02:58:24", 
+      "order": 3
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Kigali", 
+      "country": 1, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-11 02:32:07", 
+      "modified_on": "2011-10-19 03:04:16", 
+      "order": 0
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Northern", 
+      "country": 1, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-11 02:31:46", 
+      "modified_on": "2011-10-11 02:31:46", 
+      "order": 1
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Southern", 
+      "country": 1, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-11 02:31:02", 
+      "modified_on": "2011-10-19 03:04:24", 
+      "order": 2
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Eastern", 
+      "country": 1, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-19 02:58:42", 
+      "modified_on": "2011-10-19 03:03:56", 
+      "order": 3
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Western", 
+      "country": 1, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-19 03:03:49", 
+      "modified_on": "2011-10-19 03:03:59", 
+      "order": 4
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "locales.province", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Washington", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-11 02:32:00", 
+      "modified_on": "2011-10-11 02:32:00", 
+      "order": 0
+    }
+  }, 
+  {
+    "pk": 53, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_logentry", 
+      "name": "Can add log entry", 
+      "content_type": 18
+    }
+  }, 
+  {
+    "pk": 54, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_logentry", 
+      "name": "Can change log entry", 
+      "content_type": 18
+    }
+  }, 
+  {
+    "pk": 55, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_logentry", 
+      "name": "Can delete log entry", 
+      "content_type": 18
+    }
+  }, 
+  {
+    "pk": 252, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "logentry_create", 
+      "name": "Can create log entry", 
+      "content_type": 18
+    }
+  }, 
+  {
+    "pk": 255, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "logentry_delete", 
+      "name": "Can delete log entry", 
+      "content_type": 18
+    }
+  }, 
+  {
+    "pk": 256, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "logentry_list", 
+      "name": "Can list log entry", 
+      "content_type": 18
+    }
+  }, 
+  {
+    "pk": 253, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "logentry_read", 
+      "name": "Can read log entry", 
+      "content_type": 18
+    }
+  }, 
+  {
+    "pk": 254, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "logentry_update", 
+      "name": "Can update log entry", 
+      "content_type": 18
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_group", 
+      "name": "Can add group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_group", 
+      "name": "Can change group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_group", 
+      "name": "Can delete group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 232, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "group_create", 
+      "name": "Can create group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 235, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "group_delete", 
+      "name": "Can delete group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 236, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "group_list", 
+      "name": "Can list group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 233, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "group_read", 
+      "name": "Can read group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 234, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "group_update", 
+      "name": "Can update group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_message", 
+      "name": "Can add message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_message", 
+      "name": "Can change message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_message", 
+      "name": "Can delete message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 257, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "message_create", 
+      "name": "Can create message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 260, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "message_delete", 
+      "name": "Can delete message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 261, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "message_list", 
+      "name": "Can list message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 258, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "message_read", 
+      "name": "Can read message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 259, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "message_update", 
+      "name": "Can update message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_permission", 
+      "name": "Can add permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_permission", 
+      "name": "Can change permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_permission", 
+      "name": "Can delete permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 292, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "permission_create", 
+      "name": "Can create permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 295, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "permission_delete", 
+      "name": "Can delete permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 296, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "permission_list", 
+      "name": "Can list permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 293, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "permission_read", 
+      "name": "Can read permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 294, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "permission_update", 
+      "name": "Can update permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_user", 
+      "name": "Can add user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_user", 
+      "name": "Can change user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_user", 
+      "name": "Can delete user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 397, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "user_create", 
+      "name": "Can create user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 400, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "user_delete", 
+      "name": "Can delete user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 401, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "user_list", 
+      "name": "Can list user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 169, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "user_permissions", 
+      "name": "Can permissions user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 398, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "user_read", 
+      "name": "Can read user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 399, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "user_update", 
+      "name": "Can update user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 125, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_cashuse", 
+      "name": "Can add cash use", 
+      "content_type": 42
+    }
+  }, 
+  {
+    "pk": 177, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "cashuse_create", 
+      "name": "Can create cash use", 
+      "content_type": 42
+    }
+  }, 
+  {
+    "pk": 180, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "cashuse_delete", 
+      "name": "Can delete cash use", 
+      "content_type": 42
+    }
+  }, 
+  {
+    "pk": 181, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "cashuse_list", 
+      "name": "Can list cash use", 
+      "content_type": 42
+    }
+  }, 
+  {
+    "pk": 178, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "cashuse_read", 
+      "name": "Can read cash use", 
+      "content_type": 42
+    }
+  }, 
+  {
+    "pk": 179, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "cashuse_update", 
+      "name": "Can update cash use", 
+      "content_type": 42
+    }
+  }, 
+  {
+    "pk": 126, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_cashuse", 
+      "name": "Can change cash use", 
+      "content_type": 42
+    }
+  }, 
+  {
+    "pk": 127, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_cashuse", 
+      "name": "Can delete cash use", 
+      "content_type": 42
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_contenttype", 
+      "name": "Can add content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_contenttype", 
+      "name": "Can change content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 192, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "contenttype_create", 
+      "name": "Can create content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 195, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "contenttype_delete", 
+      "name": "Can delete content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 196, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "contenttype_list", 
+      "name": "Can list content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 193, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "contenttype_read", 
+      "name": "Can read content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 194, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "contenttype_update", 
+      "name": "Can update content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_contenttype", 
+      "name": "Can delete content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 104, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_csp", 
+      "name": "Can add Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 105, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_csp", 
+      "name": "Can change Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 187, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "csp_create", 
+      "name": "Can create Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 190, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "csp_delete", 
+      "name": "Can delete Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 191, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "csp_list", 
+      "name": "Can list Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 188, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "csp_read", 
+      "name": "Can read Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 434, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "csp_report_edit", 
+      "name": "Can report_edit Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 433, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "csp_report_view", 
+      "name": "Can report_view Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 189, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "csp_update", 
+      "name": "Can update Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 432, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "csp_wetmill_edit", 
+      "name": "Can wetmill_edit Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 106, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_csp", 
+      "name": "Can delete Coffee Service Provider", 
+      "content_type": 35
+    }
+  }, 
+  {
+    "pk": 59, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_quickblock", 
+      "name": "Can add quick block", 
+      "content_type": 20
+    }
+  }, 
+  {
+    "pk": 60, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_quickblock", 
+      "name": "Can change quick block", 
+      "content_type": 20
+    }
+  }, 
+  {
+    "pk": 61, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_quickblock", 
+      "name": "Can delete quick block", 
+      "content_type": 20
+    }
+  }, 
+  {
+    "pk": 307, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "quickblock_create", 
+      "name": "Can create quick block", 
+      "content_type": 20
+    }
+  }, 
+  {
+    "pk": 310, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "quickblock_delete", 
+      "name": "Can delete quick block", 
+      "content_type": 20
+    }
+  }, 
+  {
+    "pk": 311, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "quickblock_list", 
+      "name": "Can list quick block", 
+      "content_type": 20
+    }
+  }, 
+  {
+    "pk": 308, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "quickblock_read", 
+      "name": "Can read quick block", 
+      "content_type": 20
+    }
+  }, 
+  {
+    "pk": 309, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "quickblock_update", 
+      "name": "Can update quick block", 
+      "content_type": 20
+    }
+  }, 
+  {
+    "pk": 56, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_quickblocktype", 
+      "name": "Can add quick block type", 
+      "content_type": 19
+    }
+  }, 
+  {
+    "pk": 57, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_quickblocktype", 
+      "name": "Can change quick block type", 
+      "content_type": 19
+    }
+  }, 
+  {
+    "pk": 58, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_quickblocktype", 
+      "name": "Can delete quick block type", 
+      "content_type": 19
+    }
+  }, 
+  {
+    "pk": 312, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "quickblocktype_create", 
+      "name": "Can create quick block type", 
+      "content_type": 19
+    }
+  }, 
+  {
+    "pk": 315, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "quickblocktype_delete", 
+      "name": "Can delete quick block type", 
+      "content_type": 19
+    }
+  }, 
+  {
+    "pk": 316, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "quickblocktype_list", 
+      "name": "Can list quick block type", 
+      "content_type": 19
+    }
+  }, 
+  {
+    "pk": 313, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "quickblocktype_read", 
+      "name": "Can read quick block type", 
+      "content_type": 19
+    }
+  }, 
+  {
+    "pk": 314, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "quickblocktype_update", 
+      "name": "Can update quick block type", 
+      "content_type": 19
+    }
+  }, 
+  {
+    "pk": 71, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_crontabschedule", 
+      "name": "Can add crontab", 
+      "content_type": 24
+    }
+  }, 
+  {
+    "pk": 72, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_crontabschedule", 
+      "name": "Can change crontab", 
+      "content_type": 24
+    }
+  }, 
+  {
+    "pk": 202, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "crontabschedule_create", 
+      "name": "Can create crontab", 
+      "content_type": 24
+    }
+  }, 
+  {
+    "pk": 205, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "crontabschedule_delete", 
+      "name": "Can delete crontab", 
+      "content_type": 24
+    }
+  }, 
+  {
+    "pk": 206, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "crontabschedule_list", 
+      "name": "Can list crontab", 
+      "content_type": 24
+    }
+  }, 
+  {
+    "pk": 203, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "crontabschedule_read", 
+      "name": "Can read crontab", 
+      "content_type": 24
+    }
+  }, 
+  {
+    "pk": 204, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "crontabschedule_update", 
+      "name": "Can update crontab", 
+      "content_type": 24
+    }
+  }, 
+  {
+    "pk": 73, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_crontabschedule", 
+      "name": "Can delete crontab", 
+      "content_type": 24
+    }
+  }, 
+  {
+    "pk": 68, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_intervalschedule", 
+      "name": "Can add interval", 
+      "content_type": 23
+    }
+  }, 
+  {
+    "pk": 69, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_intervalschedule", 
+      "name": "Can change interval", 
+      "content_type": 23
+    }
+  }, 
+  {
+    "pk": 70, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_intervalschedule", 
+      "name": "Can delete interval", 
+      "content_type": 23
+    }
+  }, 
+  {
+    "pk": 247, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "intervalschedule_create", 
+      "name": "Can create interval", 
+      "content_type": 23
+    }
+  }, 
+  {
+    "pk": 250, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "intervalschedule_delete", 
+      "name": "Can delete interval", 
+      "content_type": 23
+    }
+  }, 
+  {
+    "pk": 251, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "intervalschedule_list", 
+      "name": "Can list interval", 
+      "content_type": 23
+    }
+  }, 
+  {
+    "pk": 248, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "intervalschedule_read", 
+      "name": "Can read interval", 
+      "content_type": 23
+    }
+  }, 
+  {
+    "pk": 249, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "intervalschedule_update", 
+      "name": "Can update interval", 
+      "content_type": 23
+    }
+  }, 
+  {
+    "pk": 77, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_periodictask", 
+      "name": "Can add periodic task", 
+      "content_type": 26
+    }
+  }, 
+  {
+    "pk": 78, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_periodictask", 
+      "name": "Can change periodic task", 
+      "content_type": 26
+    }
+  }, 
+  {
+    "pk": 79, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_periodictask", 
+      "name": "Can delete periodic task", 
+      "content_type": 26
+    }
+  }, 
+  {
+    "pk": 282, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "periodictask_create", 
+      "name": "Can create periodic task", 
+      "content_type": 26
+    }
+  }, 
+  {
+    "pk": 285, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "periodictask_delete", 
+      "name": "Can delete periodic task", 
+      "content_type": 26
+    }
+  }, 
+  {
+    "pk": 286, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "periodictask_list", 
+      "name": "Can list periodic task", 
+      "content_type": 26
+    }
+  }, 
+  {
+    "pk": 283, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "periodictask_read", 
+      "name": "Can read periodic task", 
+      "content_type": 26
+    }
+  }, 
+  {
+    "pk": 284, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "periodictask_update", 
+      "name": "Can update periodic task", 
+      "content_type": 26
+    }
+  }, 
+  {
+    "pk": 74, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_periodictasks", 
+      "name": "Can add periodic tasks", 
+      "content_type": 25
+    }
+  }, 
+  {
+    "pk": 75, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_periodictasks", 
+      "name": "Can change periodic tasks", 
+      "content_type": 25
+    }
+  }, 
+  {
+    "pk": 76, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_periodictasks", 
+      "name": "Can delete periodic tasks", 
+      "content_type": 25
+    }
+  }, 
+  {
+    "pk": 287, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "periodictasks_create", 
+      "name": "Can create periodic tasks", 
+      "content_type": 25
+    }
+  }, 
+  {
+    "pk": 290, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "periodictasks_delete", 
+      "name": "Can delete periodic tasks", 
+      "content_type": 25
+    }
+  }, 
+  {
+    "pk": 291, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "periodictasks_list", 
+      "name": "Can list periodic tasks", 
+      "content_type": 25
+    }
+  }, 
+  {
+    "pk": 288, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "periodictasks_read", 
+      "name": "Can read periodic tasks", 
+      "content_type": 25
+    }
+  }, 
+  {
+    "pk": 289, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "periodictasks_update", 
+      "name": "Can update periodic tasks", 
+      "content_type": 25
+    }
+  }, 
+  {
+    "pk": 62, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_taskmeta", 
+      "name": "Can add task meta", 
+      "content_type": 21
+    }
+  }, 
+  {
+    "pk": 63, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_taskmeta", 
+      "name": "Can change task meta", 
+      "content_type": 21
+    }
+  }, 
+  {
+    "pk": 64, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_taskmeta", 
+      "name": "Can delete task meta", 
+      "content_type": 21
+    }
+  }, 
+  {
+    "pk": 387, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "taskmeta_create", 
+      "name": "Can create task meta", 
+      "content_type": 21
+    }
+  }, 
+  {
+    "pk": 390, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "taskmeta_delete", 
+      "name": "Can delete task meta", 
+      "content_type": 21
+    }
+  }, 
+  {
+    "pk": 391, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "taskmeta_list", 
+      "name": "Can list task meta", 
+      "content_type": 21
+    }
+  }, 
+  {
+    "pk": 388, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "taskmeta_read", 
+      "name": "Can read task meta", 
+      "content_type": 21
+    }
+  }, 
+  {
+    "pk": 389, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "taskmeta_update", 
+      "name": "Can update task meta", 
+      "content_type": 21
+    }
+  }, 
+  {
+    "pk": 65, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_tasksetmeta", 
+      "name": "Can add taskset meta", 
+      "content_type": 22
+    }
+  }, 
+  {
+    "pk": 66, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_tasksetmeta", 
+      "name": "Can change taskset meta", 
+      "content_type": 22
+    }
+  }, 
+  {
+    "pk": 67, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_tasksetmeta", 
+      "name": "Can delete taskset meta", 
+      "content_type": 22
+    }
+  }, 
+  {
+    "pk": 392, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "tasksetmeta_create", 
+      "name": "Can create taskset meta", 
+      "content_type": 22
+    }
+  }, 
+  {
+    "pk": 395, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "tasksetmeta_delete", 
+      "name": "Can delete taskset meta", 
+      "content_type": 22
+    }
+  }, 
+  {
+    "pk": 396, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "tasksetmeta_list", 
+      "name": "Can list taskset meta", 
+      "content_type": 22
+    }
+  }, 
+  {
+    "pk": 393, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "tasksetmeta_read", 
+      "name": "Can read taskset meta", 
+      "content_type": 22
+    }
+  }, 
+  {
+    "pk": 394, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "tasksetmeta_update", 
+      "name": "Can update taskset meta", 
+      "content_type": 22
+    }
+  }, 
+  {
+    "pk": 83, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_taskstate", 
+      "name": "Can add task", 
+      "content_type": 28
+    }
+  }, 
+  {
+    "pk": 84, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_taskstate", 
+      "name": "Can change task", 
+      "content_type": 28
+    }
+  }, 
+  {
+    "pk": 85, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_taskstate", 
+      "name": "Can delete task", 
+      "content_type": 28
+    }
+  }, 
+  {
+    "pk": 382, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "taskstate_create", 
+      "name": "Can create task", 
+      "content_type": 28
+    }
+  }, 
+  {
+    "pk": 385, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "taskstate_delete", 
+      "name": "Can delete task", 
+      "content_type": 28
+    }
+  }, 
+  {
+    "pk": 386, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "taskstate_list", 
+      "name": "Can list task", 
+      "content_type": 28
+    }
+  }, 
+  {
+    "pk": 383, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "taskstate_read", 
+      "name": "Can read task", 
+      "content_type": 28
+    }
+  }, 
+  {
+    "pk": 384, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "taskstate_update", 
+      "name": "Can update task", 
+      "content_type": 28
+    }
+  }, 
+  {
+    "pk": 80, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_workerstate", 
+      "name": "Can add worker", 
+      "content_type": 27
+    }
+  }, 
+  {
+    "pk": 81, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_workerstate", 
+      "name": "Can change worker", 
+      "content_type": 27
+    }
+  }, 
+  {
+    "pk": 82, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_workerstate", 
+      "name": "Can delete worker", 
+      "content_type": 27
+    }
+  }, 
+  {
+    "pk": 427, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "workerstate_create", 
+      "name": "Can create worker", 
+      "content_type": 27
+    }
+  }, 
+  {
+    "pk": 430, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "workerstate_delete", 
+      "name": "Can delete worker", 
+      "content_type": 27
+    }
+  }, 
+  {
+    "pk": 431, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "workerstate_list", 
+      "name": "Can list worker", 
+      "content_type": 27
+    }
+  }, 
+  {
+    "pk": 428, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "workerstate_read", 
+      "name": "Can read worker", 
+      "content_type": 27
+    }
+  }, 
+  {
+    "pk": 429, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "workerstate_update", 
+      "name": "Can update worker", 
+      "content_type": 27
+    }
+  }, 
+  {
+    "pk": 113, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_expense", 
+      "name": "Can add expense", 
+      "content_type": 38
+    }
+  }, 
+  {
+    "pk": 114, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_expense", 
+      "name": "Can change expense", 
+      "content_type": 38
+    }
+  }, 
+  {
+    "pk": 115, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_expense", 
+      "name": "Can delete expense", 
+      "content_type": 38
+    }
+  }, 
+  {
+    "pk": 212, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "expense_create", 
+      "name": "Can create expense", 
+      "content_type": 38
+    }
+  }, 
+  {
+    "pk": 215, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "expense_delete", 
+      "name": "Can delete expense", 
+      "content_type": 38
+    }
+  }, 
+  {
+    "pk": 216, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "expense_list", 
+      "name": "Can list expense", 
+      "content_type": 38
+    }
+  }, 
+  {
+    "pk": 213, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "expense_read", 
+      "name": "Can read expense", 
+      "content_type": 38
+    }
+  }, 
+  {
+    "pk": 214, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "expense_update", 
+      "name": "Can update expense", 
+      "content_type": 38
+    }
+  }, 
+  {
+    "pk": 116, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_grade", 
+      "name": "Can add grade", 
+      "content_type": 39
+    }
+  }, 
+  {
+    "pk": 117, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_grade", 
+      "name": "Can change grade", 
+      "content_type": 39
+    }
+  }, 
+  {
+    "pk": 118, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_grade", 
+      "name": "Can delete grade", 
+      "content_type": 39
+    }
+  }, 
+  {
+    "pk": 227, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "grade_create", 
+      "name": "Can create grade", 
+      "content_type": 39
+    }
+  }, 
+  {
+    "pk": 230, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "grade_delete", 
+      "name": "Can delete grade", 
+      "content_type": 39
+    }
+  }, 
+  {
+    "pk": 231, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "grade_list", 
+      "name": "Can list grade", 
+      "content_type": 39
+    }
+  }, 
+  {
+    "pk": 228, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "grade_read", 
+      "name": "Can read grade", 
+      "content_type": 39
+    }
+  }, 
+  {
+    "pk": 229, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "grade_update", 
+      "name": "Can update grade", 
+      "content_type": 39
+    }
+  }, 
+  {
+    "pk": 44, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_groupobjectpermission", 
+      "name": "Can add group object permission", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 45, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_groupobjectpermission", 
+      "name": "Can change group object permission", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 46, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_groupobjectpermission", 
+      "name": "Can delete group object permission", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 237, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "groupobjectpermission_create", 
+      "name": "Can create group object permission", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 240, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "groupobjectpermission_delete", 
+      "name": "Can delete group object permission", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 241, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "groupobjectpermission_list", 
+      "name": "Can list group object permission", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 238, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "groupobjectpermission_read", 
+      "name": "Can read group object permission", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 239, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "groupobjectpermission_update", 
+      "name": "Can update group object permission", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 41, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_userobjectpermission", 
+      "name": "Can add user object permission", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 42, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_userobjectpermission", 
+      "name": "Can change user object permission", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 43, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_userobjectpermission", 
+      "name": "Can delete user object permission", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 402, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "userobjectpermission_create", 
+      "name": "Can create user object permission", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 405, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "userobjectpermission_delete", 
+      "name": "Can delete user object permission", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 406, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "userobjectpermission_list", 
+      "name": "Can list user object permission", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 403, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "userobjectpermission_read", 
+      "name": "Can read user object permission", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 404, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "userobjectpermission_update", 
+      "name": "Can update user object permission", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 89, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_country", 
+      "name": "Can add country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 90, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_country", 
+      "name": "Can change country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 197, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "country_create", 
+      "name": "Can create country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 200, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "country_delete", 
+      "name": "Can delete country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 201, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "country_list", 
+      "name": "Can list country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 172, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "country_pick", 
+      "name": "Can pick country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 198, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "country_read", 
+      "name": "Can read country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 175, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "country_report_edit", 
+      "name": "Can report_edit country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 174, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "country_report_view", 
+      "name": "Can report_view country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 176, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "country_translate", 
+      "name": "Can translate country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 199, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "country_update", 
+      "name": "Can update country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 173, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "country_wetmill_edit", 
+      "name": "Can wetmill_edit country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 91, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_country", 
+      "name": "Can delete country", 
+      "content_type": 30
+    }
+  }, 
+  {
+    "pk": 86, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_currency", 
+      "name": "Can add currency", 
+      "content_type": 29
+    }
+  }, 
+  {
+    "pk": 87, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_currency", 
+      "name": "Can change currency", 
+      "content_type": 29
+    }
+  }, 
+  {
+    "pk": 207, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "currency_create", 
+      "name": "Can create currency", 
+      "content_type": 29
+    }
+  }, 
+  {
+    "pk": 210, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "currency_delete", 
+      "name": "Can delete currency", 
+      "content_type": 29
+    }
+  }, 
+  {
+    "pk": 211, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "currency_list", 
+      "name": "Can list currency", 
+      "content_type": 29
+    }
+  }, 
+  {
+    "pk": 208, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "currency_read", 
+      "name": "Can read currency", 
+      "content_type": 29
+    }
+  }, 
+  {
+    "pk": 209, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "currency_update", 
+      "name": "Can update currency", 
+      "content_type": 29
+    }
+  }, 
+  {
+    "pk": 88, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_currency", 
+      "name": "Can delete currency", 
+      "content_type": 29
+    }
+  }, 
+  {
+    "pk": 92, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_province", 
+      "name": "Can add province", 
+      "content_type": 31
+    }
+  }, 
+  {
+    "pk": 93, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_province", 
+      "name": "Can change province", 
+      "content_type": 31
+    }
+  }, 
+  {
+    "pk": 94, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_province", 
+      "name": "Can delete province", 
+      "content_type": 31
+    }
+  }, 
+  {
+    "pk": 302, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "province_create", 
+      "name": "Can create province", 
+      "content_type": 31
+    }
+  }, 
+  {
+    "pk": 305, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "province_delete", 
+      "name": "Can delete province", 
+      "content_type": 31
+    }
+  }, 
+  {
+    "pk": 306, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "province_list", 
+      "name": "Can list province", 
+      "content_type": 31
+    }
+  }, 
+  {
+    "pk": 303, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "province_read", 
+      "name": "Can read province", 
+      "content_type": 31
+    }
+  }, 
+  {
+    "pk": 304, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "province_update", 
+      "name": "Can update province", 
+      "content_type": 31
+    }
+  }, 
+  {
+    "pk": 152, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_reportimport", 
+      "name": "Can add report import", 
+      "content_type": 51
+    }
+  }, 
+  {
+    "pk": 153, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_reportimport", 
+      "name": "Can change report import", 
+      "content_type": 51
+    }
+  }, 
+  {
+    "pk": 154, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_reportimport", 
+      "name": "Can delete report import", 
+      "content_type": 51
+    }
+  }, 
+  {
+    "pk": 167, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "reportimport_action", 
+      "name": "Can action report import", 
+      "content_type": 51
+    }
+  }, 
+  {
+    "pk": 322, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "reportimport_create", 
+      "name": "Can create report import", 
+      "content_type": 51
+    }
+  }, 
+  {
+    "pk": 325, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "reportimport_delete", 
+      "name": "Can delete report import", 
+      "content_type": 51
+    }
+  }, 
+  {
+    "pk": 168, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "reportimport_import", 
+      "name": "Can import report import", 
+      "content_type": 51
+    }
+  }, 
+  {
+    "pk": 326, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "reportimport_list", 
+      "name": "Can list report import", 
+      "content_type": 51
+    }
+  }, 
+  {
+    "pk": 323, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "reportimport_read", 
+      "name": "Can read report import", 
+      "content_type": 51
+    }
+  }, 
+  {
+    "pk": 324, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "reportimport_update", 
+      "name": "Can update report import", 
+      "content_type": 51
+    }
+  }, 
+  {
+    "pk": 134, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_cashuseentry", 
+      "name": "Can add cash use entry", 
+      "content_type": 45
+    }
+  }, 
+  {
+    "pk": 182, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "cashuseentry_create", 
+      "name": "Can create cash use entry", 
+      "content_type": 45
+    }
+  }, 
+  {
+    "pk": 185, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "cashuseentry_delete", 
+      "name": "Can delete cash use entry", 
+      "content_type": 45
+    }
+  }, 
+  {
+    "pk": 186, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "cashuseentry_list", 
+      "name": "Can list cash use entry", 
+      "content_type": 45
+    }
+  }, 
+  {
+    "pk": 183, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "cashuseentry_read", 
+      "name": "Can read cash use entry", 
+      "content_type": 45
+    }
+  }, 
+  {
+    "pk": 184, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "cashuseentry_update", 
+      "name": "Can update cash use entry", 
+      "content_type": 45
+    }
+  }, 
+  {
+    "pk": 135, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_cashuseentry", 
+      "name": "Can change cash use entry", 
+      "content_type": 45
+    }
+  }, 
+  {
+    "pk": 136, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_cashuseentry", 
+      "name": "Can delete cash use entry", 
+      "content_type": 45
+    }
+  }, 
+  {
+    "pk": 137, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_expenseentry", 
+      "name": "Can add expense entry", 
+      "content_type": 46
+    }
+  }, 
+  {
+    "pk": 138, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_expenseentry", 
+      "name": "Can change expense entry", 
+      "content_type": 46
+    }
+  }, 
+  {
+    "pk": 139, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_expenseentry", 
+      "name": "Can delete expense entry", 
+      "content_type": 46
+    }
+  }, 
+  {
+    "pk": 217, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "expenseentry_create", 
+      "name": "Can create expense entry", 
+      "content_type": 46
+    }
+  }, 
+  {
+    "pk": 220, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "expenseentry_delete", 
+      "name": "Can delete expense entry", 
+      "content_type": 46
+    }
+  }, 
+  {
+    "pk": 221, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "expenseentry_list", 
+      "name": "Can list expense entry", 
+      "content_type": 46
+    }
+  }, 
+  {
+    "pk": 218, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "expenseentry_read", 
+      "name": "Can read expense entry", 
+      "content_type": 46
+    }
+  }, 
+  {
+    "pk": 219, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "expenseentry_update", 
+      "name": "Can update expense entry", 
+      "content_type": 46
+    }
+  }, 
+  {
+    "pk": 131, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_production", 
+      "name": "Can add production", 
+      "content_type": 44
+    }
+  }, 
+  {
+    "pk": 132, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_production", 
+      "name": "Can change production", 
+      "content_type": 44
+    }
+  }, 
+  {
+    "pk": 133, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_production", 
+      "name": "Can delete production", 
+      "content_type": 44
+    }
+  }, 
+  {
+    "pk": 297, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "production_create", 
+      "name": "Can create production", 
+      "content_type": 44
+    }
+  }, 
+  {
+    "pk": 300, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "production_delete", 
+      "name": "Can delete production", 
+      "content_type": 44
+    }
+  }, 
+  {
+    "pk": 301, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "production_list", 
+      "name": "Can list production", 
+      "content_type": 44
+    }
+  }, 
+  {
+    "pk": 298, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "production_read", 
+      "name": "Can read production", 
+      "content_type": 44
+    }
+  }, 
+  {
+    "pk": 299, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "production_update", 
+      "name": "Can update production", 
+      "content_type": 44
+    }
+  }, 
+  {
+    "pk": 128, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_report", 
+      "name": "Can add report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 129, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_report", 
+      "name": "Can change report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 130, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_report", 
+      "name": "Can delete report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 162, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_attributes", 
+      "name": "Can attributes report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 317, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_create", 
+      "name": "Can create report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 320, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_delete", 
+      "name": "Can delete report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 164, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_expenses", 
+      "name": "Can expenses report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 166, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_finalize", 
+      "name": "Can finalize report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 321, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_list", 
+      "name": "Can list report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 161, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_lookup", 
+      "name": "Can lookup report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 165, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_pdf", 
+      "name": "Can pdf report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 163, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_production", 
+      "name": "Can production report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 318, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_read", 
+      "name": "Can read report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 319, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "report_update", 
+      "name": "Can update report", 
+      "content_type": 43
+    }
+  }, 
+  {
+    "pk": 140, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_sale", 
+      "name": "Can add sale", 
+      "content_type": 47
+    }
+  }, 
+  {
+    "pk": 141, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_sale", 
+      "name": "Can change sale", 
+      "content_type": 47
+    }
+  }, 
+  {
+    "pk": 142, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_sale", 
+      "name": "Can delete sale", 
+      "content_type": 47
+    }
+  }, 
+  {
+    "pk": 332, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "sale_create", 
+      "name": "Can create sale", 
+      "content_type": 47
+    }
+  }, 
+  {
+    "pk": 335, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "sale_delete", 
+      "name": "Can delete sale", 
+      "content_type": 47
+    }
+  }, 
+  {
+    "pk": 336, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "sale_list", 
+      "name": "Can list sale", 
+      "content_type": 47
+    }
+  }, 
+  {
+    "pk": 333, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "sale_read", 
+      "name": "Can read sale", 
+      "content_type": 47
+    }
+  }, 
+  {
+    "pk": 334, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "sale_update", 
+      "name": "Can update sale", 
+      "content_type": 47
+    }
+  }, 
+  {
+    "pk": 143, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_salecomponent", 
+      "name": "Can add sale component", 
+      "content_type": 48
+    }
+  }, 
+  {
+    "pk": 144, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_salecomponent", 
+      "name": "Can change sale component", 
+      "content_type": 48
+    }
+  }, 
+  {
+    "pk": 145, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_salecomponent", 
+      "name": "Can delete sale component", 
+      "content_type": 48
+    }
+  }, 
+  {
+    "pk": 337, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "salecomponent_create", 
+      "name": "Can create sale component", 
+      "content_type": 48
+    }
+  }, 
+  {
+    "pk": 340, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "salecomponent_delete", 
+      "name": "Can delete sale component", 
+      "content_type": 48
+    }
+  }, 
+  {
+    "pk": 341, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "salecomponent_list", 
+      "name": "Can list sale component", 
+      "content_type": 48
+    }
+  }, 
+  {
+    "pk": 338, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "salecomponent_read", 
+      "name": "Can read sale component", 
+      "content_type": 48
+    }
+  }, 
+  {
+    "pk": 339, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "salecomponent_update", 
+      "name": "Can update sale component", 
+      "content_type": 48
+    }
+  }, 
+  {
+    "pk": 47, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_revision", 
+      "name": "Can add revision", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 48, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_revision", 
+      "name": "Can change revision", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 49, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_revision", 
+      "name": "Can delete revision", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 327, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "revision_create", 
+      "name": "Can create revision", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 330, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "revision_delete", 
+      "name": "Can delete revision", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 331, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "revision_list", 
+      "name": "Can list revision", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 328, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "revision_read", 
+      "name": "Can read revision", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 329, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "revision_update", 
+      "name": "Can update revision", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 50, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_version", 
+      "name": "Can add version", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 51, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_version", 
+      "name": "Can change version", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 52, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_version", 
+      "name": "Can delete version", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 407, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "version_create", 
+      "name": "Can create version", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 410, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "version_delete", 
+      "name": "Can delete version", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 411, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "version_list", 
+      "name": "Can list version", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 408, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "version_read", 
+      "name": "Can read version", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 409, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "version_update", 
+      "name": "Can update version", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 146, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_scorecard", 
+      "name": "Can add scorecard", 
+      "content_type": 49
+    }
+  }, 
+  {
+    "pk": 147, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_scorecard", 
+      "name": "Can change scorecard", 
+      "content_type": 49
+    }
+  }, 
+  {
+    "pk": 148, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_scorecard", 
+      "name": "Can delete scorecard", 
+      "content_type": 49
+    }
+  }, 
+  {
+    "pk": 342, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "scorecard_create", 
+      "name": "Can create scorecard", 
+      "content_type": 49
+    }
+  }, 
+  {
+    "pk": 345, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "scorecard_delete", 
+      "name": "Can delete scorecard", 
+      "content_type": 49
+    }
+  }, 
+  {
+    "pk": 346, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "scorecard_list", 
+      "name": "Can list scorecard", 
+      "content_type": 49
+    }
+  }, 
+  {
+    "pk": 170, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "scorecard_lookup", 
+      "name": "Can lookup scorecard", 
+      "content_type": 49
+    }
+  }, 
+  {
+    "pk": 343, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "scorecard_read", 
+      "name": "Can read scorecard", 
+      "content_type": 49
+    }
+  }, 
+  {
+    "pk": 171, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "scorecard_standards", 
+      "name": "Can standards scorecard", 
+      "content_type": 49
+    }
+  }, 
+  {
+    "pk": 344, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "scorecard_update", 
+      "name": "Can update scorecard", 
+      "content_type": 49
+    }
+  }, 
+  {
+    "pk": 149, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_standardentry", 
+      "name": "Can add standard entry", 
+      "content_type": 50
+    }
+  }, 
+  {
+    "pk": 150, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_standardentry", 
+      "name": "Can change standard entry", 
+      "content_type": 50
+    }
+  }, 
+  {
+    "pk": 151, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_standardentry", 
+      "name": "Can delete standard entry", 
+      "content_type": 50
+    }
+  }, 
+  {
+    "pk": 377, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standardentry_create", 
+      "name": "Can create standard entry", 
+      "content_type": 50
+    }
+  }, 
+  {
+    "pk": 380, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standardentry_delete", 
+      "name": "Can delete standard entry", 
+      "content_type": 50
+    }
+  }, 
+  {
+    "pk": 381, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standardentry_list", 
+      "name": "Can list standard entry", 
+      "content_type": 50
+    }
+  }, 
+  {
+    "pk": 378, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standardentry_read", 
+      "name": "Can read standard entry", 
+      "content_type": 50
+    }
+  }, 
+  {
+    "pk": 379, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standardentry_update", 
+      "name": "Can update standard entry", 
+      "content_type": 50
+    }
+  }, 
+  {
+    "pk": 107, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_season", 
+      "name": "Can add season", 
+      "content_type": 36
+    }
+  }, 
+  {
+    "pk": 108, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_season", 
+      "name": "Can change season", 
+      "content_type": 36
+    }
+  }, 
+  {
+    "pk": 109, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_season", 
+      "name": "Can delete season", 
+      "content_type": 36
+    }
+  }, 
+  {
+    "pk": 347, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "season_create", 
+      "name": "Can create season", 
+      "content_type": 36
+    }
+  }, 
+  {
+    "pk": 350, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "season_delete", 
+      "name": "Can delete season", 
+      "content_type": 36
+    }
+  }, 
+  {
+    "pk": 351, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "season_list", 
+      "name": "Can list season", 
+      "content_type": 36
+    }
+  }, 
+  {
+    "pk": 348, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "season_read", 
+      "name": "Can read season", 
+      "content_type": 36
+    }
+  }, 
+  {
+    "pk": 349, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "season_update", 
+      "name": "Can update season", 
+      "content_type": 36
+    }
+  }, 
+  {
+    "pk": 110, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_seasoncashuse", 
+      "name": "Can add season cash use", 
+      "content_type": 37
+    }
+  }, 
+  {
+    "pk": 111, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_seasoncashuse", 
+      "name": "Can change season cash use", 
+      "content_type": 37
+    }
+  }, 
+  {
+    "pk": 112, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_seasoncashuse", 
+      "name": "Can delete season cash use", 
+      "content_type": 37
+    }
+  }, 
+  {
+    "pk": 352, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "seasoncashuse_create", 
+      "name": "Can create season cash use", 
+      "content_type": 37
+    }
+  }, 
+  {
+    "pk": 355, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "seasoncashuse_delete", 
+      "name": "Can delete season cash use", 
+      "content_type": 37
+    }
+  }, 
+  {
+    "pk": 356, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "seasoncashuse_list", 
+      "name": "Can list season cash use", 
+      "content_type": 37
+    }
+  }, 
+  {
+    "pk": 353, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "seasoncashuse_read", 
+      "name": "Can read season cash use", 
+      "content_type": 37
+    }
+  }, 
+  {
+    "pk": 354, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "seasoncashuse_update", 
+      "name": "Can update season cash use", 
+      "content_type": 37
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_filtervalue", 
+      "name": "Can add filter value", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_filtervalue", 
+      "name": "Can change filter value", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_filtervalue", 
+      "name": "Can delete filter value", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 222, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "filtervalue_create", 
+      "name": "Can create filter value", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 225, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "filtervalue_delete", 
+      "name": "Can delete filter value", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 226, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "filtervalue_list", 
+      "name": "Can list filter value", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 223, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "filtervalue_read", 
+      "name": "Can read filter value", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 224, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "filtervalue_update", 
+      "name": "Can update filter value", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_groupedmessage", 
+      "name": "Can add grouped message", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "can_view", 
+      "name": "Can view", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_groupedmessage", 
+      "name": "Can change grouped message", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_groupedmessage", 
+      "name": "Can delete grouped message", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 242, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "groupedmessage_create", 
+      "name": "Can create grouped message", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 245, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "groupedmessage_delete", 
+      "name": "Can delete grouped message", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 246, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "groupedmessage_list", 
+      "name": "Can list grouped message", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 243, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "groupedmessage_read", 
+      "name": "Can read grouped message", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 244, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "groupedmessage_update", 
+      "name": "Can update grouped message", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_message", 
+      "name": "Can add message", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_message", 
+      "name": "Can change message", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_message", 
+      "name": "Can delete message", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 262, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "message_create", 
+      "name": "Can create message", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 265, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "message_delete", 
+      "name": "Can delete message", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 266, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "message_list", 
+      "name": "Can list message", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 263, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "message_read", 
+      "name": "Can read message", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 264, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "message_update", 
+      "name": "Can update message", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 35, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_messagecountbyminute", 
+      "name": "Can add message count by minute", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_messagecountbyminute", 
+      "name": "Can change message count by minute", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 37, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_messagecountbyminute", 
+      "name": "Can delete message count by minute", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 267, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messagecountbyminute_create", 
+      "name": "Can create message count by minute", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 270, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messagecountbyminute_delete", 
+      "name": "Can delete message count by minute", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 271, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messagecountbyminute_list", 
+      "name": "Can list message count by minute", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 268, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messagecountbyminute_read", 
+      "name": "Can read message count by minute", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 269, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messagecountbyminute_update", 
+      "name": "Can update message count by minute", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_messagefiltervalue", 
+      "name": "Can add message filter value", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_messagefiltervalue", 
+      "name": "Can change message filter value", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_messagefiltervalue", 
+      "name": "Can delete message filter value", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 272, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messagefiltervalue_create", 
+      "name": "Can create message filter value", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 275, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messagefiltervalue_delete", 
+      "name": "Can delete message filter value", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 276, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messagefiltervalue_list", 
+      "name": "Can list message filter value", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 273, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messagefiltervalue_read", 
+      "name": "Can read message filter value", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 274, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messagefiltervalue_update", 
+      "name": "Can update message filter value", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 38, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_messageindex", 
+      "name": "Can add message index", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 39, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_messageindex", 
+      "name": "Can change message index", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 40, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_messageindex", 
+      "name": "Can delete message index", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 277, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messageindex_create", 
+      "name": "Can create message index", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 280, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messageindex_delete", 
+      "name": "Can delete message index", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 281, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messageindex_list", 
+      "name": "Can list message index", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 278, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messageindex_read", 
+      "name": "Can read message index", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 279, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "messageindex_update", 
+      "name": "Can update message index", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_session", 
+      "name": "Can add session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_session", 
+      "name": "Can change session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_session", 
+      "name": "Can delete session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 357, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "session_create", 
+      "name": "Can create session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 360, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "session_delete", 
+      "name": "Can delete session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 361, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "session_list", 
+      "name": "Can list session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 358, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "session_read", 
+      "name": "Can read session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 359, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "session_update", 
+      "name": "Can update session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_site", 
+      "name": "Can add site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_site", 
+      "name": "Can change site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_site", 
+      "name": "Can delete site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 362, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "site_create", 
+      "name": "Can create site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 365, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "site_delete", 
+      "name": "Can delete site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 366, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "site_list", 
+      "name": "Can list site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 363, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "site_read", 
+      "name": "Can read site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 364, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "site_update", 
+      "name": "Can update site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 122, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_standard", 
+      "name": "Can add standard", 
+      "content_type": 41
+    }
+  }, 
+  {
+    "pk": 123, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_standard", 
+      "name": "Can change standard", 
+      "content_type": 41
+    }
+  }, 
+  {
+    "pk": 124, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_standard", 
+      "name": "Can delete standard", 
+      "content_type": 41
+    }
+  }, 
+  {
+    "pk": 367, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standard_create", 
+      "name": "Can create standard", 
+      "content_type": 41
+    }
+  }, 
+  {
+    "pk": 370, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standard_delete", 
+      "name": "Can delete standard", 
+      "content_type": 41
+    }
+  }, 
+  {
+    "pk": 371, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standard_list", 
+      "name": "Can list standard", 
+      "content_type": 41
+    }
+  }, 
+  {
+    "pk": 368, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standard_read", 
+      "name": "Can read standard", 
+      "content_type": 41
+    }
+  }, 
+  {
+    "pk": 369, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standard_update", 
+      "name": "Can update standard", 
+      "content_type": 41
+    }
+  }, 
+  {
+    "pk": 119, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_standardcategory", 
+      "name": "Can add standard category", 
+      "content_type": 40
+    }
+  }, 
+  {
+    "pk": 120, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_standardcategory", 
+      "name": "Can change standard category", 
+      "content_type": 40
+    }
+  }, 
+  {
+    "pk": 121, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_standardcategory", 
+      "name": "Can delete standard category", 
+      "content_type": 40
+    }
+  }, 
+  {
+    "pk": 372, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standardcategory_create", 
+      "name": "Can create standard category", 
+      "content_type": 40
+    }
+  }, 
+  {
+    "pk": 375, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standardcategory_delete", 
+      "name": "Can delete standard category", 
+      "content_type": 40
+    }
+  }, 
+  {
+    "pk": 376, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standardcategory_list", 
+      "name": "Can list standard category", 
+      "content_type": 40
+    }
+  }, 
+  {
+    "pk": 373, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standardcategory_read", 
+      "name": "Can read standard category", 
+      "content_type": 40
+    }
+  }, 
+  {
+    "pk": 374, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "standardcategory_update", 
+      "name": "Can update standard category", 
+      "content_type": 40
+    }
+  }, 
+  {
+    "pk": 95, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_wetmill", 
+      "name": "Can add wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 96, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_wetmill", 
+      "name": "Can change wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 97, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_wetmill", 
+      "name": "Can delete wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 155, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmill_country", 
+      "name": "Can country wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 412, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmill_create", 
+      "name": "Can create wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 159, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmill_csps", 
+      "name": "Can csps wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 415, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmill_delete", 
+      "name": "Can delete wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 416, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmill_list", 
+      "name": "Can list wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 413, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmill_read", 
+      "name": "Can read wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 158, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmill_report_edit", 
+      "name": "Can report_edit wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 157, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmill_report_view", 
+      "name": "Can report_view wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 414, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmill_update", 
+      "name": "Can update wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 156, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmill_wetmill_edit", 
+      "name": "Can wetmill_edit wetmill", 
+      "content_type": 32
+    }
+  }, 
+  {
+    "pk": 98, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_wetmillcspseason", 
+      "name": "Can add wetmill csp season", 
+      "content_type": 33
+    }
+  }, 
+  {
+    "pk": 99, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_wetmillcspseason", 
+      "name": "Can change wetmill csp season", 
+      "content_type": 33
+    }
+  }, 
+  {
+    "pk": 100, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_wetmillcspseason", 
+      "name": "Can delete wetmill csp season", 
+      "content_type": 33
+    }
+  }, 
+  {
+    "pk": 417, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillcspseason_create", 
+      "name": "Can create wetmill csp season", 
+      "content_type": 33
+    }
+  }, 
+  {
+    "pk": 420, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillcspseason_delete", 
+      "name": "Can delete wetmill csp season", 
+      "content_type": 33
+    }
+  }, 
+  {
+    "pk": 421, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillcspseason_list", 
+      "name": "Can list wetmill csp season", 
+      "content_type": 33
+    }
+  }, 
+  {
+    "pk": 418, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillcspseason_read", 
+      "name": "Can read wetmill csp season", 
+      "content_type": 33
+    }
+  }, 
+  {
+    "pk": 419, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillcspseason_update", 
+      "name": "Can update wetmill csp season", 
+      "content_type": 33
+    }
+  }, 
+  {
+    "pk": 101, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_wetmillimport", 
+      "name": "Can add wetmill import", 
+      "content_type": 34
+    }
+  }, 
+  {
+    "pk": 102, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_wetmillimport", 
+      "name": "Can change wetmill import", 
+      "content_type": 34
+    }
+  }, 
+  {
+    "pk": 103, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_wetmillimport", 
+      "name": "Can delete wetmill import", 
+      "content_type": 34
+    }
+  }, 
+  {
+    "pk": 422, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillimport_create", 
+      "name": "Can create wetmill import", 
+      "content_type": 34
+    }
+  }, 
+  {
+    "pk": 425, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillimport_delete", 
+      "name": "Can delete wetmill import", 
+      "content_type": 34
+    }
+  }, 
+  {
+    "pk": 160, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillimport_import", 
+      "name": "Can import wetmill import", 
+      "content_type": 34
+    }
+  }, 
+  {
+    "pk": 426, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillimport_list", 
+      "name": "Can list wetmill import", 
+      "content_type": 34
+    }
+  }, 
+  {
+    "pk": 423, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillimport_read", 
+      "name": "Can read wetmill import", 
+      "content_type": 34
+    }
+  }, 
+  {
+    "pk": 424, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "wetmillimport_update", 
+      "name": "Can update wetmill import", 
+      "content_type": 34
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.group", 
+    "fields": {
+      "name": "Administrators", 
+      "permissions": [
+        397, 
+        400, 
+        401, 
+        169, 
+        398, 
+        399, 
+        177, 
+        180, 
+        181, 
+        178, 
+        179, 
+        187, 
+        190, 
+        191, 
+        188, 
+        434, 
+        433, 
+        189, 
+        432, 
+        307, 
+        310, 
+        311, 
+        308, 
+        309, 
+        212, 
+        215, 
+        216, 
+        213, 
+        214, 
+        227, 
+        230, 
+        231, 
+        228, 
+        229, 
+        197, 
+        200, 
+        201, 
+        172, 
+        198, 
+        175, 
+        174, 
+        176, 
+        199, 
+        173, 
+        207, 
+        210, 
+        211, 
+        208, 
+        209, 
+        302, 
+        305, 
+        306, 
+        303, 
+        304, 
+        167, 
+        322, 
+        325, 
+        168, 
+        326, 
+        323, 
+        324, 
+        162, 
+        317, 
+        320, 
+        164, 
+        166, 
+        321, 
+        161, 
+        165, 
+        163, 
+        318, 
+        319, 
+        332, 
+        335, 
+        336, 
+        333, 
+        334, 
+        342, 
+        345, 
+        346, 
+        170, 
+        343, 
+        171, 
+        344, 
+        347, 
+        350, 
+        351, 
+        348, 
+        349, 
+        367, 
+        370, 
+        371, 
+        368, 
+        369, 
+        372, 
+        375, 
+        376, 
+        373, 
+        374, 
+        155, 
+        412, 
+        159, 
+        415, 
+        416, 
+        413, 
+        158, 
+        157, 
+        414, 
+        156, 
+        422, 
+        425, 
+        160, 
+        426, 
+        423, 
+        424
+      ]
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.group", 
+    "fields": {
+      "name": "CSP Administrators", 
+      "permissions": []
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.group", 
+    "fields": {
+      "name": "CSP Users", 
+      "permissions": []
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.group", 
+    "fields": {
+      "name": "Viewer", 
+      "permissions": []
+    }
+  }, 
+  {
+    "pk": -1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "AnonymousUser", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-02 15:10:50", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "", 
+      "email": "", 
+      "date_joined": "2011-11-02 15:10:50"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "admin", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2011-11-02 15:11:56", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$d863e$07e87b94df0bb5e3f067d2650558a67696b5d51f", 
+      "email": "n@p.com", 
+      "date_joined": "2011-10-08 05:15:16"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "nupur", 
+      "first_name": "Nupur", 
+      "last_name": "Parikh", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-03 07:02:27", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$7890a$b6a575edf35e52958b1514428083a75f65ec82e3", 
+      "email": "NParikh@tns.org", 
+      "date_joined": "2011-11-02 15:12:37"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": "Cherry", 
+      "modified_by": 1, 
+      "name": "Cherry", 
+      "parent": null, 
+      "is_active": true, 
+      "kind": "CHE", 
+      "created_by": 1, 
+      "order": 0, 
+      "created_on": "2011-10-14 07:29:07", 
+      "name_am": null, 
+      "modified_on": "2011-10-18 06:50:39", 
+      "name_tz_sw": "asdfasdf", 
+      "name_en_us": "Cherry", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "15+", 
+      "parent": 10, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 1, 
+      "order": 1, 
+      "created_on": "2011-10-14 07:34:06", 
+      "name_am": null, 
+      "modified_on": "2011-10-18 06:50:59", 
+      "name_tz_sw": null, 
+      "name_en_us": "15+", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Green", 
+      "parent": null, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 1, 
+      "order": 1, 
+      "created_on": "2011-10-14 07:34:06", 
+      "name_am": null, 
+      "modified_on": "2011-10-18 06:50:59", 
+      "name_tz_sw": null, 
+      "name_en_us": "Green", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "A1", 
+      "parent": 2, 
+      "is_active": true, 
+      "kind": "PAR", 
+      "created_by": 2, 
+      "order": 1, 
+      "created_on": "2011-11-03 10:57:26", 
+      "name_am": null, 
+      "modified_on": "2011-11-03 10:57:26", 
+      "name_tz_sw": null, 
+      "name_en_us": "A1", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": "asdf", 
+      "modified_by": 1, 
+      "name": "Parchment", 
+      "parent": null, 
+      "is_active": true, 
+      "kind": "PAR", 
+      "created_by": 1, 
+      "order": 2, 
+      "created_on": "2011-10-14 07:29:24", 
+      "name_am": null, 
+      "modified_on": "2011-10-18 06:50:46", 
+      "name_tz_sw": null, 
+      "name_en_us": "Parchment", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "13,14", 
+      "parent": 10, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 1, 
+      "order": 2, 
+      "created_on": "2011-10-14 07:34:15", 
+      "name_am": null, 
+      "modified_on": "2011-10-18 06:51:16", 
+      "name_tz_sw": null, 
+      "name_en_us": "13,14", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "A2", 
+      "parent": 2, 
+      "is_active": true, 
+      "kind": "PAR", 
+      "created_by": 2, 
+      "order": 2, 
+      "created_on": "2011-11-03 10:57:39", 
+      "name_am": null, 
+      "modified_on": "2011-11-03 10:57:39", 
+      "name_tz_sw": null, 
+      "name_en_us": "A2", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Low Grades", 
+      "parent": 10, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 1, 
+      "order": 3, 
+      "created_on": "2011-10-18 06:51:31", 
+      "name_am": null, 
+      "modified_on": "2011-10-18 06:51:31", 
+      "name_tz_sw": null, 
+      "name_en_us": "Low Grades", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Washing Station Expenses", 
+      "parent": null, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:31:15", 
+      "name_am": null, 
+      "modified_on": "2011-11-03 12:24:35", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Washing Station Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Agro Input Deductions", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:37:20", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:37:20", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Agro Input Deductions", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "CSP Warehouse Handling", 
+      "parent": 32, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:45:16", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:45:16", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CSP Warehouse Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 40, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Fertilizer Fund Contribution", 
+      "parent": 39, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:47:05", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:47:05", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Fertilizer Fund Contribution", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 37, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Incurred", 
+      "parent": 36, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:46:13", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:46:13", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Incurred", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "CPU Loan Materials", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:32:15", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:32:15", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CPU Loan Materials", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 57, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "CAPEX Principal Repayment", 
+      "parent": 56, 
+      "in_dollars": true, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:52:13", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:52:34", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CAPEX Principal Repayment", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Cherry Advance", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:31:23", 
+      "name_am": null, 
+      "modified_on": "2011-11-03 12:24:35", 
+      "is_advance": true, 
+      "name_tz_sw": null, 
+      "name_en_us": "Cherry Advance", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 45, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Auction Marketing Fee", 
+      "parent": 44, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:48:54", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:48:54", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Auction Marketing Fee", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 54, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Working Capital Interest", 
+      "parent": 53, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:51:17", 
+      "name_am": null, 
+      "modified_on": "2011-11-03 11:50:10", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Working Capital Interest", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "OCIR Warehouse Handling", 
+      "parent": 32, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:45:28", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:45:28", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "OCIR Warehouse Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 58, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "CAPEX Interest", 
+      "parent": 56, 
+      "in_dollars": true, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:52:25", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:52:25", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CAPEX Interest", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Milling, Marketing and Export Expenses", 
+      "parent": null, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:37:01", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:50:13", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Milling, Marketing and Export Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Milling", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:37:31", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:37:31", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Milling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 41, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "VAT", 
+      "parent": 39, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:47:22", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:47:30", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "VAT", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Batteries and Lighting", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:32:25", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:32:25", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Batteries and Lighting", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Labour (Full Time)", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:31:38", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:31:38", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Labour (Full Time)", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 59, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Cherry Transport", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 2, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-03 11:16:26", 
+      "name_am": null, 
+      "modified_on": "2011-11-03 11:16:26", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Cherry Transport", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Hand Sorting", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:37:39", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:37:39", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Hand Sorting", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 35, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Other Storage and Handling", 
+      "parent": 32, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:45:38", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:45:38", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other Storage and Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 53, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Working Capital Financing Expenses", 
+      "parent": null, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:51:03", 
+      "name_am": null, 
+      "modified_on": "2011-11-03 11:50:42", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Working Capital Financing Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Coffee Bags", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:32:36", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:32:36", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Coffee Bags", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 42, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Other Taxes and Fees", 
+      "parent": 39, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:47:51", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:47:59", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other Taxes and Fees", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 46, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Direct Exporting Marketing Fee", 
+      "parent": 44, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:49:06", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:49:11", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Direct Exporting Marketing Fee", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 55, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Working Capital Fee", 
+      "parent": 53, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:51:27", 
+      "name_am": null, 
+      "modified_on": "2011-11-03 11:50:31", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Working Capital Fee", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Labour (Casual)", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:31:49", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:31:49", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Labour (Casual)", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 56, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "CAPEX Financing Expenses", 
+      "parent": null, 
+      "in_dollars": true, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 3, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:51:44", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:52:34", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CAPEX Financing Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Dry Parchment Transport", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 3, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:33:27", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:33:27", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Dry Parchment Transport", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Other Expenses", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 3, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:32:01", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:33:31", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Export Bagging", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 3, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:37:55", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:37:55", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Export Bagging", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Parchment Bags", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 4, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:38:08", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:38:08", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Parchment Bags", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Fuel and Oils", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 4, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:32:49", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:33:31", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Fuel and Oils", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Transport and Warehousing", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 5, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:38:29", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:38:29", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Transport and Warehousing", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Local Taxes", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 5, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:33:59", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:33:59", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Local Taxes", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Bank Charges", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 6, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:34:27", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:34:27", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Bank Charges", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Warehouse Handling", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 6, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:38:41", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:38:41", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Warehouse Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Rental of Store", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 7, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:34:55", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:34:55", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Rental of Store", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Payments to Site Collector", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 7, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:34:42", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:34:42", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Payments to Site Collector", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Transportation", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 8, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:44:39", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:44:39", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Transportation", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Repair and Maintenance", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 8, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:35:15", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:35:15", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Repair and Maintenance", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Stationary, Papers, Copies", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 9, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:35:26", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:35:26", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Stationary, Papers, Copies", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Storage and Handling", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 9, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:45:01", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:45:01", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Storage and Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Telephone Expenses", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 10, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:35:37", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:35:37", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Telephone Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Freight and Insurance", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 10, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:45:59", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:45:59", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Freight and Insurance", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Traveling Expenses", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 11, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:35:47", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:35:47", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Traveling Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 38, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Other", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 12, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:46:31", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:46:31", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Expenses Incurred on Credit", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 12, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:36:04", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:36:04", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Expenses Incurred on Credit", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Allowances", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 13, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:36:20", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:36:20", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Allowances", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 39, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Government Taxes, Fees and Deductions", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 13, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:46:50", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:47:59", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Government Taxes, Fees and Deductions", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Other General Expenses", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 14, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:36:32", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:36:32", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other General Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 43, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Other CSP Fees", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 15, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:48:13", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:48:13", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other CSP Fees", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Expenses Not Explained", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 15, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:36:41", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:36:41", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Expenses Not Explained", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 44, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Marketing Fees", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 16, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:48:32", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:49:11", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Marketing Fees", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 47, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Parchment Purchase", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 17, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:49:27", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:49:27", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Parchment Purchase", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 48, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Dry Mill / Export / CSP Costs", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 18, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:49:46", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:49:46", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Dry Mill / Export / CSP Costs", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 49, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Export Commission", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 19, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:49:54", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:49:54", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Export Commission", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 50, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Export Expenses, Transport and Other", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 20, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:50:07", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:50:13", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Export Expenses, Transport and Other", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 51, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Low Grades Sales Expenses", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 21, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:50:29", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:50:29", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Low Grades Sales Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 52, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "CSP / Export Expenses", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 22, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:50:44", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:50:44", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CSP / Export Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "cashuses.cashuse", 
+    "fields": {
+      "modified_by": 2, 
+      "name": "Second Payment", 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-03 11:57:02", 
+      "modified_on": "2011-11-03 11:57:02", 
+      "order": 1
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "cashuses.cashuse", 
+    "fields": {
+      "modified_by": 2, 
+      "name": "Dividend", 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-03 11:57:14", 
+      "modified_on": "2011-11-03 11:57:14", 
+      "order": 2
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_misc_revenue": false, 
+      "has_local_sales": false, 
+      "modified_by": 1, 
+      "name": "2010", 
+      "country": 1, 
+      "has_members": true, 
+      "is_active": true, 
+      "grades": [
+        1, 
+        3, 
+        2, 
+        4, 
+        5
+      ], 
+      "created_by": 1, 
+      "expenses": [
+        2, 
+        1, 
+        57, 
+        37, 
+        33, 
+        40, 
+        7, 
+        25, 
+        58, 
+        54, 
+        23, 
+        34, 
+        41, 
+        3, 
+        59, 
+        55, 
+        35, 
+        42, 
+        4, 
+        53, 
+        8, 
+        26, 
+        10, 
+        5, 
+        27, 
+        56, 
+        9, 
+        29, 
+        11, 
+        14, 
+        13, 
+        15, 
+        32, 
+        16, 
+        17, 
+        36, 
+        18, 
+        38, 
+        39, 
+        21, 
+        22, 
+        44
+      ], 
+      "exchange_rate": "585.00", 
+      "created_on": "2011-10-18 06:49:48", 
+      "default_adjustment": "0.16", 
+      "modified_on": "2011-10-19 05:12:34", 
+      "standards": []
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_misc_revenue": false, 
+      "has_local_sales": false, 
+      "modified_by": 2, 
+      "name": "2009", 
+      "country": 1, 
+      "has_members": false, 
+      "is_active": true, 
+      "grades": [
+        1, 
+        10, 
+        11, 
+        2, 
+        12
+      ], 
+      "created_by": 1, 
+      "expenses": [
+        1, 
+        40, 
+        57, 
+        2, 
+        54, 
+        58, 
+        23, 
+        25, 
+        7, 
+        3, 
+        59, 
+        26, 
+        53, 
+        8, 
+        55, 
+        4, 
+        56, 
+        10, 
+        5, 
+        27, 
+        9, 
+        14, 
+        31, 
+        15, 
+        16, 
+        17, 
+        18, 
+        20, 
+        39, 
+        21, 
+        44
+      ], 
+      "exchange_rate": "565.00", 
+      "created_on": "2011-10-18 06:49:54", 
+      "default_adjustment": "0.16", 
+      "modified_on": "2011-11-03 11:57:33", 
+      "standards": []
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "seasons.seasoncashuse", 
+    "fields": {
+      "season": 2, 
+      "applies_to": "ALL", 
+      "cashuse": 1
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 2, 
+      "name": "Kayco", 
+      "country": 1, 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-03 11:58:51", 
+      "modified_on": "2011-11-03 11:58:51", 
+      "logo": "", 
+      "description": "Ex CSP"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 2, 
+      "name": "KCC", 
+      "country": 1, 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-03 11:59:09", 
+      "modified_on": "2011-11-03 11:59:09", 
+      "logo": "", 
+      "description": "KCC"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 2, 
+      "name": "Muhibiri", 
+      "country": 1, 
+      "is_active": true, 
+      "created_by": 2, 
+      "created_on": "2011-11-03 11:58:37", 
+      "modified_on": "2011-11-03 11:58:37", 
+      "logo": "", 
+      "description": "Ex CSP"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Rwacof", 
+      "country": 1, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-11 03:07:07", 
+      "modified_on": "2011-10-19 03:13:56", 
+      "logo": "", 
+      "description": "Westrock Coffee and Rwanda Trading Company work together to provide our customers with a vertically integrated coffee supply chain. We develop blends, products, and brands for a range of clients. We import and roast coffee from around the world, and we produce and export coffee from East Africa through our Rwanda Trading Company subsidiary."
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Rwanda Trading Company", 
+      "country": 1, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-11 03:06:42", 
+      "modified_on": "2011-10-19 03:13:43", 
+      "logo": "logos/rtc-logo_1.png", 
+      "description": "Westrock Coffee and Rwanda Trading Company work together to provide our customers with a vertically integrated coffee supply chain. We develop blends, products, and brands for a range of clients. We import and roast coffee from around the world, and we produce and export coffee from East Africa through our Rwanda Trading Company subsidiary."
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "csps.csp", 
+    "fields": {
+      "modified_by": 1, 
+      "name": "Starbucks", 
+      "country": 2, 
+      "is_active": true, 
+      "created_by": 1, 
+      "created_on": "2011-10-11 03:06:58", 
+      "modified_on": "2011-10-19 03:15:02", 
+      "logo": "", 
+      "description": "We sell expensive coffee in stores scattered across the United States."
+    }
+  }
+]

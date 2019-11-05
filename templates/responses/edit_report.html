@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}XForms{% endblock %}
+
+
+{% block content %}
+<h3>{{ report.name }}</h3>
+<div class="copy">
+  <p>{% trans "Update the message for the report" %}, {{ report.name }}. {% trans "This report is sent" %} {{ report.get_schedule }}.</p>
+  <p>{{ report.description }}</p>
+</div>
+
+<div class="responses">
+{% load uni_form_tags %}
+<form name="responseForm" enctype="multipart/form-data" class="uniForm" method="POST">{% csrf_token %}
+{{ form|as_uni_form }}
+<br/>
+
+<div class="actions">
+  <a class="btn" href="/responses">{% trans "Cancel" %}</a>
+  <a class="btn btn-primary" href="javascript:document.responseForm.submit();">{% trans "Save Changes" %}</a>
+</div>
+
+</form>
+</div>
+{% endblock %}
+
+{% block extra-style %}
+{{ block.super }}
+<style>
+  .scenario {
+      padding-top: 15px;
+      font-weight: bold;
+  }
+
+  label { 
+      width: 120px;
+      padding-right: 5px;
+  }
+
+  .ctrlHolder {
+      padding-bottom: 5px;
+      padding-top: 5px;
+  }
+
+  .textinput {
+      width: 500px;
+      rows: 2;
+  }
+</style>
+{% endblock %}
+

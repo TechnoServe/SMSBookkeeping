@@ -1,0 +1,14 @@
+config = dict( 
+   port='8010',
+   friendly_name='Put Your Website Name Here',
+   app_dir='tns_glass',
+   name='tns-glass',
+   repo='tns-glass',
+   user='ct',
+   env='env',
+   settings='settings.py.dev',
+   db='ct',
+   db_user='ct',
+   db_host='localhost',
+   custom_domains='your-website.com www.your-other-website.com',
+   celery=True)

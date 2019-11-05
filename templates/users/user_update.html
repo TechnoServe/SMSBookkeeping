@@ -1,0 +1,11 @@
+{% extends "smartmin/users/user_update.html" %}
+
+{% block post-fields %}
+<div class="control-group">
+  <label class="control-label" for="permissions">Advanced</label>
+  <div class="controls">
+    <a class="btn" href="{% url 'users.user_permissions' object.id %}">Edit Permissions</a>
+  </div>
+</div>
+{{ block.super }}
+{% endblock %}

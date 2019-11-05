@@ -1,0 +1,248 @@
+{% extends "smartmin/read.html" %}
+
+{% load locales humanize i18n %}
+
+{% block pre-content %}
+
+<div class="page-header"><h2>{{ title }} <a id="show_report" href="#" onclick="javascript:showViewOptions()" title="Select Report Format" class="btn btn-primary pull-right">{% trans "Download Report" %}</a></h2></div>
+{% endblock %}
+
+{% block content %}
+{% with report.wetmill.country.currency as curr %}
+<div class="row">
+  <div class="span12">
+    <div class="page-header"><h4>{% trans "Sales" %}<a href="{% url 'reports.sale_create' %}?report={{report.id}}" class="btn pull-right" style="font-weight:normal;">{% trans "Add" %}</a></h4></div>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+        <th>{% trans "Sale" %}</th>
+        <th>{% trans "Date" %}</th>
+        <th>{% trans "Volume" %}</th>
+        <th>{% trans "Grade" %}</th>
+        <th>{% trans "Price" %}</th>
+        <th>{% trans "Adjustment" %}</th>
+        <th>{% trans "Exchange Rate" %}</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for sale in sales %}
+        <tr>
+        <td class="clickable"><a href="{% url 'reports.sale_update' sale.id %}">{{ sale.buyer }} ({{ sale.sale_type }})</a></td>
+        <td>{{ sale.date }}</td>
+        <td class="right">{{ sale.total_volume|format_kilos }}</td>
+        <td>{{ sale.all_grades }}</td>
+        <td class="right">{{ sale.price|format_currency:sale.currency }}</td>
+        <td class="right">{{ sale.adjustment|format_currency:dollars }}</td>
+        <td class="right">{{ sale.exchange_rate|format_currency:curr }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="span12">
+    <div class="page-header"><h4>{% trans "Production and Capital" %}</h4></div>
+  </div>
+</div>
+<div class="row">
+  <div class="span6">
+    <table class="table table-bordered table-striped col2">
+      <thead>
+        <tr>
+          <th colspan="2">{% trans "Production" %}<a href="{% url 'reports.report_production' report.id %}" class="btn pull-right" style="font-weight:normal;">{{edit_button}}</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>{% trans "Cherry" %}</td><td>{{ cherry_production|format_kilos }}</td></tr>
+        <tr><td class="indent-1">{% trans "Member" %}</td><td>{{ report.cherry_production_by_members|format_kilos }}</td></tr>
+        <tr><td class="indent-1">{% trans "Non-Member" %}</td><td>{{ report.cherry_production_by_non_members|format_kilos }}</td></tr>
+        {% for production in wetmill_production %}
+        <tr><td class="indent-{{ production.grade.depth }}">{{ production.grade.name }}</td><td>{{ production.volume|format_kilos }}</td></tr>
+        {% endfor %}
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr><td>{% trans "Farmers" %}</td><td>{{ report.farmers|intcomma }}</td></tr>
+        <tr><td>{% trans "Wet Mill Capacity (Parchment)" %}</td><td>{{ report.capacity|format_kilos }}</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="span6">
+    <table class="table table-striped table-bordered col2">
+      <thead>
+        <tr>
+          <th colspan="2">{% trans "Capital and Payments" %} <a href="{% url 'reports.report_attributes' report.id %}" class="btn pull-right" style="font-weight:normal;">{{edit_button}}</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>{% trans "Working Capital" %}</td><td>{{ report.working_capital|format_currency:curr }}</td></tr>
+        <tr><td>{% trans "Working Capital Repaid" %}</td><td>{{ report.working_capital_repaid|format_currency:curr }}</td></tr>
+        <tr><td>{% trans "Miscellaneous Sources" %}</td><td>{{ report.miscellaneous_sources|format_currency:curr }}</td></tr>
+        {% if report.season.has_misc_revenue %}
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr><td>{% trans "Miscellaneous Revenue" %}</td><td>{{ report.miscellaneous_revenue|format_currency:curr }}</td></tr>
+        {% endif %}
+        <tr><td colspan="2">&nbsp;</td></tr>
+        {% for cashsource in cashsources %}
+        <tr><td>{{ cashsource.name }}</td><td>{{ cashsource.entry.value|format_currency:curr }}</td></tr>
+        {% endfor %}
+        {% for cashuse in cashuses %}
+        <tr><td>{{ cashuse.name }}</td><td>{{ cashuse.entry.value|format_currency:curr }}</td></tr>
+        {% endfor %}
+        <tr><td colspan="2">&nbsp;</td></tr>
+        {% for payment in payments %}
+        {% if payment.applies_to == "ALL" %}
+        <tr><td>{{ payment.name }} {% trans "Per Kilo" %}</td><td>{{ payment.entry.all_per_kilo|format_currency:curr }}</td></tr>
+        {% endif %}
+        {% if payment.applies_to == "MEM" or payment.applies_to == "BOT" %}
+        <tr><td>{{ payment.name }} {% trans "Per Kilo (Members)" %}</td><td>{{ payment.entry.member_per_kilo|format_currency:curr }}</td></tr>
+        {% endif %}
+        {% if payment.applies_to == "NON" or payment.applies_to == "BOT" %}
+        <tr><td>{{ payment.name }} {% trans "Per Kilo (Non-Members)" %}</td><td>{{ payment.entry.non_member_per_kilo|format_currency:curr }}</td></tr>
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
+      <div class="page-header"><h4>{% trans "Expenses" %}<a href="{% url 'reports.report_expenses' report.id %}" class="btn pull-right" style="font-weight:normal;">{{edit_button}}</a></h4></div>
+  </div>
+</div>
+{% load smartmin %}
+<div class="row">
+  <div class="span6">
+    {% for expense in wetmill_expenses %}
+      {% if expense.expense.depth == 0 %}
+        {% if not forloop.first %}
+        </tbody>
+      </table>
+        {% endif %}
+
+        {% if forloop.counter0 == halfway_point %}
+   </div><div class="span6">
+        {% endif %}
+
+      <table class="table-striped table table-bordered col2 expense-table">
+        <thead>
+          <tr>
+            <th colspan="2">{{ expense.expense.name }}</th>
+          </tr>
+        </thead>
+        <tbody>
+      {% else %}
+          <tr><td class="expense-depth-{{ expense.expense.depth }}">{{ expense.expense.name }}</td><td>{% if expense.expense.in_dollars %}{{ expense.value|format_currency:dollars }}{% else %}{{ expense.value|format_currency:curr }}{% endif %}</td></tr>
+      {% endif %}
+    {% endfor %}
+        </tbody>
+      </table>
+  </div>
+</div>
+{% endwith %}
+{% if not report.is_finalized %}
+  <div class="row">
+    <div class="span12">
+      <a href ="{% url 'reports.report_finalize' report.id %}" class="btn posterize pull-right btn-danger">{% trans "Finalize" %}</a>
+    </div>
+  </div>
+{% endif %}
+  {% if report.is_finalized and amendments|length > 0 %}
+  <div class="row">
+    <div class="span12 alert-message block-message">
+      {% for amendment in amendments %}
+      Modified by {{amendment.modified_by}} on {{amendment.created_on}}: {{amendment.description}} <br/>
+      {% endfor %}
+    </div>
+  </div>  
+  {% endif %}
+{% endblock %}
+
+{% block extra-script %}
+{{ block.super }}
+<script type="text/javascript">
+    function getViewContent(){
+        var content = '<center><select id="report_version" class="report-options">' +
+        {% for language in languages %}
+        {% for currency in currencies %}
+        {% if weights %}
+        {% for weight in weights %}
+        '<option value="lang={{ language.language_code }}&currency={{ currency.currency_code }}&weight={{ weight.abbreviation|upper }}">{{ language.name }} - {{ currency.currency_code }} - {{ weight.abbreviation|upper }}</option>' +
+        {% endfor %}
+        {% else %}
+        '<option value="lang={{ language.language_code }}&currency={{ currency.currency_code }}">{{ language.name }} - {{ currency.currency_code }}</option>' +
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+        '</select> <a href="#" onclick="downloadReport()" class="btn btn-primary">{% trans "Download" %}</a></center>';
+        
+        return content;
+    }
+  
+    var popoverShown = false;
+    function showViewOptions(){
+        if (popoverShown){
+          $("#show_report").popover("hide");
+          popoverShown = false;
+        } else {
+          $("#show_report").popover("show");
+          popoverShown = true;
+        }
+    }
+
+    function hideViewOptions(){
+        $("#show_report").popover("hide");
+    }
+
+    function downloadReport(){
+        hideViewOptions();
+        document.location.href = "{% url 'reports.report_pdf' report.id %}?" + $("#report_version").val() + window.location.search.replace('?','&')
+    }
+
+    $(function(){
+        $("#show_report").popover({ trigger: "manual",
+                                    placement: "bottom",
+                                    html: true,
+                                    content: getViewContent
+                                  });
+    });
+</script>
+
+{% endblock %}
+
+{% block extra-style %}
+{{ block.super }}
+<style>
+  table.expense-table {
+  }
+  
+  table.col2 tbody tr td:nth-child(2) {
+    text-align: right;
+    width: 100px;
+  }
+  
+  td.indent-1 {
+    padding-left: 30px;
+  }
+
+  td.indent-2 {
+    padding-left: 60px;
+  }
+        
+  td.expense-depth-2 {
+    padding-left: 30px;
+  }
+
+  td.expense-depth-3 {
+    padding-left: 60px;
+  }
+
+  td.right {
+    text-align: right;
+  }
+</style>
+{% endblock %}

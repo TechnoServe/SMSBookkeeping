@@ -1,0 +1,53 @@
+version: '2.1'
+
+services:
+  tns-glass:
+    image: tns-glass
+    build: .
+    volumes:
+      - ./:/srv/tns-glass
+    ports:
+      - 8000:8000
+    depends_on:
+      - ct-db
+      - ct-redis
+    stdin_open: true #Added because we want to debug using pdb using `docker attach container-id` 
+    tty: true #Added because we want to debug using pdb using `docker attach container-id` 
+    working_dir: /srv/tns-glass
+    command: bash -c "python tns_glass/manage.py syncdb && python tns_glass/manage.py runserver 0.0.0.0:8000" #We want to listen to all IP Addresses.  Not just localhost.  This makes it work from outside of the container.  https://stackoverflow.com/questions/22695587/django-external-access#22695820
+    #command: bash -c "python tns_glass/manage.py syncdb && python tns_glass/manage.py runserver_plus 0.0.0.0:8000" #We want to listen to all IP Addresses.  Not just localhost.  This makes it work from outside of the container.  https://stackoverflow.com/questions/22695587/django-external-access#22695820
+    #command: bash -c "python tns_glass/manage.py syncdb && python tns_glass/manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+  
+  ct-db:
+    image: ct-mysql #This is what we build from the databases folder.
+
+    environment:
+      MYSQL_ROOT_PASSWORD: sql_password
+      MYSQL_DATABASE: ct
+    ports:
+      - 3306:3306
+
+  ct-redis:
+    #https://hub.docker.com/_/redis/
+    image: redis:3.2.9
+    ports: #make redis accessible locally
+      - 6379:6379
+
+  ct-celery-worker:
+    image: tns-glass
+    build: .
+    environment:
+      C_FORCE_ROOT: "true" #Because we want to run celery as root.  This is a bad idea if it's for production.
+    volumes:
+      - ./:/srv/tns-glass
+    working_dir: /srv/tns-glass
+    depends_on:
+      - ct-redis
+    command: bash -c "python tns_glass/manage.py celery worker --loglevel=debug"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - ct-db:db
+    ports:
+      - 8084:80

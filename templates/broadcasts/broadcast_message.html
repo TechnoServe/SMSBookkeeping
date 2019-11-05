@@ -1,0 +1,157 @@
+{% extends "smartmin/update.html" %}
+{% load smartmin i18n %}
+
+{% block pre-form %}
+<div class="row">
+  <div class="span9">
+    <p>{% trans "You can specify and test the message sent using this page.  The variables inserted will be substituted for each wetmill." %}</p>
+    <p>{% trans "Note that you can use all the utilities available to" %} <a href="https://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs">{% trans "Django Templates" %}</a>{% trans ", some examples are given below." %}</p>
+<b>{% trans "Round total profit to within two decimal places." %}</b>
+<pre>{% templatetag openvariable %}total_profit__kgc|floatformat:2{% templatetag closevariable %}</pre>
+<b>{% trans "Round total profit to the nearest whole number." %}</b>
+<pre>{% templatetag openvariable %}total_profit__kgc|floatformat:0{% templatetag closevariable %}</pre>
+
+<b>{% trans "Get the rank for the total profit in kg/cherry compared to other wetmills in this season" %}</b>
+<pre>{% templatetag openvariable %}total_profit__kgc__rank{% templatetag closevariable %}</pre>
+
+<b>{% trans "Get the best, min, max and average for the total profit in kg/cherry for this season" %}</b>
+<pre>{% templatetag openvariable %}total_profit__kgc__best{% templatetag closevariable %}
+{% templatetag openvariable %}total_profit__kgc__min{% templatetag closevariable %}
+{% templatetag openvariable %}total_profit__kgc__max{% templatetag closevariable %}
+{% templatetag openvariable %}total_profit__kgc__avg{% templatetag closevariable %}
+</pre>
+
+<b>{% trans "Only include 'Conditional Message' if the cherry to parchment ratio is greater than 5" %}</b>
+<pre>{% templatetag openblock %} if sms_cherry_to_parchment_ratio > 5 {% templatetag closeblock %}Conditional Message{% templatetag openblock %} endif {% templatetag closeblock %}</pre>
+
+</pre>
+  </div>
+  <div class="span3">
+    <div class="alert">
+      <p><b>{% trans "Wetmills" %}:</b> {{ wetmill_count }}</p>
+      <p><b>{% trans "Recipients" %}:</b> {{ recipient_count }}</p>
+      <p><b>{% trans "SMS Length" %}:</b> <span id="sms-length">~{{ sms_length }}</span></p>
+      <p><b>{% trans "SMS Count" %}:</b> <span id="sms-count">{{ sms_count }}</span></p>
+      <p><b>{% trans "Total SMS" %}:</b> <span id="total-sms">~{{ total_sms }}</span></p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block fields %}
+<div class="control-group">
+  <label class="control-label" for="id_text">{% trans "Message" %}</label>
+  <div class="controls">
+    <div class="btn-group">
+      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+      {% trans "Insert Variable" %}
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        {% for variable in variables %}
+        <li><a href="#" onclick="return insert_variable('{{ variable.slug }}');">{{ variable.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+    {{ form|field:"text" }}
+    <p class="help-block">{% trans "The text that will be sent to the wetmills (append __rank to a variable to insert the wetmill rank instead)" %}</p>
+
+    {% if form.text.errors %}
+    <span class="help-block field-errors">{{ form.text.errors }}</span>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
+
+{% block post-fields %}
+<div class="control-group">
+  <label class="control-label">{% trans "Wetmill" %}</label>
+  <div class="controls">
+    <div>
+      <select id="wetmill" style="width:400px;margin-bottom:2px;">
+      {% for wetmill in wetmills %}
+        <option value="{{wetmill.id}}">{{ wetmill.name }}</option>
+      {% endfor %}
+      </select>
+      <a class="btn btn-primary" href="#" onclick="return fetch_preview();">Preview</a>
+    </div>
+    <div><textarea disabled id="preview">{% trans "You can test your message by clicking preview" %}</textarea></div>
+    <p class="help-block">{% trans "You can preview your message for the specified wetmill here." %}</p>
+  </div>
+{% endblock %}
+
+{% block form-buttons %}
+    <div class="form-actions">
+      <input type="submit" class="btn btn-primary" value="{% trans "Preview Message For All Wetmills" %} &raquo;">
+    </div>
+{% endblock %}
+
+{% block extra-script %}
+<script>
+function getCaret(el) { 
+  if (el.selectionStart) { 
+    return el.selectionStart; 
+  } else if (document.selection) { 
+    el.focus(); 
+
+    var r = document.selection.createRange(); 
+    if (r == null) { 
+      return 0; 
+    } 
+
+    var re = el.createTextRange(), 
+        rc = re.duplicate(); 
+    re.moveToBookmark(r.getBookmark()); 
+    rc.setEndPoint('EndToStart', re); 
+
+    return rc.text.length; 
+  }  
+  return 0; 
+}
+
+function insert_variable(slug){
+  var variable_text = "{% templatetag openvariable %}" + slug + "{% templatetag closevariable %}";
+
+  var text = $("#id_text").val();
+  var caretPosition = getCaret($("#id_text")[0]);
+
+  var newText = text.substring(0, caretPosition) + variable_text + text.substring(caretPosition);
+  $("#id_text").val(newText);
+
+  return false;
+}
+
+function test_message(){
+  var text = $("#id_text").val();
+  window.open("{% url 'broadcasts.broadcast_test' object.id %}?text=" + encodeURIComponent(text), 'preview');
+}
+
+function fetch_preview(){
+  var text = $("#id_text").val();
+  var wetmill_id = $("#wetmill").val();
+
+  $.ajax({ url: "{% url 'broadcasts.broadcast_preview' object.id %}",
+           data: { text: text, wetmill_id: wetmill_id, _format: 'json' },
+           dataType: "json",
+           success: function(data){ 
+             $("#preview").val(data['preview']); 
+             $("#sms-length").html("~" + data['sms_length']);
+             $("#sms-count").html(parseInt(data['sms_count']));
+             $("#total-sms").html("~" + parseInt(data['sms_count']) * {{ recipient_count }});
+             console.log(data);
+           } 
+  });
+}
+</script>
+{% endblock %}
+
+{% block extra-style %}
+<style>
+.variables {
+  display: inline;
+  float: left;
+  margin-left: 550px;
+}
+</style>
+{% endblock %}

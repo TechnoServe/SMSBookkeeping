@@ -1,0 +1,900 @@
+{% extends "smartmin/list.html" %}
+
+{% load smartmin locales dashboard i18n %}
+
+{% block pre-content %}
+  <div class="page-header" style="height: 95px;margin-bottom:7px;">
+
+    {% if season.country.country_code == 'RW' %}
+    <div class="country_img" style="float: left">
+      <img width="100" height="90" src="{{ STATIC_URL }}img/dashboard/rw_small.png">
+    </div>
+    {% elif wetmill.country.country_code == 'TZ' %}
+    <div class="country_img" style="float: left">
+      <img width="95" height="90" src="{{ STATIC_URL }}img/dashboard/tz_small.png">
+    </div>
+    {% endif %}
+      <div class="wetmill_name" style="float:left;">
+          <h2 style="font-size:25px;margin-bottom:0">{% trans "Accounting Dashboard" %}</h2>
+          <div class='mini'>{{ season }}</div></h2>
+          {% if not show_compliance_only %}
+              <div class="mini">
+                  <a href="{% url 'dashboard_green_sales.wetmill_seasonaggregate' %}?season={{ season.id }}">{% trans "Sales Dashboard" %}</a>
+              </div>
+          {% endif %}
+      </div>
+      <div class="pull-right">
+          <form>
+              <select id="season" name="season" style="width:200px;margin-bottom:0px;">
+                  {% for s in seasons %}
+                      <option value="{{ s.id }}" {% if s.id == season.id %}selected{% endif %}>{{ s }}</option>
+                  {% endfor %}
+              </select>
+              <a class="btn btn-primary" href="#" onclick="showSeasonDashboard()">{% trans "View" %}</a>
+              {% if not show_compliance_only %}
+                  <a class="btn" href="#" onclick="exportSeason()">{% trans "Export" %}</a>
+              {% endif %}
+              {% if editable_assumptions %}
+                  <a class="btn help" data-toggle="tooltip" data-placement="left" title="Configure Settings for All Wetmills for {{ season.name }} Season" href="{% url 'dashboard.assumptions_update' editable_assumptions.id %}">{% trans "Global Settings" %}</a>
+              {% endif %}
+          </form>
+      </div>
+  </div>
+{% endblock %}
+
+{% block container-tag %}
+<div class="container-fluid">
+{% endblock %}
+
+{% block content %}
+    <div style="display: inline-block;margin-right:20px">
+        {% if currency.currency_code == 'USD' %}
+            <a href="#" onclick="switchCurrencyTo('{{ local.currency_code }}')">{{ local.currency_code }}</a> | <b>USD</b>
+        {% else %}
+            <b>{{ local.currency_code }}</b> | <a href="#" onclick="switchCurrencyTo('USD')">USD</a>
+        {% endif %}
+    </div>
+    <br/><br/>
+    <div class="row-fluid">
+    <div class="span10">
+        <div class="summary">
+            {% if stock_totals|get:"cherry_ytd" %}
+              <div class="number_widget">
+                  <div class="metric help" data-toggle="tooltip" title="{% blocktrans with dashboard_weight_name=dashboard_weight.name %}Total Cherry reported in Daily Cherry Reports ({{ dashboard_weight_name }}){% endblocktrans %}">
+                      <div class="big">{{ stock_totals|get:"cherry_tons_ytd"|format_weight_rounded:dashboard_weight }}<span class="med">{{ dashboard_weight.abbreviation }}</span></div>
+                      <div class="big_label">{% trans "Cherry YTD" %}</div>
+                  </div>
+              </div>
+            {% endif %}
+            {% if finance_totals|get:"cherry_price_ytd" and not show_compliance_only %}
+            <div class="number_widget">
+              <div class="metric help" data-toggle="tooltip" title="{% blocktrans with weight_name=weight.name currency_code=currency.currency_code %}Average price paid per {{ weight_name }} of Cherry in {{ currency_code }}{% endblocktrans %} ">
+                <div class="big">{{ finance_totals|get:"cherry_price_ytd"|format_currency_summary:currency }}<span class="med">/{{ weight.abbreviation|upper }}</span></div>
+                <div class="big_label">{% trans "Avg Price" %}</div>
+              </div>
+            </div>
+            {% endif %}
+            {% if stock_totals|get:"parchment_in_store" %}
+              <div class="number_widget">
+                  <div class="metric help" data-toggle="tooltip" title="{% blocktrans with dashboard_weight_name=dashboard_weight.name %}Parchment Stored - Parchment Delivered reported in Weekly Stock Reports ({{ dashboard_weight_name }}){% endblocktrans %}">
+                      <div class="big">{{ stock_totals|get:"parchment_in_store"|format_weight_rounded:dashboard_weight }}<span class="med">{{ dashboard_weight.abbreviation }}</span></div>
+                      <div class="big_label">{% trans "Parchment YTD" %}</div>
+                  </div>
+              </div>
+            {% endif %}
+            {% if stock_totals|get:"percent_of_parchment_shipped" or stock_totals|get:"percent_of_parchment_shipped" == 0%}
+              <div class="number_widget">
+                  <div class="metric help" data-toggle="tooltip" title="{% trans "Percent of Parchment Delivered"%}">
+                      <div class="big">{{ stock_totals|get:"percent_of_parchment_shipped"|floatformat:"0" }}<span class="med">%</span></div>
+                      <div class="big_label">{% trans "Parchment Shipped YTD" %}</div>
+                  </div>
+              </div>
+            {% endif %}
+            
+            {% if not show_compliance_only %}
+            {% if finance_totals|get:"est_stored_parchment_value" %}
+              <div class="number_widget">
+                  <div class="metric help" data-toggle="tooltip" title="{% trans "Estimated Value of Stored Parchment YTD" %} (million {{ currency.currency_code }})">
+                      <div class="big">{{ finance_totals|get:"est_stored_parchment_value"|convert_currency:exchange_rate|format_currency_rounded_summary:currency }}</div>
+                      <div class="big_label">{% trans "Est Val. Stored Parch YTD" %}</div>
+                  </div>
+              </div>
+            {% endif %}
+            {% if finance_totals|get:"est_total_parchment_value" %}
+              <div class="number_widget">
+                  <div class="metric help" data-toggle="tooltip" title="{% trans "Estimated Value of Total Parchment YTD" %} (million {{ currency.currency_code }})">
+                      <div class="big">{{ finance_totals|get:"est_total_parchment_value"|convert_currency:exchange_rate|format_currency_rounded_summary:currency }}</div>
+                      <div class="big_label">{% trans "Est Val. Total Parch YTD" %}</div>
+                  </div>
+              </div>
+            {% endif %}
+            {% if finance_totals|get:"working_capital_ytd" %}
+              <div class="number_widget">
+                  <div class="metric help" data-toggle="tooltip" title="{% trans "Total Working Capital reported received in Weekly Cash Reports" %} (million {{ currency.currency_code }})">
+                      <div class="big">{{ finance_totals|get:"working_capital_ytd"|convert_currency:exchange_rate|format_currency_rounded_summary:currency }}</div>
+                      <div class="big_label">{% trans "Working Capital YTD" %}</div>
+                  </div>
+              </div>
+            {% endif %}
+            {% if finance_totals|get:"working_capital_received_percent" %}
+              <div class="number_widget">
+                  <div class="metric help" data-toggle="tooltip" title="{% trans "% of Working capital received YTD" %}">
+                      <div class="big">{{ finance_totals|get:"working_capital_received_percent"|floatformat:"0" }}<span class="med">%</span></div>
+                      <div class="big_label">{% trans "Working Capital Received YTD" %}</div>
+                  </div>
+              </div>
+            {% endif %}
+            {% if finance_totals|get:"est_profitability_ytd" %}
+              <div class="number_widget">
+                  <div class="metric help" data-toggle="tooltip" title="{% trans "Estimated Profitability YTD" %}">
+                      <div class="big">{{ finance_totals|get:"est_profitability_ytd"|floatformat:"0" }}<span class="med">%</span></div>
+                      <div class="big_label">{% trans "Est. Profitability YTD" %}</div>
+                  </div>
+              </div>
+            {% endif %}
+            {% if finance_totals|get:"working_capital_op_exp" %}
+              <div class="number_widget">
+                  <div class="metric help" data-toggle="tooltip" title="{% trans "% of Working Capital reportedly spent on non-cherry operating expenses" %}">
+                      <div class="big">{{ finance_totals|get:"working_capital_op_exp"|floatformat:"0" }}<span class="med">%</span></div>
+                      <div class="big_label">{% trans "Operating Exp" %}</div>
+                  </div>
+              </div>
+            {% endif %}
+            {% endif %}
+        </div>
+    </div>
+        <div class="span2">
+            <div class="compliance">
+                <table>
+                    <tr>
+                        <td class="compliance-label">{% trans "Wetmills" %}</td>
+                        <td class="compliance-value">{{ wetmill_data|length }} / {{ full_wetmill_count }}</td>
+                    </tr>
+                    <tr>
+                        <td class="compliance-label">{% trans "Reports" %}</td>
+                        <td class="compliance-value {% if compliance_totals|get:"missing_count" %}missing{% endif %}">{{ compliance_totals|get:"submission_count" }} / {{ compliance_totals|get:"ideal_submission_count" }}</td>
+                    </tr>
+                    <tr>
+                        <td class="compliance-label">{% trans "Compliance" %}</td>
+                        <td class="compliance-value {% if compliance_totals|get:"missing_count" %}missing{% endif %}">{{ compliance_totals|get:"submission_pct"|default_if_none:"0"|format_int }}%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+  <div class="pull-right">
+    <form class="form-search">
+      {% if season.country.weight != kilograms and season.country.weight.abbreviation|upper != 'MT' %}
+      <div style="display: inline-block;margin-right:120px">
+      {% if weight.name|lower == 'kilograms' %}
+        <a href="#" onclick="switchWeightTo('{{ local_weight.abbreviation|upper }}')">{{ local_weight.abbreviation|upper }}</a> | <b>KG</b>
+      {% else %}
+        <b>{{ local_weight.abbreviation|upper }}</b> | <a href="#" onclick="switchWeightTo('{{ kilograms.abbreviation|upper }}')">KG</a>
+      {% endif %}
+      </div>
+      {% endif %}
+
+
+
+      <input type="hidden" name="season" value="{{ season.id }}"/>
+      <input type="text" class="input-medium search-query" name="search" placeholder="{% trans "Search" %}" value="{{ search }}">
+    </form>
+  </div>
+
+  <ul id="dashboardTabs" class="nav nav-tabs">
+    <li class="active"><a id="stockTab" href="#stockData" data-toggle="tab">{% trans "Stocks" %}</a></li>
+    {% if not show_compliance_only %}
+    <li><a id="financeTab" href="#financeData" data-toggle="tab">{% trans "Finances" %}</a></li>
+    {% endif %}
+    <li><a id="complianceTab" href="#complianceData" data-toggle="tab">{% trans "Reporting Compliance" %}</a></li>
+  </ul>
+
+  <div id="tabContent" class="tab-content">
+      <div id="stockData" class="tab-pane active">
+          <table id="dashTable" class="table table-bordered table-striped table-condensed table-fixed-header">
+              <thead class="header">
+              <tr>
+                  <th id="header-wetmill" class="header
+                  {% if order_by == 'wetmill' %}{% if reverse %}headerSortDown{% else %}headerSortUp{% endif %}{% endif %}">
+                      Wetmill
+                  </th>
+                {% for field in stock_fields %}
+                    <th id="header-{{ field.slug }}" class="dashboard-data header {% if field.help %}help{% endif %}
+                {% if order_by == field.slug %}{% if reverse %}headerSortDown{% else %}headerSortUp{% endif %}{% endif %}" {% if field.help %}data-toggle="tooltip" title="{{ field.help|safe }}" {% if forloop.last %}data-placement="left"{% endif %}{% endif %}>{{ field.label }} ({{ dashboard_weight.abbreviation }})</th>
+                {% endfor %}
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="totals">
+                  <td class="name">{% trans "Totals" %}</td>
+                  <td class="data">{{ stock_totals|get:"cherry_last"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}</td>
+                  <td class="data">{{ stock_totals|get:"cherry_ytd"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}</td>
+                  <td class="data">{{ stock_totals|get:"parchment_shipped_ytd"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}</td>
+                  <td class="data">{{ stock_totals|get:"parchment_in_store"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}</td>
+                  <td class="data">{{ stock_totals|get:"est_parchment_tabled"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}</td>
+                  <td class="data">{{ stock_totals|get:"est_parchment_processed"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}</td>
+              </tr>
+
+              {% for data in wetmill_data %}
+                  <tr class="{% if not data.daily_current %}daily-late {% endif %}{% if not data.sitoki_current %}sitoki-late {% endif %}{% if not data.amafaranga_current %}amafaranga-late {% endif %}">
+                      <td class="name">
+                        <span style="float: left;color:#666;margin-right: 5px;">{{ data.csp.sms_name|upper }}</span>
+                        <a href="{% url 'dashboard.wetmill_wetmill' data.wetmill.id %}?season={{ season.id }}">{{ data.wetmill.name }}</a>
+                      </td>
+                      <td class="data cherry-last">
+                        {% setblock tooltip %}
+                            {% trans "Last Daily Report:" %} {{ data|get:"cherry_date_last" }}
+                        {% endsetblock %}
+                        {% weight_cell data "cherry_last" "tooltip" %}
+                      </td>
+                      <td class="data cherry-ytd">
+                        {% setblock tooltip %}
+                            {% trans "Last Daily Report:" %} {{ data|get:"cherry_date_last" }}
+                        {% endsetblock %}
+                        {% weight_cell data "cherry_ytd" "tooltip" %}
+                      </td>
+                      <td class="data parchment-shipped-ytd">
+                        {% setblock tooltip %}{% trans "Last Reported for Week" %}: {{ data|get:"sitoki_last" }}{% endsetblock %}
+                        {% weight_cell data "parchment_shipped_ytd" "tooltip" %}
+                      </td>
+                      <td class="data parchment-stored-ytd">
+                        {% setblock tooltip %}{% trans "Last Reported for Week" %}: {{ data|get:"sitoki_last" }}{% endsetblock %}
+                        {% weight_cell data "parchment_in_store" "tooltip" %}
+                      </td>
+                      <td class="data est-parchment-tabled {{ data|get:"parchment_tabled_alert" }}">
+                        {% setblock tooltip %}
+                            {% trans "Est. Processed" %} {{ data|get:"est_parchment_processed"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}
+                            {% trans "Shipped" %} {{ data|get:"parchment_shipped_ytd"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}
+                            {% trans "Stored" %} {{ data|get:"parchment_stored_ytd"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}
+                        {% endsetblock %}
+                        {% weight_cell data "est_parchment_tabled" "tooltip" %}
+                      </td>
+                      <td class="data est-parchment-processed">
+                        {% setblock tooltip %}
+                          {% trans "Cherry to date" %}: {{ data|get:"cherry_ytd"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}
+                          {% trans "C:P Ratio" %}: {{ data|get:"cherry_parchment_ratio" }}
+                        {% endsetblock %}
+                        {% weight_cell data "est_parchment_processed" "tooltip" "left" %}
+                      </td>
+                  </tr>
+              {% endfor %}
+
+              {% for wetmill in inactive %}
+                  <tr>
+                      <td class="name">
+                        <span style="float: left;color:#666;margin-right: 5px;">{{ wetmill.csp.sms_name|upper }}</span>
+                        <a href="{% url 'dashboard.wetmill_wetmill' wetmill.id %}?season={{ season.id }}">{{ wetmill.name }}</a>
+                      </td>
+                      <td></td><td></td><td></td><td></td><td></td><td></td>
+                  </tr>
+              {% endfor %}
+              </tbody>
+          </table>
+      </div>
+      {% if not show_compliance_only %}
+      <div id="financeData" class="tab-pane">
+          <table id="financeTable" class="table table-bordered table-striped table-condensed table-fixed-header">
+              <thead class="header">
+              <tr>
+                  <th id="header-wetmill" class="header
+              {% if order_by == 'wetmill' %}{% if reverse %}headerSortDown{% else %}headerSortUp{% endif %}{% endif %}">
+                      {% trans "Wetmill" %}
+                  </th>
+
+                {% for field in finance_fields %}
+                    <th id="header-{{ field.slug }}" class="dashboard-data header {% if field.help %}help{% endif %}
+                {% if order_by == field.slug %}{% if reverse %}headerSortDown{% else %}headerSortUp{% endif %}{% endif %}" {% if field.help %}data-toggle="tooltip" title="{{ field.help|safe }}" {% if forloop.last %}data-placement="left"{% endif %}{% endif %}>{{ field.label }}</th>
+                {% endfor %}
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="totals">
+                  <td class="name">{% trans "Totals" %}</td>
+                  <td class="data">{{ finance_totals|get:"cherry_price_ytd"|format_currency:currency }}</td>
+                  <td class="data">{{ finance_totals|get:"cherry_price_last"|format_currency:currency }}</td>
+                  <td class="data">{{ finance_totals|get:"cherry_price_rec"|format_currency:currency }}</td>
+                  {% if season.country.country_code != 'GT' %}
+                  <td class="data">{{ finance_totals|get:"working_capital_ytd"|format_currency_rounded:currency }}</td>
+                  {% endif %}
+                  <td class="data">{{ finance_totals|get:"working_capital_op_exp"|format_percent }}</td>
+                  {% if season.country.country_code != 'GT' %}
+                  <td class="data">{{ finance_totals|get:"working_capital_unc"|format_currency_rounded:currency }}</td>
+                  {% endif %}
+                  <td class="data">{{ finance_totals|get:"cash_balance"|format_currency_rounded:currency }}</td>
+              </tr>
+
+              {% for data in wetmill_data %}
+                  <tr class="{% if not data.daily_current %}daily-late {% endif %}{% if not data.sitoki_current %}sitoki-late {% endif %}{% if not data.amafaranga_current %}amafaranga-late {% endif %}">
+                      <td class="name">
+                        <span style="float: left;color:#666;margin-right: 5px;">{{ data.csp.sms_name|upper }}</span>
+                        <a href="{% url 'dashboard.wetmill_wetmill' data.wetmill.id %}?season={{ season.id }}">{{ data.wetmill.name }}</a>
+                      </td>
+                      <td class="data cherry-price-ytd {{ data|get:"average_cherry_price_alert" }}">
+                        {% setblock tooltip %}
+                            {% trans "Cherry Bought" %}: {{ data|get:"cherry_ytd"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}
+                            {% trans "Cash Spent" %}: {{ data|get:"cherry_spent_ytd"|format_currency:currency }}
+                        {% endsetblock %}
+                        {% currency_cell data "cherry_price_ytd" "tooltip" %}
+                      </td>
+                      <td class="data cherry-price-last {{ data|get:"last_cherry_price_alert" }}">
+                        {% setblock tooltip %}
+                            {% trans "Last Cherry Report" %}: {{ data|get:"cherry_date_last" }}
+                            {% trans "Cash/Credit Spent" %}: {{ data|get:"cherry_spent_last"|format_currency:currency }}
+                            &divide;
+                            {% trans "Cherry Purchased" %}: {{ data|get:"cherry_last"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}
+                            = {% trans "Last Cherry Price" %}
+                        {% endsetblock %}
+                        {% currency_cell data "cherry_price_last" "tooltip" %}
+                      </td>
+                      <td class="data cherry-price-rec">
+                        {% setblock tooltip %}
+                            {% trans "NYC Price" %}: {{ data|get:"nyc_price"|format_currency:usd }}
+                            {% trans "Production Costs" %}: {{ data|get:"production_costs"|format_currency:usd }}
+                            {% trans "C:G Ratio" %}: {{ data|get:"cherry_green_ratio" }}
+                        {% endsetblock %}
+                        {% currency_cell  data "cherry_price_rec" "tooltip" %}
+                      </td>
+                      {% if season.country.country_code != 'GT' %}
+                      <td class="data working-capital-ytd">
+                        {% setblock tooltip %}
+                            {% trans "Last Cash Message" %}: {{ data|get:"amafaranga_last" }}
+                        {% endsetblock %}
+                        {% currency_cell_rounded data "working_capital_ytd" "tooltip" %}
+                      </td>
+                      {% endif %}
+                      <td class="data working-capital-op-exp {{ data|get:"working_capital_op_exp_alert" }}">
+                        {% setblock tooltip %}
+                            {% trans "Working Capital YTD" %}: {{ data|get:"working_capital_ytd"|format_currency:currency }}
+                            {% trans "Operating Expenses YTD" %}: {{ data|get:"op_exp_ytd"|format_currency:currency }}
+                        {% endsetblock %}
+                        {% percent_cell data "working_capital_op_exp" "tooltip" %}
+                      {% if season.country.country_code != 'GT' %}
+                      <td class="data working-capital-unc">
+                        {% setblock tooltip %}
+                            {% trans "Parchment Shipped YTD" %}: {{ data|get:"parchment_shipped_ytd"|format_weight:dashboard_weight }} {{ dashboard_weight.abbreviation }}
+                            {% trans "Working Capital YTD" %}: {{ data|get:"working_capital_ytd"|format_currency:currency }}
+                            {% trans "Parchment Value per KG" %}: {{ data|get:"parchment_value"|format_currency:currency }}
+                        {% endsetblock %}
+                        {% currency_cell_rounded data "working_capital_unc" "tooltip" %}
+                      </td>
+                      {% endif %}
+                      <td class="data cash-balance {{ data|get:"cash_balance_alert" }}">
+                        {% setblock tooltip %}
+                            {% trans "Last Cash Message" %}: {{ data|get:"amafaranga_last" }}
+                        {% endsetblock %}
+                        {% currency_cell_rounded data "cash_balance" "tooltip" "left" %}
+                      </td>
+                  </tr>
+              {% endfor %}
+
+              {% for wetmill in inactive %}
+                  <tr>
+                      <td class="name">
+                        <span style="float: left;color:#666;margin-right: 5px;">{{ wetmill.csp.sms_name|upper }}</span>
+                        <a href="{% url 'dashboard.wetmill_wetmill' wetmill.id %}?season={{ season.id }}">{{ wetmill.name }}</a>
+                      </td>
+                      {% if season.country.country_code != 'GT' %}
+                      <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                      {% else %}
+                      <td></td><td></td><td></td><td></td><td></td>
+                      {% endif %}
+                  </tr>
+              {% endfor %}
+              </tbody>
+          </table>
+      </div>
+      {% endif %}
+      <div id="complianceData" class="tab-pane">
+          <table id="complianceTable" class="table table-bordered table-striped table-condensed table-fixed-header">
+              <thead class="header">
+              <tr>
+                  <th id="header-wetmill" class="header
+              {% if order_by == 'wetmill' %}{% if reverse %}headerSortDown{% else %}headerSortUp{% endif %}{% endif %}">
+                      Wetmill
+                  </th>
+
+                {% for field in compliance_fields %}
+                    <th id="header-{{ field.slug }}" class="dashboard-data header {% if field.help %}help{% endif %}
+                {% if order_by == field.slug %}{% if reverse %}headerSortDown{% else %}headerSortUp{% endif %}{% endif %}" {% if field.help %}data-toggle="tooltip" title="{{ field.help|safe }}" {% if forloop.last %}data-placement="left"{% endif %}{% endif %}>{{ field.label }}</th>
+                {% endfor %}
+              </tr>
+              </thead>
+              <tbody>
+
+              <tr class="totals">
+                  <td class="name">{% trans "Totals" %}</td>
+                  <td class="data">{{ compliance_totals|get:"submission_count" }} / {{ compliance_totals|get:"ideal_submission_count" }}</td>
+                  <td class="data">{{ compliance_totals|get:"submission_pct"|format_percent }}</td>
+                  <td class="data">{{ compliance_totals|get:"advance_variance_pct"|format_percent }}</td>
+                  {% if season.country.country_code != 'GT' %}
+                  <td class="data">{{ compliance_totals|get:"balance_variance_pct"|format_percent }}</td>
+                  {% endif %}
+              </tr>
+
+              {% for data in wetmill_data %}
+                  <tr class="{% if not data.daily_current %}daily-late {% endif %}{% if not data.sitoki_current %}sitoki-late {% endif %}{% if not data.amafaranga_current %}amafaranga-late {% endif %}">
+                      <td class="name">
+                        <span style="float: left;color:#666;margin-right: 5px;">{{ data.csp.sms_name|upper }}</span>
+                        <a href="{% url 'dashboard.wetmill_wetmill' data.wetmill.id %}?season={{ season.id }}">{{ data.wetmill.name }}</a>
+                      </td>
+                      <td class="data submission-count {% warn_for_percentage data "submission_pct" %}">
+                          {{ data|get:"submission_count" }} / {{ data|get:"ideal_submission_count" }}
+                      </td>
+                      <td class="data submission-pct {% warn_for_percentage data "submission_pct" %}">
+                        {% setblock tooltip %}
+                            {% trans "Season start" %}: {{  data|get:"season_start" }}
+                            {% trans "Season end" %}: {{  data|get:"season_end" }}
+                        {% endsetblock %}
+                        {% percent_cell data "submission_pct" "tooltip" %}
+                      <td class="data advanced-variance-pct {% warn_for_variance data "advanced_variance_pct" %}">
+                        {% setblock tooltip %}
+                            {% trans "Cherry Advance Sum" %}: {{ data|get:"advanced_week"|format_currency:currency }}
+                            {% trans "Cash Advance Last" %}: {{ data|get:"advanced_last"|format_currency:currency }}
+                            {% trans "Variance" %}: {{ data|get:"advanced_variance"|format_currency:currency }}
+                            {% trans "Week of" %}: {{ data|get:"amafaranga_last" }}
+                        {% endsetblock %}
+                        {% percent_cell data "advanced_variance_pct" "tooltip" %}
+                      </td>
+                      {% if season.country.country_code != 'GT' %}
+                      <td class="data balance-variance-pct {% warn_for_variance data "balance_variance_pct" %}">
+                        {% setblock tooltip %}
+                          {% trans "Last Closing Balance" %}: {{ data|get:"balance_previous_close"|format_currency:currency }}
+                          {% trans "Last Opening balance" %}: {{ data|get:"opening_balance_last"|format_currency:currency }}
+                          {% trans "Variance" %}: {{ data|get:"balance_variance"|format_currency:currency }}
+                        {% endsetblock %}
+
+                        {% percent_cell data "balance_variance_pct" "tooltip" "left" %}
+                      </td>
+                      {% endif %}
+                  </tr>
+              {% endfor %}
+
+              {% for wetmill in inactive %}
+                  <tr>
+                      <td class="name">
+                          <span style="float: left;color:#666;margin-right: 5px;">{{ wetmill.csp.sms_name|upper }}</span>
+                        <a href="{% url 'dashboard.wetmill_wetmill' wetmill.id %}?season={{ season.id }}">{{ wetmill.name }}</a>
+                      </td>
+                      {% if season.country.country_code != 'GT' %}
+                      <td></td><td></td><td></td><td></td>
+                      {% else %}
+                      <td></td><td></td><td></td>
+                      {% endif %}
+                  </tr>
+              {% endfor %}
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+  <div class="row-fluid">
+    <div class="span6">
+      <div id="weekly"></div>
+      <div class="chart-help">{% trans "Compares total volume cherry purchased (actual) to date by each week to total predicted (target) volume by that week." %}</div>
+    </div>
+
+    <div class="span6">
+      <div id="total"></div>
+      <div class="chart-help">{% trans "Compares total volume cherry purchased (actual) for each week to total predicted (target) for each week." %}</div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block extra-script %}
+  {{ block.super }}
+  <script>
+    function showSeasonDashboard() {
+      var seasonId = $("#season").val();
+      document.location = "{% url 'dashboard.wetmill_dashboard' %}?season=" + seasonId;
+    }
+
+    function exportSeason() {
+      var seasonId = $("#season").val();
+      document.location = "{% url 'dashboard.wetmill_dashboardexport' %}?season=" + seasonId;
+    }
+
+    function switchCurrencyTo(currencyCode) {
+      var activeTabName = $('.nav-tabs .active').children('a').attr('href');
+      document.location = "{% url 'dashboard.wetmill_dashboard' %}?season={{ season.id }}&currency="+ currencyCode +"&weight={{ weight.abbreviation|upper }}&active_tab=" + activeTabName;
+    }
+
+    function switchWeightTo(weightCode) {
+      var activeTabName = $('.nav-tabs .active').children('a').attr('href');
+
+      document.location = "{% url 'dashboard.wetmill_dashboard' %}?season={{ season.id }}&currency={{ currency.currency_code }}&weight=" + weightCode + "&active_tab=" + activeTabName;
+    }
+
+    $(function(){
+        $('.more').tooltip({trigger: 'hover', container: 'body', delay: { show: 500, hide: 100 }});
+        $('.help').tooltip({trigger: 'hover', container: 'body', delay: { show: 500, hide: 100 }});
+
+        {% for field in stock_fields %}
+          {% if field.slug == order %}$('#stockTab').tab('show');{% endif %}
+        {% endfor %}
+        {% for field in finance_fields %}
+          {% if field.slug == order %}$('#financeTab').tab('show');{% endif %}
+        {% endfor %}
+        {% for field in compliance_fields %}
+          {% if field.slug == order %}$('#complianceTab').tab('show');{% endif %}
+        {% endfor %}
+    })
+  </script>
+  <script src="{{ STATIC_URL }}js/highcharts.js"></script>
+  <script src="{{ STATIC_URL }}js/table-fixed-header.js"></script>
+
+  <script>
+    $(function(){
+        $('#stockData .table-fixed-header').fixedHeader();
+    });
+
+    $(function(){
+      $('a[data-toggle="tab"]').on('shown', function (e) {
+        $('.tab-pane.active .table-fixed-header').fixedHeader();
+      })
+    });
+
+    $(function () {
+      var weeklyChart;
+      $(document).ready(function () {
+        weeklyChart = new Highcharts.Chart({
+          chart: {
+            renderTo: 'weekly',
+            type: 'spline'
+          },
+          credits: {
+            enabled: false
+          },
+          title: {
+            text: '{% trans "Cherry: Weekly Actual vs Target" %}'
+          },
+          xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+              second: '%b %e',
+              minute: '%b %e',
+              hour: '%b %e',
+              day: '%b %e',
+              week: '%b %e',
+              month: '%b %e',
+              year: '%b %e'
+            }
+          },
+          yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+              text: '{% trans "Cherry Collection" %} ({{ weight.abbreviation }})'
+            },
+            plotLines: [
+              {
+                value: 0,
+                width: 1,
+                color: '#808080'
+              }
+            ]
+          },
+          tooltip: {
+            formatter: function () {
+              return '<b>' + this.series.name + '</b><br/>' +
+                      Highcharts.dateFormat('%b %e', this.x) + ': ' + Highcharts.numberFormat(this.y, 0);
+            }
+          },
+          series: [
+            {
+              name: '{% trans "Predicted" %}',
+              data: [  {% for predicted in predicted_weekly %}
+                [{{ predicted.0 }}, {{ predicted.1|format_weight_int:weight }} ]
+                {% if not forloop.last %},{% endif %}
+              {% endfor %}]
+            },
+            {
+              name: '{% trans "Actual" %}',
+              data: [  {% for actual in actual_weekly %}
+                [{{ actual.0 }}, {{ actual.1|format_weight_int:weight }} ]
+                {% if not forloop.last %},{% endif %}
+              {% endfor %}]
+            }
+            {% if current_weekly %},
+            {
+              name: '{% trans "This Week" %}',
+              data: [  {% for current in current_weekly %}
+                [{{ current.0 }}, {{ current.1|format_weight_int:weight }} ]
+                {% if not forloop.last %},{% endif %}
+              {% endfor %}]
+            }
+            {% endif %}
+          ]
+        });
+      });
+
+    });
+
+    $(function () {
+      var totalChart;
+      $(document).ready(function () {
+        totalChart = new Highcharts.Chart({
+          chart: {
+            renderTo: 'total',
+            type: 'spline'
+          },
+          credits: {
+            enabled: false
+          },
+          title: {
+            text: '{% trans "Cherry: Cumulative Actual vs Target" %}'
+          },
+          xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+              second: '%b %e',
+              minute: '%b %e',
+              hour: '%b %e',
+              day: '%b %e',
+              week: '%b %e',
+              month: '%b %e',
+              year: '%b %e'
+            }
+          },
+          yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+              text: '{% trans "Cherry Collection" %} ({{ weight.abbreviation }})'
+            },
+            plotLines: [
+              {
+                value: 0,
+                width: 1,
+                color: '#808080'
+              }
+            ]
+          },
+          tooltip: {
+            formatter: function () {
+              return '<b>' + this.series.name + '</b><br/>' +
+                      Highcharts.dateFormat('%b %e', this.x) + ': ' + Highcharts.numberFormat(this.y, 0);
+            }
+          },
+          series: [
+            {
+              name: '{% trans "Predicted" %}',
+              data: [  {% for predicted in predicted_total %}
+                [{{ predicted.0 }}, {{ predicted.1|format_weight_int:weight }} ]
+                {% if not forloop.last %},{% endif %}
+              {% endfor %}]
+            },
+            {
+              name: '{% trans "Actual" %}',
+              data: [  {% for actual in actual_total %}
+                [{{ actual.0 }}, {{ actual.1|format_weight_int:weight }} ]
+                {% if not forloop.last %},{% endif %}
+              {% endfor %}]
+            }
+            {% if current_total %},
+            {
+              name: '{% trans "This Week" %}',
+              data: [  {% for current in current_total %}
+                [{{ current.0 }}, {{ current.1|format_weight_int:weight }} ]
+                {% if not forloop.last %},{% endif %}
+              {% endfor %}]
+            }
+            {% endif %}
+          ]
+        });
+      });
+
+    });
+  </script>
+{% endblock %}
+
+{% block extra-style %}
+  <style>
+    .tooltip-inner {
+        white-space:pre-wrap;
+        text-align:right;
+        max-width: 250px;
+    }
+
+    .table tr.totals td {
+      font-weight: bold;
+    }
+
+    td.data a {
+      color: #333;
+    }
+
+    td.data a:hover {
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    td.data.performance-alert a, td.data.performance-alert a:hover {
+      color: #f33;
+    }
+
+    #dashboardTabs {
+      margin-bottom: 0;
+    }
+
+    .form-search {
+      margin-bottom: 0;
+    }
+
+    .table th, .table td {
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .table thead th {
+      vertical-align: middle;
+    }
+
+    .table td.data {
+      text-align: right;
+    }
+
+    .table td.name {
+      width: 100px;
+      padding-left: 15px;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    .table-bordered {
+      border-top: 0;
+      -webkit-border-top-left-radius: 0;
+      -moz-border-top-left-radius: 0;
+      border-top-left-radius: 0;
+      -webkit-border-top-right-radius: 0;
+      -moz-border-top-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .table-bordered thead:first-child tr:first-child > th:first-child, .table-bordered tbody:first-child tr:first-child > td:first-child {
+      -webkit-border-top-left-radius: 0;
+      border-top-left-radius: 0;
+      -moz-border-radius-topleft: 0;
+    }
+
+    th.dashboard-data {
+        width: 14%;
+    }
+
+    #complianceTable th.dashboard-data {
+        width: 25%;
+    }
+
+    #financeData th.dashboard-data {
+        width: 14%;
+    }
+
+    tr.daily-late td.cherry-last, tr.daily-late td.cherry-ytd, tr.daily-late td.cherry-variance {
+        background-color: #FFFB76 !important;
+    }
+
+    tr.sitoki-late td.parchment-shipped-ytd, tr.sitoki-late td.parchment-stored-ytd,
+    tr.sitoki-late td.est-parchment-tabled, tr.sitoki-late td.est-parchment-processed {
+        background-color: #FFFB76 !important;
+    }
+
+    tr.daily-late td.cherry-price-last, tr.daily-late td.cherry-price-ytd {
+        background-color: #FFFB76 !important;
+    }
+
+    tr.amafaranga-late td.working-capital-op-exp, tr.amafaranga-late td.working-capital-unc,
+    tr.amafaranga-late td.cash-balance, tr.amafaranga-late td.working-capital-ytd {
+        background-color: #FFFB76 !important;
+    }
+
+    td.warn {
+        background-color: #FFFB76 !important;
+    }
+
+    h2 {
+        font-weight: 400;
+    }
+
+    .chart-help {
+      margin-left: 60px;
+      margin-right: 60px;
+      color: #888;
+      text-align: center;
+    }
+
+    .number_widget{
+        float: left;
+        padding-left: 5.5%;
+        padding-right: 0.5%;
+    }
+
+
+    .metric {
+        display: inline-block;
+        padding-bottom: 15px;
+    }
+    div.big {
+        margin-top: -5px;
+        font-size: 42px;
+        font-weight: bold;
+        color: #849F32;
+        line-height: 1;
+        letter-spacing: -1px;
+        text-align: right;
+    }
+    span.med {
+        font-size: 24px;
+        font-weight: bold;
+        color: #849F32;
+        margin-right: 0px;
+    }
+    div.big_label {
+        font-size: 13px;
+        font-weight: bold;
+        color: #666;;
+        text-align: right;
+        width:100px;
+    }
+
+    .summary table {
+        width:  100%;
+        text-align:  center;
+    }
+
+    .compliance table {
+        float: right;
+        font-size:  12px;
+        line-height: 100%;
+    }
+
+    .compliance td.compliance-label {
+        padding-right: 5px;
+        text-align: right;
+        font-weight: 600;
+        color: #719E41;
+    }
+
+    .compliance td.compliance-value {
+        text-align: right;
+    }
+
+    .compliance td.compliance-value a {
+        color: #333;
+    }
+
+    .compliance td.compliance-value.missing {
+        background-color: #fffb76;
+        border: 1px solid #ccc;
+        padding: 1px 3px;
+    }
+
+    .mini {
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: -2px;
+        padding:  0;
+        color: #719E41;
+    }
+
+    table .header-fixed {
+      position: fixed;
+      top: 40px;
+      z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+      border-bottom: 1px solid #d5d5d5;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+      -moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+      box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
+    }
+
+    .country_img {
+      padding-right: 5px;
+    }
+
+  </style>
+{% endblock %}

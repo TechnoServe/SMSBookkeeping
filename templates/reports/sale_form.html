@@ -1,0 +1,117 @@
+{% extends "smartmin/update.html" %}
+
+{% load smartmin i18n %}
+
+{% block form-span %}span13{% endblock %}
+
+{% block fields %}
+  <fieldset>
+    {% render_field "buyer" %}
+    {% render_field "date" %}
+  </fieldset>
+
+  <fieldset class="field-group">
+    <legend>{% trans "Manifest" %}</legend>
+
+    <div class="clearfix control-group sale-component  {% if has_component_errors %}error{% endif %}">
+      <label class="control-label">{% trans "Grade and Volume" %}</label>
+      <div class="controls">
+	{% for component_field in component_fields %}
+	  {% with form|field:component_field.grade_field as grade_field %}
+	    {% with form|field:component_field.volume_field as volume_field %}
+	      <div class="component" id="component__{{ forloop.counter0 }}" {% if forloop.counter0 >= component_count %} style="display:none;"{% endif %}>
+              {{ grade_field }} {{ volume_field }} Kg &nbsp;&nbsp;&nbsp;<a href="#" class="btn add_button">{% trans "Add" %}</a>
+	      </div>
+	    {% endwith %}
+	  {% endwith %}
+	{% endfor %}
+        
+	<span class="help-block">{% trans "Enter the grade and volume of this component of the sale" %}</span>
+      
+	{% if form_field.errors %}
+	  <span class="help-block field-errors">{{ form_field.errors }}</span>
+	{% endif %}
+      </div>
+    </div>
+  </fieldset>
+
+<fieldset class="field-group">
+  <legend>{% trans "Pricing" %}</legend>
+  {% render_field "price" %}
+  {% render_field "currency" %}
+  {% render_field "exchange_rate" %}
+
+  {% if "is_local" in fields %}
+    {% render_field "is_local" %}
+  {% endif %}
+</fieldset>
+
+<fieldset class="field-group">
+  <legend>{% trans "Sale Type" %}</legend>
+  {% render_field "sale_type" %}
+  {% render_field "adjustment" %}
+</fieldset>
+
+<input type="hidden" name="component_count" value="{{ component_count }}" id="component_count"></input>
+
+{% endblock %}
+
+{% block extra-script %}
+<script>
+  function update_components(){
+    var component_count = parseInt($("#component_count").attr("value"));
+
+    for(var i=0; i<10; i++){
+      var id = "#component__" + i;
+
+      if (i < component_count){
+        $(id).show();
+      } else {
+        $(id).hide();
+      }
+
+      if (i+1 < component_count){
+        $(id).find(".add_button").hide();
+      }
+    }
+  }
+
+  $(function(){
+    $(".add_button").click(function(){
+       var current = parseInt($("#component_count").attr("value"));
+       $("#component_count").attr("value", current+1);
+       update_components();
+    });
+
+    $("#id_sale_type").change(function(){
+       var type = $("#id_sale_type").val();
+       if (type == 'LOC'){
+         $("#id_adjustment").parents("div.form-field").hide();
+       } else {
+         $("#id_adjustment").parents("div.form-field").show();
+       }
+    });
+  });
+</script>
+{% endblock %}
+
+{% block extra-style %}
+{{ block.super }}
+<style>
+  div.sale-component select {
+    width: 170px;
+  }
+
+  div.sale-component input {
+    width: 164px;
+  }
+
+  div.sale-component {
+    color: #888;
+  }
+
+  div.component {
+    margin-bottom: 5px;
+  }
+</style>
+{% endblock %}

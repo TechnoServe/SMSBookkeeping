@@ -1,0 +1,39 @@
+{% extends "smartmin/read.html" %}
+{% load smartmin i18n %}
+
+{% block read-buttons %}
+<div class="pull-right">
+  <a class="btn btn-primary" href="#">{% trans "Send Message Now" %} &raquo;</a>
+</div>
+{% endblock %}
+
+{% block post-fields %}
+<h3>{% trans "Preview" %}</h3>
+<table class="table table-bordered table-striped">
+  <tbody>
+    {% for message in test_messages %}
+    <tr>
+      <td class="msg-wetmill">{{ message.wetmill.name }}</td>
+      <td class="msg-text" width="80%">{{ message.text }}</td>
+    </tr>
+    {% empty %}
+    <tr>
+      <td colspan="2"><b>{% trans "No matching recipients, no message would be sent" %}</b></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+
+{% block extra-style %}
+<style>
+  td.read-label {
+    white-space: nowrap;
+    width: 50px;
+  }
+
+  td.msg-wetmill {
+    white-space: nowrap;
+  }
+</style>
+{% endblock %}

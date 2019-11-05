@@ -1,0 +1,308 @@
+[
+  {
+    "pk": 1,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Umushoramari yakiriye {{ pakg }} ibiro bya kawa A mu mufuka {{ pab }} n'ibiro {{ pbkg }} bya kawa b mu mifuka {{ pbb }} ku modoka {{ license }}. Ubutohe bungana na {{ moisture }}% na manota gusogo {{ score }}. Nomero yemeza: {{ confirmation_id }}",
+      "message_en_us": "Your CSP received {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} of Parchment B in {{ pbb }} bags on vehicle {{ license }}. The moisture content is {{ moisture }}% and the cupping score is {{ score }}. Confirmation id: {{ confirmation_id }}",
+      "form": 11,
+      "created": "2011-03-07T09:41:50",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Your CSP received {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} of Parchment B in {{ pbb }} bags on vehicle {{ license }}. The moisture content is {{ moisture }}% and the cupping score is {{ score }}. Confirmation id: {{ confirmation_id }}",
+      "reporter_types": [
+      ],
+      "slug": "acc",
+      "description": "Message sent to accountant when parchment is received."
+    }
+  },
+  {
+    "pk": 2,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "{{ acc.wetmill.name }} wohereje {{ pakg }} ibiro bya kawa A mu {{ pab }} mumifuka {{ pbkg }} ibiro by'ikawa B mu {{ pbb }} imifuka kumodoka {{ license }}. Ubutumwa bwemeza: {{ confirmation_id }}",
+      "message_en_us": "{{ acc.wetmill.name }} sent {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} kg of Parchment B in {{ pbb }} bags on vehicle {{ license }}.  Confirmation id: {{ confirmation_id }}",
+      "form": 3,
+      "created": "2011-03-07T09:43:24",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ acc.wetmill.name }} sent {{ pakg }} kg of Parchment A in {{ pab }} bags and {{ pbkg }} kg of Parchment B in {{ pbb }} bags on vehicle {{ license }}.  Confirmation id: {{ confirmation_id }}",
+      "reporter_types": [
+      ],
+      "slug": "csp",
+      "description": "Message sent to CSP when parchment is shipped."
+    }
+  },
+  {
+    "pk": 3,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Hagemuwe: {{ cherry }} kg. kashi isigye: {{ cash_b }} RFW.Umwenda usigaye: {{ credit_b }} RFW.ibura: {{ missing_cv }}RFW. Ubutumwa bwemeza: {{ confirmation_id|codify:\"CH\" }}.",
+      "message_en_us": "Cherry Delivered: {{ cherry }} kg. Cash balance: {{ cash_b }} RWF. Credit balance: {{ credit_b }} RWF. Missing Coffee: {{ missing_cv }} RWF. Confirmation Id: {{ confirmation_id|codify:\"CH\" }}",
+      "form": 6,
+      "created": "2011-03-07T09:44:01",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Cherry Delivered: {{ cherry }} kg. Cash balance: {{ cash_b }} RWF. Credit balance: {{ credit_b }} RWF. Missing Coffee: {{ missing_cv }} RWF. Confirmation Id: {{ confirmation_id|codify:\"CH\" }}",
+      "reporter_types": [
+      ],
+      "slug": "cpo",
+      "description": "Message sent to CPO when a cherry delivery is made."
+    }
+  },
+  {
+    "pk": 4,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Igitabo cyandikwamo amafaranga yinjiye nasohotse cyoherejwe n'uruganda {{ acc.wetmill.name }}.",
+      "message_en_us": "{{ acc.wetmill.name }} sent a cash report. Total Cash In for week was {{ tot_cin }}. Total Cash Out for week was {{ tot_cout }}. Net balance is {{ balance }}.",
+      "form": 4,
+      "created": "2011-03-07T10:50:03",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ acc.wetmill.name }} sent a cash report. Total Cash In for week was {{ tot_cin }}. Total Cash Out for week was {{ tot_cout }}. Net balance is {{ balance }}.",
+      "reporter_types": [
+      ],
+      "slug": "obs",
+      "description": "Sent to observers of a wet mill when a cash ledger is sent.\r\n\r\nAvailable variables: {{ acc.name }} {{ acc.wetmill.name }} {{ wcap }} {{ income }} {{ advances }} {{ cash_salaries }} {{ scwages }} {{ transwages }} {{ casualwages }} {{ cashout }} {{ advance_disc }}"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Kawa itonoye yatwawe mubuhuniko {{ dlid }}. Icyiciro A: {{ amoved }} Icyiciro B: {{ bmoved }}   ibitumbwe ku ikawa: {{ cherry_to_parchment }}",
+      "message_en_us": "Parchment was moved to store from day lot {{ dlid }}. Grade A: {{ amoved }} Grade B: {{ bmoved }}  Cherry to Parchment: {{ cherry_to_parchment }}",
+      "form": 2,
+      "created": "2011-03-07T10:52:56",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Parchment was moved to store from day lot {{ dlid }}. Grade A: {{ amoved }} Grade B: {{ bmoved }}  Cherry to Parchment: {{ cherry_to_parchment }}",
+      "reporter_types": [
+      ],
+      "slug": "obs",
+      "description": "Sent to wet mill observers when a store message is sent.\r\n\r\nAvailable variables: {{ acc.name }} {{ acc.wetmill.name }} {{ cherry_to_parchment }} {{ gradea_to_parchment }} {{ amoved }} {{ bmoved }} {{ dlid }}"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "{{ name }} {{ last_name }} yiyandikishije nk'ukusanya kawa wo kuri site w'uruganda rwanyu.  inomero imuranga ni: {{ confirmation_id }}",
+      "message_en_us": "{{ name }} {{ last_name }} has registered as a site collector for your wet mill.  Their id is: {{ confirmation_id }}",
+      "form": 5,
+      "created": "2011-03-07T10:58:38",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ name }} {{ last_name }} has registered as a site collector for your wet mill.  Their id is: {{ confirmation_id }}",
+      "reporter_types": [
+      ],
+      "slug": "acc",
+      "description": "Sent to accountants for a wet mill when a new CPO registers.\r\n\r\nAvailable variables: {{ wetmill.name }} {{ confirmation_id }} {{ name }} {{ last_name }}"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Umucunga mari {{ user.name }} {{ user.last_name }} yasezeye muruganda {{ user.wetmill.name }}",
+      "message_en_us": "Accountant {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "form": 7,
+      "created": "2011-03-07T11:00:14",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Accountant {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "reporter_types": [
+      ],
+      "slug": "acc_leave",
+      "description": "Sent to wet mill observers when an accountant leaves.\r\n\r\nAvailable variables: {{ user.name }} {{ user.last_name }} {{ user.wetmill.name }}"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Ukusanya kawa kuri site {{ user.name }} {{ user.last_name }} yasezeye kuruganda {{ user.wetmill.name }}",
+      "message_en_us": "Site collector {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "form": 7,
+      "created": "2011-03-07T11:01:20",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Site collector {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "reporter_types": [
+      ],
+      "slug": "sc_leave",
+      "description": "Sent to accountants when a site collector leaves.\r\n\r\nAvailable variables: { user.name }} {{ user.last_name }} {{ user.wetmill.name }}"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Indorerezi {{ user.name }} {{ user.last_name }} yasezeye muruganda {{ user.wetmill.name }}",
+      "message_en_us": "Observer {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "form": 7,
+      "created": "2011-03-07T11:02:14",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Observer {{ user.name }} {{ user.last_name }} has left the wet mill {{ user.wetmill.name }}",
+      "reporter_types": [
+      ],
+      "slug": "obs_leave",
+      "description": "Sent to accountants when a wet mill observer leaves.\r\n\r\nAvailable variables: {{ user.name }} {{ user.last_name }} {{ user.wetmill.name }}"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Umushora mari {{ user.name }} {{ user.last_name }} yiyandikuje.",
+      "message_en_us": "CSP Officer {{ user.name }} {{ user.last_name }} has unregistered themselves.",
+      "form": 7,
+      "created": "2011-03-07T11:03:55",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "CSP Officer {{ user.name }} {{ user.last_name }} has unregistered themselves.",
+      "reporter_types": [
+      ],
+      "slug": "csp_leave",
+      "description": "Sent to accountants when a CSP officer unregisters.\r\n\r\nAvailable variables: {{ user.name }} {{ user.last_name }} {{ user.wetmill.name }}"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "{{ name }} {{ last_name }} yiyandikishije nk'indorerezi y'uruganda {{ wetmill.name }}.",
+      "message_en_us": "{{ name }} {{ last_name }} has registered as an observer for the {{ wetmill.name }} wet mill.",
+      "form": 13,
+      "created": "2011-03-07T11:05:04",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ name }} {{ last_name }} has registered as an observer for the {{ wetmill.name }} wet mill.",
+      "reporter_types": [
+      ],
+      "slug": "acc",
+      "description": "Sent to accountants of a wet mill when a new observer registers.\r\n\r\nAvailable variables: {{ wetmill.name }} {{ name }} {{ last_name }} {{ confirmation_id }}"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Ugaruye {{ cash }}. amafaranga yawe asigaye kashi  ni {{ cash_b }}, umwenda wawe usigaye ni {{ credit_b }}.",
+      "message_en_us": "You have returned {{ cash }}.  Your cash balance is {{ cash_b }}, your credit balance is {{ credit_b }}.",
+      "form": 15,
+      "created": "2011-03-07T11:11:22",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "You have returned {{ cash }}.  Your cash balance is {{ cash_b }}, your credit balance is {{ credit_b }}.",
+      "reporter_types": [
+      ],
+      "slug": "cpo",
+      "description": "Sent to the site collector that is returning an advance.\r\n\r\nAvailable variables:  {{ acc.name }} {{ acc.wetmill.name }} {{ cash }} {{ cash_b }} {{ credit_b }} {{ missing_cv }} {{ cpo.name }} {{ cpo.last_name }}"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Raporo ya {{ wetmill.name }}: ibitumbwe byakusanyijwe: {{ cherry }} ibyakoreshejwe: {{ paid }} ikigero cyigiciro: {{ avg_price }} RWF/kubiro kawa itonoye yahunitswe: {{ stored }}ibiro  ibyoherejwe: {{ sent }} ibiro ibyasigaye: {{ balance }} mu mafaranga",
+      "message_en_us": "Report for {{ wetmill.name }}: cherry collected: {{ cherry }} spent: {{ paid }} avg price: {{ avg_price }} RWF/kg parchment stored: {{ stored }}kg  sent: {{ sent }}kg balance: {{ balance }} RWF ",
+      "form": 16,
+      "created": "2011-03-23T13:56:14",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Report for {{ wetmill.name }}: cherry collected: {{ cherry }} spent: {{ paid }} avg price: {{ avg_price }} RWF/kg parchment stored: {{ stored }}kg  sent: {{ sent }}kg balance: {{ balance }} RWF ",
+      "reporter_types": [
+      ],
+      "slug": "obs",
+      "description": "Sent to a wet mill's observers when a summary report is delivered."
+    }
+  },
+  {
+    "pk": 14,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "FRW ku ntangiro y'icyumweru: {{ opening_balance }} fr; FRW yinjiye: {{ cash_inflow }} fr;  FRW yasohotse: {{ cash_outflow }} fr; , FRW Asigaye: {{ closing_balance }} fr.",
+      "message_en_us": "Week's opening balance: {{ opening_balance }} fr; cash inflows: {{ cash_inflow }} fr;  cash outflows: {{ cash_outflow }} fr; closing cash balance: {{ closing_balance }} fr.",
+      "form": 18,
+      "created": "2012-01-23T11:16:33",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Week's opening balance: {{ opening_balance }} fr; cash inflows: {{ cash_inflow }} fr;  cash outflows: {{ cash_outflow }} fr; closing cash balance: {{ closing_balance }} fr.",
+      "reporter_types": [
+      ],
+      "slug": "amafaranga",
+      "description": "Sent to wetmill observers when an Amafaranga message is confirmed by the accountant."
+    }
+  },
+  {
+    "pk": 15,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "{{ wetmill.name }} yaguze ibiro {{ cherry_purchased }}  byibitumbwe ku giciro {{ cherry_price }} fr ku kiro. FRW {{ cash_balance }} fr yasigaye kuri site. Umwenda ku bahinzi  ni {{ credit_outstanding }} fr. ",
+      "message_en_us": "{{ wetmill.name }} purchased {{ cherry_purchased }} kilograms of cherry today at a price of {{ cherry_price }} fr per kilo. Total cash balance at sites is {{ cash_balance }} fr and total credit outstanding to farmers is {{ credit_outstanding }} fr.",
+      "form": 19,
+      "created": "2012-01-23T13:51:47",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "{{ wetmill.name }} purchased {{ cherry_purchased }} kilograms of cherry today at a price of {{ cherry_price }} fr per kilo. Total cash balance at sites is {{ cash_balance }} fr and total credit outstanding to farmers is {{ credit_outstanding }} fr.",
+      "reporter_types": [
+      ],
+      "slug": "ibitumbwe",
+      "description": "Sent to observers of the wetmill when an Ibitumbwe message is confirmed."
+    }
+  },
+  {
+    "pk": 16,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Uruganda {{ wetmill.name }} Rwanuye ibiro {{ total_stored }} by'ikawa yumye mu cyumweru gishize {{ week_end }};  Ufite Ibiro {{ in_store }} by'ikawa yumye mububiko",
+      "message_en_us": "Wetmill {{ wetmill.name }} moved {{ total_stored }} kilos of parchment into the store in the week ending {{ week_end }};  you have {{ in_store }} kilos of parchment in the store in total.",
+      "form": 20,
+      "created": "2012-01-23T14:38:13",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Wetmill {{ wetmill.name }} moved {{ total_stored }} kilos of parchment into the store in the week ending {{ week_end }};  you have {{ in_store }} kilos of parchment in the store in total.",
+      "reporter_types": [
+      ],
+      "slug": "sitoki",
+      "description": "Sent to observers of a wetmill when the sitoki message is confirmed."
+    }
+  },
+  {
+    "pk": 17,
+    "model": "cc.messagecc",
+    "fields": {
+      "message_rw": "Message with keyword {{ keyword }} cancelled",
+      "message_en_us": "Message with keyword {{ keyword }} cancelled",
+      "form": 14,
+      "created": "2012-01-23T14:38:13",
+      "message_am": null,
+      "message_ke_sw": null,
+      "message_tz_sw": null,
+      "message": "Message with keyword {{ keyword }} cancelled",
+      "reporter_types": [
+      ],
+      "slug": "undo",
+      "description": "Sent to observers of a wetmill when a message is undone."
+    }
+  }
+]

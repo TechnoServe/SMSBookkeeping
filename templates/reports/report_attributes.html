@@ -1,0 +1,88 @@
+{% extends "smartmin/update.html" %}
+
+{% load smartmin i18n %}
+
+{% block form-span %}span13{% endblock %}
+
+{% block fields %}
+{% with report.season.country.currency as curr %}
+
+{% with curr.currency_code as unit %}
+<fieldset class="field-group">
+  <legend>{% trans "Working Capital" %}</legend>
+  {% with "working_capital" as field %}
+  {% include "reports/attribute_field.html" %}
+  {% endwith %}
+  {% with "working_capital_repaid" as field %}
+  {% include "reports/attribute_field.html" %}
+  {% endwith %}
+</fieldset>
+
+{% if report.season.has_misc_revenue %}
+<fieldset class="field-group">
+  <legend>{% trans "Miscellaneous Revenue" %}</legend>
+  {% with "miscellaneous_revenue" as field %}
+  {% include "reports/attribute_field.html" %}
+  {% endwith %}
+</fieldset>
+{% endif %}
+
+{% endwith %}
+
+{% if cashuse_fields %}
+{% with curr.currency_code as unit %}
+{% for cashuse in cashuse_fields %}
+<fieldset class="field-group">
+  <legend>{{ cashuse.name }}</legend>
+  {% with cashuse.field as field %}
+  {% include "reports/attribute_field.html" %}
+  {% endwith %}
+</fieldset>
+{% endfor %}
+{% endwith %}
+{% endif %}
+
+{% if cashsource_fields %}
+{% with curr.currency_code as unit %}
+{% for cashsource in cashsource_fields %}
+<fieldset class="field-group">
+  <legend>{{ cashsource.name }}</legend>
+  {% with cashsource.field as field %}
+  {% include "reports/attribute_field.html" %}
+  {% endwith %}
+</fieldset>
+{% endfor %}
+{% endwith %}
+{% endif %}
+
+{% if payment_fields %}
+{% for payment in payment_fields %}
+<fieldset class="field-group">
+  <legend>{{ payment.name }}</legend>
+  {% for payment_field in payment.fields %}
+  {% with payment_field.name as field %}
+  {% with payment_field.unit as unit %}  
+  {% include "reports/attribute_field.html" %}
+  {% endwith %}
+  {% endwith %}
+  {% endfor %}
+</fieldset>
+{% endfor %}
+{% endif %}
+
+{% endwith %}
+{% endblock %}
+
+{% block extra-style %}
+<style>
+div.input {
+    color: #888;
+}
+
+input[type=text] {
+   text-align: right;
+   width: 300px;
+}
+</style>
+{% endblock %}
+

@@ -1,0 +1,57 @@
+{% extends "xforms/layout.html" %}
+{% block title %}XForms{% endblock %}
+
+{% block content %}
+
+<script type="text/javascript">
+function deleteForm(form_id, form_name) {
+	if (confirm("Are you sure you want to delete \"" + form_name + "\" ?")) {
+		document.form.action += form_id + "/delete/";
+		document.form.submit();
+	}
+}
+</script>
+
+<table width="100%" class="form_table"> 
+  <thead> 
+    <tr> 
+      <th class="form_name_col">Name</th> 
+      <th class="form_description_col">Description</th> 
+      <th class="form_options_col"></th> 
+    </tr> 
+  </thead> 
+  <tbody>
+    {% if xforms %}
+    {% for xform in xforms %}
+    <tr class="form_table_row">
+      <td><a href="/xforms/{{ xform.pk }}/view/"><b>{% if xform.active %}{{ xform.name }}{% else %}<font color="grey">{{ xform.name }}</font>{% endif %}</b></a></td>
+      <td>{{ xform.description }}</td>
+      <td nowrap="true">
+        <a class="btn" href="javascript:void(0);" onclick="deleteForm('{{xform.pk}}','{{xform.name|addslashes}}');">Delete</a>
+	<a href="/xforms/{{ xform.pk }}/submissions/" class="btn">Subs ({{ xform.submissions.all.count }})</a>
+      </td>
+    </tr>
+    {% endfor %}
+    {% else %}
+    <tr class="form_table_row">
+      <td colspan=3><i>No existing Forms.  Click 'Add New Form' to create one.</i></td>
+    </tr>
+    {% endif %}
+  </tbody>
+</table>
+<br/>
+
+<div class="buttons"> 
+    <a href="/xforms/new/" style="float:left"> 
+      <img border="0" src="{{ STATIC_URL }}silk/add.png" alt=""/>Add New Form
+    </a> 
+</div> 
+<br class="clear"/>
+
+<br/><br/>
+
+<form name="form" method="post" action="/xforms/">
+{% csrf_token %}
+</form>
+
+{% endblock %}

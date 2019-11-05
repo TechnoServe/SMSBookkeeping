@@ -1,0 +1,239 @@
+{% extends "smartmin/list.html" %}
+
+{% load i18n %}
+
+{% block search-form %}
+<form class="form-search">
+  <select name="backend_id" class="backends"> 
+    <option value="0" {% if not backend_id %}selected{% endif %}>{% trans "All" %}</option>
+    {% for backend in backends %}
+    <option value="{{ backend.id }}" {% if backend_id == backend.id %}selected{% endif %}>{{ backend.name }}</option>
+    {% endfor %}
+  </select>
+  <input type="text" class="input-medium search-query" name="search" value="{{ search }}">
+  <button type="submit" class="btn">{% trans "Search" %}</button>
+</form>
+{% endblock %}
+
+{% block table-buttons %}
+{% if perms.rapidsms_httprouter.message_csv %}
+<a style="margin-left: 5px" class="btn pull-right" href="{% url 'console.message_csv' %}">{% trans "Export" %}</a>
+{% endif %}
+{% if perms.rapidsms_httprouter.message_monthly %}
+<a class="btn pull-right" href="{% url 'console.message_monthly' %}">{% trans "Monthly Usage" %}</a>
+{% endif %}
+{% endblock table-buttons %}
+
+{% block pre-content %}
+<div class="page-header"><h2>{% trans "SMS Message Log" %}</h2></div>
+<div id="message_activity" style="min-width: 700px; height: 160px; margin: 0 auto"></div>
+{% endblock %}
+
+{% block pjax %}
+{{ block.super }}
+<script>
+$("td.value-number").click(function(){
+  $("input.search-query").val($(this).text().trim());
+  $("form.form-search").submit();
+});
+</script>
+{% endblock %}
+
+
+{% block post-content %}
+{% load smartmin %}
+
+<div class="row" style="padding-top: 10px">
+  <div class="span12">
+    <div class="well" style="padding-bottom: 0px; padding-top: 0px;">
+      <table class="table">
+	<tr class="first">
+	  <td width="10"><div class="direction cin">&nbsp;</div></td><td width="120">{% trans "Incoming test message" %}</td>
+	  <td width="10"><div class="direction in">&nbsp;</div></td><td width="120">{% trans "Incoming message" %}</td>
+	  <td width="10"><div class="direction queued">&nbsp;</div></td><td width="120">{% trans "Outgoing message still unsent" %}</td>
+	</tr>
+	<tr>
+	  <td><div class="direction cout">&nbsp;</div></td><td>{% trans "Outgoing test message" %}</td>
+	  <td width="10"></td><td width="120"></td>
+	  <td><div class="direction sent">&nbsp;</div></td><td>{% trans "Outgoing message sent" %}</td>
+	</tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="row">  
+  <br/><br/>
+
+  <div class="tester module span12">
+    <div class="page-header">
+      <h2>{% trans "Message Tester" %}</h2>
+    </div>
+    <div>
+      <div class="well">
+        {% trans "You can test the functionality of the system by pretending to be a user here.  Enter the phone number you want to simulate and the message you want to send into the system.  The reply will appear above in the message log." %}
+      </div>
+      <form method="POST" class="uniForm">
+        <div class="clearfix form-field">
+          <label>{% trans "Sender" %}: </label><div class="input">{{ form.sender }}</div>
+        </div>
+        <div class="clearfix form-field">
+          <label>{% trans "Message" %}: </label><div class="input">{{ form.text }}</div>
+        </div>
+
+        <input type="hidden" name="backend" value="{{ tester_backend }}" />
+
+        <div class="actions">
+          <input class="btn primary" type="submit" value="Test" />
+        </div>
+        {% csrf_token %}
+      </form>
+    </div>
+  </div>
+  <br/>
+</div>
+{% endblock %}
+
+{% block extra-style %}
+<style>
+  tr.first td {
+    border-top: 0px;
+  }
+
+  td.value-date {
+      width: 130px;
+      text-align: right;
+      white-space: nowrap;
+  }
+
+  td.value-direction {
+    width: 18px;
+    text-align: center;
+  }
+
+  td.value-number {
+    width: 100px;
+  }
+
+  td.value-direction div {
+      width: 10px;
+      height: 15px;
+      background-repeat: no-repeat;
+      margin: auto;
+  }
+
+  div.direction {
+      width: 10px;
+      height: 15px;
+      background-repeat: no-repeat;
+      margin: auto;
+  }
+
+  div.in {
+      background-image: url("{{ STATIC_URL }}console/in.png");
+  }
+
+  div.delivered {
+      background-image: url("{{ STATIC_URL }}console/delivered.png");
+  }
+
+  div.sent {
+      background-image: url("{{ STATIC_URL }}console/sent.png");
+  }
+
+  div.queued {
+      background-image: url("{{ STATIC_URL }}console/queued.png");
+  }
+
+  div.cin {
+      background-image: url("{{ STATIC_URL }}console/cin.png");
+  }
+
+  div.cout {
+      background-image: url("{{ STATIC_URL }}console/cout.png");
+  }
+
+  td.value-number:hover {
+      cursor: pointer;
+  }
+
+  .backends {
+    width: 200px;
+  }
+</style>
+{% endblock %}
+
+{% block extra-script %}
+{{ block.super }}
+<script language="javascript" type="text/javascript" src="{{ STATIC_URL }}js/highcharts.js"></script>
+<script>
+  $(function () {
+    var chart;
+    $(document).ready(function() {
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'message_activity',
+                type: 'column'
+            },
+            colors: [
+                '#4572A7', 
+         	'#89A54E', 
+            ],
+            credits: {
+                 enabled: false
+            },
+            title: {
+                text: null
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: { 
+                    month: '%b %e',
+                    year: '%b'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            yAxis: {
+                title: {
+                     text: 'Messages'
+                },
+                min: 0
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.series.name +'</b><br/>' + 
+                        Highcharts.dateFormat('%B %e', this.x) +' - '+ this.y;
+                }
+            },
+            
+            series: [
+                {
+                stacking: 'normal',
+                name: 'Incoming',
+                data: [
+                    {% for count in incoming_counts %}
+                    [Date.UTC( {{ count.created.year }},  {{ count.created.month}}-1 , {{ count.created.day }} ), {{ count.created_on_count }}  ]
+                    {% if not forloop.last %},{% endif %}
+                    {% endfor %}
+                ]
+                }
+                ,
+                
+                {
+                stacking: 'normal',
+                name: 'Outgoing',
+                data: [
+                    {% for count in outgoing_counts %}
+                    [Date.UTC( {{ count.created.year }},  {{ count.created.month}}-1 , {{ count.created.day }} ), {{ count.created_on_count }}  ]
+                    {% if not forloop.last %},{% endif %}
+                    {% endfor %}
+                ]
+                }
+            ]
+        });
+    });
+  });
+</script>
+{% endblock %}

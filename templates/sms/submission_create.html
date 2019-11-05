@@ -1,0 +1,38 @@
+{% extends "smartmin/create.html" %}
+
+{% load i18n %}
+
+{% block pre-content %}
+    <div class="page-header">
+        <div class="pull-right">
+            <a class="btn btn-primary" href="{% url 'dashboard.wetmill_wetmill' wetmill.id %}?season={{ season.id }}">{% trans "Back" %}</a>
+        </div>
+        <h2>{{ wetmill.name }} - {{ title }}</h2>
+        <div class='subheader'>{{ season }} - {{ day }}</div>
+    </div>
+{% endblock %}
+
+{% block form-buttons %}
+    <div class="form-actions">
+        {% if not readonly %}
+        <input type="submit" class="btn btn-primary" value="{% trans "Save" %}">
+        {% endif %}
+        {% if delete_url %}
+        <a href="{{ delete_url }}" class="btn btn-danger posterize" style="margin-left: 400px">{% trans "Delete" %}</a>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block extra-style %}
+  {{ block.super }}
+    <style>
+        h2 {
+            font-weight: 400;
+            margin-bottom: 0px;
+        }
+
+        .subheader {
+            color: #719E41;
+        }
+    </style>
+{% endblock %}

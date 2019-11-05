@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}XForms{% endblock %}
+
+
+{% block content %}
+
+<h3>{{ form.name }} {% trans "Responses" %}</h3>
+
+{% if has_errors %}
+<div class="alert alert-error">
+<b>{% trans "Error" %}!</b>
+<p>{% trans "There are one or more errors in your form, please scroll down to fix them." %}</p>
+</div>
+{% endif %}
+
+<form name="responseForm" enctype="multipart/form-data" class="uniForm" method="POST">{% csrf_token %}
+<div class="copy">
+{% trans "Below are all the messages that are sent as a response to incoming messages for the keyword" %} <code>{{form.get_primary_keyword}}</code><br/><br/>
+<div class="alert"><p>{{ form.description }}</p></div>
+</div>
+
+<div class="responses">
+{{ keyword_form }}
+
+{% load uni_form_tags %}
+{{ formset.management_form }}
+{% for form in formset.forms %}
+<div class="scenario">{% if form.initial.label %}{{form.initial.label}}{% else %}{{form.label.data}}{%endif%}</div>
+  {{ form|as_uni_form }}
+{% endfor %}
+<br/>
+<div class="actions">
+  <a class="btn" href="/responses">{% trans "Cancel" %}</a>
+  <a class="btn btn-primary" href="javascript:document.responseForm.submit();">{% trans "Save Changes" %}</a>
+</div>
+
+</div>
+</form>
+{% endblock %}
+
+{% block extra-style %}
+{{ block.super }}
+<style>
+  label[for='id_extra_keywords'] {
+    font-weight: bold;
+  }
+
+  .errorlist li {
+    padding: 5px;
+    border: 1px solid #eed3d7;
+    background: #f1dede;
+    color: #b94a48;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    list-style-type: none;
+  }
+
+  .scenario {
+      padding-top: 15px;
+      font-weight: bold;
+  }
+
+  label { 
+      width: 120px;
+      padding-right: 5px;
+  }
+
+  .ctrlHolder {
+      padding-bottom: 5px;
+      padding-top: 5px;
+  }
+
+  .textinput {
+      width: 750px;
+      rows: 2;
+  }
+
+  .textarea {
+      width: 750px;
+      height: 50px;
+  }
+
+  .counter {
+      float: left;
+      margin-top: -20px;
+      margin-left: 740px;
+  }
+
+  .counter.long {
+      color:  red;
+  }
+</style>
+{% endblock %}
+
+{% block extra-script %}
+<script>
+$(function(){
+  // add our counter div
+  $("<div class='counter'>&nbsp;</div>").insertBefore("textarea");
+
+  function updateCounter() {
+    var len = $(this).val().length;
+
+    $(this).prev().text(len);
+
+    if (len > 160) {
+      $(this).prev().addClass("long");
+    } else {
+      $(this).prev().removeClass("long");
+    }
+  }
+
+  // initialize all our text areas
+  $("textarea").each(updateCounter);
+
+  // and register them all for being updated on keyUp
+  $("textarea").keyup(updateCounter);
+});
+</script>
+{% endblock %}

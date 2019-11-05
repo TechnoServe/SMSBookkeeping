@@ -1,0 +1,14 @@
+{% extends "reports/sale_form.html" %}
+
+{% load i18n %}
+
+{% block pre-content %}
+<div class="page-header">
+  <h2>{{ title }} 
+    {% if has_more_sale_left %}
+    <a class="btn btn-danger pull-right" href="{% url 'reports.sale_delete' sale.id %}">{% trans "Remove" %}</a>
+    {% endif %}
+  </h2>
+</div>
+{% endblock %}
+

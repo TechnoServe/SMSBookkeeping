@@ -1,0 +1,1257 @@
+[
+  {
+    "pk": 1,
+    "model": "standards.standardcategory",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Social Responsibility & Ethics",
+      "acronym": "SRE",
+      "is_active": true,
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-11-24 08:58:39",
+      "name_am": null,
+      "modified_on": "2011-11-24 08:58:39",
+      "name_tz_sw": null,
+      "name_en_us": "Social Responsibility & Ethics",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 2,
+    "model": "standards.standardcategory",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Occupational Health & Safety",
+      "acronym": "OHS",
+      "is_active": true,
+      "created_by": 1,
+      "order": 2,
+      "created_on": "2011-11-24 08:59:15",
+      "name_am": null,
+      "modified_on": "2011-11-24 08:59:15",
+      "name_tz_sw": null,
+      "name_en_us": "Occupational Health & Safety",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 3,
+    "model": "standards.standardcategory",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Environmental Responsibility",
+      "acronym": "ER",
+      "is_active": true,
+      "created_by": 1,
+      "order": 3,
+      "created_on": "2011-11-24 09:00:21",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:00:21",
+      "name_tz_sw": null,
+      "name_en_us": "Environmental Responsibility",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 4,
+    "model": "standards.standardcategory",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Economic Transparency",
+      "acronym": "ET",
+      "is_active": true,
+      "created_by": 1,
+      "order": 4,
+      "created_on": "2011-11-24 09:00:57",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:00:57",
+      "name_tz_sw": null,
+      "name_en_us": "Economic Transparency",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 5,
+    "model": "standards.standardcategory",
+    "fields": {
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Production and Farm Management Smallholder",
+      "acronym": "PFMS",
+      "is_active": true,
+      "created_by": 1,
+      "order": 5,
+      "created_on": "2011-11-24 09:01:13",
+      "name_am": null,
+      "modified_on": "2011-12-01 08:15:34",
+      "name_tz_sw": null,
+      "name_en_us": "Production and Farm Management Smallholder",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 1,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "No Child Labour",
+      "is_active": true,
+      "kind": "MR",
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-11-24 09:03:14",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:03:14",
+      "name_tz_sw": null,
+      "name_en_us": "No Child Labour",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 2,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "No Forced Labour",
+      "is_active": true,
+      "kind": "MR",
+      "created_by": 1,
+      "order": 2,
+      "created_on": "2011-11-24 09:03:42",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:03:42",
+      "name_tz_sw": null,
+      "name_en_us": "No Forced Labour",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 3,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "No Discrimination / Equality of Treatment",
+      "is_active": true,
+      "kind": "MR",
+      "created_by": 1,
+      "order": 3,
+      "created_on": "2011-11-24 09:04:15",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:04:15",
+      "name_tz_sw": null,
+      "name_en_us": "No Discrimination / Equality of Treatment",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 4,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Minimum Wage",
+      "is_active": true,
+      "kind": "MR",
+      "created_by": 1,
+      "order": 4,
+      "created_on": "2011-11-24 09:04:40",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:04:40",
+      "name_tz_sw": null,
+      "name_en_us": "Minimum Wage",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 5,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Working Hours",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 5,
+      "created_on": "2011-11-24 09:05:10",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:05:10",
+      "name_tz_sw": null,
+      "name_en_us": "Working Hours",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 6,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Overtime",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 6,
+      "created_on": "2011-11-24 09:06:00",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:06:00",
+      "name_tz_sw": null,
+      "name_en_us": "Overtime",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 7,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "HR Policy",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 7,
+      "created_on": "2011-11-24 09:06:21",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:06:21",
+      "name_tz_sw": null,
+      "name_en_us": "HR Policy",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 8,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Earnings Records",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 8,
+      "created_on": "2011-11-24 09:06:40",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:06:40",
+      "name_tz_sw": null,
+      "name_en_us": "Earnings Records",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 9,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Regular Payment",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 9,
+      "created_on": "2011-11-24 09:07:02",
+      "name_am": null,
+      "modified_on": "2011-12-01 08:11:44",
+      "name_tz_sw": null,
+      "name_en_us": "Regular Payment",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 10,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Equal Pay for Equal Work",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 10,
+      "created_on": "2011-11-24 09:07:41",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:07:41",
+      "name_tz_sw": null,
+      "name_en_us": "Equal Pay for Equal Work",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 11,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Legally Mandated Benefits",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 11,
+      "created_on": "2011-11-24 09:07:58",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:07:58",
+      "name_tz_sw": null,
+      "name_en_us": "Legally Mandated Benefits",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 12,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Written Contracts",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 12,
+      "created_on": "2011-11-24 09:08:25",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:08:25",
+      "name_tz_sw": null,
+      "name_en_us": "Written Contracts",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 13,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Access to Management and Workplace Grievances",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 13,
+      "created_on": "2011-11-24 09:09:19",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:09:19",
+      "name_tz_sw": null,
+      "name_en_us": "Access to Management and Workplace Grievances",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 14,
+    "model": "standards.standard",
+    "fields": {
+      "category": 1,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Right to Organize and Collective Bargaining",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 14,
+      "created_on": "2011-11-24 09:09:32",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:09:32",
+      "name_tz_sw": null,
+      "name_en_us": "Right to Organize and Collective Bargaining",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 15,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Occupational Health and Safety Policy",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-11-24 09:09:59",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:09:59",
+      "name_tz_sw": null,
+      "name_en_us": "Occupational Health and Safety Policy",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 16,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Annual Health and Safety Risk Assessment",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 2,
+      "created_on": "2011-11-24 09:10:23",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:10:23",
+      "name_tz_sw": null,
+      "name_en_us": "Annual Health and Safety Risk Assessment",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 17,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Occupational Health and Safety Training",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 3,
+      "created_on": "2011-11-24 09:11:11",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:11:11",
+      "name_tz_sw": null,
+      "name_en_us": "Occupational Health and Safety Training",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 18,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Medical Emergency Plan and First Aid Training",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 4,
+      "created_on": "2011-11-24 09:11:36",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:11:36",
+      "name_tz_sw": null,
+      "name_en_us": "Medical Emergency Plan and First Aid Training",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 19,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Safety Meetings",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 5,
+      "created_on": "2011-11-24 09:11:58",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:11:58",
+      "name_tz_sw": null,
+      "name_en_us": "Safety Meetings",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 20,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Work Place Hazards",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 6,
+      "created_on": "2011-11-24 09:12:30",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:12:30",
+      "name_tz_sw": null,
+      "name_en_us": "Work Place Hazards",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 21,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Access to Sanitary Facilities",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 7,
+      "created_on": "2011-11-24 09:13:09",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:13:09",
+      "name_tz_sw": null,
+      "name_en_us": "Access to Sanitary Facilities",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 22,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Access to Potable Water",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 8,
+      "created_on": "2011-11-24 09:13:44",
+      "name_am": null,
+      "modified_on": "2011-12-01 08:12:16",
+      "name_tz_sw": null,
+      "name_en_us": "Access to Potable Water",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 23,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Personal Protective Equipment",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 9,
+      "created_on": "2011-11-24 09:14:15",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:14:15",
+      "name_tz_sw": null,
+      "name_en_us": "Personal Protective Equipment",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 24,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "First Aid Kit",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 10,
+      "created_on": "2011-11-24 09:14:39",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:14:39",
+      "name_tz_sw": null,
+      "name_en_us": "First Aid Kit",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 25,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Pregnant Women, Conditional Work",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 11,
+      "created_on": "2011-11-24 09:14:52",
+      "name_am": null,
+      "modified_on": "2011-12-01 08:12:35",
+      "name_tz_sw": null,
+      "name_en_us": "Pregnant Women, Conditional Work",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 26,
+    "model": "standards.standard",
+    "fields": {
+      "category": 2,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Storage of Agrochemicals",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 12,
+      "created_on": "2011-11-24 09:15:18",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:15:18",
+      "name_tz_sw": null,
+      "name_en_us": "Storage of Agrochemicals",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 27,
+    "model": "standards.standard",
+    "fields": {
+      "category": 3,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Waste Water Management",
+      "is_active": true,
+      "kind": "MR",
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-11-24 09:15:41",
+      "name_am": null,
+      "modified_on": "2011-12-01 08:13:04",
+      "name_tz_sw": null,
+      "name_en_us": "Waste Water Management",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 28,
+    "model": "standards.standard",
+    "fields": {
+      "category": 3,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Environmental Practices Policy",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 2,
+      "created_on": "2011-11-24 09:16:55",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:16:55",
+      "name_tz_sw": null,
+      "name_en_us": "Environmental Practices Policy",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 29,
+    "model": "standards.standard",
+    "fields": {
+      "category": 3,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Waste Management - Coffee Pulp",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 3,
+      "created_on": "2011-11-24 09:17:26",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:17:26",
+      "name_tz_sw": null,
+      "name_en_us": "Waste Management - Coffee Pulp",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 30,
+    "model": "standards.standard",
+    "fields": {
+      "category": 3,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Tracking Water Consumption",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 4,
+      "created_on": "2011-11-24 09:17:54",
+      "name_am": null,
+      "modified_on": "2011-12-01 08:13:32",
+      "name_tz_sw": null,
+      "name_en_us": "Tracking Water Consumption",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 31,
+    "model": "standards.standard",
+    "fields": {
+      "category": 3,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Reducing Water Consumption",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 5,
+      "created_on": "2011-11-24 09:18:53",
+      "name_am": null,
+      "modified_on": "2011-12-01 08:13:58",
+      "name_tz_sw": null,
+      "name_en_us": "Reducing Water Consumption",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 32,
+    "model": "standards.standard",
+    "fields": {
+      "category": 3,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Tracking Energy Consumption",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 6,
+      "created_on": "2011-11-24 09:19:32",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:19:32",
+      "name_tz_sw": null,
+      "name_en_us": "Tracking Energy Consumption",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 33,
+    "model": "standards.standard",
+    "fields": {
+      "category": 3,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Soil Erosion Control",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 7,
+      "created_on": "2011-11-24 09:19:56",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:19:56",
+      "name_tz_sw": null,
+      "name_en_us": "Soil Erosion Control",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 34,
+    "model": "standards.standard",
+    "fields": {
+      "category": 3,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Water Body Protection",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 8,
+      "created_on": "2011-11-24 09:20:14",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:20:14",
+      "name_tz_sw": null,
+      "name_en_us": "Water Body Protection",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 35,
+    "model": "standards.standard",
+    "fields": {
+      "category": 3,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Conservation of Natural Resources",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 9,
+      "created_on": "2011-11-24 09:21:00",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:21:00",
+      "name_tz_sw": null,
+      "name_en_us": "Conservation of Natural Resources",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 36,
+    "model": "standards.standard",
+    "fields": {
+      "category": 3,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Solid Waste Management",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 10,
+      "created_on": "2011-11-24 09:21:17",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:21:17",
+      "name_tz_sw": null,
+      "name_en_us": "Solid Waste Management",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 37,
+    "model": "standards.standard",
+    "fields": {
+      "category": 4,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Record of Coffee Delivery and/or Payment Docs",
+      "is_active": true,
+      "kind": "MR",
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-11-24 09:21:56",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:31:23",
+      "name_tz_sw": null,
+      "name_en_us": "Record of Coffee Delivery and/or Payment Docs",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 38,
+    "model": "standards.standard",
+    "fields": {
+      "category": 4,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Membership Fees and Shares Docs",
+      "is_active": true,
+      "kind": "MR",
+      "created_by": 1,
+      "order": 2,
+      "created_on": "2011-11-24 09:22:21",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:31:32",
+      "name_tz_sw": null,
+      "name_en_us": "Membership Fees and Shares Docs",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 39,
+    "model": "standards.standard",
+    "fields": {
+      "category": 4,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Financial Transparency Sheet",
+      "is_active": true,
+      "kind": "MR",
+      "created_by": 1,
+      "order": 3,
+      "created_on": "2011-11-24 09:22:45",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:31:45",
+      "name_tz_sw": null,
+      "name_en_us": "Financial Transparency Sheet",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 40,
+    "model": "standards.standard",
+    "fields": {
+      "category": 4,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Approved Accounting / Bookkeeping System",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 4,
+      "created_on": "2011-11-24 09:23:01",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:23:01",
+      "name_tz_sw": null,
+      "name_en_us": "Approved Accounting / Bookkeeping System",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 41,
+    "model": "standards.standard",
+    "fields": {
+      "category": 4,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Coffee Sales Documentation",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 5,
+      "created_on": "2011-11-24 09:23:55",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:23:55",
+      "name_tz_sw": null,
+      "name_en_us": "Coffee Sales Documentation",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 42,
+    "model": "standards.standard",
+    "fields": {
+      "category": 4,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Loan Documentation",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 6,
+      "created_on": "2011-11-24 09:24:23",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:24:23",
+      "name_tz_sw": null,
+      "name_en_us": "Loan Documentation",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 43,
+    "model": "standards.standard",
+    "fields": {
+      "category": 4,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "External Audits",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 7,
+      "created_on": "2011-11-24 09:24:38",
+      "name_am": null,
+      "modified_on": "2011-12-01 08:14:22",
+      "name_tz_sw": null,
+      "name_en_us": "External Audits",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 44,
+    "model": "standards.standard",
+    "fields": {
+      "category": 4,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Annual Budgets",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 8,
+      "created_on": "2011-11-24 09:24:56",
+      "name_am": null,
+      "modified_on": "2011-12-01 08:14:42",
+      "name_tz_sw": null,
+      "name_en_us": "Annual Budgets",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 45,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Family and Hired Labor",
+      "is_active": true,
+      "kind": "MR",
+      "created_by": 1,
+      "order": 1,
+      "created_on": "2011-11-24 09:25:35",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:25:35",
+      "name_tz_sw": null,
+      "name_en_us": "Family and Hired Labor",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 46,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Prohibited Agrochemicals",
+      "is_active": true,
+      "kind": "MR",
+      "created_by": 1,
+      "order": 2,
+      "created_on": "2011-11-24 09:25:58",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:25:58",
+      "name_tz_sw": null,
+      "name_en_us": "Prohibited Agrochemicals",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 47,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Access to Education and Health Services",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 3,
+      "created_on": "2011-11-24 09:26:21",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:26:21",
+      "name_tz_sw": null,
+      "name_en_us": "Access to Education and Health Services",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 48,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Farmer Dwellings",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 4,
+      "created_on": "2011-11-24 09:26:36",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:26:36",
+      "name_tz_sw": null,
+      "name_en_us": "Farmer Dwellings",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 49,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Integrated Pest, Disease and Weed Management",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 5,
+      "created_on": "2011-11-24 09:26:56",
+      "name_am": null,
+      "modified_on": "2011-12-01 08:15:02",
+      "name_tz_sw": null,
+      "name_en_us": "Integrated Pest, Disease and Weed Management",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 50,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Safe Use of Agrochemicals",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 6,
+      "created_on": "2011-11-24 09:27:16",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:27:16",
+      "name_tz_sw": null,
+      "name_en_us": "Safe Use of Agrochemicals",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 51,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Soil Fertility",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 7,
+      "created_on": "2011-11-24 09:27:33",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:27:33",
+      "name_tz_sw": null,
+      "name_en_us": "Soil Fertility",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 52,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Soil Productivity and Water Conservation",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 8,
+      "created_on": "2011-11-24 09:28:10",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:28:10",
+      "name_tz_sw": null,
+      "name_en_us": "Soil Productivity and Water Conservation",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 53,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Controlling Soil Erosion",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 9,
+      "created_on": "2011-11-24 09:28:44",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:28:44",
+      "name_tz_sw": null,
+      "name_en_us": "Controlling Soil Erosion",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 54,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Shade",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 10,
+      "created_on": "2011-11-24 09:28:58",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:28:58",
+      "name_tz_sw": null,
+      "name_en_us": "Shade",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 55,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Pruning and Rejuvenation",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 11,
+      "created_on": "2011-11-24 09:29:10",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:29:10",
+      "name_tz_sw": null,
+      "name_en_us": "Pruning and Rejuvenation",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 56,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Environmental Conservation",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 13,
+      "created_on": "2011-11-24 09:29:58",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:29:58",
+      "name_tz_sw": null,
+      "name_en_us": "Environmental Conservation",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 57,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Wildlife Protection",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 14,
+      "created_on": "2011-11-24 09:30:15",
+      "name_am": null,
+      "modified_on": "2011-11-24 09:30:15",
+      "name_tz_sw": null,
+      "name_en_us": "Wildlife Protection",
+      "name_ke_sw": null
+    }
+  },
+  {
+    "pk": 58,
+    "model": "standards.standard",
+    "fields": {
+      "category": 5,
+      "name_rw": null,
+      "modified_by": 1,
+      "name": "Water Body Protection",
+      "is_active": true,
+      "kind": "BP",
+      "created_by": 1,
+      "order": 12,
+      "created_on": "2011-12-01 08:17:11",
+      "name_am": null,
+      "modified_on": "2011-12-01 10:00:00",
+      "name_tz_sw": null,
+      "name_en_us": "Water Body Protection",
+      "name_ke_sw": null
+    }
+  }
+]

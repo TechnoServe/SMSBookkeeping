@@ -1,0 +1,5837 @@
+[
+  {
+    "pk": 7, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_local_sales": true, 
+      "cherry_ratio_right": "5.0000", 
+      "has_members": true, 
+      "farmer_payment_right": "100.0000", 
+      "has_misc_revenue": false, 
+      "exchange_rate": "16.87", 
+      "created_on": "2011-11-21 14:18:26", 
+      "modified_by": 13, 
+      "is_finalized": false, 
+      "created_by": 4,
+      "sale_price_right": "10.0000", 
+      "farmer_payment_left": "0.0000", 
+      "total_costs_right": "100.0000", 
+      "farmer_income_baseline": "53.30", 
+      "total_costs_left": "0.0000", 
+      "fob_price_baseline": "66.46", 
+      "sale_price_left": "0.0000", 
+      "is_active": true, 
+      "modified_on": "2011-11-30 14:23:04", 
+      "cherry_ratio_left": "12.0000", 
+      "name": "2010", 
+      "country": 4, 
+      "standards": [], 
+      "default_adjustment": "0.10"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_local_sales": true, 
+      "cherry_ratio_right": "5.0000", 
+      "has_members": true, 
+      "farmer_payment_right": "100.0000", 
+      "has_misc_revenue": false, 
+      "exchange_rate": "14.30", 
+      "created_on": "2011-11-15 00:14:28", 
+      "modified_by": 8, 
+      "is_finalized": false, 
+      "created_by": 2, 
+      "sale_price_right": "10.0000", 
+      "farmer_payment_left": "0.0000", 
+      "total_costs_right": "100.0000", 
+      "farmer_income_baseline": "20.02", 
+      "total_costs_left": "0.0000", 
+      "fob_price_baseline": "34.46", 
+      "sale_price_left": "0.0000", 
+      "is_active": true, 
+      "modified_on": "2011-11-29 12:53:12", 
+      "cherry_ratio_left": "12.0000", 
+      "name": "2009", 
+      "country": 4, 
+      "standards": [], 
+      "default_adjustment": "0.16"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_local_sales": false, 
+      "cherry_ratio_right": "5.0000", 
+      "has_members": false, 
+      "farmer_payment_right": "100.0000", 
+      "has_misc_revenue": true, 
+      "exchange_rate": "82.00", 
+      "created_on": "2011-11-24 10:25:37", 
+      "modified_by": 9, 
+      "is_finalized": false, 
+      "created_by": 11, 
+      "sale_price_right": "10.0000", 
+      "farmer_payment_left": "0.0000", 
+      "total_costs_right": "100.0000", 
+      "farmer_income_baseline": "1.00", 
+      "total_costs_left": "0.0000", 
+      "fob_price_baseline": "1.00", 
+      "sale_price_left": "0.0000", 
+      "is_active": true, 
+      "modified_on": "2011-11-30 08:56:52", 
+      "cherry_ratio_left": "12.0000", 
+      "name": "2010/11", 
+      "country": 2, 
+      "standards": [], 
+      "default_adjustment": "0.22"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_local_sales": false, 
+      "cherry_ratio_right": "5.0000", 
+      "has_members": false, 
+      "farmer_payment_right": "100.0000", 
+      "has_misc_revenue": true, 
+      "exchange_rate": "76.00", 
+      "created_on": "2011-11-15 07:55:29", 
+      "modified_by": 9, 
+      "is_finalized": false, 
+      "created_by": 2, 
+      "sale_price_right": "10.0000", 
+      "farmer_payment_left": "0.0000", 
+      "total_costs_right": "100.0000", 
+      "farmer_income_baseline": "1.00", 
+      "total_costs_left": "0.0000", 
+      "fob_price_baseline": "1.00", 
+      "sale_price_left": "0.0000", 
+      "is_active": true, 
+      "modified_on": "2011-11-29 12:26:14", 
+      "cherry_ratio_left": "12.0000", 
+      "name": "2009/10", 
+      "country": 2, 
+      "standards": [], 
+      "default_adjustment": "0.22"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_local_sales": false, 
+      "cherry_ratio_right": "5.0000", 
+      "has_members": false, 
+      "farmer_payment_right": "100.0000", 
+      "has_misc_revenue": false, 
+      "exchange_rate": "595.00", 
+      "created_on": "2011-11-17 15:18:12", 
+      "modified_by": 2, 
+      "is_finalized": true, 
+      "created_by": 2, 
+      "sale_price_right": "10.0000", 
+      "farmer_payment_left": "0.0000", 
+      "total_costs_right": "100.0000", 
+      "farmer_income_baseline": "1.00", 
+      "total_costs_left": "0.0000", 
+      "fob_price_baseline": "3.00", 
+      "sale_price_left": "0.0000", 
+      "is_active": true, 
+      "modified_on": "2011-11-23 08:47:58", 
+      "cherry_ratio_left": "12.0000", 
+      "name": "2011", 
+      "country": 1, 
+      "standards": [], 
+      "default_adjustment": "0.16"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_local_sales": false, 
+      "cherry_ratio_right": "5.0000", 
+      "has_members": true, 
+      "farmer_payment_right": "100.0000", 
+      "has_misc_revenue": false, 
+      "exchange_rate": "585.00", 
+      "created_on": "2011-11-14 21:58:04", 
+      "modified_by": 2, 
+      "is_finalized": true, 
+      "created_by": 2, 
+      "sale_price_right": "10.0000", 
+      "farmer_payment_left": "0.0000", 
+      "total_costs_right": "100.0000", 
+      "farmer_income_baseline": "1.00", 
+      "total_costs_left": "0.0000", 
+      "fob_price_baseline": "3.00", 
+      "sale_price_left": "0.0000", 
+      "is_active": true, 
+      "modified_on": "2011-11-22 14:54:29", 
+      "cherry_ratio_left": "12.0000", 
+      "name": "2010", 
+      "country": 1, 
+      "standards": [], 
+      "default_adjustment": "0.16"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_local_sales": false, 
+      "cherry_ratio_right": "5.0000", 
+      "has_members": false, 
+      "farmer_payment_right": "100.0000", 
+      "has_misc_revenue": false, 
+      "exchange_rate": "565.00", 
+      "created_on": "2011-11-14 20:06:39", 
+      "modified_by": 2, 
+      "is_finalized": false, 
+      "created_by": 2, 
+      "sale_price_right": "10.0000", 
+      "farmer_payment_left": "0.0000", 
+      "total_costs_right": "100.0000", 
+      "farmer_income_baseline": "1.00", 
+      "total_costs_left": "0.0000", 
+      "fob_price_baseline": "3.00", 
+      "sale_price_left": "0.0000", 
+      "is_active": true, 
+      "modified_on": "2011-11-14 20:10:20", 
+      "cherry_ratio_left": "12.0000", 
+      "name": "2009", 
+      "country": 1, 
+      "standards": [], 
+      "default_adjustment": "0.16"
+    }
+  }, 
+  {
+    "pk": 100, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_local_sales": false, 
+      "cherry_ratio_right": "5.0000", 
+      "has_members": false, 
+      "farmer_payment_right": "100.0000", 
+      "has_misc_revenue": false, 
+      "exchange_rate": "545.00", 
+      "created_on": "2011-11-14 19:25:36", 
+      "modified_by": 2, 
+      "is_finalized": false, 
+      "created_by": 2, 
+      "sale_price_right": "10.0000", 
+      "farmer_payment_left": "0.0000", 
+      "total_costs_right": "100.0000", 
+      "farmer_income_baseline": "1.00", 
+      "total_costs_left": "0.0000", 
+      "fob_price_baseline": "3.00", 
+      "sale_price_left": "0.0000", 
+      "is_active": true, 
+      "modified_on": "2011-11-14 20:02:41", 
+      "cherry_ratio_left": "12.0000", 
+      "name": "2008", 
+      "country": 1, 
+      "standards": [], 
+      "default_adjustment": "0.16"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "seasons.season", 
+    "fields": {
+      "has_local_sales": false, 
+      "cherry_ratio_right": "5.0000", 
+      "has_members": false, 
+      "farmer_payment_right": "100.0000", 
+      "has_misc_revenue": true, 
+      "exchange_rate": "1470.00", 
+      "created_on": "2011-11-24 10:34:53", 
+      "modified_by": 10, 
+      "is_finalized": true, 
+      "created_by": 2, 
+      "sale_price_right": "10.0000", 
+      "farmer_payment_left": "0.0000", 
+      "total_costs_right": "100.0000", 
+      "farmer_income_baseline": "3910.00", 
+      "total_costs_left": "0.0000", 
+      "fob_price_baseline": "5674.00", 
+      "sale_price_left": "0.0000", 
+      "is_active": true, 
+      "modified_on": "2011-11-29 13:02:54", 
+      "cherry_ratio_left": "12.0000", 
+      "name": "2010", 
+      "country": 3, 
+      "standards": [], 
+      "default_adjustment": "0.20"
+    }
+  }, 
+  {
+    "pk": 248, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 1, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 320, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 1, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1197, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 1, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2235, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 1, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4583, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 1, 
+      "collapse": true
+    }
+  }, 
+  {
+    "pk": 4664, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 1, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4828, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 1, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5021, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 1, 
+      "collapse": true
+    }
+  }, 
+  {
+    "pk": 5071, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 1, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 263, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 36, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 333, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 36, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1223, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 36, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2261, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 36, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4669, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 36, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4841, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 36, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5079, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 36, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1219, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 37, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2257, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 37, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5075, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 37, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 337, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 40, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1229, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 40, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2265, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 40, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4836, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 24, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5057, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 72, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 273, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 57, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 348, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 57, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1246, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 57, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2279, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 57, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4615, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 57, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4685, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 57, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4877, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 57, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5055, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 57, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5095, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 57, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4855, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 68, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1211, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 33, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2249, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 33, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 209, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 2, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 278, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 2, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1149, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 2, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2187, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 2, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4655, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 2, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4786, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 2, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5062, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 2, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4832, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 70, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 213, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 3, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 282, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 3, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1153, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 3, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2191, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 3, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4657, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 3, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4788, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 3, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5064, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 3, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1214, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 34, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 250, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 25, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 322, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 25, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1199, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 25, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2237, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 25, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4585, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 25, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4671, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 25, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4843, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 25, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5023, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 25, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4835, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 71, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 266, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 23, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 341, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 23, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1239, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 23, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2272, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 23, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4606, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 23, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4678, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 23, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4868, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 23, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5044, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 23, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5088, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 23, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4598, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 45, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4863, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 45, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5036, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 45, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1232, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 41, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2268, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 41, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4858, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 69, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 268, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 54, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 343, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 54, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1241, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 54, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2274, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 54, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4609, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 54, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4680, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 54, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4871, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 54, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5047, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 54, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5090, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 54, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 219, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 7, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 288, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 7, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1159, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 7, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2197, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 7, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4796, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 7, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 275, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 58, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 350, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 58, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1248, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 58, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2281, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 58, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4617, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 58, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4687, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 58, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4879, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 58, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5059, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 58, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5097, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 58, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4601, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 62, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5039, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 62, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 211, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 60, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 280, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 60, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1151, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 60, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2189, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 60, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4659, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 60, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4790, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 60, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5066, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 60, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4604, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 46, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4866, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 46, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5042, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 46, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2252, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 61, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 262, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 59, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 332, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 59, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1222, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 59, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2260, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 59, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4668, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 59, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4840, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 59, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5078, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 59, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1235, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 42, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4593, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 42, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5031, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 42, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 270, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 55, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 345, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 55, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1243, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 55, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2276, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 55, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4611, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 55, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4873, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 55, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5049, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 55, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5092, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 55, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 271, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 53, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 346, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 53, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1244, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 53, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2277, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 53, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4612, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 53, 
+      "collapse": true
+    }
+  }, 
+  {
+    "pk": 4683, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 53, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4874, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 53, 
+      "collapse": true
+    }
+  }, 
+  {
+    "pk": 5052, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 53, 
+      "collapse": true
+    }
+  }, 
+  {
+    "pk": 5093, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 53, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 215, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 4, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 284, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 4, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1155, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 4, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2193, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 4, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4661, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 4, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4792, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 4, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5068, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 4, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 252, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 26, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 324, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 26, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1201, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 26, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2239, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 26, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 222, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 8, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 291, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 8, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1162, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 8, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2200, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 8, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 225, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 10, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 294, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 10, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1165, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 10, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2203, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 10, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4799, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 10, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4682, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 65, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5051, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 65, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 254, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 27, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 326, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 27, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1203, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 27, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2241, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 27, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4587, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 27, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4845, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 27, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5025, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 27, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 247, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 5, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 319, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 5, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1196, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 5, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2234, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 5, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4582, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 5, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4663, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 5, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4827, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 5, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5020, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 5, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5070, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 5, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 276, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 56, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 351, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 56, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1249, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 56, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2282, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 56, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4618, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 56, 
+      "collapse": true
+    }
+  }, 
+  {
+    "pk": 4688, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 56, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4880, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 56, 
+      "collapse": true
+    }
+  }, 
+  {
+    "pk": 5060, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 56, 
+      "collapse": true
+    }
+  }, 
+  {
+    "pk": 5098, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 56, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 228, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 9, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 297, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 9, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1168, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 9, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2206, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 9, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4802, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 9, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 256, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 28, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1205, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 28, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2243, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 28, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1171, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 11, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2209, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 11, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4589, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 29, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5027, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 29, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4805, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 12, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4847, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 30, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1177, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 13, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2215, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 13, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 300, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 14, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1174, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 14, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2212, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 14, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 231, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 15, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 303, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 15, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1180, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 15, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2218, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 15, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4808, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 15, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 258, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 31, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 328, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 31, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1207, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 31, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2245, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 31, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4849, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 31, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 234, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 16, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 306, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 16, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1183, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 16, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2221, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 16, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4811, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 16, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1215, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 32, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2253, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 32, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 237, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 17, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 309, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 17, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1186, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 17, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2224, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 17, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4814, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 17, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 240, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 18, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 312, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 18, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1189, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 18, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2227, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 18, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4817, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 18, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4820, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 19, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1225, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 38, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 338, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 39, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1236, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 39, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2269, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 39, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4594, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 39, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4851, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 39, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5032, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 39, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 243, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 20, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 315, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 20, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 246, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 21, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 318, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 21, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1192, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 21, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2230, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 21, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4581, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 21, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4823, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 21, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5019, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 21, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4859, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 43, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1195, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 22, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2233, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 22, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4826, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 22, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 265, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 100, 
+      "expense": 44, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 340, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 2, 
+      "expense": 44, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 1238, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 3, 
+      "expense": 44, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 2271, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 1, 
+      "expense": 44, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4605, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 5, 
+      "expense": 44, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4867, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 9, 
+      "expense": 44, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5043, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 8, 
+      "expense": 44, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5081, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 48, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4673, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 49, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5083, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 49, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4675, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 50, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5085, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 50, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 4677, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 4, 
+      "expense": 51, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 5087, 
+    "model": "seasons.seasonexpense", 
+    "fields": {
+      "season": 7, 
+      "expense": 51, 
+      "collapse": false
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 1, 
+      "season": 100, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 1, 
+      "season": 2, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 100, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 1, 
+      "season": 3, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 354, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 1, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1183, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 1, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1239, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 1, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1263, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 1, 
+      "season": 9, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1367, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 1, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1400, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 1, 
+      "season": 7, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 20, 
+      "season": 2, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1182, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 11, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1238, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 11, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1366, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 11, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1399, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 11, 
+      "season": 7, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1246, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 16, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1407, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 16, 
+      "season": 7, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 367, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 23, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1191, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 27, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1375, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 27, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1199, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 30, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1383, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 30, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1189, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 34, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1373, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 34, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1248, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 17, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1409, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 17, 
+      "season": 7, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 21, 
+      "season": 2, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 107, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 3, 
+      "season": 3, 
+      "is_top_grade": true
+    }
+  }, 
+  {
+    "pk": 361, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 3, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1251, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 3, 
+      "season": 4, 
+      "is_top_grade": true
+    }
+  }, 
+  {
+    "pk": 1412, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 3, 
+      "season": 7, 
+      "is_top_grade": true
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 2, 
+      "season": 100, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 2, 
+      "season": 2, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 105, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 2, 
+      "season": 3, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 359, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 2, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1186, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 2, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1244, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 2, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1264, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 2, 
+      "season": 9, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1370, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 2, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1405, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 2, 
+      "season": 7, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1193, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 28, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1377, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 28, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 370, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 24, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1202, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 31, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1386, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 31, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1188, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 35, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1372, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 35, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1249, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 13, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1410, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 13, 
+      "season": 7, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 102, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 14, 
+      "season": 3, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 356, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 14, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1185, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 14, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1241, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 14, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1369, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 14, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1402, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 14, 
+      "season": 7, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 109, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 4, 
+      "season": 3, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 363, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 4, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1195, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 29, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1379, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 29, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 104, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 15, 
+      "season": 3, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 358, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 15, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1243, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 15, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1404, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 15, 
+      "season": 7, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 373, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 25, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1205, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 22, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1389, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 22, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 10, 
+      "season": 100, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 10, 
+      "season": 2, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 112, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 10, 
+      "season": 3, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 378, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 10, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1213, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 10, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1259, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 10, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1265, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 10, 
+      "season": 9, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1397, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 10, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1418, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 10, 
+      "season": 7, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1212, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 33, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1256, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 33, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1396, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 33, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1417, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 33, 
+      "season": 7, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1208, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 32, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1392, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 32, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 376, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 26, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 111, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 5, 
+      "season": 3, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 377, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 5, 
+      "season": 1, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1211, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 5, 
+      "season": 5, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1255, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 5, 
+      "season": 4, 
+      "is_top_grade": true
+    }
+  }, 
+  {
+    "pk": 1395, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 5, 
+      "season": 8, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1416, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 5, 
+      "season": 7, 
+      "is_top_grade": true
+    }
+  }, 
+  {
+    "pk": 1258, 
+    "model": "seasons.seasongrade", 
+    "fields": {
+      "grade": 18, 
+      "season": 4, 
+      "is_top_grade": false
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Washing Station Expenses", 
+      "parent": null, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:31:15", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 07:11:41", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Washing Station Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Cherry Advance", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:31:23", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 09:00:29", 
+      "is_advance": true, 
+      "name_tz_sw": null, 
+      "name_en_us": "Cherry Advance", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "CPU Loan Materials", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:32:15", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:37:46", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CPU Loan Materials", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Agro Input Deductions", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:37:20", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 11:27:15", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Agro Input Deductions", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "CSP Warehouse Handling", 
+      "parent": 32, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:45:16", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:39:50", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CSP Warehouse Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Freight and Insurance ", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:45:59", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 12:13:48", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Freight and Insurance ", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 37, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Incurred", 
+      "parent": 36, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:46:13", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:40:06", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Incurred", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 40, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Fertilizer Fund Contribution", 
+      "parent": 39, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:47:05", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:43:00", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Fertilizer Fund Contribution", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 57, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 13, 
+      "name": "CAPEX Principal Repayment", 
+      "parent": 56, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:52:13", 
+      "name_am": null, 
+      "modified_on": "2011-11-30 14:25:03", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CAPEX Principal Repayment", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 68, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Other CSP Fees", 
+      "parent": 43, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 10, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-29 11:23:14", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 11:23:14", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other CSP Fees", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 70, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Agro Input (Current Year)", 
+      "parent": 24, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 10, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-29 11:34:42", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 11:34:42", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Agro Input (Current Year)", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 72, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 13, 
+      "name": "CAPEX Principal Amount", 
+      "parent": 56, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 9, 
+      "order": 0, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-30 08:53:37", 
+      "name_am": null, 
+      "modified_on": "2011-11-30 14:25:44", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CAPEX Principal Amount", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Labour (Full Time)", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:31:38", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:31:38", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Labour (Full Time)", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Batteries and Lighting", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:32:25", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 12:13:44", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Batteries and Lighting", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Milling, Marketing and Export Expenses", 
+      "parent": null, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:37:01", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 12:13:48", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Milling, Marketing and Export Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Milling", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:37:31", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:37:31", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Milling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "OCIR Warehouse Handling", 
+      "parent": 32, 
+      "in_dollars": false, 
+      "is_active": false, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:45:28", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 12:35:57", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "OCIR Warehouse Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 41, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "VAT", 
+      "parent": 39, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:47:22", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:40:25", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "VAT", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 45, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Auction Marketing Fee", 
+      "parent": 44, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:48:54", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:48:54", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Auction Marketing Fee", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 54, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Working Capital Interest", 
+      "parent": 53, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:51:17", 
+      "name_am": null, 
+      "modified_on": "2011-11-14 19:59:00", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Working Capital Interest", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 58, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 13, 
+      "name": "CAPEX Interest", 
+      "parent": 56, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:52:25", 
+      "name_am": null, 
+      "modified_on": "2011-11-30 14:25:26", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CAPEX Interest", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 60, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Cherry Transport", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-14 14:46:49", 
+      "name_am": null, 
+      "modified_on": "2011-11-14 14:46:49", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Cherry Transport", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 62, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "Marketing Fees for Export Sales", 
+      "parent": 44, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 2, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-18 07:13:56", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:31:01", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Marketing Fees for Export Sales", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 69, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Debts to CSP", 
+      "parent": 43, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 10, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-29 11:25:10", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 11:33:34", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Debts to CSP", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 71, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Agro Input (Previous Year)", 
+      "parent": 24, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 10, 
+      "order": 1, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-29 11:35:28", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 11:35:28", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Agro Input (Previous Year)", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Labour (Casual)", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:31:49", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:31:49", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Labour (Casual)", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Coffee Bags", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:32:36", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 12:14:04", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Coffee Bags", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Hand Sorting", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:37:39", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:39:17", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Hand Sorting", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 35, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Other Storage and Handling", 
+      "parent": 32, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:45:38", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:40:38", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other Storage and Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 42, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Other Taxes and Fees", 
+      "parent": 39, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:47:51", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:09:25", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other Taxes and Fees", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 46, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Direct Exporting Marketing Fee", 
+      "parent": 44, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:49:06", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:49:11", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Direct Exporting Marketing Fee", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 53, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Working Capital Financing Expenses", 
+      "parent": null, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:51:03", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:42:27", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Working Capital Financing Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 55, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Working Capital Fee", 
+      "parent": 53, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:51:27", 
+      "name_am": null, 
+      "modified_on": "2011-11-14 19:59:17", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Working Capital Fee", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 59, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Freight and Insurance (calculated for FOT-FOB Conversion)", 
+      "parent": 36, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 2, 
+      "calculated_from": "FREIGHT", 
+      "created_on": "2011-11-14 14:45:13", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 12:42:42", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Freight and Insurance (calculated for FOT-FOB Conversion)", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 61, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "NAEB Warehouse Handling", 
+      "parent": 32, 
+      "in_dollars": false, 
+      "is_active": false, 
+      "created_by": 2, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-17 15:31:07", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 12:35:57", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "NAEB Warehouse Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 63, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Marketing Fees for Local Sales", 
+      "parent": 44, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 2, 
+      "order": 2, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-18 07:14:15", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:40:56", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Marketing Fees for Local Sales", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Other Expenses", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 3, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:32:01", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 07:11:41", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Dry Parchment Transport", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 3, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:33:27", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:33:27", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Dry Parchment Transport", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Export Bagging", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 3, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:37:55", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:37:55", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Export Bagging", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 56, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 13, 
+      "name": "CAPEX Financing Expenses", 
+      "parent": null, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 3, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:51:44", 
+      "name_am": null, 
+      "modified_on": "2011-11-30 14:26:12", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CAPEX Financing Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 65, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Bank Fees", 
+      "parent": 53, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 2, 
+      "order": 3, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-18 07:15:45", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:42:27", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Bank Fees", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Fuel and Oils", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 4, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:32:49", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:33:31", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Fuel and Oils", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Parchment Bags", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 4, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:38:08", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:38:08", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Parchment Bags", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Local Taxes", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 5, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:33:59", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:33:59", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Local Taxes", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Transport and Warehousing", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 5, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:38:29", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:38:29", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Transport and Warehousing", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 64, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Cost of Parchment Purchased", 
+      "parent": 1, 
+      "in_dollars": false, 
+      "is_active": false, 
+      "created_by": 2, 
+      "order": 5, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-18 07:14:45", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 11:20:29", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Cost of Parchment Purchased", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Bank Charges", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 6, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:34:27", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:38:01", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Bank Charges", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Warehouse Handling", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 6, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:38:41", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:38:41", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Warehouse Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Payments to Site Collector", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 7, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:34:42", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:38:18", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Payments to Site Collector", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Rental of Store", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 7, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:34:55", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:38:31", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Rental of Store", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Repair and Maintenance", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 8, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:35:15", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:35:15", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Repair and Maintenance", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Transportation", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 8, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:44:39", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:44:39", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Transportation", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Stationary, Papers, Copies", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 9, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:35:26", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:35:26", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Stationary, Papers, Copies", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Storage and Handling", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 9, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:45:01", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:40:38", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Storage and Handling", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Telephone Expenses", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 10, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:35:37", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:35:37", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Telephone Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 66, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Misc Farmer Group debts", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 10, 
+      "order": 10, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-28 13:05:09", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 07:11:41", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Misc Farmer Group debts", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 67, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Accrued Loan-due to CSP", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 10, 
+      "order": 10, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-11-28 13:07:28", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:08:14", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Accrued Loan-due to CSP", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Traveling Expenses", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 11, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:35:47", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:35:47", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Traveling Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Expenses Incurred on Credit", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 12, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:36:04", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:36:04", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Expenses Incurred on Credit", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 38, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Other", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": false, 
+      "created_by": 1, 
+      "order": 12, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:46:31", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 12:44:51", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Allowances", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 13, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:36:20", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:39:03", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Allowances", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 39, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Government Taxes, Fees and Deductions", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 13, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:46:50", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:43:00", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Government Taxes, Fees and Deductions", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Other General Expenses", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 14, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:36:32", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:36:32", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other General Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Expenses Not Explained", 
+      "parent": 5, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 15, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:36:41", 
+      "name_am": null, 
+      "modified_on": "2011-10-19 02:36:41", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Expenses Not Explained", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 43, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Other CSP Deductions", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 15, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:48:13", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 11:33:34", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other CSP Deductions", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 44, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Marketing Fees", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 16, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:48:32", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:40:56", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Marketing Fees", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 47, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Parchment Purchase", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 17, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:49:27", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:41:11", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Parchment Purchase", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 48, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Dry Mill / Export / CSP Costs", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 18, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:49:46", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:41:30", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Dry Mill / Export / CSP Costs", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 49, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Export Commission", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 19, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:49:54", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:41:46", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Export Commission", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 50, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Export Expenses, Transport and Other", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 20, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:50:07", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:42:01", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Export Expenses, Transport and Other", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 51, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Low Grades Sales Expenses", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 21, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:50:29", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:42:13", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "Low Grades Sales Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 52, 
+    "model": "expenses.expense", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "CSP / Export Expenses", 
+      "parent": 23, 
+      "in_dollars": false, 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 22, 
+      "calculated_from": "NONE", 
+      "created_on": "2011-10-19 02:50:44", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:42:44", 
+      "is_advance": false, 
+      "name_tz_sw": null, 
+      "name_en_us": "CSP / Export Expenses", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": "Cherry", 
+      "modified_by": 1, 
+      "name": "Cherry", 
+      "parent": null, 
+      "is_active": true, 
+      "kind": "CHE", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-10-14 07:29:07", 
+      "name_am": null, 
+      "modified_on": "2011-10-18 06:50:39", 
+      "order": 0, 
+      "name_tz_sw": "asdfasdf", 
+      "name_en_us": "Cherry", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Washed", 
+      "parent": 1, 
+      "is_active": true, 
+      "kind": "CHE", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-10 13:03:17", 
+      "name_am": null, 
+      "modified_on": "2011-11-10 13:03:17", 
+      "order": 0, 
+      "name_tz_sw": null, 
+      "name_en_us": "Washed", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Dry-milled", 
+      "parent": 13, 
+      "is_active": true, 
+      "kind": "UNW", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-10 13:11:10", 
+      "name_am": null, 
+      "modified_on": "2011-11-10 13:11:10", 
+      "order": 0, 
+      "name_tz_sw": null, 
+      "name_en_us": "Dry-milled", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "A1", 
+      "parent": 2, 
+      "is_active": false, 
+      "kind": "PAR", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-10 13:26:52", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:10:24", 
+      "order": 0, 
+      "name_tz_sw": null, 
+      "name_en_us": "A1", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": "asdf", 
+      "modified_by": 9, 
+      "name": "Parchment", 
+      "parent": null, 
+      "is_active": true, 
+      "kind": "PAR", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-10-14 07:29:24", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:37:14", 
+      "order": 1, 
+      "name_tz_sw": null, 
+      "name_en_us": "Parchment", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "High Quality", 
+      "parent": 10, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-10-14 07:34:06", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:59:21", 
+      "order": 1, 
+      "name_tz_sw": null, 
+      "name_en_us": "High Quality", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Converted to Natural", 
+      "parent": 1, 
+      "is_active": true, 
+      "kind": "CHE", 
+      "created_by": 1, 
+      "is_not_processed": true, 
+      "created_on": "2011-11-10 13:03:50", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:12:07", 
+      "order": 1, 
+      "name_tz_sw": null, 
+      "name_en_us": "Converted to Natural", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 4, 
+      "name": "Sold as jenfel unhulled", 
+      "parent": 13, 
+      "is_active": true, 
+      "kind": "UNW", 
+      "created_by": 1, 
+      "is_not_processed": true, 
+      "created_on": "2011-11-10 13:11:46", 
+      "name_am": null, 
+      "modified_on": "2011-11-24 13:15:45", 
+      "order": 1, 
+      "name_tz_sw": null, 
+      "name_en_us": "Sold as jenfel unhulled", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "A2", 
+      "parent": 2, 
+      "is_active": false, 
+      "kind": "PAR", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-10 13:27:02", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:10:36", 
+      "order": 1, 
+      "name_tz_sw": null, 
+      "name_en_us": "A2", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Low grades", 
+      "parent": null, 
+      "is_active": false, 
+      "kind": "GRE", 
+      "created_by": 2, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-17 15:31:38", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:16:23", 
+      "order": 1, 
+      "name_tz_sw": null, 
+      "name_en_us": "Low grades", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "AA", 
+      "parent": 10, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 9, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-24 16:47:47", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:37:50", 
+      "order": 1, 
+      "name_tz_sw": null, 
+      "name_en_us": "AA", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "TT", 
+      "parent": 33, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 9, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-24 16:50:37", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 12:56:14", 
+      "order": 1, 
+      "name_tz_sw": null, 
+      "name_en_us": "TT", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Mbuni", 
+      "parent": null, 
+      "is_active": true, 
+      "kind": "UNW", 
+      "created_by": 2, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-29 08:20:32", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 08:20:32", 
+      "order": 1, 
+      "name_tz_sw": null, 
+      "name_en_us": "Mbuni", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "13,14", 
+      "parent": 10, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-10-14 07:34:15", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 09:37:39", 
+      "order": 2, 
+      "name_tz_sw": null, 
+      "name_en_us": "13,14", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "Jenfel", 
+      "parent": null, 
+      "is_active": true, 
+      "kind": "UNW", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-10 13:04:45", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:37:41", 
+      "order": 2, 
+      "name_tz_sw": null, 
+      "name_en_us": "Jenfel", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "Dry-milled", 
+      "parent": 2, 
+      "is_active": true, 
+      "kind": "PAR", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-10 13:10:35", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:37:27", 
+      "order": 2, 
+      "name_tz_sw": null, 
+      "name_en_us": "Dry-milled", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 4, 
+      "name": "Ungraded", 
+      "parent": 5, 
+      "is_active": false, 
+      "kind": "GRE", 
+      "created_by": 2, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-17 15:32:41", 
+      "name_am": null, 
+      "modified_on": "2011-11-24 13:22:33", 
+      "order": 2, 
+      "name_tz_sw": null, 
+      "name_en_us": "Ungraded", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "AB", 
+      "parent": 10, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 9, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-24 16:49:43", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:38:00", 
+      "order": 2, 
+      "name_tz_sw": null, 
+      "name_en_us": "AB", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "T", 
+      "parent": 33, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 9, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-24 16:50:59", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 12:56:46", 
+      "order": 2, 
+      "name_tz_sw": null, 
+      "name_en_us": "T", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 35, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Dry-milled", 
+      "parent": 34, 
+      "is_active": true, 
+      "kind": "UNW", 
+      "created_by": 2, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-29 08:21:04", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 08:21:04", 
+      "order": 2, 
+      "name_tz_sw": null, 
+      "name_en_us": "Dry-milled", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Sold as mbuni unhulled", 
+      "parent": 34, 
+      "is_active": true, 
+      "kind": "UNW", 
+      "created_by": 2, 
+      "is_not_processed": true, 
+      "created_on": "2011-11-29 08:21:38", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 08:21:38", 
+      "order": 2, 
+      "name_tz_sw": null, 
+      "name_en_us": "Sold as mbuni unhulled", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 1, 
+      "name": "Green", 
+      "parent": null, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-10-14 07:34:06", 
+      "name_am": null, 
+      "modified_on": "2011-11-10 13:04:23", 
+      "order": 3, 
+      "name_tz_sw": null, 
+      "name_en_us": "Green", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 4, 
+      "name": "Not milled", 
+      "parent": 2, 
+      "is_active": true, 
+      "kind": "PAR", 
+      "created_by": 1, 
+      "is_not_processed": true, 
+      "created_on": "2011-11-10 13:10:48", 
+      "name_am": null, 
+      "modified_on": "2011-11-24 13:11:57", 
+      "order": 3, 
+      "name_tz_sw": null, 
+      "name_en_us": "Not milled", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "PB", 
+      "parent": 33, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 2, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-15 07:52:52", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 12:57:16", 
+      "order": 3, 
+      "name_tz_sw": null, 
+      "name_en_us": "PB", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 4, 
+      "name": "Hand Pickings", 
+      "parent": 5, 
+      "is_active": false, 
+      "kind": "GRE", 
+      "created_by": 2, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-17 15:34:26", 
+      "name_am": null, 
+      "modified_on": "2011-11-24 13:22:50", 
+      "order": 3, 
+      "name_tz_sw": null, 
+      "name_en_us": "Hand Pickings", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "C", 
+      "parent": 10, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 9, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-24 16:50:07", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:38:10", 
+      "order": 3, 
+      "name_tz_sw": null, 
+      "name_en_us": "C", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Triage", 
+      "parent": null, 
+      "is_active": false, 
+      "kind": "GRE", 
+      "created_by": 2, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-17 15:34:39", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:17:05", 
+      "order": 4, 
+      "name_tz_sw": null, 
+      "name_en_us": "Triage", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "E", 
+      "parent": 33, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 9, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-24 16:51:30", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 12:57:32", 
+      "order": 4, 
+      "name_tz_sw": null, 
+      "name_en_us": "E", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "Other grades", 
+      "parent": 10, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 9, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-28 12:55:50", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:38:19", 
+      "order": 4, 
+      "name_tz_sw": null, 
+      "name_en_us": "Other grades", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 8, 
+      "name": "Low Grades", 
+      "parent": 33, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-10-18 06:51:31", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:59:38", 
+      "order": 5, 
+      "name_tz_sw": null, 
+      "name_en_us": "Low Grades", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Washed", 
+      "parent": 10, 
+      "is_active": true, 
+      "kind": "GRE", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-10 13:11:58", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:12:36", 
+      "order": 5, 
+      "name_tz_sw": null, 
+      "name_en_us": "Washed", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "grades.grade", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 10, 
+      "name": "Naturals", 
+      "parent": 10, 
+      "is_active": false, 
+      "kind": "GRE", 
+      "created_by": 1, 
+      "is_not_processed": false, 
+      "created_on": "2011-11-10 13:12:07", 
+      "name_am": null, 
+      "modified_on": "2011-11-28 13:13:00", 
+      "order": 6, 
+      "name_tz_sw": null, 
+      "name_en_us": "Naturals", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "cashuses.cashuse", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Second Payment", 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 0, 
+      "calculated_from": "NONE",
+      "created_on": "2011-11-10 14:01:57", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 12:46:57", 
+      "name_tz_sw": null, 
+      "name_en_us": "Second Payment", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "cashuses.cashuse", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Dividend", 
+      "is_active": true, 
+      "created_by": 1, 
+      "order": 1, 
+      "calculated_from": "NONE",
+      "created_on": "2011-11-10 14:02:05", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 12:47:07", 
+      "name_tz_sw": null, 
+      "name_en_us": "Dividend", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "cashuses.cashuse", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 2, 
+      "name": "Agro Inputs", 
+      "is_active": true, 
+      "created_by": 2, 
+      "order": 1, 
+      "calculated_from": "NONE",
+      "created_on": "2011-11-15 00:33:08", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 12:47:17", 
+      "name_tz_sw": null, 
+      "name_en_us": "Agro Inputs", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "cashuses.cashuse", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "Retained Cash", 
+      "is_active": true, 
+      "created_by": 4, 
+      "order": 2, 
+      "calculated_from": "NONE",
+      "created_on": "2011-11-24 13:32:08", 
+      "name_am": null, 
+      "modified_on": "2011-11-30 08:39:56", 
+      "name_tz_sw": null, 
+      "name_en_us": "Retained Cash", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "cashuses.cashuse", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "Payment to Famers", 
+      "is_active": true, 
+      "created_by": 9, 
+      "order": 1, 
+      "calculated_from": "NONE",
+      "created_on": "2011-11-24 16:52:34", 
+      "name_am": null, 
+      "modified_on": "2011-11-29 11:42:43", 
+      "name_tz_sw": null, 
+      "name_en_us": "Payment to Famers", 
+      "name_ke_sw": null
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "cashuses.cashuse", 
+    "fields": {
+      "name_rw": null, 
+      "modified_by": 9, 
+      "name": "Cooperative Retention", 
+      "is_active": true, 
+      "created_by": 9, 
+      "order": 2, 
+      "calculated_from": "NONE",
+      "created_on": "2011-11-29 11:46:00", 
+      "name_am": null, 
+      "modified_on": "2011-11-30 09:47:09", 
+      "name_tz_sw": null, 
+      "name_en_us": "Cooperative Retention", 
+      "name_ke_sw": null
+    }
+  }
+]

@@ -1,0 +1,255 @@
+{% extends "public_base.html" %}
+
+{% load quickblocks humanize perms i18n %}
+
+{% block header-block %}
+{% load_qbs "country_headers" country.name %}
+{% with country_headers|first as country_header %}
+<div class="header-image">
+  {% if country_header.image %}
+  <img src="{{ MEDIA_URL }}{{ home_header.image }}">
+  {% else %}
+  <img src="{{ STATIC_URL }}img/820x250.jpeg">
+  {% endif %}
+</div>
+{% endwith %}
+{% endblock %}
+
+{% block content %}
+
+<div class="row bottom-margin">
+  <div class="span8">
+    {% load_qbs "country_headers" country.name %}
+    {% with country_headers|first as country_header %}
+    <h1>{{ country_header.title }}</h1>
+    <p>{{ country_header.content }}</p>
+    {% endwith %}
+  </div>
+  <div class="span4">
+    <div class="metrics">
+      <div class="metric-block">
+        <div class="metric">{{ wetmill_count|intcomma }}</div>
+        <div class="metric-label">
+          <p>{% trans "Participating" %}</p>
+          <p>{% trans "Cooperatives" %}</p>
+        </div>
+      </div>
+      <div class="metric-block">
+        <div class="metric">{{ farmer_count|intcomma }}</div>
+        <div class="metric-label">
+          <p>{% trans "Participating" %}</p>
+          <p>{% trans "Farmers" %}</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "public/search_box.html" %}
+
+<div class="row">
+  <div class="span14">
+    <div id="map">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span14 wetmills">
+    {% set_has_country_permission country "wetmill_edit" %}
+    <h1>{% trans "Wetmills" %}  {% if wetmill_edit %}<a class="btn btn-primary pull-right" href="{% url 'wetmills.wetmill_create' %}?country={{country.id}}">{% trans "Add" %}</a>{% endif %}</h1>
+    <ul style="float: left">
+      {% for wetmill in left %}
+      <li>
+        <a href="{% url 'public-wetmill' wetmill.id %}">{{ wetmill.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <ul style="float: left; margin-left: 210px;">
+      {% for wetmill in center %}
+      <li>
+        <a href="{% url 'public-wetmill' wetmill.id %}">{{ wetmill.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+        <ul style="float: right">
+      {% for wetmill in right %}
+      <li>
+        <a href="{% url 'public-wetmill' wetmill.id %}">{{ wetmill.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block extra-style %}
+{{ block.super }}
+<style>
+  #map {
+  margin-bottom: 20px;
+  width: 820px;
+  height: 500px;
+  }
+</style>
+{% endblock %}
+
+{% block extra-script %}
+{{ block.super }}
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/markerclusterer.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/infobubble.js"></script>
+<script>
+    var mapStyles = [
+        {
+            featureType: "road.highway",
+            stylers: [ { visibility: "off" } ]
+        },{
+            featureType: "administrative.province",
+            stylers: [ { visibility: "off" } ]
+        },{
+            featureType: "administrative.locality",
+            stylers: [ { visibility: "off" } ]
+        },{
+            featureType: "road",
+            stylers: [ { visibility: "off" } ]
+        },{
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [ { visibility: "off" } ]
+        },{
+            featureType: "water",
+            elementType: "labels",
+            stylers: [ { visibility: "off" } ]
+        },{
+            featureType: "landscape.natural",
+        }
+    ];
+
+  function addMarker(map, point) {
+      //wetmill position
+      var coordinate = new google.maps.LatLng(point.lat, point.lng)
+
+      var marker = new google.maps.Marker({
+          position: coordinate,
+          map: map,
+          title: point.name,
+          province: point.province,
+          year: point.year,
+          icon: '{{STATIC_URL}}img/marker.png'
+      });
+
+      if (point.click) {
+          google.maps.event.addListener(marker, 'click', point.click);
+      }
+
+      google.maps.event.addListener (marker, 'mouseover', function () {
+          var title, province, year;
+          title = marker.title +" Wet Mill "
+
+          if(marker.title == undefined) {
+              title = ""
+          }
+
+          if(marker.province == undefined) {
+              province = "";
+          } else {
+              province = marker.province;
+          }
+
+          if(marker.year == undefined) {
+              year = "";
+          } else {
+              year = "Started in "+ marker.year;
+          }
+
+          infobubble = new InfoBubble({
+              map: map,
+              content: '<div class="bubbletext"><h1>'+title+'</h1>'+province+'</br>'+year+'</div>',
+              position: marker.position,
+              shadowStyle: 1,
+              padding: 0,
+              backgroundColor: '#717348',
+              borderRadius: 6,
+              arrowSize: 1,
+              borderWidth: 5,
+              borderColor: ' #384f0e',
+              disableAutoPan: true,
+              hideCloseButton: true,
+              arrowPosition: 50,
+              backgroundClassName: 'bubble',
+              arrowStyle: 3,
+              disableAnimation: true,
+          });
+
+          infobubble.close ();
+          // if marker.position
+          infobubble.open(map, marker);
+      });
+      google.maps.event.addListener (marker, 'mouseout', function () { infobubble.close ()});
+      return marker;
+  }
+
+  var map = null;
+
+  $(document).ready(function(){
+
+    var lat = {{ country.bounds_lat }};
+    var lng = {{ country.bounds_lng }};
+    var zoom = {{ country.bounds_zoom }};
+
+    var latlng = new google.maps.LatLng(5.015359, 36.60866);
+    if (lat && lng){
+        latlng = new google.maps.LatLng(lat, lng);
+    }
+
+    if (!zoom){
+        zoom = 5;
+    } else {
+        zoom = parseInt(zoom);
+    }
+
+    var options = {
+        zoom: zoom,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.TERRAIN,
+        disableDoubleClickZoom: true,
+        styles: mapStyles
+    };
+    map = new google.maps.Map(document.getElementById("map"), options);
+
+    var markers = [];
+
+    {% for wetmill in wetmills %}
+      point = {}
+      point.lat = '{{wetmill.latitude}}';
+      point.lng = '{{wetmill.longitude}}';
+      point.name = '{{wetmill.name}}';
+      point.province = '{{wetmill.province}}';
+      point.year = '{{wetmill.year_started}}';
+      point.click = function(){
+          window.location.href = '{% url "public-wetmill" wetmill.id %}';
+      };
+      markers.push(addMarker(map, point));
+    {% endfor %}
+
+    var mcoptions = {gridSize: 30,
+      styles:[{
+        url: '{{STATIC_URL}}img/marker_clusterer.png',
+        height: 24,
+        width: 24,
+        anchor: [0,0],
+        textColor: '#ffffff',
+        textSize: 10
+      }]
+
+    };
+
+    var mc = new MarkerClusterer(map, markers, mcoptions);
+
+
+  });
+</script>
+{% endblock %}

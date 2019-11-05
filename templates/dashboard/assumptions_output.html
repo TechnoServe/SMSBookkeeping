@@ -1,0 +1,19 @@
+{% extends "smartmin/update.html" %}
+
+{% load i18n %}
+
+{% block pre-form %}
+<div class="alert">
+<p>{% trans "Each season has a defined curve for the predicted rate of the cherry harvest week by week." %}</p>
+<p>{% trans "For each week you must define the percentage of a wetmill's total crop that will be harvested.  Note that the total of all weeks must total 100%.  If the season is predicted to be less than 30 weeks, simply leave the last fields empty." %}</p>
+</div>
+{% endblock %}
+
+{% block extra-style %}
+{{ block.super }}
+<style>
+input[type='text']{
+  width: 100px;
+}
+</style>
+{% endblock %}

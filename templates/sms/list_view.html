@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% load locales humanize i18n %}
+
+{% block content %}
+
+{% block header %}
+<div class="page-header">
+<h2>{{ csp.name }} {% trans "SMS Accounting" %} ({{ season.name }})</h2>
+</div>
+{% endblock %}
+
+<div>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>{% trans "Wetmill" %}</th>
+        <th>{% trans "A Shipped" %}</th>
+        <th>{% trans "B Shipped" %}</th>
+        <th>{% trans "C Shipped" %}</th>
+        <th>{% trans "A Stored" %}</th>
+        <th>{% trans "B Stored" %}</th>
+        <th>{% trans "C Stored" %}</th>
+        <th>{% trans "Cherry (kg)" %}</th>
+        <th>{% trans "Parchment (kg)" %}</th>
+        <th>{% trans "C/P Ratio" %}</th>
+        <th>{% trans "Avg Price (RWF)" %}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+    {% for wetmill in wetmills %}
+    {% with wetmill.stats as s %}
+    <tr>
+      <td><a href="{% url 'dashboard.wetmill_wetmill' wetmill.id %}?season={{ season.id }}">{{ wetmill.name }}</a></td>
+      <td>{{ s.a_shipped|floatformat:0|intcomma }}</td>
+      <td>{{ s.b_shipped|floatformat:0|intcomma }}</td>
+      <td>{{ s.c_shipped|floatformat:0|intcomma }}</td>
+      <td>{{ s.a_stored|floatformat:0|intcomma }}</td>
+      <td>{{ s.b_stored|floatformat:0|intcomma }}</td>
+      <td>{{ s.c_stored|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ s.cherry|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ s.parchment|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ s.ratio|floatformat }}</td>
+      <td class="calculated">{{ s.price|floatformat:0 }}</td>
+    </tr>
+    {% endwith %}
+    {% endfor %}
+
+    <tr>
+      <td class="calculated"><b>Totals</b></td>
+      <td class="calculated">{{ totals.a_shipped|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ totals.b_shipped|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ totals.c_shipped|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ totals.a_stored|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ totals.b_stored|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ totals.c_stored|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ totals.cherry|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ totals.parchment|floatformat:0|intcomma }}</td>
+      <td class="calculated">{{ totals.ratio|floatformat }}</td>
+      <td class="calculated">{{ totals.price|floatformat:0 }}</td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+
+{% block extra-style %}
+{{ block.super }}
+<style>
+  .table th {
+      font-size: 11px;
+      padding: 4px;
+      line-height: 130%;
+  }
+
+  .table td {
+      font-size: 10px;
+      padding: 4px;
+      text-align: right;
+  }
+
+  .zebra-striped tbody tr:nth-child(odd) td.calculated {
+      background: #EEE;
+  }
+
+  .zebra-striped tbody tr:nth-child(even) td.calculated {
+      background: #EEE;
+  }
+
+  .right {
+      text-align: right;
+  }
+
+  .center {
+      text-align: center;
+  }
+
+  .unit {
+      padding-left: 2px;
+      font-size: 8px;
+  }
+
+  td.cherry {
+      text-align: right;
+      font-size: 12px;
+  }
+
+  td.parchment {
+      text-align: right;
+      font-size: 12px;
+  }
+</style>
+{% endblock %}
+
+{% block extra-script %}
+{{ block.super }}
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap-tabs.js"></script>
+
+{# placeholder form for posterizer href's.. href's with a posterize class will be converted to POSTs #}
+<form id="posterizer" method="post">
+  {% csrf_token %}
+</form>
+
+<script type="text/javascript" src="{{ STATIC_URL }}js/libs/jquery.url.js"></script>
+
+<script>
+  $("a.posterize").click(function(event){
+    event.preventDefault();
+
+    var href = $(this).attr("href");
+    var url = $.url(href);
+
+    $("#posterizer").attr("action", url.attr("path"));
+
+    for (var key in url.param()){
+      $("#posterizer").append("<input type='hidden' name='" + key + "' value='" + url.param(key) + "'></input>");
+    }
+
+    $("#posterizer").submit();
+  });
+</script>
+{% endblock %}
